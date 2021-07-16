@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This frontmatter division will contain all content before the -->
+<!-- first chapter.  Fill in and comment/uncomment to see how this -->
+<!-- works.                                                        -->
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+  <titlepage>
+      <author>
+        <personname>TBIL Institute Fellows</personname>
+        <email>drewlewis@southalabama.edu</email>
+      </author>
+
+  <credit>
+    <title>Editors</title>
+      <author>
+        <personname>Steven Clontz</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>University of South Alabama</institution>
+        <email>sclontz@southalabama.edu</email>
+      </author>
+      <author>
+        <personname>Drew Lewis</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>University of South Alabama</institution>
+        <email>drewlewis@southalabama.edu</email>
+      </author>
+  </credit>
+  <credit>
+    <title>Contributing Authors</title>
+    <author>
+      <personname>TODO</personname>
+      <department>TODO</department>
+      <institution>TODO</institution>
+      <email>todo@todo.edu</email>
+    </author>
+    <author>
+      <personname>TODO</personname>
+      <department>TODO</department>
+      <institution>TODO</institution>
+      <email>todo@todo.edu</email>
+    </author>
+  </credit>
+        <date><today /></date>
+  </titlepage>
+
+
+  <colophon xml:id="colophon">
+    <website>
+        <name>
+            Transforming Lower Division Undergraduate Mathematics Through Team-Based Inquiry Learning
+            <c>https://sites.google.com/southalabama.edu/tbil/</c>
+        </name>
+        <address>https://sites.google.com/southalabama.edu/tbil/</address>
+    </website>
+
+    <xi:include href="./copyright.ptx" />
+
+      <p>
+This work includes materials used under license from the following works:
+      </p>
+      <ul>
+          <li>
+              <p><pubtitle>Active Calculus - single variable</pubtitle></p>
+              <ul>
+                  <li>
+                      <p><url href="https://activecalculus.org/ACS.html"/></p>
+                  </li>
+                  <li>
+                      <p>CC BY-SA 2.0</p>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+
+
+  </colophon>
+
+<!--  <dedication>
+    <p>
+      For ...
+    </p>
+  </dedication> -->
+
+<!--  <acknowledgement>
+    <p>
+      I would like to thank...
+    </p>
+
+  </acknowledgement> -->
+
+    <!-- You should be a little careful about what you put here -->
+    <!-- Avoid elements that should have a number, for example  -->
+<!--  <preface xml:id="preface">
+    <p>
+      About this book:
+    </p>
+
+  </preface> -->
+
+  <!-- You can have more than one preface. -->
+</frontmatter>
+

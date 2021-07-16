@@ -1,4 +1,3 @@
-# My Great Book
+# TBIL 2021 Calculus 2
 
-TODO this should have some simple build information
-and/or a link to documentation
+Hosted at <https://stevenclontz.github.io/cal2-tbil-2021/>.
