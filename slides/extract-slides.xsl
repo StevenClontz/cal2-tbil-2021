@@ -100,7 +100,7 @@
         <xsl:when test="latex-image">
             <image>
                 <xsl:attribute name="source">
-                    <xsl:text>images/</xsl:text>
+                    <xsl:text>generated/</xsl:text>
                     <xsl:apply-templates select="latex-image" mode="visible-id" />
                     <xsl:text>.svg</xsl:text>
                 </xsl:attribute>
