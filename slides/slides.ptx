@@ -1,0 +1,4340 @@
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude"><docinfo xml:base="meta/docinfo.ptx">
+
+  <initialism>TBIL-Cal2</initialism>
+
+<!-- The next three lines are likely for mature projects only: -->
+
+<!-- <brandlogo url="" source="images/cover.png"/> -->
+<!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
+<!-- <document-id>unique-book-id</document-id> -->
+
+<!-- macros for defining latex math shortcuts. It is good practice  -->
+<!-- to define these semantically, so that the macro relates to what-->
+<!-- it defines.                                                    -->
+<macros>
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+</macros>
+
+<!-- If you put any latex-image elements you can include preambles  -->
+<!-- for those in the next element.                                 -->
+<latex-image-preamble>
+  \usepackage{tikz, pgfplots}
+  \usetikzlibrary{positioning,matrix,arrows}
+  \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+  \usetikzlibrary{decorations.markings} 
+</latex-image-preamble>
+
+<!-- It is possible to rename elements using the tags below -->
+<!--  <rename element="investigation" xml:lang="en-US">Puzzle</rename>
+  <rename element="assemblage" xml:lang="en-US">Summary</rename>-->
+    <rename element="objectives" xml:lang="en-US">Learning Outcomes</rename>
+
+<!-- Specify the default type of cross reference:           -->
+  <cross-references text="type-global"/>
+  
+
+</docinfo><slideshow><title>Calculus 2 for Team-Based Inquiry Learning</title><subtitle>Fall 2021 Development Edition</subtitle><frontmatter><titlepage>
+      <author>
+        <personname>TBIL Institute Fellows</personname>
+        <email>drewlewis@southalabama.edu</email>
+      </author>
+
+  <credit>
+    <title>Editors</title>
+      <author>
+        <personname>Steven Clontz</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>University of South Alabama</institution>
+        <email>sclontz@southalabama.edu</email>
+      </author>
+      <author>
+        <personname>Drew Lewis</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>University of South Alabama</institution>
+        <email>drewlewis@southalabama.edu</email>
+      </author>
+  </credit>
+  <credit>
+    <title>Contributing Authors</title>
+    <author>
+      <personname>TODO</personname>
+      <department>TODO</department>
+      <institution>TODO</institution>
+      <email>todo@todo.edu</email>
+    </author>
+    <author>
+      <personname>TODO</personname>
+      <department>TODO</department>
+      <institution>TODO</institution>
+      <email>todo@todo.edu</email>
+    </author>
+  </credit>
+        <date><today/></date>
+  </titlepage></frontmatter><section><title>
+    Techniques of Integration (TI)
+    &gt;
+    
+        
+How do we use various techniques to integrate less simple functions?
+        
+        
+By the end of this chapter, you should be able to...
+        
+    
+    
+        
+            
+Evaluate various integrals via the substitution method.
+
+        
+        
+            
+Compute integrals using integration by parts.
+
+        
+        
+            
+Compute integrals involving products of trigonometric functions.
+
+        
+        
+            
+Use trigonometric substitution to compute indefinite integrals.
+
+        
+        
+            
+Compute integrals using the method of partial fractions.
+
+        
+        
+            
+Select appropriate strategies for integration.
+
+        
+        
+            
+Compute improper integrals.
+
+        
+    
+
+    
+    Readiness Assurance
+    
+        Before beginning this chapter, you should be able to...
+    
+    
+        
+            Add numbers up to ten.
+            
+                
+                    Review: Khan Academy
+                
+            
+        
+        
+            Subtract numbers up to ten.
+            
+                
+                    Review: Khan Academy
+                
+            
+        
+    
+
+    
+  Substitution method (TI1)
+    
+        
+            
+                
+Evaluate various integrals via the substitution method.
+
+            
+        
+    
+    
+        Answer the following.
+        
+            
+Using the chain rule, which of these is derivative of e^{x^3} with respect to x?
+            
+            
+                e^{3x^2}
+                x^3e^{x^3-1}
+                3x^2e^{x^3}
+                \frac{1}{4}e^{x^4}
+            
+        
+        
+            
+Based on this result, which of these would you suspect to equal \int x^2e^{x^3}\,dx?
+            
+            
+                e^{x^3+1}+C
+                \frac{1}{3x}e^{x^3+1}+C
+                3e^{x^3}+C
+                \frac{1}{3}e^{x^3}+C
+            
+        
+    
+    
+        
+            Recall that if u is a function of x,
+            then \frac{d}{dx}[u^7]=7u^6 u' by the Chain Rule.
+            For each question, choose from the following.
+            
+                u^7+C
+                \frac{1}{7}u^7+C
+                7u^7+C
+                \frac{6}{7}u^7+C
+            
+        
+        
+            
+                What is \int 7u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int 6u^6 u'\,dx?
+            
+        
+    
+    
+        
+            Based on these activities, which of these choices seems to be a viable strategy for integration?
+            
+                Memorize an integration formula for every possible function.
+                Attempt to rewrite the integral in the form \int g'(u)u'dx=g(u)+C.
+                Keep differentiating functions until you come across the function you want to integrate.
+            
+        
+    
+    
+        
+            
+By the chain rule, \frac{d}{dx}[g(u)+C]=g'(u)u'. There is an
+dual integration technique reversing this process, known as the substitution method.
+            
+            
+This technique involves choosing an appropriate function u in terms of x
+to rewrite the integral as follows:
+                \int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C.
+            
+        
+    
+    
+        
+            
+Recall that u'=\frac{du}{dx}. This allows for the following:
+                \int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C.
+            
+            
+Therefore rather than dealing with equations like u'=\frac{du}{dx}=x^2, we will prefer to write
+du=x^2\,dx.
+            
+        
+    
+    
+        
+            
+Consider \int x^2e^{x^3}\,dx, which we conjectured earlier
+to be \frac{1}{3}e^{x^3}+C.
+            
+            
+Suppose we decided to let u=x^3.
+            
+        
+        
+            
+Compute \frac{du}{dx}=\unknown,
+and rewrite it as du=\unknown\,dx.
+            
+        
+        
+            
+Multiply both sides of the equation
+du=\unknown\,dx so that its right-hand side
+appears in \int x^2e^{x^3}\,dx.
+            
+        
+        
+            
+Show why \int x^2e^{x^3}\,dx may now be rewritten as
+\int \frac{1}{3}e^u\,du.
+            
+        
+        
+            
+Solve \int \frac{1}{3}e^u\,du in terms of u,
+then replace u with x^3 to confirm our original
+conjecture.
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int x^2e^{x^3}\,dx from start to finish:
+            
+            
+                
+\int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int x^2e^{x^3}\,dx &amp;= \int e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int e^{u} \frac{1}{3}du
+                
+                
+&amp;= \frac{1}{3}e^{u}+C
+                
+                
+&amp;= \frac{1}{3}e^{x^3}+C
+                
+            
+        
+    
+    
+        
+            
+Which step of the previous example do you think was
+the most important?
+            
+            
+                
+                    
+Choosing u=x^3.
+                    
+                
+                
+                    
+Finding du=3x^2\,dx and \frac{1}{3}du=x^2\,dx.
+                    
+                
+                
+                    
+Substituting \int x^2e^{x^3}\,dx
+with \int\frac{1}{3}e^u\,du.
+                    
+                
+                
+                    
+Integrating \int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C.
+                    
+                
+                
+                    
+Unsubstituting \frac{1}{3}e^u+C
+to get \frac{1}{3}e^{x^3}+C.
+                    
+                
+            
+        
+    
+    
+        
+            
+Below are two correct student solutions to the same integral, using
+two different choices for u. Which method would you prefer
+to use yourself?
+            
+            
+                
+                    
+                    
+                        Substituting u=foo
+                    
+                
+                
+                    
+                    
+                        Substituting u=bar
+                    
+                
+            
+        
+    
+    
+        
+            
+Suppose we wanted to try substitution method to find
+\int e^x\cos(e^x+3)\,dx. Which of these choices
+for u appears to be most useful?
+            
+            
+                
+                    
+u=x, so du=dx
+                    
+                
+                
+                    
+u=e^x, so du=e^x\,dx
+                    
+                
+                
+                    
+u=e^x+3, so du=e^x\,dx
+                    
+                
+                
+                    
+u=\cos(x), so du=-\sin(x)\,dx
+                    
+                
+                
+                    
+u=\cos(e^x+3), so du=e^x\sin(e^x+3)\,dx
+                    
+                
+            
+        
+    
+    
+        
+            
+Complete the following solution using your choice from
+the previous activity to find \int e^x\cos(e^x+3)\,dx.
+            
+            
+                
+\int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+\int e^x\cos(e^x+3)\,dx &amp;= \int \unknown\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \sin(e^x+3)+C
+                
+            
+        
+    
+    
+        
+            
+Complete the following integration by substitution
+to find \int \frac{x^3}{x^4+4}\,dx.
+            
+            
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+&amp;&amp;&amp; \unknown du = \unknown\,dx
+                
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;= \int \frac{\unknown}{\unknown}\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \frac{1}{4}\ln|x^4+4|+C
+                
+            
+        
+    
+    
+        
+            
+Given that 
+\int \frac{x^3}{x^4+4}\,dx
+= \frac{1}{4}\ln|x^4+4|+C
+, what is the value of 
+\int_0^2 \frac{x^3}{x^4+4}\,dx
+?
+            
+            
+                \frac{8}{20}
+                -\frac{8}{20}
+                \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)
+            
+        
+    
+    
+        
+            
+What's wrong with the following computation?
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;= \int_0^2 \frac{1/4}{u}\, du
+                
+                
+&amp;= \left[\frac{1}{4}\ln|u|\right]_0^2
+                
+                
+&amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
+                
+            
+            
+                
+                    
+The wrong u substitution was made.
+                    
+                
+                
+                    
+The antiderivative of \frac{1/4}{u} was wrong.
+                    
+                
+                
+                    
+The x values 0,2 were plugged in for the variable u.
+                    
+                
+            
+        
+    
+    
+        
+            
+When x=2, we know that u=2^4+4=20.
+Likewise when x=0, we know that u=0^4+4=4.
+Use these facts to complete the below computation.
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
+\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du
+                
+                
+&amp;= \dots
+                
+                
+&amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+leaving bounds in terms of x:
+            
+            
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{x=1}^{x=3} e^{u} \frac{1}{3}du
+                
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \left[\frac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+transforming bounds into terms of u:
+            
+            
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp;du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du
+                 --&gt;
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+\int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e.
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+\int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}.
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+                
+\int u^5(u^3+1)^{1/3}\,du=
+\frac{1}{7}(u^3+1)^{7/3}-
+\frac{1}{4}(u^3+1)^{4/3}+C
+                
+            
+        
+    
+    
+        
+            
+Consider \int (3x-5)^2\,dx.
+            
+        
+        
+            
+Solve this integral using substitution.
+            
+        
+        
+            
+Replace (3x-5)^2 with (9x^2-30x+25)
+in the original integral, the solve using
+the reverse power rule.
+            
+        
+        
+            
+Which method did you prefer?
+            
+        
+    
+    
+        
+            
+Consider \int \tan(x)\,dx.
+            
+        
+        
+            
+Replace \tan(x) in the integral with
+a fraction involving sine and cosine.
+            
+        
+        
+            
+Use substitution to solve the integral.
+            
+        
+    
+
+    
+  Integration by Parts (TI2)
+    
+        
+            
+                
+Compute integrals using integration by parts.
+
+            
+        
+    
+    foo
+
+    
+  Integration of trigonometry (TI3)
+    
+        
+            
+                
+Compute integrals involving products of trigonometric functions.
+
+            
+        
+    
+    foo
+
+    
+  Trigonometric Substitution (TI4)
+    
+        
+            
+                
+Use trigonometric substitution to compute indefinite integrals.
+
+            
+        
+    
+    foo
+
+    
+  Partial fractions (TI5)
+    
+        
+            
+                
+Compute integrals using the method of partial fractions.
+
+            
+        
+    
+    foo
+
+    
+  Integration strategy (TI6)
+    
+        
+            
+                
+Select appropriate strategies for integration.
+
+            
+        
+    
+    foo
+
+    
+  Improper integrals (TI7)
+    
+        
+            
+                
+Compute improper integrals.
+
+            
+        
+    
+    foo
+
+ 
+    Techniques of Integration (TI)
+    &gt;
+    
+        
+How do we use various techniques to integrate less simple functions?
+        
+        
+By the end of this chapter, you should be able to...
+        
+    
+    
+        
+            
+Evaluate various integrals via the substitution method.
+
+        
+        
+            
+Compute integrals using integration by parts.
+
+        
+        
+            
+Compute integrals involving products of trigonometric functions.
+
+        
+        
+            
+Use trigonometric substitution to compute indefinite integrals.
+
+        
+        
+            
+Compute integrals using the method of partial fractions.
+
+        
+        
+            
+Select appropriate strategies for integration.
+
+        
+        
+            
+Compute improper integrals.
+
+        
+    
+
+    
+    Readiness Assurance
+    
+        Before beginning this chapter, you should be able to...
+    
+    
+        
+            Add numbers up to ten.
+            
+                
+                    Review: Khan Academy
+                
+            
+        
+        
+            Subtract numbers up to ten.
+            
+                
+                    Review: Khan Academy
+                
+            
+        
+    
+
+    
+  Substitution method (TI1)
+    
+        
+            
+                
+Evaluate various integrals via the substitution method.
+
+            
+        
+    
+    
+        Answer the following.
+        
+            
+Using the chain rule, which of these is derivative of e^{x^3} with respect to x?
+            
+            
+                e^{3x^2}
+                x^3e^{x^3-1}
+                3x^2e^{x^3}
+                \frac{1}{4}e^{x^4}
+            
+        
+        
+            
+Based on this result, which of these would you suspect to equal \int x^2e^{x^3}\,dx?
+            
+            
+                e^{x^3+1}+C
+                \frac{1}{3x}e^{x^3+1}+C
+                3e^{x^3}+C
+                \frac{1}{3}e^{x^3}+C
+            
+        
+    
+    
+        
+            Recall that if u is a function of x,
+            then \frac{d}{dx}[u^7]=7u^6 u' by the Chain Rule.
+            For each question, choose from the following.
+            
+                u^7+C
+                \frac{1}{7}u^7+C
+                7u^7+C
+                \frac{6}{7}u^7+C
+            
+        
+        
+            
+                What is \int 7u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int 6u^6 u'\,dx?
+            
+        
+    
+    
+        
+            Based on these activities, which of these choices seems to be a viable strategy for integration?
+            
+                Memorize an integration formula for every possible function.
+                Attempt to rewrite the integral in the form \int g'(u)u'dx=g(u)+C.
+                Keep differentiating functions until you come across the function you want to integrate.
+            
+        
+    
+    
+        
+            
+By the chain rule, \frac{d}{dx}[g(u)+C]=g'(u)u'. There is an
+dual integration technique reversing this process, known as the substitution method.
+            
+            
+This technique involves choosing an appropriate function u in terms of x
+to rewrite the integral as follows:
+                \int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C.
+            
+        
+    
+    
+        
+            
+Recall that u'=\frac{du}{dx}. This allows for the following:
+                \int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C.
+            
+            
+Therefore rather than dealing with equations like u'=\frac{du}{dx}=x^2, we will prefer to write
+du=x^2\,dx.
+            
+        
+    
+    
+        
+            
+Consider \int x^2e^{x^3}\,dx, which we conjectured earlier
+to be \frac{1}{3}e^{x^3}+C.
+            
+            
+Suppose we decided to let u=x^3.
+            
+        
+        
+            
+Compute \frac{du}{dx}=\unknown,
+and rewrite it as du=\unknown\,dx.
+            
+        
+        
+            
+Multiply both sides of the equation
+du=\unknown\,dx so that its right-hand side
+appears in \int x^2e^{x^3}\,dx.
+            
+        
+        
+            
+Show why \int x^2e^{x^3}\,dx may now be rewritten as
+\int \frac{1}{3}e^u\,du.
+            
+        
+        
+            
+Solve \int \frac{1}{3}e^u\,du in terms of u,
+then replace u with x^3 to confirm our original
+conjecture.
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int x^2e^{x^3}\,dx from start to finish:
+            
+            
+                
+\int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int x^2e^{x^3}\,dx &amp;= \int e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int e^{u} \frac{1}{3}du
+                
+                
+&amp;= \frac{1}{3}e^{u}+C
+                
+                
+&amp;= \frac{1}{3}e^{x^3}+C
+                
+            
+        
+    
+    
+        
+            
+Which step of the previous example do you think was
+the most important?
+            
+            
+                
+                    
+Choosing u=x^3.
+                    
+                
+                
+                    
+Finding du=3x^2\,dx and \frac{1}{3}du=x^2\,dx.
+                    
+                
+                
+                    
+Substituting \int x^2e^{x^3}\,dx
+with \int\frac{1}{3}e^u\,du.
+                    
+                
+                
+                    
+Integrating \int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C.
+                    
+                
+                
+                    
+Unsubstituting \frac{1}{3}e^u+C
+to get \frac{1}{3}e^{x^3}+C.
+                    
+                
+            
+        
+    
+    
+        
+            
+Below are two correct student solutions to the same integral, using
+two different choices for u. Which method would you prefer
+to use yourself?
+            
+            
+                
+                    
+                    
+                        Substituting u=foo
+                    
+                
+                
+                    
+                    
+                        Substituting u=bar
+                    
+                
+            
+        
+    
+    
+        
+            
+Suppose we wanted to try substitution method to find
+\int e^x\cos(e^x+3)\,dx. Which of these choices
+for u appears to be most useful?
+            
+            
+                
+                    
+u=x, so du=dx
+                    
+                
+                
+                    
+u=e^x, so du=e^x\,dx
+                    
+                
+                
+                    
+u=e^x+3, so du=e^x\,dx
+                    
+                
+                
+                    
+u=\cos(x), so du=-\sin(x)\,dx
+                    
+                
+                
+                    
+u=\cos(e^x+3), so du=e^x\sin(e^x+3)\,dx
+                    
+                
+            
+        
+    
+    
+        
+            
+Complete the following solution using your choice from
+the previous activity to find \int e^x\cos(e^x+3)\,dx.
+            
+            
+                
+\int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+\int e^x\cos(e^x+3)\,dx &amp;= \int \unknown\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \sin(e^x+3)+C
+                
+            
+        
+    
+    
+        
+            
+Complete the following integration by substitution
+to find \int \frac{x^3}{x^4+4}\,dx.
+            
+            
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+&amp;&amp;&amp; \unknown du = \unknown\,dx
+                
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;= \int \frac{\unknown}{\unknown}\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \frac{1}{4}\ln|x^4+4|+C
+                
+            
+        
+    
+    
+        
+            
+Given that 
+\int \frac{x^3}{x^4+4}\,dx
+= \frac{1}{4}\ln|x^4+4|+C
+, what is the value of 
+\int_0^2 \frac{x^3}{x^4+4}\,dx
+?
+            
+            
+                \frac{8}{20}
+                -\frac{8}{20}
+                \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)
+            
+        
+    
+    
+        
+            
+What's wrong with the following computation?
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;= \int_0^2 \frac{1/4}{u}\, du
+                
+                
+&amp;= \left[\frac{1}{4}\ln|u|\right]_0^2
+                
+                
+&amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
+                
+            
+            
+                
+                    
+The wrong u substitution was made.
+                    
+                
+                
+                    
+The antiderivative of \frac{1/4}{u} was wrong.
+                    
+                
+                
+                    
+The x values 0,2 were plugged in for the variable u.
+                    
+                
+            
+        
+    
+    
+        
+            
+When x=2, we know that u=2^4+4=20.
+Likewise when x=0, we know that u=0^4+4=4.
+Use these facts to complete the below computation.
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
+\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du
+                
+                
+&amp;= \dots
+                
+                
+&amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+leaving bounds in terms of x:
+            
+            
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{x=1}^{x=3} e^{u} \frac{1}{3}du
+                
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \left[\frac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+transforming bounds into terms of u:
+            
+            
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp;du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du
+                 --&gt;
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+\int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e.
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+\int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}.
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+                
+\int u^5(u^3+1)^{1/3}\,du=
+\frac{1}{7}(u^3+1)^{7/3}-
+\frac{1}{4}(u^3+1)^{4/3}+C
+                
+            
+        
+    
+    
+        
+            
+Consider \int (3x-5)^2\,dx.
+            
+        
+        
+            
+Solve this integral using substitution.
+            
+        
+        
+            
+Replace (3x-5)^2 with (9x^2-30x+25)
+in the original integral, the solve using
+the reverse power rule.
+            
+        
+        
+            
+Which method did you prefer?
+            
+        
+    
+    
+        
+            
+Consider \int \tan(x)\,dx.
+            
+        
+        
+            
+Replace \tan(x) in the integral with
+a fraction involving sine and cosine.
+            
+        
+        
+            
+Use substitution to solve the integral.
+            
+        
+    
+
+    
+  Integration by Parts (TI2)
+    
+        
+            
+                
+Compute integrals using integration by parts.
+
+            
+        
+    
+    foo
+
+    
+  Integration of trigonometry (TI3)
+    
+        
+            
+                
+Compute integrals involving products of trigonometric functions.
+
+            
+        
+    
+    foo
+
+    
+  Trigonometric Substitution (TI4)
+    
+        
+            
+                
+Use trigonometric substitution to compute indefinite integrals.
+
+            
+        
+    
+    foo
+
+    
+  Partial fractions (TI5)
+    
+        
+            
+                
+Compute integrals using the method of partial fractions.
+
+            
+        
+    
+    foo
+
+    
+  Integration strategy (TI6)
+    
+        
+            
+                
+Select appropriate strategies for integration.
+
+            
+        
+    
+    foo
+
+    
+  Improper integrals (TI7)
+    
+        
+            
+                
+Compute improper integrals.
+
+            
+        
+    
+    foo
+
+:
+        Techniques of Integration (TI)</title></section><section><title>
+  Substitution method (TI1)
+    
+        
+            
+                
+Evaluate various integrals via the substitution method.
+
+            
+        
+    
+    
+        Answer the following.
+        
+            
+Using the chain rule, which of these is derivative of e^{x^3} with respect to x?
+            
+            
+                e^{3x^2}
+                x^3e^{x^3-1}
+                3x^2e^{x^3}
+                \frac{1}{4}e^{x^4}
+            
+        
+        
+            
+Based on this result, which of these would you suspect to equal \int x^2e^{x^3}\,dx?
+            
+            
+                e^{x^3+1}+C
+                \frac{1}{3x}e^{x^3+1}+C
+                3e^{x^3}+C
+                \frac{1}{3}e^{x^3}+C
+            
+        
+    
+    
+        
+            Recall that if u is a function of x,
+            then \frac{d}{dx}[u^7]=7u^6 u' by the Chain Rule.
+            For each question, choose from the following.
+            
+                u^7+C
+                \frac{1}{7}u^7+C
+                7u^7+C
+                \frac{6}{7}u^7+C
+            
+        
+        
+            
+                What is \int 7u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int 6u^6 u'\,dx?
+            
+        
+    
+    
+        
+            Based on these activities, which of these choices seems to be a viable strategy for integration?
+            
+                Memorize an integration formula for every possible function.
+                Attempt to rewrite the integral in the form \int g'(u)u'dx=g(u)+C.
+                Keep differentiating functions until you come across the function you want to integrate.
+            
+        
+    
+    
+        
+            
+By the chain rule, \frac{d}{dx}[g(u)+C]=g'(u)u'. There is an
+dual integration technique reversing this process, known as the substitution method.
+            
+            
+This technique involves choosing an appropriate function u in terms of x
+to rewrite the integral as follows:
+                \int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C.
+            
+        
+    
+    
+        
+            
+Recall that u'=\frac{du}{dx}. This allows for the following:
+                \int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C.
+            
+            
+Therefore rather than dealing with equations like u'=\frac{du}{dx}=x^2, we will prefer to write
+du=x^2\,dx.
+            
+        
+    
+    
+        
+            
+Consider \int x^2e^{x^3}\,dx, which we conjectured earlier
+to be \frac{1}{3}e^{x^3}+C.
+            
+            
+Suppose we decided to let u=x^3.
+            
+        
+        
+            
+Compute \frac{du}{dx}=\unknown,
+and rewrite it as du=\unknown\,dx.
+            
+        
+        
+            
+Multiply both sides of the equation
+du=\unknown\,dx so that its right-hand side
+appears in \int x^2e^{x^3}\,dx.
+            
+        
+        
+            
+Show why \int x^2e^{x^3}\,dx may now be rewritten as
+\int \frac{1}{3}e^u\,du.
+            
+        
+        
+            
+Solve \int \frac{1}{3}e^u\,du in terms of u,
+then replace u with x^3 to confirm our original
+conjecture.
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int x^2e^{x^3}\,dx from start to finish:
+            
+            
+                
+\int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int x^2e^{x^3}\,dx &amp;= \int e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int e^{u} \frac{1}{3}du
+                
+                
+&amp;= \frac{1}{3}e^{u}+C
+                
+                
+&amp;= \frac{1}{3}e^{x^3}+C
+                
+            
+        
+    
+    
+        
+            
+Which step of the previous example do you think was
+the most important?
+            
+            
+                
+                    
+Choosing u=x^3.
+                    
+                
+                
+                    
+Finding du=3x^2\,dx and \frac{1}{3}du=x^2\,dx.
+                    
+                
+                
+                    
+Substituting \int x^2e^{x^3}\,dx
+with \int\frac{1}{3}e^u\,du.
+                    
+                
+                
+                    
+Integrating \int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C.
+                    
+                
+                
+                    
+Unsubstituting \frac{1}{3}e^u+C
+to get \frac{1}{3}e^{x^3}+C.
+                    
+                
+            
+        
+    
+    
+        
+            
+Below are two correct student solutions to the same integral, using
+two different choices for u. Which method would you prefer
+to use yourself?
+            
+            
+                
+                    
+                    
+                        Substituting u=foo
+                    
+                
+                
+                    
+                    
+                        Substituting u=bar
+                    
+                
+            
+        
+    
+    
+        
+            
+Suppose we wanted to try substitution method to find
+\int e^x\cos(e^x+3)\,dx. Which of these choices
+for u appears to be most useful?
+            
+            
+                
+                    
+u=x, so du=dx
+                    
+                
+                
+                    
+u=e^x, so du=e^x\,dx
+                    
+                
+                
+                    
+u=e^x+3, so du=e^x\,dx
+                    
+                
+                
+                    
+u=\cos(x), so du=-\sin(x)\,dx
+                    
+                
+                
+                    
+u=\cos(e^x+3), so du=e^x\sin(e^x+3)\,dx
+                    
+                
+            
+        
+    
+    
+        
+            
+Complete the following solution using your choice from
+the previous activity to find \int e^x\cos(e^x+3)\,dx.
+            
+            
+                
+\int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+\int e^x\cos(e^x+3)\,dx &amp;= \int \unknown\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \sin(e^x+3)+C
+                
+            
+        
+    
+    
+        
+            
+Complete the following integration by substitution
+to find \int \frac{x^3}{x^4+4}\,dx.
+            
+            
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+&amp;&amp;&amp; \unknown du = \unknown\,dx
+                
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;= \int \frac{\unknown}{\unknown}\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \frac{1}{4}\ln|x^4+4|+C
+                
+            
+        
+    
+    
+        
+            
+Given that 
+\int \frac{x^3}{x^4+4}\,dx
+= \frac{1}{4}\ln|x^4+4|+C
+, what is the value of 
+\int_0^2 \frac{x^3}{x^4+4}\,dx
+?
+            
+            
+                \frac{8}{20}
+                -\frac{8}{20}
+                \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)
+            
+        
+    
+    
+        
+            
+What's wrong with the following computation?
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;= \int_0^2 \frac{1/4}{u}\, du
+                
+                
+&amp;= \left[\frac{1}{4}\ln|u|\right]_0^2
+                
+                
+&amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
+                
+            
+            
+                
+                    
+The wrong u substitution was made.
+                    
+                
+                
+                    
+The antiderivative of \frac{1/4}{u} was wrong.
+                    
+                
+                
+                    
+The x values 0,2 were plugged in for the variable u.
+                    
+                
+            
+        
+    
+    
+        
+            
+When x=2, we know that u=2^4+4=20.
+Likewise when x=0, we know that u=0^4+4=4.
+Use these facts to complete the below computation.
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
+\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du
+                
+                
+&amp;= \dots
+                
+                
+&amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+leaving bounds in terms of x:
+            
+            
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{x=1}^{x=3} e^{u} \frac{1}{3}du
+                
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \left[\frac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+transforming bounds into terms of u:
+            
+            
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp;du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du
+                 --&gt;
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+\int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e.
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+\int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}.
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+                
+\int u^5(u^3+1)^{1/3}\,du=
+\frac{1}{7}(u^3+1)^{7/3}-
+\frac{1}{4}(u^3+1)^{4/3}+C
+                
+            
+        
+    
+    
+        
+            
+Consider \int (3x-5)^2\,dx.
+            
+        
+        
+            
+Solve this integral using substitution.
+            
+        
+        
+            
+Replace (3x-5)^2 with (9x^2-30x+25)
+in the original integral, the solve using
+the reverse power rule.
+            
+        
+        
+            
+Which method did you prefer?
+            
+        
+    
+    
+        
+            
+Consider \int \tan(x)\,dx.
+            
+        
+        
+            
+Replace \tan(x) in the integral with
+a fraction involving sine and cosine.
+            
+        
+        
+            
+Use substitution to solve the integral.
+            
+        
+    
+ 
+  Substitution method (TI1)
+    
+        
+            
+                
+Evaluate various integrals via the substitution method.
+
+            
+        
+    
+    
+        Answer the following.
+        
+            
+Using the chain rule, which of these is derivative of e^{x^3} with respect to x?
+            
+            
+                e^{3x^2}
+                x^3e^{x^3-1}
+                3x^2e^{x^3}
+                \frac{1}{4}e^{x^4}
+            
+        
+        
+            
+Based on this result, which of these would you suspect to equal \int x^2e^{x^3}\,dx?
+            
+            
+                e^{x^3+1}+C
+                \frac{1}{3x}e^{x^3+1}+C
+                3e^{x^3}+C
+                \frac{1}{3}e^{x^3}+C
+            
+        
+    
+    
+        
+            Recall that if u is a function of x,
+            then \frac{d}{dx}[u^7]=7u^6 u' by the Chain Rule.
+            For each question, choose from the following.
+            
+                u^7+C
+                \frac{1}{7}u^7+C
+                7u^7+C
+                \frac{6}{7}u^7+C
+            
+        
+        
+            
+                What is \int 7u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int 6u^6 u'\,dx?
+            
+        
+    
+    
+        
+            Based on these activities, which of these choices seems to be a viable strategy for integration?
+            
+                Memorize an integration formula for every possible function.
+                Attempt to rewrite the integral in the form \int g'(u)u'dx=g(u)+C.
+                Keep differentiating functions until you come across the function you want to integrate.
+            
+        
+    
+    
+        
+            
+By the chain rule, \frac{d}{dx}[g(u)+C]=g'(u)u'. There is an
+dual integration technique reversing this process, known as the substitution method.
+            
+            
+This technique involves choosing an appropriate function u in terms of x
+to rewrite the integral as follows:
+                \int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C.
+            
+        
+    
+    
+        
+            
+Recall that u'=\frac{du}{dx}. This allows for the following:
+                \int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C.
+            
+            
+Therefore rather than dealing with equations like u'=\frac{du}{dx}=x^2, we will prefer to write
+du=x^2\,dx.
+            
+        
+    
+    
+        
+            
+Consider \int x^2e^{x^3}\,dx, which we conjectured earlier
+to be \frac{1}{3}e^{x^3}+C.
+            
+            
+Suppose we decided to let u=x^3.
+            
+        
+        
+            
+Compute \frac{du}{dx}=\unknown,
+and rewrite it as du=\unknown\,dx.
+            
+        
+        
+            
+Multiply both sides of the equation
+du=\unknown\,dx so that its right-hand side
+appears in \int x^2e^{x^3}\,dx.
+            
+        
+        
+            
+Show why \int x^2e^{x^3}\,dx may now be rewritten as
+\int \frac{1}{3}e^u\,du.
+            
+        
+        
+            
+Solve \int \frac{1}{3}e^u\,du in terms of u,
+then replace u with x^3 to confirm our original
+conjecture.
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int x^2e^{x^3}\,dx from start to finish:
+            
+            
+                
+\int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int x^2e^{x^3}\,dx &amp;= \int e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int e^{u} \frac{1}{3}du
+                
+                
+&amp;= \frac{1}{3}e^{u}+C
+                
+                
+&amp;= \frac{1}{3}e^{x^3}+C
+                
+            
+        
+    
+    
+        
+            
+Which step of the previous example do you think was
+the most important?
+            
+            
+                
+                    
+Choosing u=x^3.
+                    
+                
+                
+                    
+Finding du=3x^2\,dx and \frac{1}{3}du=x^2\,dx.
+                    
+                
+                
+                    
+Substituting \int x^2e^{x^3}\,dx
+with \int\frac{1}{3}e^u\,du.
+                    
+                
+                
+                    
+Integrating \int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C.
+                    
+                
+                
+                    
+Unsubstituting \frac{1}{3}e^u+C
+to get \frac{1}{3}e^{x^3}+C.
+                    
+                
+            
+        
+    
+    
+        
+            
+Below are two correct student solutions to the same integral, using
+two different choices for u. Which method would you prefer
+to use yourself?
+            
+            
+                
+                    
+                    
+                        Substituting u=foo
+                    
+                
+                
+                    
+                    
+                        Substituting u=bar
+                    
+                
+            
+        
+    
+    
+        
+            
+Suppose we wanted to try substitution method to find
+\int e^x\cos(e^x+3)\,dx. Which of these choices
+for u appears to be most useful?
+            
+            
+                
+                    
+u=x, so du=dx
+                    
+                
+                
+                    
+u=e^x, so du=e^x\,dx
+                    
+                
+                
+                    
+u=e^x+3, so du=e^x\,dx
+                    
+                
+                
+                    
+u=\cos(x), so du=-\sin(x)\,dx
+                    
+                
+                
+                    
+u=\cos(e^x+3), so du=e^x\sin(e^x+3)\,dx
+                    
+                
+            
+        
+    
+    
+        
+            
+Complete the following solution using your choice from
+the previous activity to find \int e^x\cos(e^x+3)\,dx.
+            
+            
+                
+\int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+\int e^x\cos(e^x+3)\,dx &amp;= \int \unknown\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \sin(e^x+3)+C
+                
+            
+        
+    
+    
+        
+            
+Complete the following integration by substitution
+to find \int \frac{x^3}{x^4+4}\,dx.
+            
+            
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+&amp;&amp;&amp; \unknown du = \unknown\,dx
+                
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;= \int \frac{\unknown}{\unknown}\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \frac{1}{4}\ln|x^4+4|+C
+                
+            
+        
+    
+    
+        
+            
+Given that 
+\int \frac{x^3}{x^4+4}\,dx
+= \frac{1}{4}\ln|x^4+4|+C
+, what is the value of 
+\int_0^2 \frac{x^3}{x^4+4}\,dx
+?
+            
+            
+                \frac{8}{20}
+                -\frac{8}{20}
+                \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)
+            
+        
+    
+    
+        
+            
+What's wrong with the following computation?
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;= \int_0^2 \frac{1/4}{u}\, du
+                
+                
+&amp;= \left[\frac{1}{4}\ln|u|\right]_0^2
+                
+                
+&amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
+                
+            
+            
+                
+                    
+The wrong u substitution was made.
+                    
+                
+                
+                    
+The antiderivative of \frac{1/4}{u} was wrong.
+                    
+                
+                
+                    
+The x values 0,2 were plugged in for the variable u.
+                    
+                
+            
+        
+    
+    
+        
+            
+When x=2, we know that u=2^4+4=20.
+Likewise when x=0, we know that u=0^4+4=4.
+Use these facts to complete the below computation.
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
+\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du
+                
+                
+&amp;= \dots
+                
+                
+&amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+leaving bounds in terms of x:
+            
+            
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{x=1}^{x=3} e^{u} \frac{1}{3}du
+                
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \left[\frac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    
+    
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+transforming bounds into terms of u:
+            
+            
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp;du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du
+                 --&gt;
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+\int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e.
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+\int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}.
+            
+        
+    
+    
+        
+            
+Use substitution to show that
+                
+\int u^5(u^3+1)^{1/3}\,du=
+\frac{1}{7}(u^3+1)^{7/3}-
+\frac{1}{4}(u^3+1)^{4/3}+C
+                
+            
+        
+    
+    
+        
+            
+Consider \int (3x-5)^2\,dx.
+            
+        
+        
+            
+Solve this integral using substitution.
+            
+        
+        
+            
+Replace (3x-5)^2 with (9x^2-30x+25)
+in the original integral, the solve using
+the reverse power rule.
+            
+        
+        
+            
+Which method did you prefer?
+            
+        
+    
+    
+        
+            
+Consider \int \tan(x)\,dx.
+            
+        
+        
+            
+Replace \tan(x) in the integral with
+a fraction involving sine and cosine.
+            
+        
+        
+            
+Use substitution to solve the integral.
+            
+        
+    
+:
+        Substitution method (TI1)</title><slide><title>
+        Answer the following.
+        
+            
+Using the chain rule, which of these is derivative of e^{x^3} with respect to x?
+            
+            
+                e^{3x^2}
+                x^3e^{x^3-1}
+                3x^2e^{x^3}
+                \frac{1}{4}e^{x^4}
+            
+        
+        
+            
+Based on this result, which of these would you suspect to equal \int x^2e^{x^3}\,dx?
+            
+            
+                e^{x^3+1}+C
+                \frac{1}{3x}e^{x^3+1}+C
+                3e^{x^3}+C
+                \frac{1}{3}e^{x^3}+C
+            
+        
+     
+        Answer the following.
+        
+            
+Using the chain rule, which of these is derivative of e^{x^3} with respect to x?
+            
+            
+                e^{3x^2}
+                x^3e^{x^3-1}
+                3x^2e^{x^3}
+                \frac{1}{4}e^{x^4}
+            
+        
+        
+            
+Based on this result, which of these would you suspect to equal \int x^2e^{x^3}\,dx?
+            
+            
+                e^{x^3+1}+C
+                \frac{1}{3x}e^{x^3+1}+C
+                3e^{x^3}+C
+                \frac{1}{3}e^{x^3}+C
+            
+        
+    </title><p>Answer the following.</p><ol label="(a)" pause="yes"><task>
+            <p>
+Using the chain rule, which of these is derivative of <m>e^{x^3}</m> with respect to <m>x</m>?
+            </p>
+            <ol label="a">
+                <li><p><me>e^{3x^2}</me></p></li>
+                <li><p><me>x^3e^{x^3-1}</me></p></li>
+                <li><p><me>3x^2e^{x^3}</me></p></li>
+                <li><p><me>\frac{1}{4}e^{x^4}</me></p></li>
+            </ol>
+        </task><task>
+            <p>
+Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^3}\,dx</m>?
+            </p>
+            <ol label="a">
+                <li><p><me>e^{x^3+1}+C</me></p></li>
+                <li><p><me>\frac{1}{3x}e^{x^3+1}+C</me></p></li>
+                <li><p><me>3e^{x^3}+C</me></p></li>
+                <li><p><me>\frac{1}{3}e^{x^3}+C</me></p></li>
+            </ol>
+        </task></ol></slide><slide><title>
+        
+            Recall that if u is a function of x,
+            then \frac{d}{dx}[u^7]=7u^6 u' by the Chain Rule.
+            For each question, choose from the following.
+            
+                u^7+C
+                \frac{1}{7}u^7+C
+                7u^7+C
+                \frac{6}{7}u^7+C
+            
+        
+        
+            
+                What is \int 7u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int 6u^6 u'\,dx?
+            
+        
+     
+        
+            Recall that if u is a function of x,
+            then \frac{d}{dx}[u^7]=7u^6 u' by the Chain Rule.
+            For each question, choose from the following.
+            
+                u^7+C
+                \frac{1}{7}u^7+C
+                7u^7+C
+                \frac{6}{7}u^7+C
+            
+        
+        
+            
+                What is \int 7u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int u^6 u'\,dx?
+            
+        
+        
+            
+                What is \int 6u^6 u'\,dx?
+            
+        
+    </title><p>Recall that if <m>u</m> is a function of <m>x</m>,
+            then <m>\frac{d}{dx}[u^7]=7u^6 u'</m> by the Chain Rule.</p><p>For each question, choose from the following.</p><ol label="a">
+                <li><p><me>u^7+C</me></p></li>
+                <li><p><me>\frac{1}{7}u^7+C</me></p></li>
+                <li><p><me>7u^7+C</me></p></li>
+                <li><p><me>\frac{6}{7}u^7+C</me></p></li>
+            </ol><ol label="(a)" pause="yes"><task>
+            <statement>
+                <p>What is <m>\int 7u^6 u'\,dx</m>?</p>
+            </statement>
+        </task><task>
+            <statement>
+                <p>What is <m>\int u^6 u'\,dx</m>?</p>
+            </statement>
+        </task><task>
+            <statement>
+                <p>What is <m>\int 6u^6 u'\,dx</m>?</p>
+            </statement>
+        </task></ol></slide><slide><title>
+        
+            Based on these activities, which of these choices seems to be a viable strategy for integration?
+            
+                Memorize an integration formula for every possible function.
+                Attempt to rewrite the integral in the form \int g'(u)u'dx=g(u)+C.
+                Keep differentiating functions until you come across the function you want to integrate.
+            
+        
+     
+        
+            Based on these activities, which of these choices seems to be a viable strategy for integration?
+            
+                Memorize an integration formula for every possible function.
+                Attempt to rewrite the integral in the form \int g'(u)u'dx=g(u)+C.
+                Keep differentiating functions until you come across the function you want to integrate.
+            
+        
+    </title><p>Based on these activities, which of these choices seems to be a viable strategy for integration?</p><ol label="a">
+                <li><p>Memorize an integration formula for every possible function.</p></li>
+                <li><p>Attempt to rewrite the integral in the form <m>\int g'(u)u'dx=g(u)+C</m>.</p></li>
+                <li><p>Keep differentiating functions until you come across the function you want to integrate.</p></li>
+            </ol></slide><slide><title>
+        
+            
+By the chain rule, \frac{d}{dx}[g(u)+C]=g'(u)u'. There is an
+dual integration technique reversing this process, known as the substitution method.
+            
+            
+This technique involves choosing an appropriate function u in terms of x
+to rewrite the integral as follows:
+                \int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C.
+            
+        
+     
+        
+            
+By the chain rule, \frac{d}{dx}[g(u)+C]=g'(u)u'. There is an
+dual integration technique reversing this process, known as the substitution method.
+            
+            
+This technique involves choosing an appropriate function u in terms of x
+to rewrite the integral as follows:
+                \int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C.
+            
+        
+    </title><p>
+By the chain rule, <me>\frac{d}{dx}[g(u)+C]=g'(u)u'</me>. There is an
+dual integration technique reversing this process, known as the <term>substitution method</term>.
+            </p><p>
+This technique involves choosing an appropriate function <m>u</m> in terms of <m>x</m>
+to rewrite the integral as follows:
+                <me>\int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C</me>.
+            </p></slide><slide><title>
+        
+            
+Recall that u'=\frac{du}{dx}. This allows for the following:
+                \int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C.
+            
+            
+Therefore rather than dealing with equations like u'=\frac{du}{dx}=x^2, we will prefer to write
+du=x^2\,dx.
+            
+        
+     
+        
+            
+Recall that u'=\frac{du}{dx}. This allows for the following:
+                \int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C.
+            
+            
+Therefore rather than dealing with equations like u'=\frac{du}{dx}=x^2, we will prefer to write
+du=x^2\,dx.
+            
+        
+    </title><p>
+Recall that <m>u'=\frac{du}{dx}</m>. This allows for the following:
+                <me>\int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C</me>.
+            </p><p>
+Therefore rather than dealing with equations like <m>u'=\frac{du}{dx}=x^2</m>, we will prefer to write
+<m>du=x^2\,dx</m>.
+            </p></slide><slide><title>
+        
+            
+Consider \int x^2e^{x^3}\,dx, which we conjectured earlier
+to be \frac{1}{3}e^{x^3}+C.
+            
+            
+Suppose we decided to let u=x^3.
+            
+        
+        
+            
+Compute \frac{du}{dx}=\unknown,
+and rewrite it as du=\unknown\,dx.
+            
+        
+        
+            
+Multiply both sides of the equation
+du=\unknown\,dx so that its right-hand side
+appears in \int x^2e^{x^3}\,dx.
+            
+        
+        
+            
+Show why \int x^2e^{x^3}\,dx may now be rewritten as
+\int \frac{1}{3}e^u\,du.
+            
+        
+        
+            
+Solve \int \frac{1}{3}e^u\,du in terms of u,
+then replace u with x^3 to confirm our original
+conjecture.
+            
+        
+     
+        
+            
+Consider \int x^2e^{x^3}\,dx, which we conjectured earlier
+to be \frac{1}{3}e^{x^3}+C.
+            
+            
+Suppose we decided to let u=x^3.
+            
+        
+        
+            
+Compute \frac{du}{dx}=\unknown,
+and rewrite it as du=\unknown\,dx.
+            
+        
+        
+            
+Multiply both sides of the equation
+du=\unknown\,dx so that its right-hand side
+appears in \int x^2e^{x^3}\,dx.
+            
+        
+        
+            
+Show why \int x^2e^{x^3}\,dx may now be rewritten as
+\int \frac{1}{3}e^u\,du.
+            
+        
+        
+            
+Solve \int \frac{1}{3}e^u\,du in terms of u,
+then replace u with x^3 to confirm our original
+conjecture.
+            
+        
+    </title><p>
+Consider <m>\int x^2e^{x^3}\,dx</m>, which we conjectured earlier
+to be <m>\frac{1}{3}e^{x^3}+C</m>.
+            </p><p>
+Suppose we decided to let <m>u=x^3</m>.
+            </p><ol label="(a)" pause="yes"><task>
+            <p>
+Compute <m>\frac{du}{dx}=\unknown</m>,
+and rewrite it as <m>du=\unknown\,dx</m>.
+            </p>
+        </task><task>
+            <p>
+Multiply both sides of the equation
+<m>du=\unknown\,dx</m> so that its right-hand side
+appears in <m>\int x^2e^{x^3}\,dx</m>.
+            </p>
+        </task><task>
+            <p>
+Show why <m>\int x^2e^{x^3}\,dx</m> may now be rewritten as
+<m>\int \frac{1}{3}e^u\,du</m>.
+            </p>
+        </task><task>
+            <p>
+Solve <m>\int \frac{1}{3}e^u\,du</m> in terms of <m>u</m>,
+then replace <m>u</m> with <m>x^3</m> to confirm our original
+conjecture.
+            </p>
+        </task></ol></slide><slide><title>
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int x^2e^{x^3}\,dx from start to finish:
+            
+            
+                
+\int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int x^2e^{x^3}\,dx &amp;= \int e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int e^{u} \frac{1}{3}du
+                
+                
+&amp;= \frac{1}{3}e^{u}+C
+                
+                
+&amp;= \frac{1}{3}e^{x^3}+C
+                
+            
+        
+     
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int x^2e^{x^3}\,dx from start to finish:
+            
+            
+                
+\int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int x^2e^{x^3}\,dx &amp;= \int e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int e^{u} \frac{1}{3}du
+                
+                
+&amp;= \frac{1}{3}e^{u}+C
+                
+                
+&amp;= \frac{1}{3}e^{x^3}+C
+                
+            
+        
+    </title><p>
+Here is how one might write out the explanation
+of how to find
+<m>\int x^2e^{x^3}\,dx</m> from start to finish:
+            </p><md>
+                <mrow>
+\int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; du = 3x^2\,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                </mrow>
+                <mrow>
+\int x^2e^{x^3}\,dx &amp;= \int e^{(x^3)} (x^2\,dx)
+                </mrow>
+                <mrow>
+&amp;= \int e^{u} \frac{1}{3}du
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{3}e^{u}+C
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{3}e^{x^3}+C
+                </mrow>
+            </md></slide><slide><title>
+        
+            
+Which step of the previous example do you think was
+the most important?
+            
+            
+                
+                    
+Choosing u=x^3.
+                    
+                
+                
+                    
+Finding du=3x^2\,dx and \frac{1}{3}du=x^2\,dx.
+                    
+                
+                
+                    
+Substituting \int x^2e^{x^3}\,dx
+with \int\frac{1}{3}e^u\,du.
+                    
+                
+                
+                    
+Integrating \int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C.
+                    
+                
+                
+                    
+Unsubstituting \frac{1}{3}e^u+C
+to get \frac{1}{3}e^{x^3}+C.
+                    
+                
+            
+        
+     
+        
+            
+Which step of the previous example do you think was
+the most important?
+            
+            
+                
+                    
+Choosing u=x^3.
+                    
+                
+                
+                    
+Finding du=3x^2\,dx and \frac{1}{3}du=x^2\,dx.
+                    
+                
+                
+                    
+Substituting \int x^2e^{x^3}\,dx
+with \int\frac{1}{3}e^u\,du.
+                    
+                
+                
+                    
+Integrating \int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C.
+                    
+                
+                
+                    
+Unsubstituting \frac{1}{3}e^u+C
+to get \frac{1}{3}e^{x^3}+C.
+                    
+                
+            
+        
+    </title><p>
+Which step of the previous example do you think was
+the most important?
+            </p><ol label="a">
+                <li>
+                    <p>
+Choosing <m>u=x^3</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Finding <m>du=3x^2\,dx</m> and <m>\frac{1}{3}du=x^2\,dx</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Substituting <m>\int x^2e^{x^3}\,dx</m>
+with <m>\int\frac{1}{3}e^u\,du</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Integrating <m>\int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Unsubstituting <m>\frac{1}{3}e^u+C</m>
+to get <m>\frac{1}{3}e^{x^3}+C</m>.
+                    </p>
+                </li>
+            </ol></slide><slide><title>
+        
+            
+Below are two correct student solutions to the same integral, using
+two different choices for u. Which method would you prefer
+to use yourself?
+            
+            
+                
+                    
+                    
+                        Substituting u=foo
+                    
+                
+                
+                    
+                    
+                        Substituting u=bar
+                    
+                
+            
+        
+     
+        
+            
+Below are two correct student solutions to the same integral, using
+two different choices for u. Which method would you prefer
+to use yourself?
+            
+            
+                
+                    
+                    
+                        Substituting u=foo
+                    
+                
+                
+                    
+                    
+                        Substituting u=bar
+                    
+                
+            
+        
+    </title><p>
+Below are two correct student solutions to the same integral, using
+two different choices for <m>u</m>. Which method would you prefer
+to use yourself?
+            </p><sidebyside widths="48% 48%">
+                <figure>
+                    <image source="external/frog.jpg"/>
+                    <caption>
+                        Substituting <m>u=foo</m>
+                    </caption>
+                </figure>
+                <figure>
+                    <image source="external/frog.jpg"/>
+                    <caption>
+                        Substituting <m>u=bar</m>
+                    </caption>
+                </figure>
+            </sidebyside></slide><slide><title>
+        
+            
+Suppose we wanted to try substitution method to find
+\int e^x\cos(e^x+3)\,dx. Which of these choices
+for u appears to be most useful?
+            
+            
+                
+                    
+u=x, so du=dx
+                    
+                
+                
+                    
+u=e^x, so du=e^x\,dx
+                    
+                
+                
+                    
+u=e^x+3, so du=e^x\,dx
+                    
+                
+                
+                    
+u=\cos(x), so du=-\sin(x)\,dx
+                    
+                
+                
+                    
+u=\cos(e^x+3), so du=e^x\sin(e^x+3)\,dx
+                    
+                
+            
+        
+     
+        
+            
+Suppose we wanted to try substitution method to find
+\int e^x\cos(e^x+3)\,dx. Which of these choices
+for u appears to be most useful?
+            
+            
+                
+                    
+u=x, so du=dx
+                    
+                
+                
+                    
+u=e^x, so du=e^x\,dx
+                    
+                
+                
+                    
+u=e^x+3, so du=e^x\,dx
+                    
+                
+                
+                    
+u=\cos(x), so du=-\sin(x)\,dx
+                    
+                
+                
+                    
+u=\cos(e^x+3), so du=e^x\sin(e^x+3)\,dx
+                    
+                
+            
+        
+    </title><p>
+Suppose we wanted to try substitution method to find
+<m>\int e^x\cos(e^x+3)\,dx</m>. Which of these choices
+for <m>u</m> appears to be most useful?
+            </p><ol label="a">
+                <li>
+                    <p>
+<m>u=x</m>, so <m>du=dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<m>u=e^x</m>, so <m>du=e^x\,dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<m>u=e^x+3</m>, so <m>du=e^x\,dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<m>u=\cos(x)</m>, so <m>du=-\sin(x)\,dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<m>u=\cos(e^x+3)</m>, so <m>du=e^x\sin(e^x+3)\,dx</m>
+                    </p>
+                </li>
+            </ol></slide><slide><title>
+        
+            
+Complete the following solution using your choice from
+the previous activity to find \int e^x\cos(e^x+3)\,dx.
+            
+            
+                
+\int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+\int e^x\cos(e^x+3)\,dx &amp;= \int \unknown\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \sin(e^x+3)+C
+                
+            
+        
+     
+        
+            
+Complete the following solution using your choice from
+the previous activity to find \int e^x\cos(e^x+3)\,dx.
+            
+            
+                
+\int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+\int e^x\cos(e^x+3)\,dx &amp;= \int \unknown\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \sin(e^x+3)+C
+                
+            
+        
+    </title><p>
+Complete the following solution using your choice from
+the previous activity to find <m>\int e^x\cos(e^x+3)\,dx</m>.
+            </p><md>
+                <mrow>
+\int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; du = \unknown\,dx
+                </mrow>
+                <mrow>
+\int e^x\cos(e^x+3)\,dx &amp;= \int \unknown\, du
+                </mrow>
+                <mrow>
+&amp;= \cdots
+                </mrow>
+                <mrow>
+&amp;= \sin(e^x+3)+C
+                </mrow>
+            </md></slide><slide><title>
+        
+            
+Complete the following integration by substitution
+to find \int \frac{x^3}{x^4+4}\,dx.
+            
+            
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+&amp;&amp;&amp; \unknown du = \unknown\,dx
+                
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;= \int \frac{\unknown}{\unknown}\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \frac{1}{4}\ln|x^4+4|+C
+                
+            
+        
+     
+        
+            
+Complete the following integration by substitution
+to find \int \frac{x^3}{x^4+4}\,dx.
+            
+            
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                
+                
+&amp;&amp;&amp; du = \unknown\,dx
+                
+                
+&amp;&amp;&amp; \unknown du = \unknown\,dx
+                
+                
+\int \frac{x^3}{x^4+4}\,dx &amp;= \int \frac{\unknown}{\unknown}\, du
+                
+                
+&amp;= \cdots
+                
+                
+&amp;= \frac{1}{4}\ln|x^4+4|+C
+                
+            
+        
+    </title><p>
+Complete the following integration by substitution
+to find <m>\int \frac{x^3}{x^4+4}\,dx</m>.
+            </p><md>
+                <mrow>
+\int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; du = \unknown\,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; \unknown du = \unknown\,dx
+                </mrow>
+                <mrow>
+\int \frac{x^3}{x^4+4}\,dx &amp;= \int \frac{\unknown}{\unknown}\, du
+                </mrow>
+                <mrow>
+&amp;= \cdots
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{4}\ln|x^4+4|+C
+                </mrow>
+            </md></slide><slide><title>
+        
+            
+Given that 
+\int \frac{x^3}{x^4+4}\,dx
+= \frac{1}{4}\ln|x^4+4|+C
+, what is the value of 
+\int_0^2 \frac{x^3}{x^4+4}\,dx
+?
+            
+            
+                \frac{8}{20}
+                -\frac{8}{20}
+                \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)
+            
+        
+     
+        
+            
+Given that 
+\int \frac{x^3}{x^4+4}\,dx
+= \frac{1}{4}\ln|x^4+4|+C
+, what is the value of 
+\int_0^2 \frac{x^3}{x^4+4}\,dx
+?
+            
+            
+                \frac{8}{20}
+                -\frac{8}{20}
+                \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)
+            
+        
+    </title><p>
+Given that <m>
+\int \frac{x^3}{x^4+4}\,dx
+= \frac{1}{4}\ln|x^4+4|+C
+</m>, what is the value of <m>
+\int_0^2 \frac{x^3}{x^4+4}\,dx
+</m>?
+            </p><ol label="a">
+                <li><p><m>\frac{8}{20}</m></p></li>
+                <li><p><m>-\frac{8}{20}</m></p></li>
+                <li><p><m>\frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)</m></p></li>
+                <li><p><m>\frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)</m></p></li>
+            </ol></slide><slide><title>
+        
+            
+What's wrong with the following computation?
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;= \int_0^2 \frac{1/4}{u}\, du
+                
+                
+&amp;= \left[\frac{1}{4}\ln|u|\right]_0^2
+                
+                
+&amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
+                
+            
+            
+                
+                    
+The wrong u substitution was made.
+                    
+                
+                
+                    
+The antiderivative of \frac{1/4}{u} was wrong.
+                    
+                
+                
+                    
+The x values 0,2 were plugged in for the variable u.
+                    
+                
+            
+        
+     
+        
+            
+What's wrong with the following computation?
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;= \int_0^2 \frac{1/4}{u}\, du
+                
+                
+&amp;= \left[\frac{1}{4}\ln|u|\right]_0^2
+                
+                
+&amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
+                
+            
+            
+                
+                    
+The wrong u substitution was made.
+                    
+                
+                
+                    
+The antiderivative of \frac{1/4}{u} was wrong.
+                    
+                
+                
+                    
+The x values 0,2 were plugged in for the variable u.
+                    
+                
+            
+        
+    </title><p>
+What's wrong with the following computation?
+            </p><md>
+                <mrow>
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; du = 4x^3\,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                </mrow>
+                <mrow>
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;= \int_0^2 \frac{1/4}{u}\, du
+                </mrow>
+                <mrow>
+&amp;= \left[\frac{1}{4}\ln|u|\right]_0^2
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
+                </mrow>
+            </md><ol label="a">
+                <li>
+                    <p>
+The wrong <m>u</m> substitution was made.
+                    </p>
+                </li>
+                <li>
+                    <p>
+The antiderivative of <m>\frac{1/4}{u}</m> was wrong.
+                    </p>
+                </li>
+                <li>
+                    <p>
+The <m>x</m> values <m>0,2</m> were plugged in for the variable <m>u</m>.
+                    </p>
+                </li>
+            </ol></slide><slide><title>
+        
+            
+When x=2, we know that u=2^4+4=20.
+Likewise when x=0, we know that u=0^4+4=4.
+Use these facts to complete the below computation.
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
+\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du
+                
+                
+&amp;= \dots
+                
+                
+&amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                
+            
+        
+     
+        
+            
+When x=2, we know that u=2^4+4=20.
+Likewise when x=0, we know that u=0^4+4=4.
+Use these facts to complete the below computation.
+            
+            
+                
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                
+                
+&amp;&amp;&amp; du = 4x^3\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                
+                
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
+\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du
+                
+                
+&amp;= \dots
+                
+                
+&amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                
+            
+        
+    </title><p>
+When <m>x=2</m>, we know that <m>u=2^4+4=20</m>.
+Likewise when <m>x=0</m>, we know that <m>u=0^4+4=4</m>.
+Use these facts to complete the below computation.
+            </p><md>
+                <mrow>
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; du = 4x^3\,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
+                </mrow>
+                <mrow>
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
+\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du
+                </mrow>
+                <mrow>
+&amp;= \dots
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+                </mrow>
+            </md></slide><slide><title>
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+leaving bounds in terms of x:
+            
+            
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{x=1}^{x=3} e^{u} \frac{1}{3}du
+                
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \left[\frac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+     
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+leaving bounds in terms of x:
+            
+            
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp; du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{x=1}^{x=3} e^{u} \frac{1}{3}du
+                
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \left[\frac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
+                
+                
+&amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    </title><p>
+Here is how one might write out the explanation
+of how to find
+<m>\int_1^3 x^2e^{x^3}\,dx</m> from start to finish by
+leaving bounds in terms of <m>x</m>:
+            </p><md>
+                <mrow>
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; du = 3x^2\,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx
+                </mrow>
+                <mrow>
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                </mrow>
+                <mrow>
+&amp;= \int_{x=1}^{x=3} e^{u} \frac{1}{3}du
+                </mrow>
+                <mrow>
+&amp;= \left[\frac{1}{3}e^{u}\right]_{x=1}^{x=3}
+                </mrow>
+                <mrow>
+&amp;= \left[\frac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                </mrow>
+            </md></slide><slide><title>
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+transforming bounds into terms of u:
+            
+            
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp;du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du
+                 --&gt;
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+     
+        
+            
+Here is how one might write out the explanation
+of how to find
+\int_1^3 x^2e^{x^3}\,dx from start to finish by
+transforming bounds into terms of u:
+            
+            
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                
+                
+&amp;&amp;&amp;du = 3x^2\,dx
+                
+                
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
+                
+                
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                
+                
+&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du
+                 --&gt;
+                
+&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}
+                
+                
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                
+            
+        
+    </title><p>
+Here is how one might write out the explanation
+of how to find
+<m>\int_1^3 x^2e^{x^3}\,dx</m> from start to finish by
+transforming bounds into terms of <m>u</m>:
+            </p><md>
+                <!-- doing transformation in margins instead...
+                <mrow>
+\int_1^3 x^2e^{x^3}\,dx &amp;\phantom{=}\text{Let }u=x^3
+&amp;\text{so }&amp;x=3\Rightarrow u=3^3=27
+                </mrow>
+                <mrow>
+&amp;\phantom{=} du = 3x^2\,dx&amp;\text{and }&amp;x=1\Rightarrow u=1^3=1
+                </mrow>
+                <mrow>
+&amp;\phantom{=} \frac{1}{3}du = x^2\,dx
+                </mrow>
+                <mrow>
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                </mrow>
+                <mrow>
+&amp;= \int_{u=1}^{u=27} e^{u} \frac{1}{3}du
+                </mrow> -->
+                <mrow>
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                </mrow>
+                <mrow>
+&amp;&amp;&amp;du = 3x^2\,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
+                </mrow>
+                <mrow>
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                </mrow>
+                <mrow>
+&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du
+                </mrow> --&gt;
+                <mrow>
+&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+                </mrow>
+            </md></slide><slide><title>
+        
+            
+Use substitution to show that
+\int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e.
+            
+        
+     
+        
+            
+Use substitution to show that
+\int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e.
+            
+        
+    </title><p>
+Use substitution to show that
+<me>\int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e</me>.
+            </p></slide><slide><title>
+        
+            
+Use substitution to show that
+\int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}.
+            
+        
+     
+        
+            
+Use substitution to show that
+\int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}.
+            
+        
+    </title><p>
+Use substitution to show that
+<me>\int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}</me>.
+            </p></slide><slide><title>
+        
+            
+Use substitution to show that
+                
+\int u^5(u^3+1)^{1/3}\,du=
+\frac{1}{7}(u^3+1)^{7/3}-
+\frac{1}{4}(u^3+1)^{4/3}+C
+                
+            
+        
+     
+        
+            
+Use substitution to show that
+                
+\int u^5(u^3+1)^{1/3}\,du=
+\frac{1}{7}(u^3+1)^{7/3}-
+\frac{1}{4}(u^3+1)^{4/3}+C
+                
+            
+        
+    </title><p>
+Use substitution to show that
+                <me>
+\int u^5(u^3+1)^{1/3}\,du=
+\frac{1}{7}(u^3+1)^{7/3}-
+\frac{1}{4}(u^3+1)^{4/3}+C
+                </me>
+            </p></slide><slide><title>
+        
+            
+Consider \int (3x-5)^2\,dx.
+            
+        
+        
+            
+Solve this integral using substitution.
+            
+        
+        
+            
+Replace (3x-5)^2 with (9x^2-30x+25)
+in the original integral, the solve using
+the reverse power rule.
+            
+        
+        
+            
+Which method did you prefer?
+            
+        
+     
+        
+            
+Consider \int (3x-5)^2\,dx.
+            
+        
+        
+            
+Solve this integral using substitution.
+            
+        
+        
+            
+Replace (3x-5)^2 with (9x^2-30x+25)
+in the original integral, the solve using
+the reverse power rule.
+            
+        
+        
+            
+Which method did you prefer?
+            
+        
+    </title><p>
+Consider <m>\int (3x-5)^2\,dx</m>.
+            </p><ol label="(a)" pause="yes"><task>
+            <p>
+Solve this integral using substitution.
+            </p>
+        </task><task>
+            <p>
+Replace <m>(3x-5)^2</m> with <m>(9x^2-30x+25)</m>
+in the original integral, the solve using
+the reverse power rule.
+            </p>
+        </task><task>
+            <p>
+Which method did you prefer?
+            </p>
+        </task></ol></slide><slide><title>
+        
+            
+Consider \int \tan(x)\,dx.
+            
+        
+        
+            
+Replace \tan(x) in the integral with
+a fraction involving sine and cosine.
+            
+        
+        
+            
+Use substitution to solve the integral.
+            
+        
+     
+        
+            
+Consider \int \tan(x)\,dx.
+            
+        
+        
+            
+Replace \tan(x) in the integral with
+a fraction involving sine and cosine.
+            
+        
+        
+            
+Use substitution to solve the integral.
+            
+        
+    </title><p>
+Consider <m>\int \tan(x)\,dx</m>.
+            </p><ol label="(a)" pause="yes"><task>
+            <p>
+Replace <m>\tan(x)</m> in the integral with
+a fraction involving sine and cosine.
+            </p>
+        </task><task>
+            <p>
+Use substitution to solve the integral.
+            </p>
+        </task></ol></slide></section><section><title>
+  Integration by Parts (TI2)
+    
+        
+            
+                
+Compute integrals using integration by parts.
+
+            
+        
+    
+    foo
+ 
+  Integration by Parts (TI2)
+    
+        
+            
+                
+Compute integrals using integration by parts.
+
+            
+        
+    
+    foo
+:
+        Integration by Parts (TI2)</title></section><section><title>
+  Integration of trigonometry (TI3)
+    
+        
+            
+                
+Compute integrals involving products of trigonometric functions.
+
+            
+        
+    
+    foo
+ 
+  Integration of trigonometry (TI3)
+    
+        
+            
+                
+Compute integrals involving products of trigonometric functions.
+
+            
+        
+    
+    foo
+:
+        Integration of trigonometry (TI3)</title></section><section><title>
+  Trigonometric Substitution (TI4)
+    
+        
+            
+                
+Use trigonometric substitution to compute indefinite integrals.
+
+            
+        
+    
+    foo
+ 
+  Trigonometric Substitution (TI4)
+    
+        
+            
+                
+Use trigonometric substitution to compute indefinite integrals.
+
+            
+        
+    
+    foo
+:
+        Trigonometric Substitution (TI4)</title></section><section><title>
+  Partial fractions (TI5)
+    
+        
+            
+                
+Compute integrals using the method of partial fractions.
+
+            
+        
+    
+    foo
+ 
+  Partial fractions (TI5)
+    
+        
+            
+                
+Compute integrals using the method of partial fractions.
+
+            
+        
+    
+    foo
+:
+        Partial fractions (TI5)</title></section><section><title>
+  Integration strategy (TI6)
+    
+        
+            
+                
+Select appropriate strategies for integration.
+
+            
+        
+    
+    foo
+ 
+  Integration strategy (TI6)
+    
+        
+            
+                
+Select appropriate strategies for integration.
+
+            
+        
+    
+    foo
+:
+        Integration strategy (TI6)</title></section><section><title>
+  Improper integrals (TI7)
+    
+        
+            
+                
+Compute improper integrals.
+
+            
+        
+    
+    foo
+ 
+  Improper integrals (TI7)
+    
+        
+            
+                
+Compute improper integrals.
+
+            
+        
+    
+    foo
+:
+        Improper integrals (TI7)</title></section><section><title>
+     A Short Table of Integrals
+    
+      
+        
+          
+            \int \frac{du}{a^2 + u^2} = \frac{1}{a} \arctan \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \frac{du}{\sqrt{u^2 \pm a^2}} = \ln |u + \sqrt{u^2 \pm a^2}| + C
+          
+        
+
+        
+          
+            \int \sqrt{u^2 \pm a^2} \, du = \frac{u}{2}\sqrt{u^2 \pm a^2} \pm \frac{a^2}{2}\ln|u + \sqrt{u^2 \pm a^2}| + C
+          
+        
+
+        
+          
+            \int \frac{u^2 du}{\sqrt{u^2 \pm a^2}} = \frac{u}{2}\sqrt{u^2 \pm a^2} \mp \frac{a^2}{2}\ln|u + \sqrt{u^2 \pm a^2}| + C
+          
+        
+
+        
+          
+            \int \frac{du}{u\sqrt{u^2+a^2}} = -\frac{1}{a} \ln \left| \frac{a+\sqrt{u^2 + a^2}}{u} \right| + C
+          
+        
+
+        
+          
+            \int \frac{du}{u\sqrt{u^2-a^2}} = \frac{1}{a} \arcsec \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \frac{du}{\sqrt{a^2 - u^2}} = \arcsin \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \sqrt{a^2 - u^2} \, du = \frac{u}{2}\sqrt{a^2 - u^2} + \frac{a^2}{2} \arcsin \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \frac{u^2}{\sqrt{a^2 - u^2}} \, du = -\frac{u}{2}\sqrt{a^2 - u^2} + \frac{a^2}{2} \arcsin \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \frac{du}{u\sqrt{a^2 - u^2}} = -\frac{1}{a} \ln \left| \frac{a + \sqrt{a^2 - u^2}}{u} \right| + C
+          
+        
+
+        
+          
+            \int \frac{du}{u^2\sqrt{a^2 - u^2}} = -\frac{\sqrt{a^2-u^2}}{a^2 u} + C
+          
+        
+      
+    
+ 
+     A Short Table of Integrals
+    
+      
+        
+          
+            \int \frac{du}{a^2 + u^2} = \frac{1}{a} \arctan \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \frac{du}{\sqrt{u^2 \pm a^2}} = \ln |u + \sqrt{u^2 \pm a^2}| + C
+          
+        
+
+        
+          
+            \int \sqrt{u^2 \pm a^2} \, du = \frac{u}{2}\sqrt{u^2 \pm a^2} \pm \frac{a^2}{2}\ln|u + \sqrt{u^2 \pm a^2}| + C
+          
+        
+
+        
+          
+            \int \frac{u^2 du}{\sqrt{u^2 \pm a^2}} = \frac{u}{2}\sqrt{u^2 \pm a^2} \mp \frac{a^2}{2}\ln|u + \sqrt{u^2 \pm a^2}| + C
+          
+        
+
+        
+          
+            \int \frac{du}{u\sqrt{u^2+a^2}} = -\frac{1}{a} \ln \left| \frac{a+\sqrt{u^2 + a^2}}{u} \right| + C
+          
+        
+
+        
+          
+            \int \frac{du}{u\sqrt{u^2-a^2}} = \frac{1}{a} \arcsec \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \frac{du}{\sqrt{a^2 - u^2}} = \arcsin \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \sqrt{a^2 - u^2} \, du = \frac{u}{2}\sqrt{a^2 - u^2} + \frac{a^2}{2} \arcsin \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \frac{u^2}{\sqrt{a^2 - u^2}} \, du = -\frac{u}{2}\sqrt{a^2 - u^2} + \frac{a^2}{2} \arcsin \left( \frac{u}{a} \right) + C
+          
+        
+
+        
+          
+            \int \frac{du}{u\sqrt{a^2 - u^2}} = -\frac{1}{a} \ln \left| \frac{a + \sqrt{a^2 - u^2}}{u} \right| + C
+          
+        
+
+        
+          
+            \int \frac{du}{u^2\sqrt{a^2 - u^2}} = -\frac{\sqrt{a^2-u^2}}{a^2 u} + C
+          
+        
+      
+    
+:
+        A Short Table of Integrals</title></section></slideshow></pretext>
