@@ -21,6 +21,8 @@
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
 </macros>
 
 <!-- If you put any latex-image elements you can include preambles  -->

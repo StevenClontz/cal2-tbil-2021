@@ -26,6 +26,8 @@
     <index-list/>
   </index>-->
 
+  <xi:include href="integral-table.ptx"/>
+
   <colophon xml:id="tbil-rl">
       <title>TBIL Resource Library</title>
       <p>
