@@ -15,22 +15,22 @@
             <p>
 Using the chain rule, which of these is derivative of <m>e^{x^3}</m> with respect to <m>x</m>?
             </p>
-            <ol label="a">
-                <li><p><me>e^{3x^2}</me></p></li>
-                <li><p><me>x^3e^{x^3-1}</me></p></li>
-                <li><p><me>3x^2e^{x^3}</me></p></li>
-                <li><p><me>\frac{1}{4}e^{x^4}</me></p></li>
+            <ol label="a" cols="2">
+                <li><p><m>e^{3x^2}</m></p></li>
+                <li><p><m>x^3e^{x^3-1}</m></p></li>
+                <li><p><m>3x^2e^{x^3}</m></p></li>
+                <li><p><m>\frac{1}{4}e^{x^4}</m></p></li>
             </ol>
         </task>
         <task>
             <p>
 Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^3}\,dx</m>?
             </p>
-            <ol label="a">
-                <li><p><me>e^{x^3+1}+C</me></p></li>
-                <li><p><me>\frac{1}{3x}e^{x^3+1}+C</me></p></li>
-                <li><p><me>3e^{x^3}+C</me></p></li>
-                <li><p><me>\frac{1}{3}e^{x^3}+C</me></p></li>
+            <ol label="a" cols="2">
+                <li><p><m>e^{x^3+1}+C</m></p></li>
+                <li><p><m>\frac{1}{3x}e^{x^3+1}+C</m></p></li>
+                <li><p><m>3e^{x^3}+C</m></p></li>
+                <li><p><m>\frac{1}{3}e^{x^3}+C</m></p></li>
             </ol>
         </task>
     </activity>
@@ -39,11 +39,11 @@ Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^
             <p>Recall that if <m>u</m> is a function of <m>x</m>,
             then <m>\frac{d}{dx}[u^7]=7u^6 u'</m> by the Chain Rule.</p>
             <p>For each question, choose from the following.</p>
-            <ol label="a">
-                <li><p><me>u^7+C</me></p></li>
-                <li><p><me>\frac{1}{7}u^7+C</me></p></li>
-                <li><p><me>7u^7+C</me></p></li>
-                <li><p><me>\frac{6}{7}u^7+C</me></p></li>
+            <ol label="a" cols="4">
+                <li><p><m>u^7+C</m></p></li>
+                <li><p><m>\frac{1}{7}u^7+C</m></p></li>
+                <li><p><m>7u^7+C</m></p></li>
+                <li><p><m>\frac{6}{7}u^7+C</m></p></li>
             </ol>
         </introduction>
         <task>
@@ -375,7 +375,7 @@ Given that <m>
 \int_0^2 \frac{x^3}{x^4+4}\,dx
 </m>?
             </p>
-            <ol label="a">
+            <ol label="a" cols="2">
                 <li><p><m>\frac{8}{20}</m></p></li>
                 <li><p><m>-\frac{8}{20}</m></p></li>
                 <li><p><m>\frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)</m></p></li>

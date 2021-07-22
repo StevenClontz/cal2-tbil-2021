@@ -64,19 +64,7 @@
 <xsl:template match="activity|definition|remark|fact|observation|example">
     <slide>
         <xsl:apply-templates select="." mode="slides-title"/>
-        <xsl:choose>
-            <xsl:when test="statement|introduction">
-                <xsl:apply-templates select="statement/*|introduction/*" mode="slideshow-copy"/>
-                <xsl:if test="task">
-                    <ol label="(a)" pause="yes">
-                        <xsl:apply-templates select="task" mode="slideshow-copy"/>
-                    </ol>
-                </xsl:if>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:apply-templates select="*" mode="slideshow-copy"/>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:apply-templates select="statement/*|introduction/*|task" mode="slideshow-copy"/>
     </slide>
 </xsl:template>
 
