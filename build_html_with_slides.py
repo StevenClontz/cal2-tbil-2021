@@ -1,10 +1,12 @@
 import pretext
 from pretext.project import Project
+from pretext.utils import working_directory
 from lxml import etree as ET
 from pathlib import Path
 
 # build HTML with diagrams as usual
-Project().build("html",diagrams=True)
+with working_directory("."):
+    Project().build("html",diagrams=True)
 
 # rig up slide stuff
 XSLNS="{http://www.w3.org/1999/XSL/Transform}"
