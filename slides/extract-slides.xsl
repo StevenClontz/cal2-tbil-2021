@@ -4,7 +4,7 @@
   xmlns:xml="http://www.w3.org/XML/1998/namespace"
 >
 
-<!--<xsl:include href="pretext/xsl/pretext-common.xsl"/>-->
+<!-- Inserted <xsl:include href="pretext/xsl/pretext-common.xsl"/>-->
 
 <xsl:output method="xml" indent="yes"/>
 
