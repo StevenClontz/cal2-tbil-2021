@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-22T16:49:29Z       *-->
+<!--*       on 2021-07-23T21:13:22Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal2 Integration strategy (TI6)</title>
+<title>TBIL-Cal2 Partial fractions (TI6)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -68,10 +68,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="TI5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="TI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="TI7.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="TI4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="TI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="TI7.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="TI5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="TI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="TI7.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="TI4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="TI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="TI7.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -85,9 +85,10 @@
 <li><a href="TI2.html" data-scroll="TI2">Integration by Parts (TI2)</a></li>
 <li><a href="TI3.html" data-scroll="TI3">Integration of trigonometry (TI3)</a></li>
 <li><a href="TI4.html" data-scroll="TI4">Trigonometric Substitution (TI4)</a></li>
-<li><a href="TI5.html" data-scroll="TI5">Partial fractions (TI5)</a></li>
-<li><a href="TI6.html" data-scroll="TI6" class="active">Integration strategy (TI6)</a></li>
-<li><a href="TI7.html" data-scroll="TI7">Improper integrals (TI7)</a></li>
+<li><a href="TI4.html" data-scroll="TI4">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="active">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -97,10 +98,171 @@
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="TI6"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1.6</span> <span class="title">Integration strategy (TI6)</span>
+<span class="type">Section</span> <span class="codenumber">1.6</span> <span class="title">Partial fractions (TI6)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-7"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-52"><p id="p-102">Select appropriate strategies for integration.</p></li></ul></article><p id="p-103">foo</p></section></div></main>
+<ul class="disc"><li id="li-66"><p id="p-116">I can integrate functions using the method of partial fractions.</p></li></ul></article><p id="p-117"><article class="activity project-like" id="activity-TI6oneoverlinear"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.1</span><span class="period">.</span>
+</h6>
+<p id="p-118">Using the method of substitution, which of these is the integral of \(\displaystyle\int \frac{1}{(ax+b)} dx\text{?}\)</p>
+<ol class="decimal">
+<li id="li-67">\(\displaystyle \frac{1}{a}\ln(ax+b) +C.\)</li>
+<li id="li-68">\(\displaystyle \frac{1}{a}\ln|ax+b| +C.\)</li>
+<li id="li-69">\(\displaystyle \frac{1}{x}(\ln(ax)+\ln(b))+C.\)</li>
+<li id="li-70">\(\displaystyle \frac{1}{a}(\ln|ax|+\ln|b|)+C.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6RationalExpression"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.2</span><span class="period">.</span>
+</h6>
+<p id="p-119">Which of the following is equivalent to the rational expression \(\displaystyle\frac{3x+3}{2x^2+3x}\text{?}\)</p>
+<ol class="decimal">
+<li id="li-71">\(\displaystyle \frac{3}{2x}+\frac{1}{x}.\)</li>
+<li id="li-72">\(\displaystyle \frac{3}{x}+\frac{3}{2x+3}.\)</li>
+<li id="li-73">\(\displaystyle \frac{1}{x}+\frac{1}{2x+3}.\)</li>
+<li id="li-74">\(\displaystyle \frac{3}{2x^2}+1.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6IntegrateRationalExpression"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.3</span><span class="period">.</span>
+</h6>
+<p id="p-120">Based on your choice in <a class="xref" data-knowl="./knowl/activity-TI6RationalExpression.html" title="Activity 1.6.2">Activity 1.6.2</a>, which of these is the integral for \(\displaystyle\int \frac{3x+3}{2x^2+3x} dx\text{?}\)</p>
+<ol class="decimal">
+<li id="li-75">\(\displaystyle \frac{3}{2}\ln|x|+\ln|x|+C.\)</li>
+<li id="li-76">\(\displaystyle 3\ln|x|+\frac{3}{2}\ln|2x+3|+C.\)</li>
+<li id="li-77">\(\displaystyle \ln|x|+\frac{1}{2}\ln|2x+3|+C.\)</li>
+<li id="li-78">\(\displaystyle -\frac{3}{2}x^{-1}+x+C.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6AntidiffArctan"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.4</span><span class="period">.</span>
+</h6>
+<p id="p-121">Which of the following is an antiderivative for \(\displaystyle\frac{1}{(x+k)^2+h^2}\text{?}\)</p>
+<ol class="decimal">
+<li id="li-79">\(\displaystyle \arctan(x).\)</li>
+<li id="li-80">\(\displaystyle \arctan(x+k).\)</li>
+<li id="li-81">\(\displaystyle \frac{1}{h}\arctan\left(\frac{x+h}{h}\right).\)</li>
+<li id="li-82">\(\displaystyle \frac{1}{h^2}\arctan\left(\frac{x+k}{h^2}\right).\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6CompleteSquare"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.5</span><span class="period">.</span>
+</h6>
+<p id="p-122">Consider the irreducible quadratic \(x^2-4x+80\text{.}\)  Which of the following is the completed square form of this quadratic expression?</p>
+<ol class="decimal">
+<li id="li-83">\(\displaystyle (x-4)^2+80.\)</li>
+<li id="li-84">\(\displaystyle (x-2)^2+80.\)</li>
+<li id="li-85">\(\displaystyle (x-4)^2+64.\)</li>
+<li id="li-86">\(\displaystyle (x-2)^2+64.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6EvalIrred"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.6</span><span class="period">.</span>
+</h6>
+<p id="p-123">Using the fact that \(\displaystyle\int \frac{1}{x^2-4x+100} dx = \int \frac{1}{(x-4)^2+64} dx\text{,}\) evaluate the integral \(\displaystyle \int \frac{1}{x^2-4x+100} dx\text{.}\)</p></article> <article class="activity project-like" id="activity-TI6FindCoeff"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.7</span><span class="period">.</span>
+</h6>
+<p id="p-124">Suppose that one could write \(\displaystyle\frac{4x^2-5x-2}{x^2(x-2)} =\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2}\text{.}\)  What are the values of \(A, B\) and \(C\text{?}\) <a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><p id="p-125">Recall that  \(\displaystyle \frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2} = \frac{A(x-2)+Bx(x-2)+Cx^2}{x^2(x-2)}.\)</p></div></div></p>
+<ol class="decimal">
+<li id="li-87">\(\displaystyle A=4, B=-5, C=-2.\)</li>
+<li id="li-88">\(\displaystyle A=1, B=1, C=1.\)</li>
+<li id="li-89">\(\displaystyle A=1, B=3, C=1.\)</li>
+<li id="li-90">\(\displaystyle A=2, B=1, C=1.\)</li>
+</ol></article> <article class="fact theorem-like" id="fact-TI6PartialFractions"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.6.8</span><span class="period">.</span><span class="space"> </span><span class="title">Partial Fraction Decomposition.</span>
+</h6>
+<p id="p-126">Let \(\displaystyle \frac{p(x)}{q(x)}\) be a rational function, where the degree of \(p\) is less than the degree of \(q\text{.}\) </p>
+<ol id="p-127" class="decimal">
+<li id="li-91">
+<p id="p-128"><em class="emphasis">Linear Terms:</em> Let \((x-a)\) divide \(q(x)\text{,}\) where \((x-a)^n\) is the highest power of \((x-a)\) that divides \(q(x)\text{.}\) Then the decomposition of \(\frac{p(x)}{q(x)}\) will contain the sum</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{A_1}{(x-a)} + \frac{A_2}{(x-a)^2} + \cdots +\frac{A_n}{(x-a)^n}\text{.}
+\end{equation*}
+</div>
+</li>
+<li id="li-92">
+<p id="p-129"><em class="emphasis">Quadratic Terms:</em> Let \(x^2+bx+c\)  be an irreducible quadratic that divides \(q(x)\text{,}\) where \((x^2+bx+c)^n\) is the highest power of \(x^2+bx+c\) that divides \(q(x)\text{.}\) Then the decomposition of \(\frac{p(x)}{q(x)}\) will contain the sum</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{B_1x+C_1}{x^2+bx+c}+\frac{B_2x+C_2}{(x^2+bx+c)^2}+\cdots+\frac{B_nx+C_n}{(x^2+bx+c)^n}\text{.}
+\end{equation*}
+</div>
+</li>
+</ol></article> <article class="activity project-like" id="activity-TI6FirstDecomp"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.9</span><span class="period">.</span>
+</h6>
+<p id="p-130">Which of the following is the form of the partial fraction decomposition of \(\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}\text{?}\)</p>
+<ol class="decimal">
+<li id="li-93">\(\displaystyle \frac{A}{x}+\frac{B}{x+5}.\)</li>
+<li id="li-94">\(\displaystyle \frac{A}{x^3}+\frac{B}{x+5}.\)</li>
+<li id="li-95">\(\displaystyle \frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}.\)</li>
+<li id="li-96">\(\displaystyle \frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{Dx+E}{x+5}.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6SecondDecomp"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.10</span><span class="period">.</span>
+</h6>
+<p id="p-131">Which of the following is the form of the partial fraction decomposition of \(\displaystyle\frac{x^2+1}{(x-3)^2(x^2+4)^2}\text{?}\)</p>
+<ol class="decimal">
+<li id="li-97">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{D}{(x^2+4)^2}.\)</li>
+<li id="li-98">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{(x^2+4)^2}.\)</li>
+<li id="li-99">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{Dx+E}{(x^2+4)^2}.\)</li>
+<li id="li-100">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{x^2+4}+\frac{Ex+F}{(x^2+4)^2}.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6FindCoefficients1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.11</span><span class="period">.</span>
+</h6>
+<p id="p-132">Given that \(\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}=\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}\text{,}\) what are \(A, B, C\text{,}\) and \(D\text{?}\)</p>
+<ol class="decimal">
+<li id="li-101">\(\displaystyle A=1, B=-7 C=-7, D=15.\)</li>
+<li id="li-102">\(\displaystyle A=-1, B=-2, C=3, D=2.\)</li>
+<li id="li-103">\(\displaystyle A=1, B=-2, C=-3, D=2.\)</li>
+<li id="li-104">\(\displaystyle A=-1, B=2, C=3, D=-2.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6Evaluate1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.12</span><span class="period">.</span>
+</h6>
+<p id="p-133">Given your choice in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "activity-TI5FindCoefficients1" missing or not unique]</code> Find \(\displaystyle\int \frac{x^3-7x^2-7x+15}{x^3(x+5)} dx.\)</p></article> <article class="activity project-like" id="activity-TI6FindCompleteDecomp"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.13</span><span class="period">.</span>
+</h6>
+<p id="p-134">Consider the rational expression \(\displaystyle\frac{2x^3+2x+4}{x^4+2x^3+4x^2}.\)  Which of the following is the partial fraction decomposition of this rational expression?</p>
+<ol class="decimal">
+<li id="li-105">\(\displaystyle \frac{1}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}.\)</li>
+<li id="li-106">\(\displaystyle \frac{2}{x}+\frac{0}{x^2}+\frac{-1}{x^2+2x+4}.\)</li>
+<li id="li-107">\(\displaystyle \frac{0}{x}+\frac{1}{x^2}+\frac{-1}{x^2+2x+4}.\)</li>
+<li id="li-108">\(\displaystyle \frac{0}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6Evaluate2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.14</span><span class="period">.</span>
+</h6>
+<p id="p-135">Given your choice in <a class="xref" data-knowl="./knowl/activity-TI6FindCompleteDecomp.html" title="Activity 1.6.13">Activity 1.6.13</a> Find \(\displaystyle\int \frac{2x^3+2x+4}{x^4+2x^3+4x^2} dx.\)</p></article> <article class="activity project-like" id="activity-TI6Definite"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.15</span><span class="period">.</span>
+</h6>
+<p id="p-136">Given that \(\displaystyle \frac{2x+5}{x^2+3x+2}=\frac{-1}{x+2}+\frac{3}{x+1}\text{,}\) find \(\displaystyle\int_0^3  \frac{2x+5}{x^2+3x+2} dx.\)</p></article></p>
+<p id="p-137"><article class="remark remark-like" id="remark-1"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.6.16</span><span class="period">.</span>
+</h6>
+<p id="p-138">This is all well and good, but given a rational function, how might one actually find coefficients for the partial fractions if we weren't given them?</p></article> <article class="activity project-like" id="activity-TI6RationaltoPoly"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.17</span><span class="period">.</span>
+</h6>
+<p id="p-139">Consider that the partial decomposition of \(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}.
+\end{equation*}
+</div>
+<p class="continuation">What equality do we obtain if we multiply both sides of the above equation by \((x+1)^2x\text{?}\)</p>
+<ol class="decimal">
+<li id="li-109">\(\displaystyle x^2+5x+3=A(x+1)+B(x+1)^2+Cx.\)</li>
+<li id="li-110">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2.\)</li>
+</ol></article> <article class="activity project-like" id="activity-TI6SolveaCoeff"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.18</span><span class="period">.</span>
+</h6>
+<p id="p-140">By taking \(x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2\) and setting \(x=0\text{,}\) can we solve for any values \(A, B\) or \(C\text{?}\)</p></article> <article class="activity project-like" id="activity-TI6SolveanotherCoeff"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.19</span><span class="period">.</span>
+</h6>
+<p id="p-141">By taking \(x^2+5x+3=Ax(x+1)+Bx+3(x+1)^2\) and setting \(x=-1\text{,}\) can we solve for any values \(A\) or \(B\text{?}\)</p></article> <article class="activity project-like" id="activity-TI6SolvelastCoeff"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.20</span><span class="period">.</span>
+</h6>
+<p id="p-142">Rewrite \(Ax(x+1)-x+3(x+1)^2\) so that \(Ax(x+1)-x+3(x+1)^2=?x^2+?x+?\text{.}\)  Knowing that</p>
+<div class="displaymath">
+\begin{equation*}
+1x^2+5x+3=Ax(x+1)-x+3(x+1)^2=?x^2+?x+?,
+\end{equation*}
+</div>
+<p class="continuation">can we solve for  \(A\text{?}\)</p></article> <article class="activity project-like" id="activity-TI6PuttingitTogether"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.21</span><span class="period">.</span>
+</h6>
+<p id="p-143">By using the form of the decomposition \(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}\)  and the coefficients found in <a class="xref" data-knowl="./knowl/activity-TI6SolveaCoeff.html" title="Activity 1.6.18">Activity 1.6.18</a>, <a class="xref" data-knowl="./knowl/activity-TI6SolveanotherCoeff.html" title="Activity 1.6.19">Activity 1.6.19</a> and <a class="xref" data-knowl="./knowl/activity-TI6SolvelastCoeff.html" title="Activity 1.6.20">Activity 1.6.20</a>, evaluate \(\displaystyle \int \frac{x^2+5x+3}{(x+1)^2x} dx\text{.}\)</p></article> <article class="activity project-like" id="activity-TI6HandsOff"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.22</span><span class="period">.</span>
+</h6>
+<p id="p-144">Evaluate \(\displaystyle \int \frac{4x^2-3x+1}{(2x+1)(x+2)(x-3)}dx.\)</p></article></p></section></div></main>
 </div>
 </body>
 </html>
