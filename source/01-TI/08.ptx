@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="TI8" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Improper integrals (TI8)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/08.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+    <p>
+        <activity xml:id="activity-T8Exploration1">
+            <introduction>
+                <statement>
+                    <p>
+                        Consider <m>f(x)=\frac{1}{x^2}.</m>
+                    </p>
+                </statement>
+            </introduction>
+            <task>
+                <p>
+                    Compute the following definite integrals.
+                    <ol>
+                        <li><m>\displaystyle \int_{0.1}^1 \frac{1}{x^2} dx.</m></li>
+                        <li><m>\displaystyle \int_{0.01}^1 \frac{1}{x^2} dx.</m></li>
+                        <li><m>\displaystyle \int_{0.001}^1 \frac{1}{x^2} dx.</m></li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    What do you notice as the lower bound approached 0?
+                </p>
+            </task>
+        </activity>
+        
+        <activity xml:id="activity-T8Exploration2">
+            <introduction>
+                <statement>
+                    <p>
+                        We still are considering <m>f(x)=\frac{1}{x^2}.</m>
+                    </p>
+                </statement>
+            </introduction>
+            <task>
+                <p>
+                    Compute the following definite integrals.
+                    <ol>
+                        <li><m>\displaystyle \int_{1}^{10} \frac{1}{x^2} dx.</m></li>
+                        <li><m>\displaystyle \int_{1}^{100} \frac{1}{x^2} dx.</m></li>
+                        <li><m>\displaystyle \int_{1}^{1000} \frac{1}{x^2} dx.</m></li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    What do you notice as the upper bound approached <m>\infty</m>?
+                </p>
+            </task>
+        </activity>
+        <activity xml:id="activity-T8Comparerootxtoxsquared">
+            <introduction>
+                <statement>
+                    <p>
+                        Now consider <m>g(x)=\frac{1}{\sqrt{x}}.</m>
+                    </p>
+                </statement>
+            </introduction>
+            <task>
+                <p>
+                    How do we think <m>\displaystyle \int_{a}^{1} \frac{1}{\sqrt{x}} dx</m> behaves as <m>a</m> approaches 0?
+                    <ol>
+                        <li>The value of the integral will be bounded.</li>
+                        <li>The value of the integral will be unbounded.</li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    How do we think <m>\displaystyle \int_{1}^{1} \frac{1}{\sqrt{x}} dx</m> behaves as <m>a</m> approaches <m>\infty</m>?
+                    <ol>
+                        <li>The value of the integral will be bounded.</li>
+                        <li>The value of the integral will be unbounded.</li>
+                    </ol>
+                </p>
+            </task>
+        </activity>
+        <activity xml:id="activity-T8Exploration3">
+            
+            <task>
+                <p>
+                    Compute the following definite integrals.
+                    <ol>
+                        <li><m>\displaystyle \int_{0.1}^1 \frac{1}{\sqrt{x}} dx.</m></li>
+                        <li><m>\displaystyle \int_{0.01}^1 \frac{1}{\sqrt{x}} dx.</m></li>
+                        <li><m>\displaystyle \int_{0.001}^1 \frac{1}{\sqrt{x}} dx.</m></li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    What do you notice as the lower bound approached 0?  How does this compare to what you found in <xref ref="activity-T8Exploration1"/>?
+                </p>
+            </task>
+        </activity>
+        <activity xml:id="activity-T8Exploration4">
+            
+            <task>
+                <p>
+                    Compute the following definite integrals.
+                    <ol>
+                        <li><m>\displaystyle \int_{1}^{10} \frac{1}{\sqrt{x}} dx.</m></li>
+                        <li><m>\displaystyle \int_{1}^{100} \frac{1}{\sqrt{x}} dx.</m></li>
+                        <li><m>\displaystyle \int_{1}^{1000} \frac{1}{\sqrt{x}} dx.</m></li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    What do you notice as the upper bound approached 0?  How does this compare to what you found in <xref ref="activity-T8Exploration2"/>?
+                </p>
+            </task>
+        </activity>
+        <activity xml:id="activity-T8Compare">
+            <p>
+                How does what you found in <xref ref="activity-T8Exploration1"/>, <xref ref="activity-T8Exploration1"/>
+            </p>
+            
+        </activity>
+    </p>
+</section>

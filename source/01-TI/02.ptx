@@ -9,5 +9,35 @@
             </li>
         </ul>
     </objectives>
-    <p>foo</p>
+    <p>
+        <activity estimated-time="99" xml:id="activity-TI2ProductRuleParts">
+        <introduction><p>Answer the following.</p></introduction>
+        <task>
+            <p>
+Using the product rule, which of these is derivative of <m>x^3e^x</m> with respect to <m>x</m>?
+            </p>
+            <ol label="A" cols="2">
+                <li><p><m>3x^2e^x</m></p></li>
+                <li><p><m>3x^2e^{x}+x^3e^x</m></p></li>
+                <li><p><m>3x^2e^{x-1}</m></p></li>
+                <li><p><m>\frac{1}{4}x^4 e^x</m></p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+Based on this result, which of these would you suspect to equal <m>\int 3x^2e^x+x^3e^x\,dx</m>?
+            </p>
+            <ol label="A" cols="2">
+                <li><p><m>x^3e^x+C</m></p></li>
+                <li><p><m>x^3e^x+\frac{1}{4}x^4e^x+C</m></p></li>
+                <li><p><m>6xe^x+3x^2e^x+C</m></p></li>
+                <li><p><m>6xe^x+3x^2e^x+3x^2e^x+x^3e^x+C</m></p></li>
+            </ol>
+        </task>
+        </activity>
+        
+        <activity estimated-time="99" xml:id="activity-TI2RulePreferences">
+
+        </activity>
+    </p>
 </section>

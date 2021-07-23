@@ -9,5 +9,32 @@
             </li>
         </ul>
     </objectives>
-    <p>foo</p>
+    <p>
+    <activity xml:id="activity-TI3oddOdd">
+            <statement>
+                <p>
+                    Consider <m>\displaystyle\int \sin(x)\cos(x) \, dx</m>.  Which strategy would you choose to evaluate this integral?
+                    <ol>
+                        <li>The method of substitution</li>
+                        <li>Integration by parts</li>
+                        <li>Other (specify your strategy)</li>
+                    </ol>
+                </p>
+            </statement>
+    </activity>
+    </p>
+    <p>
+    <activity xml:id="activity-TI3evenOdd">
+            <statement>
+                <p>
+                    Consider <m>\displaystyle\int \sin^2(x)\cos(x) \, dx</m>.  Which strategy would you choose to evaluate this integral?
+                    <ol>
+                        <li>The method of substitution</li>
+                        <li>Integration by parts</li>
+                        <li>Other (specify your strategy)</li>
+                    </ol>
+                </p>
+            </statement>
+    </activity>
+    </p>
 </section>
