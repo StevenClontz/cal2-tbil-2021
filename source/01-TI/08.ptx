@@ -90,7 +90,7 @@
         
         <definition xml:id="definition TI8infinityint">
             <p>
-                For a function <m>f(x)</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^\infty f(x) dx</m> denote <me>\int_c^\infty f(x) dx=\lim_{a\to\infty}\left( \int_c^a f(x) dx\right).</me>  So just as in limits, this value can be a real number, <m>\pm \infty</m> or undefined.
+                For a function <m>f(x)</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^\infty f(x) dx</m> denote <me>\int_c^\infty f(x) dx=\lim_{a\to\infty}\left( \int_c^a f(x) dx\right).</me>  If this limit is a defined real number, then we say <m>\displaystyle \int_c^\infty f(x) dx</m> is <em>convergent</em>, otherwise, it is <em>divergent</em>.
             </p>
             <p>
                 Similarly <me>\int_{-\infty}^c f(x) dx=\lim_{a\to-\infty}\left( \int_a^c f(x) dx\right).</me>
@@ -117,17 +117,15 @@
         <activity xml:id="activity-T8Fcos">
             <task>
                 <p>
-                    Find <m>\int_{\pi/2}^a \cos(x)dx.</m>
+                    Find <m>\displaystyle \int_{\pi/2}^a \cos(x)dx.</m>
                 </p>
             </task>
             <task>
                 <p>
                     Which of the following is true about <m>\int_{\pi/2}^\infty \cos(x)dx</m>?
                     <ol>
-                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is a real number.</li>
-                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is positive infinity.</li>
-                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is negative infinity.</li>
-                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is undefined but neither positive or negative infinity.</li>
+                        <li><m>\displaystyle \int_{\pi/2}^\infty \cos(x)dx</m> is convergent.</li>
+                        <li><m>\displaystyle \int_{\pi/2}^\infty \cos(x)dx</m> is divergent.</li>
                     </ol>
                 </p>
             </task>
@@ -247,7 +245,7 @@
             </statement>
         </fact>
         
-        <activity xml:id="activity-TI8fboundsgconverge">
+        <activity xml:id="activity-TI8finfinitybounded">
             <p>
                 Consider the plots of <m>f(x), g(x)</m> where <m>0 &lt; g(x) &lt; f(x)</m>.
             <figure>
@@ -276,25 +274,70 @@
                                 samples=100,
                                 domain=1:4,
                                 ] (\x,{1/(\x^(1/2)) });
-                            \draw[orange] (4, 1/4) --node[ right]{\small$f(x)$} (4,1/4); 
-                            \draw[red] (4, 1/16) --node[below right]{\small$g(x)$} (4,1/16);
-                            \draw[blue] (4, 1/2) --node[above right]{\small$h(x)$} (4,1/2);
+                            \draw[orange] (4, 1/4) --node[ right]{\tiny $f(x)$} (4,1/4); 
+                            \draw[red] (4, 1/16) --node[below right]{\tiny $g(x)$} (4,1/16);
+                            \draw[blue] (4, 1/2) --node[above right]{\tiny $h(x)$} (4,1/2);
                         \end{tikzpicture}
                         </latex-image>
                     </image>
             </figure>    
-                If <m>\displaystyle \int_1^\infty f(x) dx</m> is a finite real number, what can we say about <m>g(x), h(x)</m>?
+                If <m>\displaystyle \int_1^\infty f(x) dx</m> is convergent, what can we say about <m>g(x), h(x)</m>?
                 <ol>
-                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both finite.</li> 
-                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both infinite.</li>
-                    <li>Whether or not <m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are finite or infinite cannot be determined.</li>
-                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> is finite and  <m>\displaystyle \int_1^\infty h(x) dx</m> is infinite.</li>
-                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> is finite and <m>\displaystyle \int_1^\infty h(x) dx</m> could be either infinite or finite.</li>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both convergent.</li> 
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both divergent.</li>
+                    <li>Whether or not <m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are convergent or divergent cannot be determined.</li>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> is convergent and  <m>\displaystyle \int_1^\infty h(x) dx</m> is divergent.</li>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> is convergent and <m>\displaystyle \int_1^\infty h(x) dx</m> could be either convergent or divergent.</li>
                 </ol>
             </p>
         </activity>
         
-        
+        <activity xml:id="activity-TI8finfinityunbounded">
+            <p>
+                Consider the plots of <m>f(x), g(x)</m> where <m>0 &lt; g(x) &lt; f(x)</m>.
+            <figure>
+                <caption>Plots of <m>f(x), g(x)</m></caption>
+                    <image xml:id="fboundsg" width="100%">
+                        <description>Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                          \draw[->] (-1, 0) -- (4.2, 0) node[right] {$x$};
+                          \draw[->] (0, -1) -- (0, 2.2) node[above] {$y$};
+                          \draw[orange] plot [
+                                samples=100,
+                                domain=1:4,
+                                ] (\x,{1/\x });
+                          \draw[dashed] (1,-1) -- (1,2);
+                          \fill [orange, domain=1:4, variable=\x, opacity=0.2]
+                              (1, 0)
+                              -- plot ({\x}, {1/\x})
+                              -- (4, 0)
+                              -- cycle;
+                             \draw[red] plot [
+                                samples=100,
+                                domain=1:4,
+                                ] (\x,{1/(\x)^2 });
+                            \draw[blue] plot [
+                                samples=100,
+                                domain=1:4,
+                                ] (\x,{1/(\x^(1/2)) });
+                            \draw[orange] (4, 1/4) --node[ right]{\tiny $f(x)$} (4,1/4); 
+                            \draw[red] (4, 1/16) --node[below right]{\tiny $g(x)$} (4,1/16);
+                            \draw[blue] (4, 1/2) --node[above right]{\tiny $h(x)$} (4,1/2);
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>    
+                If <m>\displaystyle \int_1^\infty f(x) dx</m> is infinite, what can we say about <m>g(x), h(x)</m>?
+                <ol>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both convergent.</li>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both dicergent.</li>
+                    <li>Whether or not <m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are convergent or divergent cannot be determined.</li>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> could be either convergent or dicergent and  <m>\displaystyle \int_1^\infty h(x) dx</m> is divergent.</li>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> is convergent and  <m>\displaystyle \int_1^\infty h(x) dx</m> is divergent.</li>
+                </ol>
+            </p>
+        </activity>
         
         
         
