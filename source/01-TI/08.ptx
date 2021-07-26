@@ -262,7 +262,7 @@
                                 samples=100,
                                 domain=1:4,
                                 ] (\x,{1/\x });
-                          \draw[dashed] (1,-1) -- (1,4);
+                          \draw[dashed] (1,-1) -- (1,2);
                           \fill [orange, domain=1:4, variable=\x, opacity=0.2]
                               (1, 0)
                               -- plot ({\x}, {1/\x})
