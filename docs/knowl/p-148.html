@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-26T13:00:05Z       *-->
+<!--*       on 2021-07-26T21:14:20Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -70,7 +70,7 @@
 \int_c^\infty f(x) dx=\lim_{a\to\infty}\left( \int_c^a f(x) dx\right).
 \end{equation*}
 </div>
-<p class="continuation">So just as in limits, this value can be a real number, \(\pm \infty\) or undefined.</p>
+<p class="continuation">If this limit is a defined real number, then we say \(\displaystyle \int_c^\infty f(x) dx\) is <em class="emphasis">convergent</em>, otherwise, it is <em class="emphasis">divergent</em>.</p>
 <p>Similarly</p>
 <div class="displaymath">
 \begin{equation*}
@@ -97,13 +97,11 @@
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.12</span><span class="period">.</span>
 </h6>
 <article class="task exercise-like"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p>Find \(\int_{\pi/2}^a \cos(x)dx.\)</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p>Find \(\displaystyle \int_{\pi/2}^a \cos(x)dx.\)</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <p>Which of the following is true about \(\int_{\pi/2}^\infty \cos(x)dx\text{?}\)</p>
 <ol class="decimal">
-<li>\(\int_{\pi/2}^\infty \cos(x)dx\) is a real number.</li>
-<li>\(\int_{\pi/2}^\infty \cos(x)dx\) is positive infinity.</li>
-<li>\(\int_{\pi/2}^\infty \cos(x)dx\) is negative infinity.</li>
-<li>\(\int_{\pi/2}^\infty \cos(x)dx\) is undefined but neither positive or negative infinity.</li>
+<li>\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\) is convergent.</li>
+<li>\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\) is divergent.</li>
 </ol></article></article> <article class="definition definition-like"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.8.13</span><span class="period">.</span>
 </h6>
@@ -155,13 +153,24 @@
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.20</span><span class="period">.</span>
 </h6>
 <p>Consider the plots of \(f(x), g(x)\) where \(0 &lt; g(x) &lt; f(x)\text{.}\) <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/fboundsg.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x)."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.21<span class="period">.</span></span><span class="space"> </span>Plots of \(f(x), g(x)\)</figcaption></figure> If \(\displaystyle \int_1^\infty f(x) dx\) is a finite real number, what can we say about \(g(x), h(x)\text{?}\)</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.21<span class="period">.</span></span><span class="space"> </span>Plots of \(f(x), g(x)\)</figcaption></figure> If \(\displaystyle \int_1^\infty f(x) dx\) is convergent, what can we say about \(g(x), h(x)\text{?}\)</p>
 <ol class="decimal">
-<li>\(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are both finite.</li>
-<li>\(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are both infinite.</li>
-<li>Whether or not \(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are finite or infinite cannot be determined.</li>
-<li>\(\displaystyle \int_1^\infty g(x) dx\) is finite and  \(\displaystyle \int_1^\infty h(x) dx\) is infinite.</li>
-<li>\(\displaystyle \int_1^\infty g(x) dx\) is finite and \(\displaystyle \int_1^\infty h(x) dx\) could be either infinite or finite.</li>
+<li>\(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are both convergent.</li>
+<li>\(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are both divergent.</li>
+<li>Whether or not \(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are convergent or divergent cannot be determined.</li>
+<li>\(\displaystyle \int_1^\infty g(x) dx\) is convergent and  \(\displaystyle \int_1^\infty h(x) dx\) is divergent.</li>
+<li>\(\displaystyle \int_1^\infty g(x) dx\) is convergent and \(\displaystyle \int_1^\infty h(x) dx\) could be either convergent or divergent.</li>
+</ol></article> <article class="activity project-like"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.22</span><span class="period">.</span>
+</h6>
+<p>Consider the plots of \(f(x), g(x)\) where \(0 &lt; g(x) &lt; f(x)\text{.}\) <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/fboundsg.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.23<span class="period">.</span></span><span class="space"> </span>Plots of \(f(x), g(x)\)</figcaption></figure> If \(\displaystyle \int_1^\infty f(x) dx\) is infinite, what can we say about \(g(x), h(x)\text{?}\)</p>
+<ol class="decimal">
+<li>\(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are both convergent.</li>
+<li>\(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are both dicergent.</li>
+<li>Whether or not \(\displaystyle \int_1^\infty g(x) dx\) and \(\displaystyle \int_1^\infty h(x) dx\) are convergent or divergent cannot be determined.</li>
+<li>\(\displaystyle \int_1^\infty g(x) dx\) could be either convergent or dicergent and  \(\displaystyle \int_1^\infty h(x) dx\) is divergent.</li>
+<li>\(\displaystyle \int_1^\infty g(x) dx\) is convergent and  \(\displaystyle \int_1^\infty h(x) dx\) is divergent.</li>
 </ol></article></p>
 <span class="incontext"><a href="TI8.html#p-148">in-context</a></span>
 </body>
