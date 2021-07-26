@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-26T00:38:54Z       *-->
+<!--*       on 2021-07-26T00:48:09Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -28,7 +28,7 @@
 </h6>
 <article class="task exercise-like"><h6 class="heading"><span class="codenumber">(a)</span></h6>
 <p>What do you notice about \(\displaystyle \int_{a}^1 \frac{1}{x^2} dx.\) as \(a\) approached 0 in <a class="xref" data-knowl="./knowl/activity-T8Exploration1.html" title="Activity 1.8.1">Activity 1.8.1</a>?</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p>Why can't the lower bound be \(0\text{?}\)</p></article></article> <article class="activity project-like"><h6 class="heading">
+<p>Why can't \(a=0\text{?}\)</p></article></article> <article class="activity project-like"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.3</span><span class="period">.</span>
 </h6>
 <p>We still are considering \(f(x)=\frac{1}{x^2}.\) Compute the following definite integrals.</p>
@@ -105,11 +105,11 @@
 <li>\(\int_{\pi/2}^\infty \cos(x)dx\) is a real number.</li>
 <li>\(\int_{\pi/2}^\infty \cos(x)dx\) is positive infinity.</li>
 <li>\(\int_{\pi/2}^\infty \cos(x)dx\) is negative infinity.</li>
-<li>\(\int_{\pi/2}^\infty \cos(x)dx\) is undefined.</li>
+<li>\(\int_{\pi/2}^\infty \cos(x)dx\) is undefined but neither positive or negative infinity.</li>
 </ol></article></article> <article class="definition definition-like"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.8.13</span><span class="period">.</span>
 </h6>
-<p>For a function \(f(x)\) with a vertical assymptote at \(x=b\) and a constant \(c\text{,}\) we let \(\displaystyle \int_c^b f(x) dx\) denote</p>
+<p>For a function \(f(x)\) with a vertical asymptote at \(x=b\) and a constant \(c\text{,}\) we let \(\displaystyle \int_c^b f(x) dx\) denote</p>
 <div class="displaymath">
 \begin{equation*}
 \int_c^b f(x) dx=\lim_{b\to a}\left( \int_c^a f(x) dx\right).
@@ -133,22 +133,27 @@
 <p>Find \(\displaystyle \int_{0}^1 \frac{1}{x^2} dx.\)</p></article></article> <article class="activity project-like"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.16</span><span class="period">.</span>
 </h6>
-<div class="introduction"><p>Suppose that \(0&lt; p\) and \(p\neq 1\text{.}\)  Consider \(\displaystyle \int \frac{1}{x^p}\ dx=\frac{1}{(1-p)}x^{1-p}+C\text{.}\)</p></div>
+<div class="introduction"><p>Suppose that \(0&lt; p\) and \(p\neq 1\text{.}\)  Consider \(\displaystyle \int \frac{1}{x^p} dx=\frac{1}{(1-p)}x^{1-p}+C\text{.}\)</p></div>
 <article class="task exercise-like"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p>If \(p&lt; 1\text{,}\) what is \(\displaystyle \int_1^\infty \frac{1}{x^p}\ dx\text{?}\)</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p>If \(p&gt; 1\text{,}\) what is \(\displaystyle \int_1^\infty \frac{1}{x^p}\ dx\text{?}\)</p></article></article> <article class="activity project-like"><h6 class="heading">
+<p>If \(p&lt; 1\text{,}\) what is \(\displaystyle \int_1^\infty \frac{1}{x^p} dx\text{?}\)</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p>If \(p&gt; 1\text{,}\) what is \(\displaystyle \int_1^\infty \frac{1}{x^p} dx\text{?}\)</p></article></article> <article class="activity project-like"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.17</span><span class="period">.</span>
 </h6>
-<div class="introduction"><p>Suppose that \(0&lt; p\) and \(p\neq 1\text{.}\)  Consider \(\displaystyle \int \frac{1}{x^p}\ dx=\frac{1}{(1-p)}x^{1-p}+C\text{.}\)</p></div>
+<div class="introduction"><p>Suppose that \(0&lt; p\) and \(p\neq 1\text{.}\)  Consider \(\displaystyle \int \frac{1}{x^p} dx=\frac{1}{(1-p)}x^{1-p}+C\text{.}\)</p></div>
 <article class="task exercise-like"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p>If \(p&lt; 1\text{,}\) what is \(\displaystyle \int_0^1 \frac{1}{x^p}\ dx\text{?}\)</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p>If \(p&gt; 1\text{,}\) what is \(\displaystyle \int_0^1 \frac{1}{x^p}\ dx\text{?}\)</p></article></article> <article class="activity project-like"><h6 class="heading">
+<p>If \(p&lt; 1\text{,}\) what is \(\displaystyle \int_0^1 \frac{1}{x^p} dx\text{?}\)</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p>If \(p&gt; 1\text{,}\) what is \(\displaystyle \int_0^1 \frac{1}{x^p} dx\text{?}\)</p></article></article> <article class="activity project-like"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.18</span><span class="period">.</span>
 </h6>
 <div class="introduction"><p>Consider if \(p=1\) then \(\frac{1}{x^p}=\frac{1}{x}\) and \(\displaystyle \int \frac{1}{x}\ dx=\ln|x|+C\text{.}\)</p></div>
 <article class="task exercise-like"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p>If \(p&lt; 1\text{,}\) what is \(\displaystyle \int_1^\infty \frac{1}{x}\ dx\text{?}\)</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p>If \(p&gt; 1\text{,}\) what is \(\displaystyle \int_1^\infty \frac{1}{x}\ dx\text{?}\)</p></article></article></p>
+<p>What is \(\displaystyle \int_1^\infty \frac{1}{x} dx\text{?}\)</p></article><article class="task exercise-like"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p>What is \(\displaystyle \int_0^1 \frac{1}{x} dx\text{?}\)</p></article></article> <article class="fact theorem-like"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.8.19</span><span class="period">.</span>
+</h6>
+<p>Let \(c, p&gt;0\text{.}\)</p>
+<ul class="disc"><li>\(\displaystyle \int_0^c \frac{1}{x^p} dx\) is defined if and only if \(p&lt; 1\text{.}\)</li></ul>
+<ul class="disc"><li>\(\displaystyle \int_c^\infty \frac{1}{x^p} dx\) is defined if and only if \(p&gt; 1\text{.}\)</li></ul></article></p>
 <span class="incontext"><a href="TI8.html#p-148">in-context</a></span>
 </body>
 </html>
