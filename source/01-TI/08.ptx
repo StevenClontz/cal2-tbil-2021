@@ -30,7 +30,7 @@
             </task>
             <task>
                 <p>
-                    Why can't the lower bound be <m>0</m>?
+                    Why can't <m>a=0</m>?
                 </p>
             </task>
         </activity>
@@ -130,7 +130,7 @@
                         <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is a real number.</li>
                         <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is positive infinity.</li>
                         <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is negative infinity.</li>
-                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is undefined.</li>
+                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is undefined but neither positive or negative infinity.</li>
                     </ol>
                 </p>
             </task>
@@ -139,7 +139,7 @@
         
         <definition xml:id="definition-TI8assympint">
             <p>
-                For a function <m>f(x)</m> with a vertical assymptote at <m>x=b</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{b\to a}\left( \int_c^a f(x) dx\right).</me>  
+                For a function <m>f(x)</m> with a vertical asymptote at <m>x=b</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{b\to a}\left( \int_c^a f(x) dx\right).</me>  
             </p>
             <p>
                 Similarly <me>\int_{b}^c f(x) dx=\lim_{a\to b}\left( \int_a^c f(x) dx\right).</me>
@@ -179,17 +179,17 @@
         <activity xml:id="activity-TI8prule1">
             <introduction>
                 <p>
-                    Suppose that <m>0&lt; p</m> and <m>p\neq 1</m>.  Consider <m>\displaystyle \int \frac{1}{x^p}\ dx=\frac{1}{(1-p)}x^{1-p}+C</m>.
+                    Suppose that <m>0&lt; p</m> and <m>p\neq 1</m>.  Consider <m>\displaystyle \int \frac{1}{x^p} dx=\frac{1}{(1-p)}x^{1-p}+C</m>.
                 </p>
             </introduction>
             <task>
                 <p>
-                    If <m>p&lt; 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x^p}\ dx</m>?
+                    If <m>p&lt; 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x^p} dx</m>?
                 </p>
             </task>
             <task>
                 <p>
-                    If <m>p> 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x^p}\ dx</m>?
+                    If <m>p> 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x^p} dx</m>?
                 </p>
             </task>
         </activity>
@@ -198,17 +198,17 @@
         <activity xml:id="activity-TI8prule2">
             <introduction>
                 <p>
-                    Suppose that <m>0&lt; p</m> and <m>p\neq 1</m>.  Consider <m>\displaystyle \int \frac{1}{x^p}\ dx=\frac{1}{(1-p)}x^{1-p}+C</m>.
+                    Suppose that <m>0&lt; p</m> and <m>p\neq 1</m>.  Consider <m>\displaystyle \int \frac{1}{x^p} dx=\frac{1}{(1-p)}x^{1-p}+C</m>.
                 </p>    
             </introduction>
             <task>
                 <p>
-                    If <m>p&lt; 1</m>, what is <m>\displaystyle \int_0^1 \frac{1}{x^p}\ dx</m>?
+                    If <m>p&lt; 1</m>, what is <m>\displaystyle \int_0^1 \frac{1}{x^p} dx</m>?
                 </p>
             </task>
             <task>
                 <p>
-                    If <m>p> 1</m>, what is <m>\displaystyle \int_0^1 \frac{1}{x^p}\ dx</m>?
+                    If <m>p> 1</m>, what is <m>\displaystyle \int_0^1 \frac{1}{x^p} dx</m>?
                 </p>
             </task>
         </activity>
@@ -221,15 +221,36 @@
             </introduction>
             <task>
                 <p>
-                    If <m>p&lt; 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x}\ dx</m>?
+                    What is <m>\displaystyle \int_1^\infty \frac{1}{x} dx</m>?
                 </p>
             </task>
             <task>
                 <p>
-                    If <m>p> 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x}\ dx</m>?
+                    What is <m>\displaystyle \int_0^1 \frac{1}{x} dx</m>?
                 </p>
             </task>
         </activity>
+        
+        
+        <fact xml:id="fact-TI8prule">
+            <statement>
+                <p>
+                    Let <m>c, p>0</m>.
+                    <ul>
+                        <li>
+                            <m>\displaystyle \int_0^c \frac{1}{x^p} dx</m> is defined if and only if <m>p&lt; 1</m>.
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <m>\displaystyle \int_c^\infty \frac{1}{x^p} dx</m> is defined if and only if <m>p> 1</m>.
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </fact>
+        
+        
         
         
     </p>
