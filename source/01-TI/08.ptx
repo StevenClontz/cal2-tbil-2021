@@ -247,6 +247,48 @@
             </statement>
         </fact>
         
+        <activity>
+            <p>
+                Consider the plots of <m>f(x), g(x)</m> where <m>0 &lt; g(x) &lt; f(x)</m>.
+            <figure>
+                <caption>Plots of <m>f(x), g(x)</m></caption>
+                    <image xml:id="rna-codons-table" width="100%">
+                        <description>Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                          \draw[->] (-1, 0) -- (4.2, 0) node[right] {$x$};
+                          \draw[->] (0, -1) -- (0, 4.2) node[above] {$y$};
+                          \draw[blue] plot [
+                                samples=100,
+                                domain=1:4,
+                                ] (\x,{1/\x^2 });
+                          \draw[dashed] (1,-1) -- (1,4);
+                          \fill [blue, domain=1:4, variable=\x, opacity=0.2]
+                              (1, 0)
+                              -- plot ({\x}, {1/\x^2})
+                              -- (4, 0)
+                              -- cycle;
+                             \draw[red] plot [
+                                samples=100,
+                                domain=1:4,
+                                ] (\x,{1/(\x)^3 }); 
+                            \draw[blue] (4, 1/16) --node[above right]{$f(x)$} (4,1/16); \draw[red] (4, 1/64) --node[below right]{$g(x)$} (4,1/64);
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>    
+                If <m>\int_1^\infty f(x) dx</m> is defined, what can we say about g(x)?
+                <ol>
+                    <li><m>\int_1^\infty g(x) dx</m></li> is defined.
+                    <li><m>\int_1^\infty g(x) dx</m></li> is undefined.
+                    <li>We cannot conlude anything about <m>\int_1^\infty g(x) dx</m></li>.
+                </ol>
+            </p>
+            
+            
+   
+        </activity>
+        
         
         
         
