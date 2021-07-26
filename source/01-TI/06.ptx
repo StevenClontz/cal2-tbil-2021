@@ -188,7 +188,7 @@
         <activity xml:id="activity-TI6Evaluate1">
             <statement>
                 <p>
-                     Given your choice in <xref ref="activity-TI5FindCoefficients1"/> Find <m>\displaystyle\int \frac{x^3-7x^2-7x+15}{x^3(x+5)} dx.</m> 
+                     Given your choice in <xref ref="activity-TI6FindCoefficients1"/> Find <m>\displaystyle\int \frac{x^3-7x^2-7x+15}{x^3(x+5)} dx.</m> 
                 </p>
             </statement>
         </activity>

@@ -11,15 +11,9 @@
     </objectives>
     <p>
         <activity xml:id="activity-T8Exploration1">
-            <introduction>
-                <statement>
                     <p>
                         Consider <m>f(x)=\frac{1}{x^2}.</m>
-                    </p>
-                </statement>
-            </introduction>
-            <task>
-                <p>
+                    
                     Compute the following definite integrals.
                     <ol>
                         <li><m>\displaystyle \int_{0.1}^1 \frac{1}{x^2} dx.</m></li>
@@ -27,24 +21,25 @@
                         <li><m>\displaystyle \int_{0.001}^1 \frac{1}{x^2} dx.</m></li>
                     </ol>
                 </p>
+            </activity>
+         <activity>
+             <task>
+                <p>
+                    What do you notice about <m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx.</m> as <m>a</m> approached 0 in <xref ref="activity-T8Exploration1"/>?
+                </p>
             </task>
             <task>
                 <p>
-                    What do you notice as the lower bound approached 0?
+                    Why can't the lower bound be <m>0</m>?
                 </p>
             </task>
         </activity>
         
         <activity xml:id="activity-T8Exploration2">
-            <introduction>
-                <statement>
+            
                     <p>
                         We still are considering <m>f(x)=\frac{1}{x^2}.</m>
-                    </p>
-                </statement>
-            </introduction>
-            <task>
-                <p>
+                    
                     Compute the following definite integrals.
                     <ol>
                         <li><m>\displaystyle \int_{1}^{10} \frac{1}{x^2} dx.</m></li>
@@ -52,42 +47,15 @@
                         <li><m>\displaystyle \int_{1}^{1000} \frac{1}{x^2} dx.</m></li>
                     </ol>
                 </p>
-            </task>
-            <task>
-                <p>
-                    What do you notice as the upper bound approached <m>\infty</m>?
-                </p>
-            </task>
+        <activity>   
+            <p>
+                    What do you notice about <m>\displaystyle \int_{1}^a \frac{1}{x^2} dx.</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration2"/>?
+            </p>
         </activity>
-        <activity xml:id="activity-T8Comparerootxtoxsquared">
-            <introduction>
-                <statement>
-                    <p>
-                        Now consider <m>g(x)=\frac{1}{\sqrt{x}}.</m>
-                    </p>
-                </statement>
-            </introduction>
-            <task>
-                <p>
-                    How do we think <m>\displaystyle \int_{a}^{1} \frac{1}{\sqrt{x}} dx</m> behaves as <m>a</m> approaches 0?
-                    <ol>
-                        <li>The value of the integral will be bounded.</li>
-                        <li>The value of the integral will be unbounded.</li>
-                    </ol>
-                </p>
-            </task>
-            <task>
-                <p>
-                    How do we think <m>\displaystyle \int_{1}^{1} \frac{1}{\sqrt{x}} dx</m> behaves as <m>a</m> approaches <m>\infty</m>?
-                    <ol>
-                        <li>The value of the integral will be bounded.</li>
-                        <li>The value of the integral will be unbounded.</li>
-                    </ol>
-                </p>
-            </task>
-        </activity>
-        <activity xml:id="activity-T8Exploration3">
             
+           
+                
+        <activity xml:id="activity-T8Exploration3">
             <task>
                 <p>
                     Compute the following definite integrals.
@@ -98,15 +66,13 @@
                     </ol>
                 </p>
             </task>
-            <task>
+        </activity>   
+        <activity></activity>    
                 <p>
-                    What do you notice as the lower bound approached 0?  How does this compare to what you found in <xref ref="activity-T8Exploration1"/>?
+                    What do you notice about the integral <m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx.</m> as <m>a</m> approached 0 in <xref ref="activity-T8Exploration3"/>?  How does this compare to what you found in <xref ref="activity-T8Exploration1"/>?
                 </p>
-            </task>
         </activity>
         <activity xml:id="activity-T8Exploration4">
-            
-            <task>
                 <p>
                     Compute the following definite integrals.
                     <ol>
@@ -115,18 +81,156 @@
                         <li><m>\displaystyle \int_{1}^{1000} \frac{1}{\sqrt{x}} dx.</m></li>
                     </ol>
                 </p>
-            </task>
+        </activity>
+        <activity>
             <task>
                 <p>
-                    What do you notice as the upper bound approached 0?  How does this compare to what you found in <xref ref="activity-T8Exploration2"/>?
+                    What do you notice the integral <m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx.</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration4"/>?  How does this compare to what you found in <xref ref="activity-T8Exploration2"/>?
                 </p>
             </task>
         </activity>
-        <activity xml:id="activity-T8Compare">
+        
+        
+        <definition xml:id="definition TI8infinityint">
             <p>
-                How does what you found in <xref ref="activity-T8Exploration1"/>, <xref ref="activity-T8Exploration1"/>
+                For a function <m>f(x)</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^\infty f(x) dx</m> denote <me>\int_c^\infty f(x) dx=\lim_{a\to\infty}\left( \int_c^a f(x) dx\right).</me>  So just as in limits, this value can be a real number, <m>\pm \infty</m> or undefined.
             </p>
+            <p>
+                Similarly <me>\int_{-\infty}^c f(x) dx=\lim_{a\to-\infty}\left( \int_a^c f(x) dx\right).</me>
+            </p>
+        </definition>
+        
+        <activity xml:id="activity-T8Fabound">
+            <p>
+               Which of the following is <m>\displaystyle \int_1^a \frac{1}{x^2} dx</m> ?
+                <ol>
+                    <li><m>-\frac{1}{x}+C.</m></li>
+                    <li><m>-\frac{1}{a}+C.</m></li>
+                    <li><m>-\frac{1}{a}.</m></li>
+                    <li><m>-\frac{1}{a}+1.</m></li>
+                </ol>
+            </p>
+        </activity>
+        <activity xml:id="activity-T8Fevaluatexcube">
+            <p>
+                Using your choice in <xref ref="activity-T8Fabound"/>, what is <me>\lim_{a\to \infty} \int_1^a \frac{1}{x^2} dx?</me>
+            </p>
+        </activity>
+        
+        <activity xml:id="activity-T8Fcos">
+            <task>
+                <p>
+                    Find <m>\int_{\pi/2}^a \cos(x)dx.</m>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Which of the following is true about <m>\int_{\pi/2}^\infty \cos(x)dx</m>?
+                    <ol>
+                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is a real number.</li>
+                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is positive infinity.</li>
+                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is negative infinity.</li>
+                        <li><m>\int_{\pi/2}^\infty \cos(x)dx</m> is undefined.</li>
+                    </ol>
+                </p>
+            </task>
             
         </activity>
+        
+        <definition xml:id="definition-TI8assympint">
+            <p>
+                For a function <m>f(x)</m> with a vertical assymptote at <m>x=b</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{b\to a}\left( \int_c^a f(x) dx\right).</me>  
+            </p>
+            <p>
+                Similarly <me>\int_{b}^c f(x) dx=\lim_{a\to b}\left( \int_a^c f(x) dx\right).</me>
+            </p>
+        </definition>
+        
+        
+        <activity xml:id="activity-TI8oneoverrootx">
+            <task>
+                <p>
+                    Find <m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx.</m>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Find <m>\displaystyle \int_{0}^1 \frac{1}{\sqrt{x}} dx.</m>
+                </p>
+            </task>
+        </activity>
+        
+        
+        <activity xml:id="activity-TI8xsquare">
+            <task>
+                <p>
+                    Find <m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx.</m>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Find <m>\displaystyle \int_{0}^1 \frac{1}{x^2} dx.</m>
+                </p>
+            </task>
+        </activity>
+        
+        
+        
+        <activity xml:id="activity-TI8prule1">
+            <introduction>
+                <p>
+                    Suppose that <m>0&lt; p</m> and <m>p\neq 1</m>.  Consider <m>\displaystyle \int \frac{1}{x^p}\ dx=\frac{1}{(1-p)}x^{1-p}+C</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    If <m>p&lt; 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x^p}\ dx</m>?
+                </p>
+            </task>
+            <task>
+                <p>
+                    If <m>p> 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x^p}\ dx</m>?
+                </p>
+            </task>
+        </activity>
+        
+        
+        <activity xml:id="activity-TI8prule2">
+            <introduction>
+                <p>
+                    Suppose that <m>0&lt; p</m> and <m>p\neq 1</m>.  Consider <m>\displaystyle \int \frac{1}{x^p}\ dx=\frac{1}{(1-p)}x^{1-p}+C</m>.
+                </p>    
+            </introduction>
+            <task>
+                <p>
+                    If <m>p&lt; 1</m>, what is <m>\displaystyle \int_0^1 \frac{1}{x^p}\ dx</m>?
+                </p>
+            </task>
+            <task>
+                <p>
+                    If <m>p> 1</m>, what is <m>\displaystyle \int_0^1 \frac{1}{x^p}\ dx</m>?
+                </p>
+            </task>
+        </activity>
+        
+        <activity xml:id="activity-TI8prule3">
+            <introduction>
+                <p>
+                    Consider if <m>p=1</m> then <m>\frac{1}{x^p}=\frac{1}{x}</m> and <m>\displaystyle \int \frac{1}{x}\ dx=\ln|x|+C</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    If <m>p&lt; 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x}\ dx</m>?
+                </p>
+            </task>
+            <task>
+                <p>
+                    If <m>p> 1</m>, what is <m>\displaystyle \int_1^\infty \frac{1}{x}\ dx</m>?
+                </p>
+            </task>
+        </activity>
+        
+        
     </p>
 </section>
