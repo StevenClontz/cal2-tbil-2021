@@ -257,13 +257,13 @@
                         <latex-image>
                           \begin{tikzpicture}
                           \draw[->] (-1, 0) -- (4.2, 0) node[right] {$x$};
-                          \draw[->] (0, -1) -- (0, 4.2) node[above] {$y$};
-                          \draw[purple] plot [
+                          \draw[->] (0, -1) -- (0, 2.2) node[above] {$y$};
+                          \draw[orange] plot [
                                 samples=100,
                                 domain=1:4,
                                 ] (\x,{1/\x });
                           \draw[dashed] (1,-1) -- (1,4);
-                          \fill [purple, domain=1:4, variable=\x, opacity=0.2]
+                          \fill [orange, domain=1:4, variable=\x, opacity=0.2]
                               (1, 0)
                               -- plot ({\x}, {1/\x})
                               -- (4, 0)
@@ -276,18 +276,20 @@
                                 samples=100,
                                 domain=1:4,
                                 ] (\x,{1/(\x^(1/2)) });
-                            \draw[purple] (4, 1/4) --node[ right]{$f(x)$} (4,1/4); 
-                            \draw[red] (4, 1/16) --node[below right]{$g(x)$} (4,1/16);
-                            \draw[blue] (4, 1/2) --node[above right]{$h(x)$} (4,1/2);
+                            \draw[orange] (4, 1/4) --node[ right]{\small$f(x)$} (4,1/4); 
+                            \draw[red] (4, 1/16) --node[below right]{\small$g(x)$} (4,1/16);
+                            \draw[blue] (4, 1/2) --node[above right]{\small$h(x)$} (4,1/2);
                         \end{tikzpicture}
                         </latex-image>
                     </image>
             </figure>    
                 If <m>\displaystyle \int_1^\infty f(x) dx</m> is a finite real number, what can we say about <m>g(x), h(x)</m>?
                 <ol>
-                    <li><m>\displaystyle \int_1^\infty g(x) dx</m></li> is defined.
-                    <li><m>\displaystyle \int_1^\infty g(x) dx</m></li> is undefined.
-                    <li>We cannot conlude anything about <m>\int_1^\infty g(x) dx</m></li>.
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both finite.</li> 
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both infinite.</li>
+                    <li>Whether or not <m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are finite or infinite cannot be determined.</li>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> is finite and  <m>\displaystyle \int_1^\infty h(x) dx</m> is infinite.</li>
+                    <li><m>\displaystyle \int_1^\infty g(x) dx</m> is finite and <m>\displaystyle \int_1^\infty h(x) dx</m> could be either infinite or finite.</li>
                 </ol>
             </p>
         </activity>
