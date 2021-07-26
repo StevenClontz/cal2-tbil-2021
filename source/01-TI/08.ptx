@@ -250,7 +250,7 @@
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
             <figure>
                 <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="fboundsg" width="100%">
+                    <image xml:id="finfinity" width="100%">
                         <description>Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -275,8 +275,8 @@
                                 domain=1:4,
                                 ] (\x,{1/(\x^(1/2)) });
                             \draw[orange] (4, 1/4) --node[ right]{\tiny $f(x)$} (4,1/4); 
-                            \draw[red] (4, 1/16) --node[below right]{\tiny $g(x)$} (4,1/16);
-                            \draw[blue] (4, 1/2) --node[above right]{\tiny $h(x)$} (4,1/2);
+                            \draw[red] (4, 1/16) --node[ right]{\tiny $g(x)$} (4,1/16);
+                            \draw[blue] (4, 1/2) --node[ right]{\tiny $h(x)$} (4,1/2);
                         \end{tikzpicture}
                         </latex-image>
                     </image>
@@ -297,7 +297,7 @@
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
             <figure>
                 <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="fboundsg" width="100%">
+                    <image xml:id="finfinity" width="100%">
                         <description>Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -322,8 +322,8 @@
                                 domain=1:4,
                                 ] (\x,{1/(\x^(1/2)) });
                             \draw[orange] (4, 1/4) --node[ right]{\tiny $f(x)$} (4,1/4); 
-                            \draw[red] (4, 1/16) --node[below right]{\tiny $g(x)$} (4,1/16);
-                            \draw[blue] (4, 1/2) --node[above right]{\tiny $h(x)$} (4,1/2);
+                            \draw[red] (4, 1/16) --node[ right]{\tiny $g(x)$} (4,1/16);
+                            \draw[blue] (4, 1/2) --node[ right]{\tiny $h(x)$} (4,1/2);
                         \end{tikzpicture}
                         </latex-image>
                     </image>
@@ -345,7 +345,7 @@
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
             <figure>
                 <caption>Plots of <m>f(x), g(x)</m></caption>
-                    <image xml:id="fboundsg" width="100%">
+                    <image xml:id="fzero" width="100%">
                         <description>Plots of positive functions f(x), g(x) and h(x).</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -394,7 +394,7 @@
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
             <figure>
                 <caption>Plots of <m>f(x), g(x)</m></caption>
-                    <image xml:id="fboundsg" width="100%">
+                    <image xml:id="fzero" width="100%">
                         <description>Plots of positive functions f(x), g(x) and h(x).</description>
                         <latex-image>
                           \begin{tikzpicture}
