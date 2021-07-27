@@ -13,7 +13,7 @@
         <activity xml:id="activity-TI4fakeusub">
             <statement>
                 <p>
-                    Consider the integral <m>\displaystyle \int \frac{sqrt{1-x^2}}{x} dx</m>.  If one were to use the method of substitution to evaluate this integral, what would be the best choice of <m>u</m>?
+                    Consider the integral <m>\displaystyle \int \frac{\sqrt{1-x^2}}{x} dx</m>.  If one were to use the method of substitution to evaluate this integral, what would be the best choice of <m>u</m>?
                     <ol>
                         <li><m>u=1-x^2.</m></li>
                         <li><m>u=\sqrt{x^2-1}.</m></li>
@@ -27,7 +27,7 @@
         <activity xml:id="activity-TI4intropythagoras">
             <statement>
                 <p>
-                    It would be good if <m>\sqrt(\{1-x^2)\}</m> were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?
+                    It would be good if <m>\sqrt{1-x^2}</m> were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?
                     <ol>
                         <li>For any real number, <m>x^2</m> must be positive (note: this isn’t even true).</li>
                         <li><m>u=\sqrt{x^2-1}.</m></li>
