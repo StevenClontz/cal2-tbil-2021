@@ -45,8 +45,8 @@
 
                     <ol>
                         <li><m>\displaystyle \int \sqrt{1-\sin^2(\theta)}dx</m>.</li>
-                        <li><m>\displaystyle \sqrt{\int 1-\sin^2(\theta)\cos(\theta)}d\theta</m>.</li>
-                        <li><m>\displaystyle \sqrt{\int 1-\sin^2(\theta)}\cos(\theta)d\theta</m>.</li>
+                        <li><m>\displaystyle \int \sqrt{ 1-\sin^2(\theta)\cos(\theta)}d\theta</m>.</li>
+                        <li><m>\displaystyle  \int \sqrt{ 1-\sin^2(\theta)}\cos(\theta)d\theta</m>.</li>
                     </ol>
                 </p>
             </statement>
@@ -58,9 +58,53 @@
                     Use the fact from <xref ref="activity-TI4intropythagoras"/> to rewrite your choice of integral from <xref ref="activity-TI4sinsub"/> to an integral without any <m>\sin(\theta)</m> terms.
 
                     <ol>
-                        <li><m>\displaystyle \cos(theta) d\theta</m>.</li>
-                        <li><m>\displaystyle \cos^2(\theta) d\theta</m>.</li>
-                        <li><m>\displaystyle \sqrt(cos(\theta)) d\theta</m>.</li>
+                        <li><m>\displaystyle\int \cos(\theta) d\theta</m>.</li>
+                        <li><m>\displaystyle\int \cos^2(\theta) d\theta</m>.</li>
+                        <li><m>\displaystyle\int \sqrt{cos(\theta)} d\theta</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4cosdoubleanglesub">
+            <statement>
+                <p>
+                    Use the fact that <m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m> to rewrite the integral from <xref ref="activity-TI4sinsubrewrite"/>.
+
+                    <ol>
+                        <li><m>\displaystyle\int \sqrt{(1+\cos(2\theta))/2} d\theta</m>.</li>
+                        <li><m>\displaystyle\int \frac{1+\cos(2\theta)}{2} d\theta</m>.</li>
+                        <li><m>\displaystyle\int \left(\frac{1+\cos(2\theta)}{2} \right)^2</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4evaluatesinsub">
+            <statement>
+                <p>
+                    Evaluate the integral in terms of <m>\theta</m> that you found in <xref ref="activity-TI4sinsubrewrite"/>.
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4turnbacktox">
+            <statement>
+                <p>
+                    Consider the fact that <m>x=\sin(\theta)</m> and thus <m>\theta=\arcsin(x)</m>.  Use this to rewrite the solution you found in (previous) in terms of <m>x</m>.
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4sinsubadjust">
+            <statement>
+                <p>
+                    Consider the integral <m>\displaystyle \int \sqrt{9-x^2} dx</m>; how can we best modify our approach in <xref ref="activity-TI4sinsub"/> and adapt it here?
+
+                    <ol>
+                        <li>Let <m>x=\sin(\theta), dx=\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int sqrt{9-\sin^2(\theta)} \cos(\theta) d\theta.</m> </li>
+                        <li>Let <m>x=3\sin(\theta), dx=3\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int sqrt{9-(3\sin(\theta))^2} \cos(\theta) d\theta.</m> </li>
+                        <li>Let <m>x=\sin(3\theta), dx=3\cos(3\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int sqrt{9-\sin^2(3\theta)} 3\cos(3\theta) d\theta.</m> </li>
                     </ol>
                 </p>
             </statement>

@@ -88,7 +88,7 @@
         </activity>
         
         
-        <definition xml:id="definition TI8infinityint">
+        <definition xml:id="definition-TI8infinityint">
             <p>
                 For a function <m>f(x)</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^\infty f(x) dx</m> denote <me>\int_c^\infty f(x) dx=\lim_{a\to\infty}\left( \int_c^a f(x) dx\right).</me>  If this limit is a defined real number, then we say <m>\displaystyle \int_c^\infty f(x) dx</m> is <em>convergent</em>, otherwise, it is <em>divergent</em>.
             </p>
