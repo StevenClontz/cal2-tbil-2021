@@ -447,8 +447,6 @@
                     <li>If <m>f(x)</m> converges, so does g(x).  We need more information to conclude anything about <m>h(x)</m>.</li>
                     <li>If <m>f(x)</m> diverges, so does h(x).  We need more information to conclude anything about <m>g(x)</m>.</li>
                 </ul>
-                
-            
             </p>
         
         </fact>
