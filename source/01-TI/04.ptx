@@ -38,21 +38,7 @@
             </statement>
         </activity>
         
-        <activity xml:id="activity-TI4intropythagoras">
-            <statement>
-                <p>
-                    It would be good if <m>\sqrt(\{1-x^2)\}</m> were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?
-                    <ol>
-                        <li>For any real number, <m>x^2</m> must be positive (note: this isn’t even true).</li>
-                        <li><m>u=\sqrt{x^2-1}.</m></li>
-                        <li>The Pythagorean theorem allows us to write <m>(\cos(\theta))^2</m> as <m>1-(\sin(\theta))^2</m>.</li>
-                        <li>The ratio of an even function and an odd function is odd.</li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4intropythagoras">
+        <activity xml:id="activity-TI4sinsub">
             <statement>
                 <p>
                     Suppose we let <m>x=\sin(\theta)</m>, then <m>\frac{dx}{d\theta}=\cos(\theta)</m> and <m>dx=\cos(\theta) d\theta</m>.  Which of the following best represents the integral <m>\displaystyle \int \sqrt{1-x^2}dx</m>?
@@ -61,6 +47,20 @@
                         <li><m>\displaystyle \int \sqrt{1-\sin^2(\theta)}dx</m>.</li>
                         <li><m>\displaystyle \sqrt{\int 1-\sin^2(\theta)\cos(\theta)}d\theta</m>.</li>
                         <li><m>\displaystyle \sqrt{\int 1-\sin^2(\theta)}\cos(\theta)d\theta</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4sinsubrewrite">
+            <statement>
+                <p>
+                    Use the fact from <xref ref="activity-TI4intropythagoras"/> to rewrite your choice of integral from <xref ref="activity-TI4sinsub"/> to an integral without any <m>\sin(\theta)</m> terms.
+
+                    <ol>
+                        <li><m>\displaystyle \cos(theta) d\theta</m>.</li>
+                        <li><m>\displaystyle \cos^2(\theta) d\theta</m>.</li>
+                        <li><m>\displaystyle \sqrt(cos(\theta)) d\theta</m>.</li>
                     </ol>
                 </p>
             </statement>
