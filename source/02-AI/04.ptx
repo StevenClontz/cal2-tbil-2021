@@ -406,7 +406,7 @@
         <activity xml:id="activity-AI4conemanypieces">
             <introduction>
                 <p>
-                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with cylinders of height <m>\Delta H</m>.
+                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with cylinders of height <m>\Delta h</m>.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</caption>
                     <image xml:id="coneslicedmanypieces" width="100%">
@@ -420,7 +420,8 @@
                             \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
                             (1.025,3.9) -- (1.025,4.1) node [black,midway,xshift=1.2cm] {\footnotesize
                             $\Delta h$\ in};
-                            \draw[dashed] (0,8) -- (0,0);
+                            \node at (0, 2){$\vdots$};
+                            \node at (0, 6){$\vdots$};
                             \draw[dashed] (0,3.9) --node[below]{\tiny $r_i$} (1.025,3.9);
                             \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
                             (-3.25,0) -- (-3.25,8) node [black,midway,xshift=-1cm] {\footnotesize
@@ -525,7 +526,7 @@
             </figure>
                 </p>
                 <p>
-                    We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b A(x)\delta(x) dx.</me>
+                    We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b \delta(x)A(x) dx.</me>
                     <figure>
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass" width="100%">
@@ -559,7 +560,7 @@
             </statement>
         </fact>
         
-        <activity sml:id="activity-TI4prismmass">
+        <activity xml:id="activity-TI4prismmass">
             <statement>
                 <p>
                     Consider that for the prism from <xref ref="activity-AI4rectangularprism"/>, a cross section of height <m>h</m> is <m>A(h)=10^2=100</m> m<m>^2</m>.  Also recall that the density of the prism is <m>\delta(h)=10+h</m> kg/m<m>^3</m>, where <m>h</m> is the height in meters.
@@ -570,10 +571,10 @@
             </statement>
         </activity>
         
-        <activity sml:id="activity-TI4conemass">
+        <activity xml:id="activity-TI4conemass">
             <introduction>
                 <p>
-                    Consider that for the cone from <xref ref="activity-AI4coneprism"/>, a cross section of height <m>h</m> is <m>A(h)=\pi r^2</m> in<m>^2</m>, where <m>r</m> is the radius of the circular cross-section at height <m>h</m> inches.  Also recall that the density of the cone is <m>\delta(h)=15+\sqrt{h}</m> oz/in<m>^3</m>, where <m>h</m> is the height in inches.
+                    Consider that for the cone from <xref ref="activity-AI4cone"/>, a cross section of height <m>h</m> is <m>A(h)=\pi r^2</m> in<m>^2</m>, where <m>r</m> is the radius of the circular cross-section at height <m>h</m> inches.  Also recall that the density of the cone is <m>\delta(h)=15+\sqrt{h}</m> oz/in<m>^3</m>, where <m>h</m> is the height in inches.
                 </p>
             </introduction>
             <task>
@@ -584,8 +585,8 @@
                     <p>
                         Use similar triangles:
                         <figure>
-                <caption>The right triangles in this caption are similar.</caption>
-                    <image xml:id="similartriangleprism" width="100%">
+                <caption>The right triangles in this figure are similar.</caption>
+                    <image xml:id="similartrianglecone" width="100%">
                         <description>a 15 by 60 triangle, with a similar r by 60-h triangle.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -625,6 +626,252 @@
                     Use <xref ref="fact-AI4masscomputation"/> to find the mass of the cone.
                 </p>
             </task>
+        </activity>
+        
+        <activity xml:id="activity-A4pyramidmass">
+            <introduction>
+                Consider a pyramid with a <m>8\times8</m> ft square base and a height of 16 ft.  Suppose the density of the pyramid is <m>\delta(h)=10+\cos(\pi h)</m> lb/ft<m>^3</m> where <m>h</m> is the height in feet.
+            
+            </introduction>
+            
+            <task>
+                <p>
+                    When the height is <m>h</m> ft, what is the area of the square cross section at that height, <m>A(h)</m>?
+                </p>
+                <hint>
+                    <p>
+                        Use similar triangles:
+                        <figure>
+                <caption>The  triangles in this figure are similar.</caption>
+                    <image xml:id="similartrianglepyramid" width="100%">
+                        <description>a 8 by 60 triangle, with a similar r by 16-h triangle.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw (-2,0)--(2,0)--(0,8)--(-2,0);
+                            \draw[dashed] (-1.5,2)--(1.5,2);
+                            
+                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](-2,0) -- (2,0) node[black,midway,yshift=-0.5cm] {\footnotesize $8$\ ft};
+                            
+                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](-1.5,2) -- (1.5,2) node[black,midway,yshift=-0.5cm] {\footnotesize $b$};
+                            
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-2,0) -- (-2,8) node [black,midway,xshift=-1cm] {\footnotesize
+                            $16$ ft};
+                            
+                            \draw [decorate,decoration={brace,mirror, amplitude=10pt,raise=4pt},yshift=0pt]
+                            (2,0) -- (2,2) node [black,midway,xshift=-1cm] {\footnotesize
+                            $h$};
+                            \draw [decorate,decoration={brace, mirror, amplitude=10pt,raise=4pt},yshift=0pt]
+                            (1.5,2) -- (1.5,8) node [black,midway,xshift=1cm] {\footnotesize
+                            $16-h$};
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    </p>
+                </hint>
+            </task>
+            
+            <task>
+                <p>
+                    Use <xref ref="fact-AI4masscomputation"/> to find the mass of the pyramid.
+                </p>
+            </task>
+            
+        </activity>
+        
+        <activity xml:id="activity-AI4balance">
+            <statement>
+                <p>
+                    Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg are placed upon it.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6.
+                    
+                    <figure>
+                <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
+                    <image xml:id="blocksonaxis1" width="100%">
+                        <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw[very thick,->] (0,0) -- (8.5,0) node[anchor=north west] {\tiny$x$};
+                            \foreach \x in {1,2,3,4,5,6,7,8}
+    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
+                            \draw (0.5,0)--(1.5,0)--(1.5,1)--(0.5,1)--(0.5,0);
+                            \draw [fill=blue, opacity=0.2] (0.5,0) rectangle (1.5,1);
+                            \draw (0.5,1)--(1.5,1)--(1.5,2)--(0.5,2)--(0.5,1);
+                            \draw [fill=blue, opacity=0.2] (0.5,1) rectangle (1.5,2);
+                            
+                            \draw (1.5,0)--(2.5,0)--(2.5,1)--(1.5,1)--(1.5,0);
+                            \draw [fill=blue, opacity=0.2] (1.5,0) rectangle (2.5,1);
+                            \draw (1.5,1)--(2.5,1)--(2.5,2)--(1.5,2)--(1.5,1);
+                            \draw [fill=blue, opacity=0.2] (1.5,1) rectangle (2.5,2);
+                            \draw (1.5,2)--(2.5,2)--(2.5,3)--(1.5,3)--(1.5,2);
+                            \draw [fill=blue, opacity=0.2] (1.5,2) rectangle (2.5,3);
+                            
+                            \draw (5.5,0)--(6.5,0)--(6.5,1)--(5.5,1)--(5.5,0);
+                            \draw [fill=blue, opacity=0.2] (5.5,0) rectangle (6.5,1);
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    
+                </p>
+                <p>
+                    Which of the following describes the <m>x</m>-value where the center of gravity of these blocks lie?
+                    <ol>
+                        <li><m>\displaystyle\frac{1+6}{2}=3.5</m>.</li>
+                        <li><m>\displaystyle\frac{1+2+6}{3}=3</m>.</li>
+                        <li><m>\displaystyle\frac{2\cdot1+3\cdot2+1\cdot6}{6}\approx 2.3333</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-AI4balance">
+            <statement>
+                <p>
+                    Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg are placed upon it.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.
+                    
+                    <figure>
+                <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
+                    <image xml:id="blocksonaxis2" width="100%">
+                        <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw[very thick,->] (0,0) -- (8.5,0) node[anchor=north west] {\tiny$x$};
+                            \foreach \x in {1,2,3,4,5,6,7,8}
+    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
+                            \draw (0.5,0)--(1.5,0)--(1.5,1)--(0.5,1)--(0.5,0);
+                            \draw [fill=blue, opacity=0.2] (0.5,0) rectangle (1.5,1);
+                            \draw (0.5,1)--(1.5,1)--(1.5,2)--(0.5,2)--(0.5,1);
+                            \draw [fill=blue, opacity=0.2] (0.5,1) rectangle (1.5,2);
+                            
+                            \draw (1.5,0)--(2.5,0)--(2.5,1)--(1.5,1)--(1.5,0);
+                            \draw [fill=blue, opacity=0.2] (1.5,0) rectangle (2.5,1);
+                            \draw (1.5,1)--(2.5,1)--(2.5,2)--(1.5,2)--(1.5,1);
+                            \draw [fill=blue, opacity=0.2] (1.5,1) rectangle (2.5,2);
+                            \draw (1.5,2)--(2.5,2)--(2.5,3)--(1.5,3)--(1.5,2);
+                            \draw [fill=blue, opacity=0.2] (1.5,2) rectangle (2.5,3);
+                            
+                            \draw (7.5,0)--(8.5,0)--(8.5,1)--(7.5,1)--(7.5,0);
+                            \draw [fill=blue, opacity=0.2] (7.5,0) rectangle (8.5,1);
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    
+                </p>
+                <p>
+                    Find the <m>x</m>-value where the center of gravity of these blocks lie.
+                </p>
+            </statement>
+        </activity>
+        
+        
+        
+        <fact xml:id="fact-AI4centerofmass">
+            <statement>
+                <p>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represented the <m>x</m> values of this solid.  Since each slice has approximated mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
+                    <figure>
+                <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
+                    <image xml:id="Solidmassapproximation" width="100%">
+                        <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{(\x)^(0.5) });
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{-1*(\x)^(0.5) });   
+                            \draw (4,-2) -- (4,2);
+                            
+
+                            \foreach \i in {0,...,20}{
+                                \draw (0.2*\i, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {sqrt(0.2*\i)})--(0.2*\i, {sqrt(0.2*\i)})--(0.2*\i, {-1*sqrt(0.2*\i)});
+                                \draw [fill=blue, opacity=0.2] (0.2*\i,{-1*sqrt(0.2*\i)}) rectangle (0.2*\i+0.2,{sqrt(0.2*\i)});
+                            };
+                            
+                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](2,-1.414) -- (2.2,-1.414) node[black,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+                <p>
+                    We can then find actual center of mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\int_a^b x\delta(x)A(x)dx}{\int_a^b \delta(x)A(x)dx}=\frac{\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.</me>
+                    <figure>
+                <caption>Solid mass.</caption>
+                    <image xml:id="Solidmass" width="100%">
+                        <description>Solid mass.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{(\x)^(0.5) });
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{-1*(\x)^(0.5) });   
+                            \draw (4,-2) -- (4,2);
+                            
+
+                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
+                              (0, 0)
+                              -- plot ({\x}, {sqrt(\x)})
+                              --(4,-2)
+                              --plot ({\x}, {-1*sqrt(\x)})
+                              -- cycle;
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </statement>
+        </fact>
+        
+        <activity sml:id="activity-TI4prismcentermass">
+            <statement>
+                <p>
+                    Consider that for the prism from <xref ref="activity-TI4prismmass"/>, a cross section of height <m>h</m> is <m>A(h)=10^2=100</m> m<m>^2</m>.  Also recall that the density of the prism is <m>\delta(h)=10+h</m> kg/m<m>^3</m>, where <m>h</m> is the height in meters, and that we found the total mass to be 40000  kg.
+                </p>
+                <p>
+                    Use <xref ref="fact-AI4centerofmass"/> to find the height where the center of mass occurs.
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity sml:id="activity-TI4conecentermass">
+            <statement>
+                <p>
+                    Consider that for the prism from <xref ref="activity-TI4conemass"/>, a cross section of height <m>h</m> is <m>A(h)=\pi\cdot \left( \frac{60-h}{4}\right)^2</m> in<m>^2</m>.  Also recall that the density of the cone is <m>\delta(h)=15+\sqrt{h}</m> oz/in<m>^3</m>, where <m>h</m> is the height in inches, and that we found the total mass to be about 142492.6  oz.
+                </p>
+                <p>
+                    Use <xref ref="fact-AI4centerofmass"/> to find the height where the center of mass occurs.
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity sml:id="activity-TI4pyramidcentermass">
+            <statement>
+                <p>
+                    Consider that for the pyramid from <xref ref="activity-A4pyramidmass"/>, a cross section of height <m>h</m> is <m>A(h)=\pi\cdot \left( \frac{16-h}{2}\right)^2</m> ft<m>^2</m>.  Also recall that the density of the pyramid is <m>\delta(h)=10+\cos{\pi h}</m> lb/feet<m>^3</m>, where <m>h</m> is the height in feet, and that we found the total mass to be about 3414.14.6  lb's.
+                </p>
+                <p>
+                    Use <xref ref="fact-AI4centerofmass"/> to find the height where the center of mass occurs.
+                </p>
+            </statement>
         </activity>
     
     
