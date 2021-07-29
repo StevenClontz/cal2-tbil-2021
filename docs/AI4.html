@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-29T01:24:56Z       *-->
+<!--*       on 2021-07-29T02:14:17Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -269,7 +269,7 @@ h_1=0\ \text{m} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot20\ \text
 <p id="p-258">Consider a solid where the cross section of the solid at \(x=x_i\) has area \(A(x_i)\text{,}\) and the density when \(x=x_i\) is \(\delta(x_i)\text{.}\)  Suppose the interval \([a,b]\) represented the \(x\) values of this solid.  If one sliced the solid into \(n\) pieces of width \(\Delta x=\frac{b-a}{n}\text{,}\) then one can approximate the mass of the solid by</p>
 <div class="displaymath">
 \begin{equation*}
-\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x.
+\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x.
 \end{equation*}
 </div>
 <p class="continuation"><figure class="figure figure-like" id="figure-15"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/Solidmassapproximation.svg" role="img" class="contained" alt="Solid approximated with prisms of width \(\Delta x\text{.}\)"></div>
@@ -277,11 +277,24 @@ h_1=0\ \text{m} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot20\ \text
 <p id="p-259">We can then find actual mass by taking the limit as \(n\to\infty\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
-\lim_{n\to\infty} \left(\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x\right)=\int_a^b A(x)\delta(x) dx.
+\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b A(x)\delta(x) dx.
 \end{equation*}
 </div>
 <p class="continuation"><figure class="figure figure-like" id="figure-16"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/Solidmass.svg" role="img" class="contained" alt="Solid mass."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.21<span class="period">.</span></span><span class="space"> </span>Solid mass.</figcaption></figure></p></article></p></section></div></main>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.21<span class="period">.</span></span><span class="space"> </span>Solid mass.</figcaption></figure></p></article> <article class="activity project-like" id="activity-104"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.22</span><span class="period">.</span>
+</h6>
+<p id="p-260">Consider that for the prism from <a class="xref" data-knowl="./knowl/activity-AI4rectangularprism.html" title="Activity 2.2.1">Activity 2.2.1</a>, a cross section of height \(h\) is \(A(h)=10^2=100\) m\(^2\text{.}\)  Also recall that the density of the prism is \(\delta(h)=10+h\) kg/m\(^3\text{,}\) where \(h\) is the height in meters.</p>
+<p id="p-261">Use <a class="xref" data-knowl="./knowl/fact-AI4masscomputation.html" title="Fact 2.2.19">Fact 2.2.19</a> to find the mass of the prism.</p></article> <article class="activity project-like" id="activity-105"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.23</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-24"><p id="p-262">Consider that for the cone from <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "activity-AI4coneprism" missing or not unique]</code>, a cross section of height \(h\) is \(A(h)=\pi r^2\) in\(^2\text{,}\) where \(r\) is the radius of the circular cross-section at height \(h\) inches.  Also recall that the density of the cone is \(\delta(h)=15+\sqrt{h}\) oz/in\(^3\text{,}\) where \(h\) is the height in inches.</p></div>
+<article class="task exercise-like" id="task-51"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-263">When the height is \(h\) in, what is \(r\text{?}\)</p>
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-3" id="hint-3"><span class="type">Hint.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-hint-3"><div class="hint solution-like"><p id="p-264">Use similar triangles: <figure class="figure figure-like" id="figure-17"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/similartriangleprism.svg" role="img" class="contained" alt="a 15 by 60 triangle, with a similar r by 60-h triangle."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.24<span class="period">.</span></span><span class="space"> </span>The right triangles in this caption are similar.</figcaption></figure></p></div></div></article><article class="task exercise-like" id="task-52"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-265">Find \(A(h)\) as a function of \(h\) using this information.</p></article><article class="task exercise-like" id="task-53"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-266">Use <a class="xref" data-knowl="./knowl/fact-AI4masscomputation.html" title="Fact 2.2.19">Fact 2.2.19</a> to find the mass of the cone.</p></article></article></p></section></div></main>
 </div>
 </body>
 </html>
