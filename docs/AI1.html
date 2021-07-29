@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-07-29T01:24:56Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal2 Average Value (AI1)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 2 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AI.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AI4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AI.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AI4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="active">Average Value (AI1)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Density, Mass, and Center of Mass (AI4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AI1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Average Value (AI1)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-11"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-205"><p id="p-215">I can compute the average value of a function on an interval.</p></li></ul></article><p id="p-216"><article class="activity project-like" id="activity-AI1averagespeed"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-13"><p id="p-217">Suppose a car drives due east at 70 mph for 2 hours, and then slows down to 40 mph for an additional hour.</p></div>
+<article class="task exercise-like" id="task-33"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-218">How far did the car travel in these 3 hours?</p></article><article class="task exercise-like" id="task-34"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-219">What was their average veclocity over these 3 hours?</p></article></article> <article class="activity project-like" id="activity-AI1averagespeed2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-14"><p id="p-220">Suppose a car drives due east at a velocity of \(v(t)=40+\sqrt{300t}\) mph, where \(t\) is the number of hours after they start driving.</p></div>
+<article class="task exercise-like" id="task-35"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-221">How far did the car travel in these 3 hours?</p></article><article class="task exercise-like" id="task-36"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-222">What was their average veclocity over these 3 hours?</p></article></article> <article class="activity project-like" id="activity-AI1piecewise"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-223">Which of the following is the average value of \(f(x)\) over the interval \([0,8]\text{?}\)  Note \(f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 3, &amp; 6 &lt; x \leq 8 \end{cases}\text{.}\) <figure class="figure figure-like" id="figure-6"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/piecewiseaverage.svg" role="img" class="contained" alt="A plot of f(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.4<span class="period">.</span></span><span class="space"> </span>Plot of \(f(x)\text{.}\)</figcaption></figure></p>
+<ol class="decimal">
+<li id="li-206">\(4\text{.}\)</li>
+<li id="li-207">\(2\text{.}\)</li>
+<li id="li-208">\(\frac{7}{3}\text{.}\)</li>
+<li id="li-209">\(2.375\text{.}\)</li>
+</ol></article> <article class="activity project-like" id="activity-AI1strat"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</h6>
+<p id="p-224">Consider a function \(f(x)\) which has average value \(v\) on the interval \([a,b]\text{.}\)  Which of the following is most likely always true about \(v\text{?}\)</p>
+<ol class="decimal">
+<li id="li-210">\(v\) is the average of \(a\) and \(b\text{.}\)</li>
+<li id="li-211">\(v\) is the average of \(f(a)\) and \(f(b)\text{.}\)</li>
+<li id="li-212">\(v\) is the average of \(\min\{f(x)\}\) and \(\max\{f(x)\}\) on the interval \([a,b]\text{.}\)</li>
+<li id="li-213">\(\displaystyle \int_a^b f(x)dx=\int_a^b vdx\text{.}\)</li>
+</ol></article> <article class="definition definition-like" id="definition-AI8averagevalue"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+</h6>
+<p id="p-225">Given a function \(f(x)\) defined on \([a,b]\text{,}\) it's average value \(v\) is:</p>
+<div class="displaymath">
+\begin{equation*}
+v=\frac{1}{b-a}\int_a^b f(x) dx.
+\end{equation*}
+</div></article> <article class="activity project-like" id="activity-AI1averageform"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h6>
+<p id="p-226">Which of the following expressions represent the average value of \(f(x)=x\cos(x^2)+x\) on the interval \([\pi, 4\pi]\text{?}\)</p>
+<ol class="decimal">
+<li id="li-214">\(\displaystyle \int_{0}^{4\pi}x\cos(x^2)+x\text{.}\)</li>
+<li id="li-215">\(\displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}x\cos(x^2)+x\text{.}\)</li>
+<li id="li-216">\(\displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}x\cos(x^2)+x\text{.}\)</li>
+<li id="li-217">\(\displaystyle \int_{\pi}^{4\pi}x\cos(x^2)+x\text{.}\)</li>
+<li id="li-218">\(\displaystyle \frac{1}{3\pi}\int_{\pi}^{4\pi}x\cos(x^2)+x\text{.}\)</li>
+<li id="li-219">\(\displaystyle \frac{1}{4\pi}\int_{\pi}^{4\pi}x\cos(x^2)+x\text{.}\)</li>
+</ol></article> <article class="activity project-like" id="activity-AI1averageevaluate"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span>
+</h6>
+<p id="p-227">Find the average value of \(f(x)=x\cos(x^2)+x\) on the interval \([\pi, 4\pi]\) using the chosen expression from <a class="xref" data-knowl="./knowl/activity-AI1averageform.html" title="Activity 2.1.7">Activity 2.1.7</a>.</p></article> <article class="activity project-like" id="activity-AI1averagehandsoff"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
+</h6>
+<p id="p-228">Find the average value of \(g(t)=\frac{t}{t^2+1}\) on the interval \([0, 4]\text{.}\)</p></article> <article class="activity project-like" id="activity-AI1averageconcentration"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
+</h6>
+<p id="p-229">A shot of a drug is administered to a patient and the quantity of the drug in the bloodstream over time is \(q(t)=3te^{-0.25t}\) where \(t\) is measured in hours and \(q\) is measured in mg.  What is the average quantity of this drug in the patient's bloodstream over the first 6 hours after injection?</p></article></p></section></div></main>
+</div>
+</body>
+</html>

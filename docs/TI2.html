@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-27T01:29:46Z       *-->
+<!--*       on 2021-07-29T01:24:55Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -77,7 +77,10 @@
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon">Colophon</a></li></ul>
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
 </li>
 <li class="link">
 <a href="TI.html" data-scroll="TI"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
@@ -91,6 +94,12 @@
 <li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
 </ul>
 </li>
+<li class="link">
+<a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Density, Mass, and Center of Mass (AI4)</a></li>
+</ul>
+</li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
 <li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
 <li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
@@ -101,24 +110,24 @@
 <span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Integration by Parts (TI2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-3"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-48"><p id="p-94">Compute integrals using integration by parts.</p></li></ul></article><p id="p-95"><article class="activity project-like" id="activity-TI2ProductRuleParts"><h6 class="heading">
+<ul class="disc"><li id="li-45"><p id="p-91">Compute integrals using integration by parts.</p></li></ul></article><p id="p-92"><article class="activity project-like" id="activity-TI2ProductRuleParts"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-8"><p id="p-96">Answer the following.</p></div>
+<div class="introduction" id="introduction-7"><p id="p-93">Answer the following.</p></div>
 <article class="task exercise-like" id="task-15"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-97">Using the product rule, which of these is derivative of \(x^3e^x\) with respect to \(x\text{?}\)</p>
+<p id="p-94">Using the product rule, which of these is derivative of \(x^3e^x\) with respect to \(x\text{?}\)</p>
 <ol class="upper-alpha cols2">
-<li id="li-49"><p id="p-98">\(\displaystyle 3x^2e^x\)</p></li>
-<li id="li-50"><p id="p-99">\(\displaystyle 3x^2e^{x}+x^3e^x\)</p></li>
-<li id="li-51"><p id="p-100">\(\displaystyle 3x^2e^{x-1}\)</p></li>
-<li id="li-52"><p id="p-101">\(\displaystyle \frac{1}{4}x^4 e^x\)</p></li>
+<li id="li-46"><p id="p-95">\(\displaystyle 3x^2e^x\)</p></li>
+<li id="li-47"><p id="p-96">\(\displaystyle 3x^2e^{x}+x^3e^x\)</p></li>
+<li id="li-48"><p id="p-97">\(\displaystyle 3x^2e^{x-1}\)</p></li>
+<li id="li-49"><p id="p-98">\(\displaystyle \frac{1}{4}x^4 e^x\)</p></li>
 </ol></article><article class="task exercise-like" id="task-16"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-102">Based on this result, which of these would you suspect to equal \(\int 3x^2e^x+x^3e^x\,dx\text{?}\)</p>
+<p id="p-99">Based on this result, which of these would you suspect to equal \(\int 3x^2e^x+x^3e^x\,dx\text{?}\)</p>
 <ol class="upper-alpha cols2">
-<li id="li-53"><p id="p-103">\(\displaystyle x^3e^x+C\)</p></li>
-<li id="li-54"><p id="p-104">\(\displaystyle x^3e^x+\frac{1}{4}x^4e^x+C\)</p></li>
-<li id="li-55"><p id="p-105">\(\displaystyle 6xe^x+3x^2e^x+C\)</p></li>
-<li id="li-56"><p id="p-106">\(\displaystyle 6xe^x+3x^2e^x+3x^2e^x+x^3e^x+C\)</p></li>
+<li id="li-50"><p id="p-100">\(\displaystyle x^3e^x+C\)</p></li>
+<li id="li-51"><p id="p-101">\(\displaystyle x^3e^x+\frac{1}{4}x^4e^x+C\)</p></li>
+<li id="li-52"><p id="p-102">\(\displaystyle 6xe^x+3x^2e^x+C\)</p></li>
+<li id="li-53"><p id="p-103">\(\displaystyle 6xe^x+3x^2e^x+3x^2e^x+x^3e^x+C\)</p></li>
 </ol></article></article> <article class="activity project-like" id="activity-TI2RulePreferences"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
 </h6></article></p></section></div></main>

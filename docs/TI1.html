@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-27T01:29:46Z       *-->
+<!--*       on 2021-07-29T01:24:55Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -77,7 +77,10 @@
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon">Colophon</a></li></ul>
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
 </li>
 <li class="link">
 <a href="TI.html" data-scroll="TI"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
@@ -91,6 +94,12 @@
 <li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
 </ul>
 </li>
+<li class="link">
+<a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Density, Mass, and Center of Mass (AI4)</a></li>
+</ul>
+</li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
 <li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
 <li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
@@ -101,59 +110,59 @@
 <span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Substitution method (TI1)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-2"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-15"><p id="p-19">Evaluate various integrals via the substitution method.</p></li></ul></article><article class="activity project-like" id="activity-1"><h6 class="heading">
+<ul class="disc"><li id="li-12"><p id="p-16">Evaluate various integrals via the substitution method.</p></li></ul></article><article class="activity project-like" id="activity-1"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-3"><p id="p-20">Answer the following.</p></div>
+<div class="introduction" id="introduction-2"><p id="p-17">Answer the following.</p></div>
 <article class="task exercise-like" id="task-1"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-21">Using the chain rule, which of these is derivative of \(e^{x^3}\) with respect to \(x\text{?}\)</p>
+<p id="p-18">Using the chain rule, which of these is derivative of \(e^{x^3}\) with respect to \(x\text{?}\)</p>
 <ol class="upper-alpha cols2">
-<li id="li-16"><p id="p-22">\(\displaystyle e^{3x^2}\)</p></li>
-<li id="li-17"><p id="p-23">\(\displaystyle x^3e^{x^3-1}\)</p></li>
-<li id="li-18"><p id="p-24">\(\displaystyle 3x^2e^{x^3}\)</p></li>
-<li id="li-19"><p id="p-25">\(\displaystyle \frac{1}{4}e^{x^4}\)</p></li>
+<li id="li-13"><p id="p-19">\(\displaystyle e^{3x^2}\)</p></li>
+<li id="li-14"><p id="p-20">\(\displaystyle x^3e^{x^3-1}\)</p></li>
+<li id="li-15"><p id="p-21">\(\displaystyle 3x^2e^{x^3}\)</p></li>
+<li id="li-16"><p id="p-22">\(\displaystyle \frac{1}{4}e^{x^4}\)</p></li>
 </ol></article><article class="task exercise-like" id="task-2"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-26">Based on this result, which of these would you suspect to equal \(\int x^2e^{x^3}\,dx\text{?}\)</p>
+<p id="p-23">Based on this result, which of these would you suspect to equal \(\int x^2e^{x^3}\,dx\text{?}\)</p>
 <ol class="upper-alpha cols2">
-<li id="li-20"><p id="p-27">\(\displaystyle e^{x^3+1}+C\)</p></li>
-<li id="li-21"><p id="p-28">\(\displaystyle \frac{1}{3x}e^{x^3+1}+C\)</p></li>
-<li id="li-22"><p id="p-29">\(\displaystyle 3e^{x^3}+C\)</p></li>
-<li id="li-23"><p id="p-30">\(\displaystyle \frac{1}{3}e^{x^3}+C\)</p></li>
+<li id="li-17"><p id="p-24">\(\displaystyle e^{x^3+1}+C\)</p></li>
+<li id="li-18"><p id="p-25">\(\displaystyle \frac{1}{3x}e^{x^3+1}+C\)</p></li>
+<li id="li-19"><p id="p-26">\(\displaystyle 3e^{x^3}+C\)</p></li>
+<li id="li-20"><p id="p-27">\(\displaystyle \frac{1}{3}e^{x^3}+C\)</p></li>
 </ol></article></article><article class="activity project-like" id="activity-2"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-4">
-<p id="p-31">Recall that if \(u\) is a function of \(x\text{,}\) then \(\frac{d}{dx}[u^7]=7u^6 u'\) by the Chain Rule.</p>
-<p id="p-32">For each question, choose from the following.</p>
+<div class="introduction" id="introduction-3">
+<p id="p-28">Recall that if \(u\) is a function of \(x\text{,}\) then \(\frac{d}{dx}[u^7]=7u^6 u'\) by the Chain Rule.</p>
+<p id="p-29">For each question, choose from the following.</p>
 <ol class="upper-alpha cols4">
-<li id="li-24"><p id="p-33">\(\displaystyle \frac{1}{7}u^7+C\)</p></li>
-<li id="li-25"><p id="p-34">\(\displaystyle u^7+C\)</p></li>
-<li id="li-26"><p id="p-35">\(\displaystyle 7u^7+C\)</p></li>
-<li id="li-27"><p id="p-36">\(\displaystyle \frac{6}{7}u^7+C\)</p></li>
+<li id="li-21"><p id="p-30">\(\displaystyle \frac{1}{7}u^7+C\)</p></li>
+<li id="li-22"><p id="p-31">\(\displaystyle u^7+C\)</p></li>
+<li id="li-23"><p id="p-32">\(\displaystyle 7u^7+C\)</p></li>
+<li id="li-24"><p id="p-33">\(\displaystyle \frac{6}{7}u^7+C\)</p></li>
 </ol>
 </div>
 <article class="task exercise-like" id="task-3"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-37">What is \(\int 7u^6 u'\,dx\text{?}\)</p></article><article class="task exercise-like" id="task-4"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-38">What is \(\int u^6 u'\,dx\text{?}\)</p></article><article class="task exercise-like" id="task-5"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-39">What is \(\int 6u^6 u'\,dx\text{?}\)</p></article></article><article class="activity project-like" id="activity-3"><h6 class="heading">
+<p id="p-34">What is \(\int 7u^6 u'\,dx\text{?}\)</p></article><article class="task exercise-like" id="task-4"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-35">What is \(\int u^6 u'\,dx\text{?}\)</p></article><article class="task exercise-like" id="task-5"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-36">What is \(\int 6u^6 u'\,dx\text{?}\)</p></article></article><article class="activity project-like" id="activity-3"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span>
 </h6>
-<p id="p-40">Based on these activities, which of these choices seems to be a viable strategy for integration?</p>
+<p id="p-37">Based on these activities, which of these choices seems to be a viable strategy for integration?</p>
 <ol class="upper-alpha">
-<li id="li-28"><p id="p-41">Memorize an integration formula for every possible function.</p></li>
-<li id="li-29"><p id="p-42">Attempt to rewrite the integral in the form \(\int g'(u)u'dx=g(u)+C\text{.}\)</p></li>
-<li id="li-30"><p id="p-43">Keep differentiating functions until you come across the function you want to integrate.</p></li>
+<li id="li-25"><p id="p-38">Memorize an integration formula for every possible function.</p></li>
+<li id="li-26"><p id="p-39">Attempt to rewrite the integral in the form \(\int g'(u)u'dx=g(u)+C\text{.}\)</p></li>
+<li id="li-27"><p id="p-40">Keep differentiating functions until you come across the function you want to integrate.</p></li>
 </ol></article><article class="fact theorem-like" id="fact-1"><h6 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span>
 </h6>
-<p id="p-44">By the chain rule,</p>
+<p id="p-41">By the chain rule,</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{d}{dx}[g(u)+C]=g'(u)u'\text{.}
 \end{equation*}
 </div>
 <p class="continuation">There is an dual integration technique reversing this process, known as the <dfn class="terminology">substitution method</dfn>.</p>
-<p id="p-45">This technique involves choosing an appropriate function \(u\) in terms of \(x\) to rewrite the integral as follows:</p>
+<p id="p-42">This technique involves choosing an appropriate function \(u\) in terms of \(x\) to rewrite the integral as follows:</p>
 <div class="displaymath">
 \begin{equation*}
 \int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C\text{.}
@@ -161,27 +170,27 @@
 </div></article><article class="observation remark-like" id="observation-1"><h6 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.1.5</span><span class="period">.</span>
 </h6>
-<p id="p-46">Recall that \(u'=\frac{du}{dx}\text{.}\) This allows for the following:</p>
+<p id="p-43">Recall that \(u'=\frac{du}{dx}\text{.}\) This allows for the following:</p>
 <div class="displaymath">
 \begin{equation*}
 \int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C\text{.}
 \end{equation*}
 </div>
-<p id="p-47">Therefore rather than dealing with equations like \(u'=\frac{du}{dx}=x^2\text{,}\) we will prefer to write \(du=x^2\,dx\text{.}\)</p></article><article class="activity project-like" id="activity-4"><h6 class="heading">
+<p id="p-44">Therefore rather than dealing with equations like \(u'=\frac{du}{dx}=x^2\text{,}\) we will prefer to write \(du=x^2\,dx\text{.}\)</p></article><article class="activity project-like" id="activity-4"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-5">
-<p id="p-48">Consider \(\int x^2e^{x^3}\,dx\text{,}\) which we conjectured earlier to be \(\frac{1}{3}e^{x^3}+C\text{.}\)</p>
-<p id="p-49">Suppose we decided to let \(u=x^3\text{.}\)</p>
+<div class="introduction" id="introduction-4">
+<p id="p-45">Consider \(\int x^2e^{x^3}\,dx\text{,}\) which we conjectured earlier to be \(\frac{1}{3}e^{x^3}+C\text{.}\)</p>
+<p id="p-46">Suppose we decided to let \(u=x^3\text{.}\)</p>
 </div>
 <article class="task exercise-like" id="task-6"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-50">Compute \(\frac{du}{dx}=\unknown\text{,}\) and rewrite it as \(du=\unknown\,dx\text{.}\)</p></article><article class="task exercise-like" id="task-7"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-51">Multiply both sides of the equation \(du=\unknown\,dx\) so that its right-hand side appears in \(\int x^2e^{x^3}\,dx\text{.}\)</p></article><article class="task exercise-like" id="task-8"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-52">Show why \(\int x^2e^{x^3}\,dx\) may now be rewritten as \(\int \frac{1}{3}e^u\,du\text{.}\)</p></article><article class="task exercise-like" id="task-9"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-53">Solve \(\int \frac{1}{3}e^u\,du\) in terms of \(u\text{,}\) then replace \(u\) with \(x^3\) to confirm our original conjecture.</p></article></article><article class="example example-like" id="example-1"><h6 class="heading">
+<p id="p-47">Compute \(\frac{du}{dx}=\unknown\text{,}\) and rewrite it as \(du=\unknown\,dx\text{.}\)</p></article><article class="task exercise-like" id="task-7"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-48">Multiply both sides of the equation \(du=\unknown\,dx\) so that its right-hand side appears in \(\int x^2e^{x^3}\,dx\text{.}\)</p></article><article class="task exercise-like" id="task-8"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-49">Show why \(\int x^2e^{x^3}\,dx\) may now be rewritten as \(\int \frac{1}{3}e^u\,du\text{.}\)</p></article><article class="task exercise-like" id="task-9"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-50">Solve \(\int \frac{1}{3}e^u\,du\) in terms of \(u\text{,}\) then replace \(u\) with \(x^3\) to confirm our original conjecture.</p></article></article><article class="example example-like" id="example-1"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span>
 </h6>
-<p id="p-54">Here is how one might write out the explanation of how to find \(\int x^2e^{x^3}\,dx\) from start to finish:</p>
+<p id="p-51">Here is how one might write out the explanation of how to find \(\int x^2e^{x^3}\,dx\) from start to finish:</p>
 <div class="displaymath">
 \begin{align*}
 \int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3\\
@@ -195,19 +204,19 @@
 </div></article><article class="activity project-like" id="activity-5"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span>
 </h6>
-<p id="p-55">Which step of the previous example do you think was the most important?</p>
+<p id="p-52">Which step of the previous example do you think was the most important?</p>
 <ol class="upper-alpha">
-<li id="li-31"><p id="p-56">Choosing \(u=x^3\text{.}\)</p></li>
-<li id="li-32"><p id="p-57">Finding \(du=3x^2\,dx\) and \(\frac{1}{3}du=x^2\,dx\text{.}\)</p></li>
-<li id="li-33"><p id="p-58">Substituting \(\int x^2e^{x^3}\,dx\) with \(\int\frac{1}{3}e^u\,du\text{.}\)</p></li>
-<li id="li-34"><p id="p-59">Integrating \(\int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C\text{.}\)</p></li>
-<li id="li-35"><p id="p-60">Unsubstituting \(\frac{1}{3}e^u+C\) to get \(\frac{1}{3}e^{x^3}+C\text{.}\)</p></li>
+<li id="li-28"><p id="p-53">Choosing \(u=x^3\text{.}\)</p></li>
+<li id="li-29"><p id="p-54">Finding \(du=3x^2\,dx\) and \(\frac{1}{3}du=x^2\,dx\text{.}\)</p></li>
+<li id="li-30"><p id="p-55">Substituting \(\int x^2e^{x^3}\,dx\) with \(\int\frac{1}{3}e^u\,du\text{.}\)</p></li>
+<li id="li-31"><p id="p-56">Integrating \(\int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C\text{.}\)</p></li>
+<li id="li-32"><p id="p-57">Unsubstituting \(\frac{1}{3}e^u+C\) to get \(\frac{1}{3}e^{x^3}+C\text{.}\)</p></li>
 </ol></article><article class="activity project-like" id="activity-6"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span>
 </h6>
-<p id="p-61">Below are two correct solutions to the same integral, using two different choices for \(u\text{.}\) Which method would you prefer to use yourself?</p>
+<p id="p-58">Below are two correct solutions to the same integral, using two different choices for \(u\text{.}\) Which method would you prefer to use yourself?</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
-<div class="sbspanel top" style="width:48.9795918367347%;"><div class="displaymath" id="p-62">
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="displaymath" id="p-59">
 \begin{align*}
 \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=x+1\\
 &amp;\phantom{=} 4u=4x+4\\
@@ -220,7 +229,7 @@
 &amp;\phantom{=}-\frac{4}{3}(x+1)^{3/2}+C
 \end{align*}
 </div></div>
-<div class="sbspanel top" style="width:48.9795918367347%;"><div class="displaymath" id="p-63">
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="displaymath" id="p-60">
 \begin{align*}
 \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=\sqrt{4x+4}\\
 &amp;\phantom{=} u^2=4x+4\\
@@ -236,17 +245,17 @@
 </div></div></article><article class="activity project-like" id="activity-7"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span>
 </h6>
-<p id="p-64">Suppose we wanted to try substitution method to find \(\int e^x\cos(e^x+3)\,dx\text{.}\) Which of these choices for \(u\) appears to be most useful?</p>
+<p id="p-61">Suppose we wanted to try substitution method to find \(\int e^x\cos(e^x+3)\,dx\text{.}\) Which of these choices for \(u\) appears to be most useful?</p>
 <ol class="upper-alpha">
-<li id="li-36"><p id="p-65">\(u=x\text{,}\) so \(du=dx\)</p></li>
-<li id="li-37"><p id="p-66">\(u=e^x\text{,}\) so \(du=e^x\,dx\)</p></li>
-<li id="li-38"><p id="p-67">\(u=e^x+3\text{,}\) so \(du=e^x\,dx\)</p></li>
-<li id="li-39"><p id="p-68">\(u=\cos(x)\text{,}\) so \(du=-\sin(x)\,dx\)</p></li>
-<li id="li-40"><p id="p-69">\(u=\cos(e^x+3)\text{,}\) so \(du=e^x\sin(e^x+3)\,dx\)</p></li>
+<li id="li-33"><p id="p-62">\(u=x\text{,}\) so \(du=dx\)</p></li>
+<li id="li-34"><p id="p-63">\(u=e^x\text{,}\) so \(du=e^x\,dx\)</p></li>
+<li id="li-35"><p id="p-64">\(u=e^x+3\text{,}\) so \(du=e^x\,dx\)</p></li>
+<li id="li-36"><p id="p-65">\(u=\cos(x)\text{,}\) so \(du=-\sin(x)\,dx\)</p></li>
+<li id="li-37"><p id="p-66">\(u=\cos(e^x+3)\text{,}\) so \(du=e^x\sin(e^x+3)\,dx\)</p></li>
 </ol></article><article class="activity project-like" id="activity-8"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.11</span><span class="period">.</span>
 </h6>
-<p id="p-70">Complete the following solution using your choice from the previous activity to find \(\int e^x\cos(e^x+3)\,dx\text{.}\)</p>
+<p id="p-67">Complete the following solution using your choice from the previous activity to find \(\int e^x\cos(e^x+3)\,dx\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 \int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown\\
@@ -258,7 +267,7 @@
 </div></article><article class="activity project-like" id="activity-9"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span>
 </h6>
-<p id="p-71">Complete the following integration by substitution to find \(\int \frac{x^3}{x^4+4}\,dx\text{.}\)</p>
+<p id="p-68">Complete the following integration by substitution to find \(\int \frac{x^3}{x^4+4}\,dx\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 \int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown\\
@@ -271,19 +280,19 @@
 </div></article><article class="activity project-like" id="activity-10"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.13</span><span class="period">.</span>
 </h6>
-<p id="p-72">Given that \(\int \frac{x^3}{x^4+4}\,dx
+<p id="p-69">Given that \(\int \frac{x^3}{x^4+4}\,dx
 = \frac{1}{4}\ln|x^4+4|+C
 \text{,}\) what is the value of \(\int_0^2 \frac{x^3}{x^4+4}\,dx
 \text{?}\)</p>
 <ol class="upper-alpha cols2">
-<li id="li-41"><p id="p-73">\(\displaystyle \frac{8}{20}\)</p></li>
-<li id="li-42"><p id="p-74">\(\displaystyle -\frac{8}{20}\)</p></li>
-<li id="li-43"><p id="p-75">\(\displaystyle \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)\)</p></li>
-<li id="li-44"><p id="p-76">\(\displaystyle \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)\)</p></li>
+<li id="li-38"><p id="p-70">\(\displaystyle \frac{8}{20}\)</p></li>
+<li id="li-39"><p id="p-71">\(\displaystyle -\frac{8}{20}\)</p></li>
+<li id="li-40"><p id="p-72">\(\displaystyle \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)\)</p></li>
+<li id="li-41"><p id="p-73">\(\displaystyle \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)\)</p></li>
 </ol></article><article class="activity project-like" id="activity-11"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.14</span><span class="period">.</span>
 </h6>
-<p id="p-77">What's wrong with the following computation?</p>
+<p id="p-74">What's wrong with the following computation?</p>
 <div class="displaymath">
 \begin{align*}
 \int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4\\
@@ -295,13 +304,13 @@
 \end{align*}
 </div>
 <ol class="upper-alpha">
-<li id="li-45"><p id="p-78">The wrong \(u\) substitution was made.</p></li>
-<li id="li-46"><p id="p-79">The antiderivative of \(\frac{1/4}{u}\) was wrong.</p></li>
-<li id="li-47"><p id="p-80">The \(x\) values \(0,2\) were plugged in for the variable \(u\text{.}\)</p></li>
+<li id="li-42"><p id="p-75">The wrong \(u\) substitution was made.</p></li>
+<li id="li-43"><p id="p-76">The antiderivative of \(\frac{1/4}{u}\) was wrong.</p></li>
+<li id="li-44"><p id="p-77">The \(x\) values \(0,2\) were plugged in for the variable \(u\text{.}\)</p></li>
 </ol></article><article class="activity project-like" id="activity-12"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.15</span><span class="period">.</span>
 </h6>
-<p id="p-81">When \(x=2\text{,}\) we know that \(u=2^4+4=20\text{.}\) Likewise when \(x=0\text{,}\) we know that \(u=0^4+4=4\text{.}\) Use these facts to complete the below computation.</p>
+<p id="p-78">When \(x=2\text{,}\) we know that \(u=2^4+4=20\text{.}\) Likewise when \(x=0\text{,}\) we know that \(u=0^4+4=4\text{.}\) Use these facts to complete the below computation.</p>
 <div class="displaymath">
 \begin{align*}
 \int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4\\
@@ -315,7 +324,7 @@
 </div></article><article class="example example-like" id="example-2"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.16</span><span class="period">.</span>
 </h6>
-<p id="p-82">Here is how one might write out the explanation of how to find \(\int_1^3 x^2e^{x^3}\,dx\) from start to finish by leaving bounds in terms of \(x\text{:}\)</p>
+<p id="p-79">Here is how one might write out the explanation of how to find \(\int_1^3 x^2e^{x^3}\,dx\) from start to finish by leaving bounds in terms of \(x\text{:}\)</p>
 <div class="displaymath">
 \begin{align*}
 \int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3\\
@@ -331,7 +340,7 @@
 </div></article><article class="example example-like" id="example-3"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.17</span><span class="period">.</span>
 </h6>
-<p id="p-83">Here is how one might write out the explanation of how to find \(\int_1^3 x^2e^{x^3}\,dx\) from start to finish by transforming bounds into terms of \(u\text{:}\)</p>
+<p id="p-80">Here is how one might write out the explanation of how to find \(\int_1^3 x^2e^{x^3}\,dx\) from start to finish by transforming bounds into terms of \(u\text{:}\)</p>
 <div class="displaymath">
 \begin{align*}
 \int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3\\
@@ -345,7 +354,7 @@
 </div></article><article class="activity project-like" id="activity-13"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.18</span><span class="period">.</span>
 </h6>
-<p id="p-84">Use substitution to show that</p>
+<p id="p-81">Use substitution to show that</p>
 <div class="displaymath">
 \begin{equation*}
 \int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e\text{.}
@@ -353,7 +362,7 @@
 </div></article><article class="activity project-like" id="activity-14"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.19</span><span class="period">.</span>
 </h6>
-<p id="p-85">Use substitution to show that</p>
+<p id="p-82">Use substitution to show that</p>
 <div class="displaymath">
 \begin{equation*}
 \int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}\text{.}
@@ -361,7 +370,7 @@
 </div></article><article class="activity project-like" id="activity-15"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.20</span><span class="period">.</span>
 </h6>
-<p id="p-86">Use substitution to show that</p>
+<p id="p-83">Use substitution to show that</p>
 <div class="displaymath">
 \begin{equation*}
 \int u^5(u^3+1)^{1/3}\,du=
@@ -371,17 +380,17 @@
 </div></article><article class="activity project-like" id="activity-16"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.21</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-6"><p id="p-87">Consider \(\int (3x-5)^2\,dx\text{.}\)</p></div>
+<div class="introduction" id="introduction-5"><p id="p-84">Consider \(\int (3x-5)^2\,dx\text{.}\)</p></div>
 <article class="task exercise-like" id="task-10"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-88">Solve this integral using substitution.</p></article><article class="task exercise-like" id="task-11"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-89">Replace \((3x-5)^2\) with \((9x^2-30x+25)\) in the original integral, the solve using the reverse power rule.</p></article><article class="task exercise-like" id="task-12"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-90">Which method did you prefer?</p></article></article><article class="activity project-like" id="activity-17"><h6 class="heading">
+<p id="p-85">Solve this integral using substitution.</p></article><article class="task exercise-like" id="task-11"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-86">Replace \((3x-5)^2\) with \((9x^2-30x+25)\) in the original integral, the solve using the reverse power rule.</p></article><article class="task exercise-like" id="task-12"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-87">Which method did you prefer?</p></article></article><article class="activity project-like" id="activity-17"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.22</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-7"><p id="p-91">Consider \(\int \tan(x)\,dx\text{.}\)</p></div>
+<div class="introduction" id="introduction-6"><p id="p-88">Consider \(\int \tan(x)\,dx\text{.}\)</p></div>
 <article class="task exercise-like" id="task-13"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-92">Replace \(\tan(x)\) in the integral with a fraction involving sine and cosine.</p></article><article class="task exercise-like" id="task-14"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-93">Use substitution to solve the integral.</p></article></article></section></div></main>
+<p id="p-89">Replace \(\tan(x)\) in the integral with a fraction involving sine and cosine.</p></article><article class="task exercise-like" id="task-14"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-90">Use substitution to solve the integral.</p></article></article></section></div></main>
 </div>
 </body>
 </html>
