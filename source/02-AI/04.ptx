@@ -493,7 +493,7 @@
         <fact xml:id="fact-AI4masscomputation">
             <statement>
                 <p>
-                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represented the <m>x</m> values of this solid.  If one sliced the solid into <m>n</m> pieces of width <m>\Delta x=\frac{b-a}{n}</m>, then one can approximate the mass of the solid by <me>\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x.</me>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represented the <m>x</m> values of this solid.  If one sliced the solid into <m>n</m> pieces of width <m>\Delta x=\frac{b-a}{n}</m>, then one can approximate the mass of the solid by <me>\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x.</me>
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
                     <image xml:id="Solidmassapproximation" width="100%">
@@ -525,7 +525,7 @@
             </figure>
                 </p>
                 <p>
-                    We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x\right)=\int_a^b A(x)\delta(x) dx.</me>
+                    We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b A(x)\delta(x) dx.</me>
                     <figure>
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass" width="100%">
@@ -558,6 +558,74 @@
                 </p>
             </statement>
         </fact>
+        
+        <activity sml:id="activity-TI4prismmass">
+            <statement>
+                <p>
+                    Consider that for the prism from <xref ref="activity-AI4rectangularprism"/>, a cross section of height <m>h</m> is <m>A(h)=10^2=100</m> m<m>^2</m>.  Also recall that the density of the prism is <m>\delta(h)=10+h</m> kg/m<m>^3</m>, where <m>h</m> is the height in meters.
+                </p>
+                <p>
+                    Use <xref ref="fact-AI4masscomputation"/> to find the mass of the prism.
+                </p>
+            </statement>
+        </activity>
+        
+        <activity sml:id="activity-TI4conemass">
+            <introduction>
+                <p>
+                    Consider that for the cone from <xref ref="activity-AI4coneprism"/>, a cross section of height <m>h</m> is <m>A(h)=\pi r^2</m> in<m>^2</m>, where <m>r</m> is the radius of the circular cross-section at height <m>h</m> inches.  Also recall that the density of the cone is <m>\delta(h)=15+\sqrt{h}</m> oz/in<m>^3</m>, where <m>h</m> is the height in inches.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    When the height is <m>h</m> in, what is <m>r</m>?
+                </p>
+                <hint>
+                    <p>
+                        Use similar triangles:
+                        <figure>
+                <caption>The right triangles in this caption are similar.</caption>
+                    <image xml:id="similartriangleprism" width="100%">
+                        <description>a 15 by 60 triangle, with a similar r by 60-h triangle.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw (-2,0)--(2,0)--(0,8)--(-2,0);
+                            \draw[dashed] (-1.5,2)--(1.5,2);
+                            \draw[dashed] (0,0)--(0,8);
+                            
+                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](0,0) -- (2,0) node[black,midway,yshift=-0.5cm] {\footnotesize $15$\ in};
+                            
+                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](0,2) -- (1.5,2) node[black,midway,yshift=-0.5cm] {\footnotesize $r$};
+                            
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-2,0) -- (-2,8) node [black,midway,xshift=-1cm] {\footnotesize
+                            $60$ in};
+                            
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (0,0) -- (0,2) node [black,midway,xshift=-1cm] {\footnotesize
+                            $h$};
+                            \draw [decorate,decoration={brace, mirror, amplitude=10pt,raise=4pt},yshift=0pt]
+                            (1.5,2) -- (1.5,8) node [black,midway,xshift=1cm] {\footnotesize
+                            $60-h$};
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    </p>
+                </hint>
+            </task>
+            <task>
+                <p>
+                    Find <m>A(h)</m> as a function of <m>h</m> using this information.
+                </p>
+            </task>
+            <task>
+                <p>
+                    Use <xref ref="fact-AI4masscomputation"/> to find the mass of the cone.
+                </p>
+            </task>
+        </activity>
     
     
     </p>
