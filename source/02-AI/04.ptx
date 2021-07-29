@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AI4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Density, Mass, and Center of Mass (AI4)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/04.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+    <p>
+        <activity xml:id="activity-AI4rectangularprism">
+            <introduction>
+                <p>
+                    Consider a rectangular prism with a 10 m <m>\times</m> 10 m square base and height 20 m.  Suppose the density of the material in the prism increases with height, following the function <m>\delta(h)=10+h</m> kg/m<m>^3</m>, where <m>h</m> is the height in meters.
+                </p>
+            </introduction>
+            <task>
+                <p>If one were to cut this prism, parallel to the base, into 4 pieces with height 5 m, what would the volume of each piece be?</p>
+            </task>
+            <task>
+                <p>Consider the piece sitting on top the slice made at height <m>h=5</m>.  Using <m>\delta(5)=15</m>  kg/m<m>^3</m>, estimate the mass of this piece.</p>
+            </task>
+            <task>
+                <p>
+                    Is this estimate the actual mass of this piece?
+                </p>
+            </task>
+        </activity>
+        
+        <activity xml:id="activity-AI4rectangularprism4pieces">
+            <introduction>
+                <p>
+                    Consider all 4 slices from <xref ref="activity-AI4rectangularprism"/>.
+                    <figure>
+                <caption><m>10\times 10\times 20</m> prism sliced into 4 pieces.</caption>
+                    <image xml:id="prism4pieces" width="100%">
+                        <description><m>10\times 10\times 20</m> prism sliced into 4 pieces.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw [fill=blue, opacity=0.2] (0,0) rectangle (2,1);
+                            \draw [fill=blue, opacity=0.2] (0,1) rectangle (2,2);
+                            \draw [fill=blue, opacity=0.2] (0,2) rectangle (2,3);
+                            \draw [fill=blue, opacity=0.2] (0,3) rectangle (2,4);
+                            \draw (0,0) -- (2,0) -- (2,4) -- (0,4)--(0,0);
+
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (2,1) -- (2,2) node [black,midway,xshift=1.2cm] {\footnotesize
+                            $\Delta h= 5$ m};
+                            \draw (0,0)--node[left]{\tiny $h_1=0$ m} (0,0);
+                            \draw (0,1)--node[left]{\tiny $h_2=5$ m} (0,1);
+                            \draw (0,2)--node[left]{\tiny $h_3=10$ m} (0,2);
+                            \draw (0,3)--node[left]{\tiny $h_4=15$ m} (0,3);
+
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-1.25,0) -- (-1.25,4) node [black,midway,xshift=-1cm] {\footnotesize
+                            $20$ m};
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </introduction>
+            <task>
+                <p>Fill out the following table:
+                    <me>
+                        \begin{array}{|c|c|c|c|}
+                        \hline
+                        h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
+                        \hline
+                        h_4=15\ \text{m} &amp; \delta(15)=25\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; \\
+                        \hline
+                        h_3=10\ \text{m} &amp; \delta(10)=20\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; \\
+                        \hline
+                        h_2=5\ \text{m} &amp; \delta(5)=15\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; 6500\ \text{kg}\\
+                        \hline
+                        h_1=0\ \text{m} &amp; \delta(0)=10\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; \\
+                        \hline
+                        \end{array}
+                    </me>
+                
+                
+                </p>
+            </task>
+            <task>
+                <p>
+                    What is the estimated mass of the rectangular prism?
+                </p>
+            </task>
+            
+        </activity>
+        
+        <activity xml:id="activity-AI4rectangularprism5pieces">
+            <introduction>
+                <p>
+                    Suppose instead that we sliced the prism from <xref ref="activity-AI4rectangularprism"/> into 5 pices of height 4 m.
+                    <figure>
+                <caption><m>10\times 10\times 20</m> prism sliced into 5 pieces.</caption>
+                    <image xml:id="prism5pieces" width="100%">
+                        <description><m>10\times 10\times 20</m> prism sliced into 5 pieces.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw [fill=blue, opacity=0.2] (0,0) rectangle (2,0.8);
+                            \draw [fill=blue, opacity=0.2] (0,0.8) rectangle (2,1.6);
+                            \draw [fill=blue, opacity=0.2] (0,1.6) rectangle (2,2.4);
+                            \draw [fill=blue, opacity=0.2] (0,2.4) rectangle (2,3.2);
+                            \draw [fill=blue, opacity=0.2] (0,3.2) rectangle (2,4);
+                            \draw (0,0) -- (2,0) -- (2,4) -- (0,4)--(0,0);
+
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (2,0.8) -- (2,1.6) node [black,midway,xshift=1.2cm] {\footnotesize
+                            $\Delta h= 4$ m};
+                            \draw (0,0)--node[left]{\tiny $h_1=0$ m} (0,0);
+                            \draw (0,0.8)--node[left]{\tiny $h_2=4$ m} (0,0.8);
+                            \draw (0,1.6)--node[left]{\tiny $h_3=8$ m} (0,1.6);
+                            \draw (0,2.4)--node[left]{\tiny $h_4=12$ m} (0,2.4);
+                            \draw (0,3.2)--node[left]{\tiny $h_5=16$ m} (0,3.2);
+
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-1.25,0) -- (-1.25,4) node [black,midway,xshift=-1cm] {\footnotesize
+                            $20$ m};
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </introduction>
+            <task>
+                <p>Fill out the following table:
+                    <me>
+                        \begin{array}{|c|c|c|c|}
+                        \hline
+                        h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
+                        \hline
+                        h_5=16\ \text{m} &amp; \delta(16)=26\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
+                        \hline
+                        h_4=12\ \text{m} &amp; \delta(12)=22\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
+                        \hline
+                        h_3=8\ \text{m} &amp; \delta(8)=18\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
+                        \hline
+                        h_2=4\ \text{m} &amp; \delta(4)=14\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \phantom{6500\ \text{kg}}\\
+                        \hline
+                        h_1=0\ \text{m} &amp; \delta(0)=10\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
+                        \hline
+                        \end{array}
+                    </me>
+                
+                
+                </p>
+            </task>
+            <task>
+                <p>
+                    What is the estimated mass of the rectangular prism?
+                </p>
+            </task>
+            
+        </activity>
+        
+        <activity xml:id="activity-AI4comparison">
+            <statement>
+                Which of the estimates computed in <xref ref="activity-AI4rectangularprism4pieces"/> and <xref ref="activity-AI4rectangularprism5pieces"/> is a better estimate of the mass of the prism?
+                <ol>
+                    <li><xref ref="activity-AI4rectangularprism4pieces"/>, 4 pieces is a better estimate.</li>
+                    <li><xref ref="activity-AI4rectangularprism5pieces"/>, 5 pieces is a better estimate.</li>
+                </ol>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-AI4rectangularprismmanypieces">
+            <introduction>
+                <p>
+                    Suppose now that we slice the prism from <xref ref="activity-AI4rectangularprism"/> into slices of height <m>\Delta h</m> m.
+                    
+                    <figure>
+                <caption><m>10\times 10\times 20</m> prism sliced into many pieces.</caption>
+                    <image xml:id="prismmanypieces" width="100%">
+                        <description><m>10\times 10\times 20</m> prism sliced into many pieces.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw [fill=blue, opacity=0.2] (0,1.9) rectangle (2,2.1);
+                            \draw (0,0)--(2,0) -- (2,4)--(0,4)--(0,0);
+                            \node at (1, 0.95){$\vdots$};
+                            \node at (1, 3.05){$\vdots$};
+
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (2,1.9) -- (2,2.1) node [black,midway,xshift=0.7cm] {\footnotesize
+                            $\Delta h$};
+                            \draw (0,1.9)--node[left]{\tiny $h_i$} (0,1.9);
+
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-.5,0) -- (-.5,4) node [black,midway,xshift=-1cm] {\footnotesize
+                            $20$ m};
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+                <p>
+                    Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=10+h_i</m> as the estimate for the density of this piece, what is the mass of this piece?
+                    <ol>
+                        <li><m>(10+h)100\cdot h_i</m>.</li>
+                        <li><m>(10+\Delta h)100\cdot h_i</m>.</li>
+                        <li><m>(10+h_i)100\cdot \Delta h</m>.</li>
+                        <li><m>(10+h_i)100\cdot h</m>.</li>
+                    </ol>
+                </p>
+            </introduction>
+        </activity>
+        
+        
+        <activity xml:id="activity-AI4cone">
+            <introduction>
+                <p>
+                    Consider a cylindrical cone with a base radius of 15 inches and a height of 60 inches.  Suppose the density of the cone is <m>\delta(h)= 15+\sqrt{h}</m> oz/in<m>^3</m>.
+                    <figure>
+                <caption>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</caption>
+                    <image xml:id="conesliced" width="100%">
+                        <description>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw [fill=blue, opacity=0.2] (-2,0) rectangle (2,4);
+                            \draw[blue] (-2,0) -- (2,0) -- (2,4) -- (-2, 4) -- (-2,0);
+                            \draw [fill=blue, opacity=0.2] (-1,4) rectangle (1,8);
+                            \draw[blue] (-1,4) -- (1,4) -- (1,8) -- (-1, 8) -- (-1,4);
+                            \draw (-2,0) -- (2,0) -- (0,8) -- (-2,0);
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (2,0) -- (2,4) node [black,midway,xshift=1.4cm] {\footnotesize
+                            $\Delta h=30$\ in};
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (1,4) -- (1,8) node [black,midway,xshift=1.4cm] {\footnotesize
+                            $\Delta h=30$\ in};
+                            \draw[dashed] (0,8) -- (0,0);
+                            \draw[dashed] (0,0) --node[below]{\tiny $r_1=15$\ in} (2,0);
+                            \draw[dashed] (0,4) --node[below]{\tiny $r_2$} (1,4);
+                            \draw[fill] (0,0) circle (2pt);
+                            \draw (0,0) --node[below]{\tiny $B$} (0,0);
+                            \draw[fill] (2,0) circle (2pt);
+                            \draw (2,0) --node[below right]{\tiny $C$} (2,0);
+                            \draw[fill] (0,4) circle (2pt);
+                            \draw (0,4) --node[below left]{\tiny $B'$} (0,4);
+                            \draw[fill] (1,4) circle (2pt);
+                            \draw (1,4) --node[below right]{\tiny $C'$} (1,4);
+                            \draw[fill] (0,8) circle (2pt);
+                            \draw (0,8) --node[below right]{\tiny $C'$} (0,8);
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-2.25,0) -- (-2.25,8) node [black,midway,xshift=-1cm] {\footnotesize
+                            $60$ in};
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    Using the fact that <m>\Delta ABC, \Delta AB'C'</m> are similar triangles, what is <m>r_2</m>?
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    What is the volume of a cylinder with radius <m>r_1=15</m> in and height <m>30</m> in?
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    What is the volume of a cylinder with radius <m>r_2</m> and height <m>30</m> in?
+                </p>
+            </task>
+            
+        </activity>
+        
+        <activity xml:id="activity-AI4cone2pieces">
+            <introduction>
+                <p>
+                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with 2 cylinders of height 30 in.
+                    <figure>
+                <caption>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</caption>
+                    <image xml:id="conesliced2pieces" width="100%">
+                        <description>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw [fill=blue, opacity=0.2] (-2,0) rectangle (2,4);
+                            \draw[blue] (-2,0) -- (2,0) -- (2,4) -- (-2, 4) -- (-2,0);
+                            \draw [fill=blue, opacity=0.2] (-1,4) rectangle (1,8);
+                            \draw[blue] (-1,4) -- (1,4) -- (1,8) -- (-1, 8) -- (-1,4);
+                            \draw (-2,0) -- (2,0) -- (0,8) -- (-2,0);
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (2,0) -- (2,4) node [black,midway,xshift=1.4cm] {\footnotesize
+                            $\Delta h=30$\ in};
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (1,4) -- (1,8) node [black,midway,xshift=1.4cm] {\footnotesize
+                            $\Delta h=30$\ in};
+                            \draw[dashed] (0,8) -- (0,0);
+                            \draw[dashed] (0,0) --node[below]{\tiny $r_1=15$\ in} (2,0);
+                            \draw[dashed] (0,4) --node[below]{\tiny $r_2$} (1,4);
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-3.25,0) -- (-3.25,8) node [black,midway,xshift=-1cm] {\footnotesize
+                            $60$ in};
+                            \draw (-2,0) -- node[left]{\tiny $h_1=0$\ in} (-2,0);
+                            \draw (-2,4) -- node[left]{\tiny $h_2=30$\ in} (-2,4);
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </introduction>
+            <task>
+                <p>Fill out the following table:
+                    <me>
+                        \begin{array}{|c|c|c|c|}
+                        \hline
+                        h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
+                        \hline
+                        h_2=30\ \text{m} &amp; \delta(30)=15+\sqrt{30}\ \text{oz/in}^3 &amp; \pi(7.5)^2\cdot30\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+                        \hline
+                        h_1=0\ \text{m} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot30\ \text{in}^3 &amp; \\
+                        \hline
+                        \end{array}
+                    </me>
+                
+                
+                </p>
+            </task>
+            <task>
+                <p>
+                    What is the estimated mass of the cone?
+                </p>
+            </task>
+            
+        </activity>
+        
+        <activity xml:id="activity-AI4cone3pieces">
+            <introduction>
+                <p>
+                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with 3 cylinders of height 20 in.
+                    <figure>
+                <caption>15<m>\times</m> 60 cylindrical cone sliced into three pieces.</caption>
+                    <image xml:id="conesliced3pieces" width="100%">
+                        <description>15<m>\times</m> 60 cylindrical cone sliced into three pieces.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw [fill=blue, opacity=0.2] (-2,0) rectangle (2,8/3);
+                            \draw[blue] (-2,0) -- (2,0) -- (2,8/3) -- (-2, 8/3) -- (-2,0);
+                            \draw [fill=blue, opacity=0.2] (-4/3,8/3) rectangle (4/3,16/3);
+                            \draw[blue] (-4/3,8/3) -- (4/3,8/3) -- (4/3,16/3) -- (-4/3, 16/3) -- (-4/3,8/3);
+                            \draw [fill=blue, opacity=0.2] (-2/3,16/3) rectangle (2/3,8);
+                            \draw[blue] (-2/3,16/3) -- (2/3,16/3) -- (2/3,8) -- (-2/3, 8) -- (-2/3,16/3);
+                            \draw (-2,0) -- (2,0) -- (0,8) -- (-2,0);
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (2,0) -- (2,8/3) node [black,midway,xshift=1.4cm] {\footnotesize
+                            $\Delta h=20$\ in};
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (4/3,8/3) -- (4/3,16/3) node [black,midway,xshift=1.4cm] {\footnotesize
+                            $\Delta h=20$\ in};
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (2/3,16/3) -- (2/3,8) node [black,midway,xshift=1.4cm] {\footnotesize
+                            $\Delta h=20$\ in};
+                            \draw[dashed] (0,8) -- (0,0);
+                            \draw[dashed] (0,0) --node[below]{\tiny $r_1=15$\ in} (2,0);
+                            \draw[dashed] (0,8/3) --node[below]{\tiny $r_2=10$\ in} (4/3,8/3);
+                            \draw[dashed] (0,16/3) --node[below]{\tiny $r_3=5$\ in} (2/3,16/3);
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-3.25,0) -- (-3.25,8) node [black,midway,xshift=-1cm] {\footnotesize
+                            $60$ in};
+                            \draw (-2,0) -- node[left]{\tiny $h_1=0$\ in} (-2,0);
+                            \draw (-2,8/3) -- node[left]{\tiny $h_2=20$\ in} (-2,8/3);
+                            \draw (-4/3,16/3) -- node[left]{\tiny $h_3=40$\ in} (-4/3,16/3);
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </introduction>
+            <task>
+                <p>Fill out the following table:
+                    <me>
+                        \begin{array}{|c|c|c|c|}
+                        \hline
+                        h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
+                        \hline
+                        h_2=40\ \text{m} &amp; \delta(40)=15+\sqrt{40}\ \text{oz/in}^3 &amp; \pi(5)^2\cdot20\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+                        \hline
+                        h_2=20\ \text{m} &amp; \delta(20)=15+\sqrt{20}\ \text{oz/in}^3 &amp; \pi(10)^2\cdot20\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+                        \hline
+                        h_1=0\ \text{m} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot20\ \text{in}^3 &amp; \\
+                        \hline
+                        \end{array}
+                    </me>
+                
+                
+                </p>
+            </task>
+            <task>
+                <p>
+                    What is the estimated mass of the cone?
+                </p>
+            </task>
+            
+        </activity>
+        
+        
+        <activity xml:id="activity-AI4conemanypieces">
+            <introduction>
+                <p>
+                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with cylinders of height <m>\Delta H</m>.
+                    <figure>
+                <caption>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</caption>
+                    <image xml:id="coneslicedmanypieces" width="100%">
+                        <description>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw [fill=blue, opacity=0.2] (-1.025,3.9) rectangle (1.025, 4.1);
+                            \draw[blue] (-1.025,3.9) -- (1.025,3.9) -- (1.025,4.1) -- (-1.025, 4.1) -- (-1.025,3.9);
+                            
+                            \draw (-2,0) -- (2,0) -- (0,8) -- (-2,0);
+                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+                            (1.025,3.9) -- (1.025,4.1) node [black,midway,xshift=1.2cm] {\footnotesize
+                            $\Delta h$\ in};
+                            \draw[dashed] (0,8) -- (0,0);
+                            \draw[dashed] (0,3.9) --node[below]{\tiny $r_i$} (1.025,3.9);
+                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-3.25,0) -- (-3.25,8) node [black,midway,xshift=-1cm] {\footnotesize
+                            $60$ in};
+                            \draw (-1.025,3.9) -- node[left]{\tiny $h_i$} (-1.025,3.9);
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    
+                </p>
+                <p>
+                    Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=15+\sqrt{h_i}</m> as the estimate for the density of this cylinder, what is the mass of this cylinder?
+                    <ol>
+                        <li><m>(15+\sqrt{h})\pi r_i^2\cdot \Delta h</m>.</li>
+                        <li><m>(15+\sqrt{h_i})\pi r_i^2\cdot \Delta h</m>.</li>
+                        <li><m>(15+\Delta h)\pi r_i^2\cdot \Delta h_i</m>.</li>
+                        <li><m>(15+\sqrt{h_i})\pi r^2\cdot \Delta h</m>.</li>
+                    </ol>
+                </p>
+            </introduction>
+        </activity>
+        
+        <activity xml:id="fact-AI4discreteform">
+            <introduction>
+                <p>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.
+                    <figure>
+                <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
+                    <image xml:id="Generalsolidsliced" width="100%">
+                        <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{(\x-1)^3-3*(\x-1)^2+5 });
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{\x-5 });    
+                            \draw (0,-5)--(0,1);
+                            \draw (4,-1) -- (4,5);
+                            
+                            \draw[blue] (2,-3)--(2,3)--(2.2,3)--(2.2,-3)--(2,-3);
+                            \draw [fill=blue, opacity=0.2] (2,-3) rectangle (2.2,3);
+                            
+                            \draw(2,-.1)--node[above left]{\tiny$x_i$}(2,.1);
+                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](2,-3) -- (2.2,-3) node[black,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+                <p>If we used prisms of width <m>\Delta x</m> to approximate this solid, what is the mass of the slice associated with <m>x_i?</m>
+                    <ol>
+                        <li><m>A(x)\delta(x)\Delta x</m>.</li>
+                        <li><m>\pi A(x)^2\delta(x_i)\Delta x</m>.</li>
+                        <li><m>A(x_i)\delta(x_i)\Delta x</m>.</li>
+                        <li><m>A(x_i)\delta(x_i)\Delta x_i</m>.</li>
+                    </ol>
+                </p>
+                
+            </introduction>
+        </activity>
+        
+        <fact xml:id="fact-AI4masscomputation">
+            <statement>
+                <p>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represented the <m>x</m> values of this solid.  If one sliced the solid into <m>n</m> pieces of width <m>\Delta x=\frac{b-a}{n}</m>, then one can approximate the mass of the solid by <me>\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x.</me>
+                    <figure>
+                <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
+                    <image xml:id="Solidmassapproximation" width="100%">
+                        <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{(\x)^(0.5) });
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{-1*(\x)^(0.5) });   
+                            \draw (4,-2) -- (4,2);
+                            
+
+                            \foreach \i in {0,...,20}{
+                                \draw (0.2*\i, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {sqrt(0.2*\i)})--(0.2*\i, {sqrt(0.2*\i)})--(0.2*\i, {-1*sqrt(0.2*\i)});
+                                \draw [fill=blue, opacity=0.2] (0.2*\i,{-1*sqrt(0.2*\i)}) rectangle (0.2*\i+0.2,{sqrt(0.2*\i)});
+                            };
+                            
+                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](2,-1.414) -- (2.2,-1.414) node[black,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+                <p>
+                    We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x\right)=\int_a^b A(x)\delta(x) dx.</me>
+                    <figure>
+                <caption>Solid mass.</caption>
+                    <image xml:id="Solidmass" width="100%">
+                        <description>Solid mass.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{(\x)^(0.5) });
+                            \draw plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{-1*(\x)^(0.5) });   
+                            \draw (4,-2) -- (4,2);
+                            
+
+                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
+                              (0, 0)
+                              -- plot ({\x}, {sqrt(\x)})
+                              --(4,-2)
+                              --plot ({\x}, {-1*sqrt(\x)})
+                              -- cycle;
+
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </statement>
+        </fact>
+    
+    
+    </p>
+</section>
+

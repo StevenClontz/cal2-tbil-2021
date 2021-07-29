@@ -40,6 +40,8 @@
         <xsl:apply-templates select="." mode="type-name"/><xsl:text> </xsl:text>
         <xsl:apply-templates select="." mode="number"/><xsl:if test="title">:
         <xsl:value-of select="title"/></xsl:if>
+        <xsl:text> </xsl:text>
+        <xsl:if test="@estimated-time">(~<xsl:value-of select="@estimated-time"/> min)</xsl:if>
     </title>
 </xsl:template>
 

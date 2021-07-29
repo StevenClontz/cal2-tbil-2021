@@ -10,6 +10,7 @@
     <xi:include href="meta/frontmatter.ptx" />
 
     <xi:include href="01-TI/main.ptx" />
+    <xi:include href="02-AI/main.ptx" />  
 
     <xi:include href="meta/backmatter.ptx" />
   </book>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="meta/docinfo.ptx" />
+
+  <book xml:id="cal2">
+    <title>Calculus 2 for Team-Based Inquiry Learning</title>
+    <subtitle>Subset Preview</subtitle>
+      <!-- Use this for a single section -->
+      <chapter>
+          <title>Chapter Title</title>
+          <xi:include href="01-TI/01.ptx"/>
+      </chapter>
+
+      <!-- Use this for a single chapter
+        <xi:include href="01-TI/main.ptx"/>
+        -->
+  </book>
+</pretext>

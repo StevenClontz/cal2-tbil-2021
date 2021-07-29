@@ -3,6 +3,7 @@ output
 
 # assets generated from source
 generated-assets
+generated-assets-subset
 
 # error logs
 .error-schema.log
@@ -13,3 +14,6 @@ error-syntax.log
 # cocalc
 *.term
 !.gitignore
+
+# RATs
+RATs
