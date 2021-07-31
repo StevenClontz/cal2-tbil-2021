@@ -4,7 +4,7 @@
   xmlns:xml="http://www.w3.org/XML/1998/namespace"
 >
 
-<!-- Inserted <xsl:include href="pretext/xsl/pretext-common.xsl"/>-->
+<xsl:include pretext-href="pretext-common.xsl"/>
 
 <xsl:output method="xml" indent="yes"/>
 
@@ -70,10 +70,11 @@
     </slide>
 </xsl:template>
 
-<xsl:template match="task">
-    <li>
+<xsl:template match="task" mode="slideshow-copy">
+    <p>Part <xsl:value-of select="count(preceding-sibling::task)+1"/>.</p>
+    <subslide>
         <xsl:apply-templates select="*" mode="slideshow-copy"/>
-    </li>
+    </subslide>
 </xsl:template>
 
 <!-- Identity template : copy all text nodes, elements and attributes -->
@@ -84,6 +85,18 @@
             <xsl:apply-templates select="@*|node()" mode="slideshow-copy" />
         </xsl:copy>
     </xsl:template>
+
+<xsl:template match="xref" mode="slideshow-copy">
+    <xsl:variable name="target-id">
+        <xsl:call-template name="id-lookup-by-name">
+            <xsl:with-param name="name" select="@ref"/>
+        </xsl:call-template>
+    </xsl:variable>
+    <xsl:variable name="target" select="id($target-id)"/>
+    <xsl:apply-templates select="$target" mode="type-name"/>
+    <xsl:text> </xsl:text>
+    <xsl:apply-templates select="$target" mode="number"/>
+</xsl:template>
 
 <xsl:template match="image" mode="slideshow-copy">
     <xsl:choose>
