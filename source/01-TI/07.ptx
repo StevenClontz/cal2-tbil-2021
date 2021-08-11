@@ -11,7 +11,7 @@
     </objectives>
         <activity estimated-time="99" xml:id="activity-TI7FirstStepTrig">
         <statement>
-            <p>Consider the integral <m>\int e^t tan(e^t) sec^2(e^t)\,dt</m>. Which strategy is the best first step to make progress towards evaluating this integral?</p>
+            <p>Consider the integral <m>\int e^t \tan(e^t) \sec^2(e^t)\,dt</m>. Which strategy is the best first step to make progress towards evaluating this integral?</p>
             <ol label="A">
                 <li><p>The method of substitution</p></li>
                 <li><p>The method of integration by parts</p></li>

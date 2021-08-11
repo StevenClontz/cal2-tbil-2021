@@ -727,7 +727,7 @@
             </statement>
         </activity>
         
-        <activity xml:id="activity-AI4balance">
+        <activity xml:id="activity-AI4balance2">
             <statement>
                 <p>
                     Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg are placed upon it.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.

@@ -9,5 +9,50 @@
             </li>
         </ul>
     </objectives>
-    <p>foo</p>
+        <activity estimated-time="99" xml:id="activity-TI5BestSub">
+        <statement>
+            <p>Consider the integral <m>\int \sqrt{16-9x^2} \,dx</m>. Which of the following substitutions appears most promising to find an antiderivaitve for this integral?</p>
+            <ol label="A">
+                <li><p><m>u=16-9x^2</m></p></li>
+                <li><p><m>u=9x^2</m></p></li>
+                <li><p><m>u=3x</m></p></li>
+                <li><p><m>u=x</m></p></li>
+            </ol>
+        </statement>
+    </activity>
+        <activity estimated-time="99" xml:id="activity-TI5BestMatch">
+        <statement>
+            <p>The form of which entry from <xref ref="integral-table"/> best matches the form of the integral <m>\int \sqrt{16-9x^2} \,dx</m>?</p>
+            <ol label="A">
+                <li><p>b.</p></li>
+                <li><p>c.</p></li>
+                <li><p>g.</p></li>
+                <li><p>h.</p></li>
+            </ol>
+        </statement>
+    </activity>
+        <activity estimated-time="99" xml:id="activity-TI5BestMatchSeries">
+        <statement>
+            <p>For each of the following integrals, identify which entry from Appendix A best matches the form of that integral.</p>
+            <ol label="A">
+                <li><p><m>\int \frac{25x^2}{\sqrt{25x^2-9}} \,dx</m></p></li>
+                <li><p><m>\int \frac{81x^2}{\sqrt{16-x^2}} \,dx</m></p></li>
+                <li><p><m>\int \frac{1}{10x \sqrt{100-x^2}} \,dx</m></p></li>
+                <li><p><m>\int \frac{7}{\sqrt{25x^2-9}} \,dx</m></p></li>
+                <li><p><m>\int \frac{1}{\sqrt{25x^2+16}} \,dx</m></p></li>
+            </ol>
+        </statement>
+    </activity>
+        <activity estimated-time="99" xml:id="activity-TI5BadSubChoice">
+        <statement>
+            <p>Consider the integral <m>\int \frac{1}{\sqrt{64-9x^2}} \,dx</m>. Suppose we proceed using AA. We choose <m>u^2=x^2</m> and <m>a^2=64</m>.</p>
+            <ol label="A">
+                <li><p>What is <m>u</m>?</p></li>
+                <li><p>What is <m>du</m>?</p></li>
+                <li><p>What is <m>a</m>?</p></li>
+                <li><p>What do you get when plugging these pieces into the integral <m>\int \frac{1}{\sqrt{64-9x^2}} \,dx</m>?</p></li>
+                <li><p>Is this a good substitution choice or a bad substitution choice?</p></li>
+            </ol>
+        </statement>
+    </activity>
 </section>
