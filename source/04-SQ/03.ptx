@@ -13,7 +13,7 @@
     <activity xml:id="activity-SQ3intropartialsumsgeometric">
         <introduction>
             <p>
-                Consider the sequence <m>\displaystyle a_n=\frac{1}{2^n}, \{a_n\}=\frac{1}{2},\frac{1}{4},\ldots</m>.
+                Consider the sequence <m>\displaystyle \{a_n\}_{n=0}^\infty=\left\{\frac{1}{2^n}\right\}_{n=0}^\infty, \{a_n\}=1, \frac{1}{2},\frac{1}{4},\ldots</m>.
             </p>
         </introduction>
         <task>
@@ -23,13 +23,13 @@
         </task>
         <task>
             <p>
-                <ul>
-                    <li><m>a_1.</m></li>
-                    <li><m>a_1+a_2.</m></li>
-                    <li><m>a_1+a_2+a_3.</m></li>
-                    <li><m>a_1+a_2+a_3+a_4.</m></li>
-                    <li><m>a_1+a_2+a_3+a_4+a_5.</m></li>
-                </ul>
+                <ol>
+                    <li><m>a_0.</m></li>
+                    <li><m>a_0+a_1.</m></li>
+                    <li><m>a_0+a_1+a_2.</m></li>
+                    <li><m>a_0+a_1+a_2+a_3.</m></li>
+                    <li><m>a_0+a_1+a_2+a_3+a_4.</m></li>
+                </ol>
             </p>
         </task>
     </activity>
@@ -37,7 +37,7 @@
     <activity xml:id="activity-SQ3intropartialsumsharmonic">
         <introduction>
             <p>
-                Consider the sequence <m>\displaystyle a_n=\frac{1}{n}, \{a_n\}=1,\frac{1}{2},\ldots</m>.
+                Consider the sequence <m>\displaystyle \{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}\right\}_{n=1}^\infty, \{a_n\}=1,\frac{1}{2},\ldots</m>.
             </p>
         </introduction>
         <task>
@@ -47,13 +47,13 @@
         </task>
         <task>
             <p>
-                <ul>
+                <ol>
                     <li><m>a_1.</m></li>
                     <li><m>a_1+a_2.</m></li>
                     <li><m>a_1+a_2+a_3.</m></li>
                     <li><m>a_1+a_2+a_3+a_4.</m></li>
                     <li><m>a_1+a_2+a_3+a_4+a_5.</m></li>
-                </ul>
+                </ol>
             </p>
         </task>
     </activity>
@@ -61,7 +61,7 @@
         <definition xml:id="definition-SQ3partialsumsequence">
             <statement>
                 <p>
-                    Given a sequence <m>\{a_n\}</m> define the <em><m>k^{\text{th}}</m> partial sum</em> of <m>\{a_n\}</m> to be <me>A_k=\sum_{i=1}^k A_i=A_1+A_2+\cdots+A_k.</me>  Note that <m>\{A_n\}=A_1, A_2, A_3, \ldots</m> is itself a sequence called the <em>partial sum sequence</em>.
+                    Given a sequence <m>\{a_n\}_{n=0}^\infty</m> define the <em><m>k^{\text{th}}</m> partial sum</em> of <m>\{a_n\}</m> to be <me>A_k=\sum_{i=0}^k A_i=A_1+A_2+\cdots+A_k.</me>  Note that <m>\{A_n\}=A_0, A_1, A_2, \ldots</m> is itself a sequence called the <em>partial sum sequence</em>.
                 </p>
             </statement>
         </definition>
@@ -71,10 +71,10 @@
                 <p>
                      Let <m>a_n=\frac{2}{3^n}.</m> Find the following partial sums:
                     <ol>
+                        <li><m>A_0</m>.</li>
                         <li><m>A_1</m>.</li>
                         <li><m>A_2</m>.</li>
                         <li><m>A_3</m>.</li>
-                        <li><m>A_4</m>.</li>
                     </ol>
                 </p>
                  
@@ -83,9 +83,9 @@
         
         <activity xml:id="activity-SQ3closedformmotivation">
             <statement>
-                <p>Consider the sequence <m>a_n=\frac{2}{3^n}.</m> What is the best way to fin the 100th partial sum <m>A_{100}</m>?
+                <p>Consider the sequence <m>a_n=\frac{2}{3^n}.</m> What is the best way to find the 100th partial sum <m>A_{100}</m>?
                     <ol>
-                        <li>Sum the first 100 terms of the sequence <m>\{a_n\}</m>.</li>
+                        <li>Sum the first 101 terms of the sequence <m>\{a_n\}</m>.</li>
                         <li>Find a closed form for the partial sum sequence <m>\{A_n\}</m>.</li>
                     </ol>
                 </p>
@@ -96,15 +96,241 @@
             <statement>
                 <p>Expand the following polynomial products, then reduce to as few summands as possible:
                     <ol>
-                        <li><m>(1-x)(x^2+x)</m>.</li>
-                        <li><m>(1-x)(x^3+x^2+x)</m>.</li>
-                        <li><m>(1-x)(x^4+x^3+x^2+x)</m>.</li>
+                        <li><m>(1-x)(1+x+x^2)</m>.</li>
+                        <li><m>(1-x)(1+x+x^2+x^3)</m>.</li>
+                        <li><m>(1-x)(1+x+x^2+x^3+x^4)</m>.</li>
                     </ol>
                 </p>
             </statement>
         </activity>
         
-        <activity xml:id="activity-SQ3polysumform">
+        <activity xml:id="activity-SQ3simplifyingsum">
+            <statement>
+                <p>Suppose <m>\displaystyle S_5=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}.</m>  Without actually computing this sum, which of the following is equal to <m>\left(1-\frac{1}{2}\right)S_5</m>?
+                    <ol>
+                        <li><m>\displaystyle\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}-\frac{1}{64}</m>.</li>
+                        <li><m>\displaystyle1-\frac{1}{64}</m>.</li>
+                        <li><m>\displaystyle1-\frac{1}{2}-\frac{1}{4}-\frac{1}{8}-\frac{1}{16}-\frac{1}{32}</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-SQ3particularclosedform">
+            <introduction>
+                <p>
+                    Recall from <xref ref="activity-SQ3closedformmotivation"/> that <m>\displaystyle A_{100}=2+\frac{2}{3}+\frac{2}{3^2}+\frac{2}{3^3}+\frac{2}{3^4}+\cdots+\frac{2}{3^{100}}=2\left(1+\frac{1}{3}+\frac{1}{3^2}+\frac{1}{3^3}+\frac{1}{3^4}+\cdots+\frac{1}{3^{100}}\right).</m> 
+                </p>
+            </introduction>
+            <task>
+                <p>
+                     Which of the following is equal to <m>\displaystyle\left(1-\frac{1}{3}\right)A_{100}</m>?
+                    <ol>
+                        <li><m>\displaystyle1-\frac{1}{3^{101}}</m>.</li>
+                        <li><m>\displaystyle1-\frac{1}{3^{100}}</m>.</li>
+                        <li><m>\displaystyle2\left(1-\frac{1}{3^{101}}\right)</m>.</li>
+                        <li><m>\displaystyle2\left(1-\frac{1}{3^{100}}\right)</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Based on your previous choice, write out an expression for <m>A_{100}</m>.
+                </p>
+            </task>
+                    
+        </activity>
+        
+        <activity xml:id="activity-SQ3nthclosedform">
+            <introduction>
+                <p>
+                    Suppose that <m>\{b_n\}_{n=0}^\infty=\{(-2)^n\}=1,-2,4,-8,\ldots</m>.  Let <m>B_n=\displaystyle\sum_{i=0}^n b_i</m> be the <m>n</m>th partial sum of <m>\{b_n\}</m>.  
+                </p>
+            </introduction>
+            <task>
+                <p>
+                     Find simple expressions for the following:
+                    <ol>
+                        <li><m>(1-(-2))B_{10}</m>.</li>
+                        <li><m>(1-(-2))B_{30}</m>.</li>
+                        <li><m>(1-(-2))B_{n}</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Based on your previous answers, solve for the following:
+                    <ol>
+                        <li><m>B_{10}</m>.</li>
+                        <li><m>B_{30}</m>.</li>
+                        <li><m>B_{n}</m>.</li>
+                    </ol>
+                </p>
+            </task>
+                    
+        </activity>
+        
+        <activity xml:id="activity-SQ3closedformgeomhandsoff">
+            <introduction>
+                <p>
+                    Consider the following sequences:
+                    <ol>
+                        <li><m>\displaystyle\{a_n\}_{n=0}^\infty=\left\{\left(-\frac{2}{3}\right)^n\right\}_{n=0}^\infty</m>.</li>
+                        <li><m>\displaystyle\{b_n\}_{n=0}^\infty=\left\{2\cdot\left(-1\right)^n\right\}_{n=0}^\infty</m>.</li>
+                        <li><m>\displaystyle\{c_n\}_{n=0}^\infty=\left\{-3\cdot \left(1.2\right)^n\right\}_{n=0}^\infty</m>.</li>
+                    </ol>
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    Find the closed form for the <m>n</m>th partial sum for the following geometric sequences.
+                    <ol>
+                        <li><m>A_n=\displaystyle\sum_{i=0}^n a_i=\displaystyle\sum_{i=0}^n \left(-\frac{2}{3}\right)^n</m>.</li>
+                        <li><m>B_n=\displaystyle\sum_{i=0}^n b_i=\displaystyle\sum_{i=0}^n 2\cdot\left(-1\right)^n</m>.</li>
+                        <li><m>C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^n</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    Given the closed forms you found in the previous task, which of the following limits are defined?  If defined, what is the limit?
+                    <ol>
+                        <li><m>\displaystyle\lim_{n\to\infty}A_n</m>.</li>
+                        <li><m>\displaystyle\lim_{n\to\infty}B_n</m>.</li>
+                        <li><m>\displaystyle\lim_{n\to\infty}C_n</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            
+        </activity>
+        
+        <definition xml:id="definition-SQ3serieslimit">
+            <statement>
+                <p>
+                    Given a sequence <m>a_n</m>, we define the limit of the series <me>\displaystyle\sum_{n=k}^\infty a_n:=\lim_{n\to \infty} A_n</me> where <m>A_n=\displaystyle \sum_{i=k}^n a_i</m>.  We call <m>\displaystyle\sum_{n=k}^\infty a_n</m> an <em>infinite series</em>.
+                </p>
+            </statement>
+        </definition>
+        
+        <activity xml:id="activity-SQ3geomserieslimit">
+            <statement>
+                <p>
+                    For each of the following series, find the limit if it exists:
+                    <ol>
+                        <li><m>\displaystyle\sum_{n=0}^\infty 3(0.8)^n</m>.</li>
+                        <li><m>\displaystyle\sum_{n=0}^\infty 2\left(\frac{5}{4}\right)^n</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-SQ3telescopingpartialsums">
+            <statement>
+                <p>
+                    Let <m>\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}=1-\frac{1}{2}, \frac{1}{2}-\frac{1}{3}, \frac{1}{3}-\frac{1}{4},\ldots</m>.  Let <m>\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)</m>.
+                </p>
+                <p>
+                    Which of the following is the best strategy for evaluating <m>\displaystyle A_{4}=\left(1-\frac{1}{2} \right)+\left(\frac{1}{2}-\frac{1}{3} \right)+\left(\frac{1}{3}-\frac{1}{4} \right)+\left(\frac{1}{4}-\frac{1}{5} \right)</m>?
+                    <ol>
+                        <li>Compute <m>\displaystyle A_{4}=\left(1-\frac{1}{2} \right)+\left(\frac{1}{2}-\frac{1}{3} \right)+\left(\frac{1}{3}-\frac{1}{4} \right)+\left(\frac{1}{4}-\frac{1}{5} \right)=\frac{1}{2}+\frac{1}{6}+\frac{1}{12}+\frac{1}{20}</m>, then evaluate the sum.</li>
+                        <li>Rewrite <m>\displaystyle A_{4}=\left(1-\frac{1}{2} \right)+\left(\frac{1}{2}-\frac{1}{3} \right)+\left(\frac{1}{3}-\frac{1}{4} \right)+\left(\frac{1}{4}-\frac{1}{5} \right)=1+\left(-\frac{1}{2}+\frac{1}{2}\right)+\left(-\frac{1}{3}+\frac{1}{3}\right)+\left(-\frac{1}{4}+\frac{1}{4}\right)-\frac{1}{5}</m>, then simplify.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-SQ3telescopingpartialsumsclosed">
+            <statement>
+                <p>
+                    Recall from <xref ref="activity-SQ3telescopingpartialsums"/> that <m>\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}</m> and <m>\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)</m>.
+                </p>
+                <p>
+                    Compute the following
+                    <ol>
+                        <li><m>A_3</m>.</li>
+                        <li><m>A_{10}</m>.</li>
+                        <li><m>A_{100}</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-SQ3telescopingclosedform">
+            <statement>
+                <p>
+                    Recall from <xref ref="activity-SQ3telescopingpartialsums"/> that <m>\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}</m> and <m>\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)</m>.
+                </p>
+                <p>
+                    Which of the following is equal to <m>A_n</m>?
+                    <ol>
+                        <li><m>n-\frac{1}{n+1}</m>.</li>
+                        <li><m>1-\frac{1}{n}</m>.</li>
+                        <li><m>1-\frac{1}{n+1}</m>.</li>
+                        <li><m>1-\frac{1}{i}</m>.</li>
+                        <li><m>1-\frac{1}{i+1}</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <definition xml:id="definition-SQ3telescoping">
+            <statement>
+                <p>
+                    Given a sequence <m>\{x_n\}_1^\infty</m> and a sequence of the form <m>\{s_n\}_1^\infty:=\{x_n-x_{n+1}\}_1^\infty</m>  we call the series <m>S_n=\displaystyle\sum_{i=1}^n s_i=\sum_{i=1}^n(x_i-x_{i+1})</m> to be a <em>telescoping series</em>.
+                </p>
+            </statement>
+        </definition>
+        
+        <activity xml:id="activity-SQ3generaltelescoping">
+            <statement>
+                <p>
+                    Given a telescoping series <m>S_n=\displaystyle\sum_{i=1}^n s_i=\sum_{i=1}^n(x_i-x_{i+1})</m>, find:
+                    <ol>
+                        <li><m>S_2</m>.</li>
+                        <li><m>S_{10}</m>.</li>
+                        <li><m>S_n</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        
+        <activity xml:id="activity-SQ3telescopinghandsoff">
+            <task>
+                <p>
+                    For each of the following telescoping series, find a closed form.
+                    <ol>
+                        <li><m>\displaystyle\sum_{i=1}^n (2^{-i}-(2^{-i-1}))</m>.</li>
+                        <li><m>\displaystyle\sum_{i=1}^n (i^2-(i+1)^2)</m>.</li>
+                        <li><m>\displaystyle\sum_{i=1}^n \left( \frac{1}{2i+1}-\frac{1}{2i+3}\right)</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Determine if the following converge, and if so, to what value?
+                    <ol>
+                        <li><m>\displaystyle\sum_{i=1}^\infty (2^{-i}-(2^{-i-1}))</m>.</li>
+                        <li><m>\displaystyle\sum_{i=1}^\infty (i^2-(i+1)^2)</m>.</li>
+                        <li><m>\displaystyle\sum_{i=1}^\infty \left( \frac{1}{2i+1}-\frac{1}{2i+3}\right)</m>.</li>
+                    </ol>
+                </p>
+            </task>
+        </activity>
+        
+        
+        
+        
+        
+        
+        
+        <!--<activity xml:id="activity-SQ3polysumform">
             <statement>
                 <p>Based on what you observed in <xref ref="activity-SQ3polyproducts"/>, which of the following is equivalent to <m>x+x_2+x_3+\cdots+x^n</m>?
                     <ol>
@@ -259,7 +485,7 @@
                 </p>
             </statement>
             
-        </activity>
+        </activity>-->
         
         
     
