@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-15T20:45:37Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal2 Sequences and Series (SQ)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 2 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AI5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="cal1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="SQ3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AI5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="cal1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="SQ3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Density, Mass, and Center of Mass (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5">Physics Applications (AI5)</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="SQ.html" data-scroll="SQ"><span class="codenumber">3</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ3.html" data-scroll="SQ3">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4">Geometric Series (SQ4)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6">Comparison Tests (SQ6)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="SQ"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">3</span> <span class="title">Sequences and Series (SQ)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-14"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<div class="introduction" id="introduction-36">
+<p id="p-467">How do we use various techniques to integrate less simple functions?</p>
+<p id="p-468">By the end of this chapter, you should be able to...</p>
+</div>
+<ol class="decimal">
+<li id="li-366"><p id="p-469">Define and use explicit and recursive formulas for sequences.</p></li>
+<li id="li-367"><p id="p-470">Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.</p></li>
+<li id="li-368"><p id="p-471">Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.</p></li>
+<li id="li-369"><p id="p-472">Determine if a geometric series converges, and if so, the value it converges to.</p></li>
+<li id="li-370"><p id="p-473">Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.</p></li>
+<li id="li-371"><p id="p-474">Use the direct comparison and limit comparison tests to determine if a series converges or diverges.</p></li>
+<li id="li-372"><p id="p-475">Use the ratio and root tests to determine if a series converges or diverges.</p></li>
+<li id="li-373"><p id="p-476">Determine if a series converges absolutely or conditionally.</p></li>
+</ol></article><nav class="summary-links"><ul>
+<li><a href="SQ3.html"><span class="codenumber">3.1</span> <span class="title">Partial Sum Sequence (SQ3)</span></a></li>
+<li><a href="SQ4.html"><span class="codenumber">3.2</span> <span class="title">Geometric Series (SQ4)</span></a></li>
+<li><a href="SQ6.html"><span class="codenumber">3.3</span> <span class="title">Comparison Tests (SQ6)</span></a></li>
+</ul></nav></section></div></main>
+</div>
+</body>
+</html>
