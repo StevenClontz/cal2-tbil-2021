@@ -479,7 +479,7 @@
         </fact>
         
         
-        <activity xml:id="activity=SQ6useDCT">
+        <activity xml:id="activity-SQ6useDCT">
             <introduction>
                 <p>
                     Suppose we wish to determine if <m>\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}</m> converged  using <xref ref="fact-SQ6directcomparisontest"/>.
@@ -501,7 +501,7 @@
         </activity>
         
         
-        <activity xml:id="activity=SQ6useDCT">
+        <activity xml:id="activity-SQ6useDCT2">
             <introduction>
                 <p>
                     Suppose we wish to determine if <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2+5}</m> converged  using <xref ref="fact-SQ6directcomparisontest"/>.
