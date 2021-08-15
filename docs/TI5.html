@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-11T15:14:01Z       *-->
+<!--*       on 2021-08-15T20:37:44Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -101,6 +101,13 @@
 <li><a href="AI5.html" data-scroll="AI5">Physics Applications (AI5)</a></li>
 </ul>
 </li>
+<li class="link">
+<a href="TI.html" data-scroll="TI"><span class="codenumber">3</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ3.html" data-scroll="SQ3">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4">Geometric Series (SQ4)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6">Comparison Tests (SQ6)</a></li>
+</ul>
+</li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
 <li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
 <li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
@@ -111,45 +118,90 @@
 <span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Tables of Integrals (TI5)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-6"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-106"><p id="p-136">I can integrate functions using a table of integrals.</p></li></ul></article><article class="activity project-like" id="activity-TI5BestSub"><h6 class="heading">
+<ul class="disc"><li id="li-152"><p id="p-210">I can integrate functions using a table of integrals.</p></li></ul></article><article class="activity project-like" id="activity-TI5BestSub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
 </h6>
-<p id="p-137">Consider the integral \(\int \sqrt{16-9x^2} \,dx\text{.}\) Which of the following substitutions appears most promising to find an antiderivaitve for this integral?</p>
+<p id="p-211">Consider the integral \(\int \sqrt{16-9x^2} \,dx\text{.}\) Which of the following substitutions appears most promising to find an antiderivaitve for this integral?</p>
 <ol class="upper-alpha">
-<li id="li-107"><p id="p-138">\(\displaystyle u=16-9x^2\)</p></li>
-<li id="li-108"><p id="p-139">\(\displaystyle u=9x^2\)</p></li>
-<li id="li-109"><p id="p-140">\(\displaystyle u=3x\)</p></li>
-<li id="li-110"><p id="p-141">\(\displaystyle u=x\)</p></li>
+<li id="li-153"><p id="p-212">\(\displaystyle u=16-9x^2\)</p></li>
+<li id="li-154"><p id="p-213">\(\displaystyle u=9x^2\)</p></li>
+<li id="li-155"><p id="p-214">\(\displaystyle u=3x\)</p></li>
+<li id="li-156"><p id="p-215">\(\displaystyle u=x\)</p></li>
 </ol></article><article class="activity project-like" id="activity-TI5BestMatch"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
 </h6>
-<p id="p-142">The form of which entry from <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a> best matches the form of the integral \(\int \sqrt{16-9x^2} \,dx\text{?}\)</p>
+<p id="p-216">The form of which entry from <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a> best matches the form of the integral \(\int \sqrt{16-9x^2} \,dx\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-111"><p id="p-143">b.</p></li>
-<li id="li-112"><p id="p-144">c.</p></li>
-<li id="li-113"><p id="p-145">g.</p></li>
-<li id="li-114"><p id="p-146">h.</p></li>
+<li id="li-157"><p id="p-217">b.</p></li>
+<li id="li-158"><p id="p-218">c.</p></li>
+<li id="li-159"><p id="p-219">g.</p></li>
+<li id="li-160"><p id="p-220">h.</p></li>
 </ol></article><article class="activity project-like" id="activity-TI5BestMatchSeries"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
 </h6>
-<p id="p-147">For each of the following integrals, identify which entry from Appendix A best matches the form of that integral.</p>
+<p id="p-221">For each of the following integrals, identify which entry from <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a> best matches the form of that integral.</p>
 <ol class="upper-alpha">
-<li id="li-115"><p id="p-148">\(\displaystyle \int \frac{25x^2}{\sqrt{25x^2-9}} \,dx\)</p></li>
-<li id="li-116"><p id="p-149">\(\displaystyle \int \frac{81x^2}{\sqrt{16-x^2}} \,dx\)</p></li>
-<li id="li-117"><p id="p-150">\(\displaystyle \int \frac{1}{10x \sqrt{100-x^2}} \,dx\)</p></li>
-<li id="li-118"><p id="p-151">\(\displaystyle \int \frac{7}{\sqrt{25x^2-9}} \,dx\)</p></li>
-<li id="li-119"><p id="p-152">\(\displaystyle \int \frac{1}{\sqrt{25x^2+16}} \,dx\)</p></li>
-</ol></article><article class="activity project-like" id="activity-TI5BadSubChoice"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
+<li id="li-161"><p id="p-222">\(\displaystyle \int \frac{25x^2}{\sqrt{25x^2-9}} \,dx\)</p></li>
+<li id="li-162"><p id="p-223">\(\displaystyle \int \frac{81x^2}{\sqrt{16-x^2}} \,dx\)</p></li>
+<li id="li-163"><p id="p-224">\(\displaystyle \int \frac{1}{10x \sqrt{100-x^2}} \,dx\)</p></li>
+<li id="li-164"><p id="p-225">\(\displaystyle \int \frac{7}{\sqrt{25x^2-9}} \,dx\)</p></li>
+<li id="li-165"><p id="p-226">\(\displaystyle \int \frac{1}{\sqrt{25x^2+16}} \,dx\)</p></li>
+</ol></article><article class="example example-like" id="example-5"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
 </h6>
-<p id="p-153">Consider the integral \(\int \frac{1}{\sqrt{64-9x^2}} \,dx\text{.}\) Suppose we proceed using AA. We choose \(u^2=x^2\) and \(a^2=64\text{.}\)</p>
+<p id="p-227">Here is how one might write out the explanation of how to find \(\int \frac{3}{x\sqrt{49x^2-4}} \,dx\) from start to finish:</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{3}{x\sqrt{49x^2-4}} \,dx &amp;&amp;\text{Let }&amp;u^2=49x^2\\
+&amp;&amp;\text{Let }&amp;a^2=4                \\
+&amp;&amp;&amp; u = 7x\\
+&amp;&amp;&amp; \,du = 7\,dx\\
+&amp;&amp;&amp; \frac{1}{7}\,du = \,dx\\
+&amp;&amp;&amp; a = 2\\
+\int \frac{3}{x\sqrt{49x^2-4}} \,dx &amp;= 3\int \frac{1}{x\sqrt{49x^2-4}} (\,dx)\\
+&amp;= 3\int \frac{1}{\frac{u}{7}\sqrt{u^2-a^2}} (\frac{1}{7}\,du)\\
+&amp;= 3\int \frac{1}{u\sqrt{u^2-a^2}} \,du &amp; \text{which best matches f.}\\
+&amp;= 3(\frac{1}{a}\arcsec(\frac{u}{a}))+C\\
+&amp;= \frac{3}{2}\arcsec(\frac{7x}{2})+C
+\end{align*}
+</div></article><article class="activity project-like" id="activity-63"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
+</h6>
+<p id="p-228">Which step of the previous example do you think was the most important?</p>
 <ol class="upper-alpha">
-<li id="li-120"><p id="p-154">What is \(u\text{?}\)</p></li>
-<li id="li-121"><p id="p-155">What is \(du\text{?}\)</p></li>
-<li id="li-122"><p id="p-156">What is \(a\text{?}\)</p></li>
-<li id="li-123"><p id="p-157">What do you get when plugging these pieces into the integral \(\int \frac{1}{\sqrt{64-9x^2}} \,dx\text{?}\)</p></li>
-<li id="li-124"><p id="p-158">Is this a good substitution choice or a bad substitution choice?</p></li>
-</ol></article></section></div></main>
+<li id="li-166"><p id="p-229">Choosing \(u^2=49x^2\) and \(a^2=4\text{.}\)</p></li>
+<li id="li-167"><p id="p-230">Finding \(u=7x\text{,}\) \(du=7\,dx\text{,}\) \(\frac{1}{7}\,du=\,dx\text{,}\) and \(a=2\text{.}\)</p></li>
+<li id="li-168"><p id="p-231">Substituting \(\frac{3}{x\sqrt{49x^2-4}} \,dx\) with \(3\int \frac{1}{u\sqrt{u^2-a^2}} \,du\) and finding the best match of f from <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a>.</p></li>
+<li id="li-169"><p id="p-232">Integrating \(3\int \frac{1}{u\sqrt{u^2-a^2}} \,du=3(\frac{1}{a}\arcsec(\frac{u}{a}))+C\text{.}\)</p></li>
+<li id="li-170"><p id="p-233">Unsubstituting \(3(\frac{1}{a}\arcsec(\frac{u}{a}))+C\) to get \(\frac{3}{2}\arcsec(\frac{7x}{2})+C\text{.}\)</p></li>
+</ol></article><article class="activity project-like" id="activity-TI5BadSubChoice"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.6</span><span class="period">.</span>
+</h6>
+<p id="p-234">Consider the integral \(\int \frac{1}{\sqrt{64-9x^2}} \,dx\text{.}\) Suppose we proceed using <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a>. We choose \(u^2=x^2\) and \(a^2=64\text{.}\)</p>
+<ol class="upper-alpha">
+<li id="li-171"><p id="p-235">What is \(u\text{?}\)</p></li>
+<li id="li-172"><p id="p-236">What is \(du\text{?}\)</p></li>
+<li id="li-173"><p id="p-237">What is \(a\text{?}\)</p></li>
+<li id="li-174"><p id="p-238">What do you get when plugging these pieces into the integral \(\int \frac{1}{\sqrt{64-9x^2}} \,dx\text{?}\)</p></li>
+<li id="li-175"><p id="p-239">Is this a good substitution choice or a bad substitution choice?</p></li>
+</ol></article><article class="activity project-like" id="activity-TI5BetterSubChoice"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span>
+</h6>
+<p id="p-240">Consider the integral \(\int \frac{1}{\sqrt{64-9x^2}} \,dx\) once more. Suppose we still proceed using <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a>. However, this time we choose \(u^2=9x^2\) and \(a^2=64\text{.}\) Do you prefer this choice of substitution or the choice we made in <a class="xref" data-knowl="./knowl/activity-TI5BadSubChoice.html" title="Activity 1.5.6">Activity 1.5.6</a>?</p>
+<ol class="upper-alpha">
+<li id="li-176"><p id="p-241">We prefer the substitution choice of \(u^2=x^2\) and \(a^2=64\text{.}\)</p></li>
+<li id="li-177"><p id="p-242">We prefer the substitution choice of \(u^2=9x^2\) and \(a^2=64\text{.}\)</p></li>
+<li id="li-178"><p id="p-243">We do not have a strong preference, since these substitution choices are of the same difficulty.</p></li>
+</ol></article><article class="activity project-like" id="activity-TI5matchE"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
+</h6>
+<p id="p-244">Evaluate the integral \(\int \frac{7}{x\sqrt{4+49x^2}} \,dx\text{.}\) Be sure to specify which entry is used from <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a> at the corresponding step.</p></article><article class="activity project-like" id="activity-TI5matchC"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.9</span><span class="period">.</span>
+</h6>
+<p id="p-245">Evaluate the integral \(\int 8\sqrt{4x^2-81} \,dx\text{.}\) Be sure to specify which entry is used from <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a> at the corresponding step.</p></article><article class="activity project-like" id="activity-TI5matchK"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.10</span><span class="period">.</span>
+</h6>
+<p id="p-246">Evaluate the integral \(\int \frac{3}{5x^2\sqrt{36-49x^2}} \,dx\text{.}\) Be sure to specify which entry is used from <a href="integral-table.html" class="internal" title="Appendix A: A Short Table of Integrals">Appendix A</a> at the corresponding step.</p></article></section></div></main>
 </div>
 </body>
 </html>
