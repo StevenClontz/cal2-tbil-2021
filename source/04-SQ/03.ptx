@@ -63,7 +63,7 @@
         <definition xml:id="definition-SQ3partialsumsequence">
             <statement>
                 <p>
-                    Given a sequence <m>\{a_n\}_{n=0}^\infty</m> define the <em><m>k^{\text{th}}</m> partial sum</em> of <m>\{a_n\}</m> to be <me>A_k=\sum_{i=0}^k A_i=A_1+A_2+\cdots+A_k.</me>  Note that <m>\{A_n\}=A_0, A_1, A_2, \ldots</m> is itself a sequence called the <em>partial sum sequence</em>.
+                    Given a sequence <m>\{a_n\}_{n=0}^\infty</m> define the <em><m>k^{\text{th}}</m> partial sum</em> of <m>\{a_n\}</m> to be <me>A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.</me>  Note that <m>\{A_n\}=A_0, A_1, A_2, \ldots</m> is itself a sequence called the <em>partial sum sequence</em>.
                 </p>
             </statement>
         </definition>
