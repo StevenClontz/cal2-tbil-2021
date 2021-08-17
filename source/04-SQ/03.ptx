@@ -306,11 +306,11 @@
         <activity xml:id="activity-SQ3telescopinghandsoff">
             <task>
                 <p>
-                    For each of the following telescoping series, find a closed form.
+                    For each of the following telescoping series, find the closed form for the <m>n</m>th partial sum.
                     <ol label="A">
-                        <li><m>\displaystyle\sum_{i=1}^n (2^{-i}-(2^{-i-1}))</m>.</li>
-                        <li><m>\displaystyle\sum_{i=1}^n (i^2-(i+1)^2)</m>.</li>
-                        <li><m>\displaystyle\sum_{i=1}^n \left( \frac{1}{2i+1}-\frac{1}{2i+3}\right)</m>.</li>
+                        <li><m>S_n=\displaystyle\sum_{i=1}^n (2^{-i}-(2^{-i-1}))</m>.</li>
+                        <li><m>S_n=\displaystyle\sum_{i=1}^n (i^2-(i+1)^2)</m>.</li>
+                        <li><m>S_n=\displaystyle\sum_{i=1}^n \left( \frac{1}{2i+1}-\frac{1}{2i+3}\right)</m>.</li>
                     </ol>
                 </p>
             </task>
