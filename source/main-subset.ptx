@@ -9,9 +9,7 @@
       <!-- Use this for a single section -->
       <chapter>
           <title>Chapter Title</title>
-          <xi:include href="04-SQ/03.ptx"/>
-          <xi:include href="04-SQ/04.ptx"/>
-          <xi:include href="04-SQ/06.ptx"/>
+          <xi:include href="05-PS/01.ptx"/>
       </chapter>
 
       <!-- Use this for a single chapter

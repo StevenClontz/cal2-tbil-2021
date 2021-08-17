@@ -492,6 +492,20 @@
                 </p>
             </task>
             
+            
+            <task>
+                <p>
+                    For which value <m>k</m> is <m>\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k</m>?
+                    <ol>
+                        <li><m>\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k=0</m>.</li>
+                        <li><m>\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k=1</m>.</li>
+                        <li><m>\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k=2</m>.</li>
+                        <li><m>\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k=3</m>.</li>
+                        <li>There is no <m>k</m> for which <m>\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            
             <task>
                 <p>
                     Use <xref ref="fact-SQ6directcomparisontest"/> and compare <m>\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}</m> to <m>\displaystyle \sum_{n=1}^\infty \frac{1}{3n}</m> to determine if <m>\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}</m> converges or diverges.
