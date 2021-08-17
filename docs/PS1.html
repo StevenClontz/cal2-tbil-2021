@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-17T17:50:38Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal2 Power Series (PS1)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 2 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="PS.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="PS.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="PS.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="PS.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Density, Mass, and Center of Mass (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5">Physics Applications (AI5)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ"><span class="codenumber">3</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ3.html" data-scroll="SQ3">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4">Geometric Series (SQ4)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6">Comparison Tests (SQ6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS"><span class="codenumber">4</span> <span class="title">Power Series (PS)</span></a><ul><li><a href="PS1.html" data-scroll="PS1" class="active">Power Series (PS1)</a></li></ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="PS1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Power Series (PS1)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-19"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-532"><p id="p-575">Approximate functions defined as power series.</p></li></ul></article><p id="p-576"><article class="activity project-like" id="activity-PS1introexp"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-55"><p id="p-577">Consider the series \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\) where \(x\) is a real number.</p></div>
+<article class="task exercise-like" id="task-134"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-578">If \(x=2\text{,}\) then \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}\text{.}\)  What can be said about this series?</p>
+<ol class="decimal">
+<li id="li-533"><p id="p-derived-li-533">The techniques we have learned so far allow us to conclude that \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}\) converges.</p></li>
+<li id="li-534"><p id="p-derived-li-534">The techniques we have learned so far allow us to conclude that \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}\) diverges.</p></li>
+<li id="li-535"><p id="p-derived-li-535">None of the  techniques we have learned so far allow us to conclude whether \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}\) converges or diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-135"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-579">If \(x=-100\text{,}\) then \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}\text{.}\)  What can be said about this series?</p>
+<ol class="decimal">
+<li id="li-536"><p id="p-derived-li-536">The techniques we have learned so far allow us to conclude that \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}\) converges.</p></li>
+<li id="li-537"><p id="p-derived-li-537">The techniques we have learned so far allow us to conclude that \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}\) diverges.</p></li>
+<li id="li-538"><p id="p-derived-li-538">None of the  techniques we have learned so far allow us to conclude whether \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}\) converges or diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-136"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-580">Suppose that \(x\) were some arbitrary real number.  What can be said about this series?</p>
+<ol class="decimal">
+<li id="li-539"><p id="p-derived-li-539">The techniques we have learned so far allow us to conclude that \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\) converges.</p></li>
+<li id="li-540"><p id="p-derived-li-540">The techniques we have learned so far allow us to conclude that \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\) diverges.</p></li>
+<li id="li-541"><p id="p-derived-li-541">None of the  techniques we have learned so far allow us to conclude whether \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\) converges or diverges.</p></li>
+</ol></article></article> <article class="activity project-like" id="activity-PS1comparetoexp"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-56"><p id="p-581">Since \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\) converges for each real value \(x\text{,}\) we can define a function \(f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\) which assigns to each input \(x\) the limit \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\text{.}\)</p></div>
+<article class="task exercise-like" id="task-137"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-582">To estimate \(f(2)\text{,}\) we consider \(f_{5}(x)=\displaystyle \sum_{n=0}^5 \frac{1}{n!}x^n=1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5.\)  What is \(f_5(2)\text{?}\)</p>
+<ol class="decimal">
+<li id="li-542"><p id="p-derived-li-542">\(f_5(2)=4\left(1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5\right)=4+4x+2x^2+\frac{2}{3}x^3+\frac{1}{6}x^4+\frac{1}{30}x^5\text{.}\)</p></li>
+<li id="li-543"><p id="p-derived-li-543">\(f_5(2)=1+2+\frac{1}{2}2+\frac{1}{6}2+\frac{1}{24}2+\frac{1}{120}2=\frac{133}{30}\approx 4.4333\text{.}\)</p></li>
+<li id="li-544"><p id="p-derived-li-544">\(f_5(2)=1+2+\frac{1}{2}2^2+\frac{1}{6}2^3+\frac{1}{24}2^4+\frac{1}{120}2^5=\frac{109}{15}\approx 7.2667\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-138"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-583">To which of these values is \(f_5(2)\) the closest?</p>
+<ol class="decimal">
+<li id="li-545"><p id="p-derived-li-545">\((2)^2\text{.}\)</p></li>
+<li id="li-546"><p id="p-derived-li-546">\(\sqrt{2}\text{.}\)</p></li>
+<li id="li-547"><p id="p-derived-li-547">\(e^2\text{.}\)</p></li>
+<li id="li-548"><p id="p-derived-li-548">\(\ln(2)\text{.}\)</p></li>
+<li id="li-549"><p id="p-derived-li-549">\(\sin(2)\text{.}\)</p></li>
+<li id="li-550"><p id="p-derived-li-550">\(\cos(2)\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-139"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-584">Consider the plot of \(y=f_5(x):\) <figure class="figure figure-like" id="figure-31"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plotf5.svg" role="img" class="contained" alt="A plot of \(y=f_5(x)\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.3<span class="period">.</span></span><span class="space"> </span>Plot of \(f_5(x)\text{.}\)</figcaption></figure> Which of the following plots does the plot \(y=f_5(x)\) most resemble?</p>
+<ol class="decimal">
+<li id="li-551">\(y=x^2\text{.}\) <figure class="figure figure-like" id="figure-32"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plotf5x%5E2.svg" role="img" class="contained" alt="Plots of \(y=f_5(x), y=x^2\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.4<span class="period">.</span></span><span class="space"> </span>Plots of \(y=f_5(x), y=x^2\text{.}\)</figcaption></figure>
+</li>
+<li id="li-552">\(y=\sqrt{x}\text{.}\) <figure class="figure figure-like" id="figure-33"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plotf5rootx.svg" role="img" class="contained" alt="Plots of \(y=f_5(x), y=\sqrt{x}\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.5<span class="period">.</span></span><span class="space"> </span>Plots of \(y=f_5(x), y=\sqrt{x}\text{.}\)</figcaption></figure>
+</li>
+<li id="li-553">\(y=e^x\text{.}\) <figure class="figure figure-like" id="figure-34"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plotf5exp.svg" role="img" class="contained" alt="Plots of \(y=f_5(x), y=e^x\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.6<span class="period">.</span></span><span class="space"> </span>Plots of \(y=f_5(x), y=e^x\text{.}\)</figcaption></figure>
+</li>
+<li id="li-554">\(y=\ln{x}\text{.}\) <figure class="figure figure-like" id="figure-35"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plotf5lnx.svg" role="img" class="contained" alt="Plots of \(y=f_5(x), y=\ln{x}\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.7<span class="period">.</span></span><span class="space"> </span>Plots of \(y=f_5(x), y=\ln{x}\text{.}\)</figcaption></figure>
+</li>
+<li id="li-555">\(y=\sin{x}\text{.}\) <figure class="figure figure-like" id="figure-36"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plotf5sinx.svg" role="img" class="contained" alt="Plots of \(y=f_5(x), y=\sin{x}\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.8<span class="period">.</span></span><span class="space"> </span>Plots of \(y=f_5(x), y=\sin{x}\text{.}\)</figcaption></figure>
+</li>
+<li id="li-556">\(y=\sin{x}\text{.}\) <figure class="figure figure-like" id="figure-37"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plotf5cosx.svg" role="img" class="contained" alt="Plots of \(y=f_5(x), y=\cos{x}\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.9<span class="period">.</span></span><span class="space"> </span>Plots of \(y=f_5(x), y=\cos{x}\text{.}\)</figcaption></figure>
+</li>
+</ol></article></article> <article class="definition definition-like" id="definition-PS1PowerSeries"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.10</span><span class="period">.</span>
+</h6>
+<p id="p-585">For a real number \(c\) a <em class="emphasis">power series</em> centered at \(c\) is a series \(\displaystyle\sum_{n=0}^\infty a_n (x-c)^n\) where each coefficient \(a_n\) is a real number.</p>
+<p id="p-586">For the values of \(x\) where \(\displaystyle\sum_{n=0}^\infty a_n (x-c)^n\) converges, we can define a function \(p(x)=\displaystyle\sum_{n=0}^\infty a_n (x-c)^n\text{.}\)  We can define \(p_k(x)=\displaystyle\sum_{n=0}^k a_n (x-c)^n\) to be the degree \(k\) polynomial approximation of \(p(x)\text{.}\)</p></article> <article class="example example-like" id="example-PS1diffpowerseries"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.11</span><span class="period">.</span>
+</h6>
+<p id="p-587">Consider the power series \(\displaystyle \sum_{n=0}^\infty a_nx^n\text{.}\)  We could compute \(\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]\) by:</p>
+<div class="displaymath">
+\begin{align*}
+\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}\\
+(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;\\
+&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}\\
+(\text{Then let }m=n-1, n=m+1)&amp;\\
+&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}\\
+(\text{Then renaming indices}.)&amp;\\
+&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
+\end{align*}
+</div>
+<p id="p-588">We could also compute \(\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]\) by:</p>
+<div class="displaymath">
+\begin{align*}
+\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\frac{d}{dx}\left[a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots\right]\\
+&amp;=a_1+a_22x+a_33x^2+\cdots a_nnx^{n-1}+a_{n+1}(n+1)x^n+\cdots\\
+&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
+\end{align*}
+</div></article> <article class="activity project-like" id="activity-PS1diffexp"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.12</span><span class="period">.</span>
+</h6>
+<article class="task exercise-like" id="task-140"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-589">Given \(f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\text{,}\) which of the following represents \(f'(x)=\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\right]\text{?}\)</p>
+<ol class="decimal">
+<li id="li-557"><p id="p-derived-li-557">\(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\text{.}\)</p></li>
+<li id="li-558"><p id="p-derived-li-558">\(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^{n-1}\text{.}\)</p></li>
+<li id="li-559"><p id="p-derived-li-559">\(\displaystyle n\sum_{n=0}^\infty \frac{1}{n!}x^{n-1}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-141"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-590">For which of the following is \(y=\frac{dy}{dx}\text{?}\)</p>
+<ol class="decimal">
+<li id="li-560"><p id="p-derived-li-560">\(y=x^2\text{.}\)</p></li>
+<li id="li-561"><p id="p-derived-li-561">\(y=\sqrt{x}\text{.}\)</p></li>
+<li id="li-562"><p id="p-derived-li-562">\(y=e^x\text{.}\)</p></li>
+<li id="li-563"><p id="p-derived-li-563">\(y=\ln(x)\text{.}\)</p></li>
+<li id="li-564"><p id="p-derived-li-564">\(y=\sin(x)\text{.}\)</p></li>
+<li id="li-565"><p id="p-derived-li-565">\(y=\cos(x)\text{.}\)</p></li>
+</ol></article></article> <article class="fact theorem-like" id="fact-PS1exp"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.1.13</span><span class="period">.</span>
+</h6>
+<p id="p-591">We have that</p>
+<div class="displaymath">
+\begin{equation*}
+f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=e^x.
+\end{equation*}
+</div>
+<p class="continuation">What we mean by equality is that for any real number \(x\text{,}\) the series \(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\) will converge to \(e^x\text{.}\)</p></article> <article class="activity project-like" id="activity-PS1expneg3"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.14</span><span class="period">.</span>
+</h6>
+<p id="p-592">Estimate \(e^{-3}\) using \(e^x\approx f_6(x)=\displaystyle \sum_{n=0}^6 \frac{1}{n!}x^n=1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5+\frac{1}{720}x^6\) by evaluating \(f_6(-3)\text{.}\)</p></article> <article class="example example-like" id="example-PS1intpowerseries"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.15</span><span class="period">.</span>
+</h6>
+<p id="p-593">Consider the power series \(\displaystyle \sum_{n=0}^\infty a_nx^n\text{.}\)  We could compute \(\displaystyle\int \sum_{n=0}^\infty a_nx^ndx\) by:</p>
+<div class="displaymath">
+\begin{align*}
+\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=C+\displaystyle \sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}\\
+(\text{Letting }m=n+1, n=m-1)&amp;\\
+&amp;=C+\displaystyle \sum_{m=1}^\infty \frac{a_{m-1}}{m}x^{m}\\
+(\text{Then, renaming})&amp;\\
+&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}
+\end{align*}
+</div>
+<p id="p-594">We could also compute \(\displaystyle\int \sum_{n=0}^\infty a_nx^ndx\) by:</p>
+<div class="displaymath">
+\begin{align*}
+\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=\int(a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots)dx\\
+&amp;=C+a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\cdots+\frac{a_{n-1}}{n}x^n +\frac{a_n}{n+1}x^{n+1}+\cdots\\
+&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}
+\end{align*}
+</div></article> <article class="activity project-like" id="activity-PS1expnegxsquare"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.16</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-57"><p id="p-595">The function \(n(x)=e^{-x^2}\) is one whose integrals are very important for statistics.  However, it does not admit an elementary anti-derivative.</p></div>
+<article class="task exercise-like" id="task-142"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-596">Which of the following best represents the power series for \(n(x)=e^{-x^2}\text{?}\)</p>
+<ol class="decimal">
+<li id="li-566"><p id="p-derived-li-566">\(n(x)=\displaystyle -x^2\sum_{n=0}^\infty \frac{1}{n!}x^n=\displaystyle \sum_{n=0}^\infty -\frac{1}{n!}x^{n+2}\text{.}\)</p></li>
+<li id="li-567"><p id="p-derived-li-567">\(n(x)=\displaystyle x^{-2}\sum_{n=0}^\infty \frac{1}{n!}(-x)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n+2}x^{n+2}\text{.}\)</p></li>
+<li id="li-568"><p id="p-derived-li-568">\(n(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-x^2)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n+2}x^{2n}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-143"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-597">Which of the following best represents a degree 10 polynomial that approximates \(n(x)\text{?}\)</p>
+<ol class="decimal">
+<li id="li-569"><p id="p-derived-li-569">\(n_{10}(x)=\displaystyle -x^2-x^3-\frac{1}{2}x^4-\frac{1}{6}x^5-\frac{1}{24}x^6-\frac{1}{120}x^7-\frac{1}{720}x^8-\frac{1}{5040}x^9-\frac{1}{40320}x^{10}\text{.}\)</p></li>
+<li id="li-570"><p id="p-derived-li-570">\(n_{10}(x)=\displaystyle x^2-x^3+\frac{1}{2}x^4-\frac{1}{6}x^5+\frac{1}{24}x^6-\frac{1}{120}x^7+\frac{1}{720}x^8-\frac{1}{5040}x^9+\frac{1}{40320}x^{10}\text{.}\)</p></li>
+<li id="li-571"><p id="p-derived-li-571">\(n_{10}(x)=1-x^2+\frac{1}{2}x^4-\frac{1}{6}x^6+\frac{1}{24}x^8-\frac{1}{120}x^{10}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-144"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-598">Use your choice of \(n_{10}(x)\) to estimate \(\displaystyle \int_0^1 n(x)dx\) by computing \(\displaystyle \int_0^1 n_{10}(x)dx\text{.}\)</p></article></article> <article class="activity project-like" id="activity-PS1geom"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.17</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-58">Recall from <a href="SQ4.html" class="internal" title="Section 3.2: Geometric Series (SQ4)">Section 3.2</a> that<div class="displaymath">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div>for \(-1&lt; x&lt; 1\text{.}\)</div>
+<article class="task exercise-like" id="task-145"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-599">Which of the following represents an antiderivative of \(g(x)=\displaystyle \frac{1}{1-x}\text{?}\)</p>
+<ol class="decimal">
+<li id="li-572"><p id="p-derived-li-572">\(G(x)=C+\displaystyle\sum_{n=0}^\infty x^{n+1}\text{.}\)</p></li>
+<li id="li-573"><p id="p-derived-li-573">\(G(x)=C+\displaystyle\sum_{n=1}^\infty \frac{1}{n}x^{n+1}\text{.}\)</p></li>
+<li id="li-574"><p id="p-derived-li-574">\(G(x)=C+\displaystyle\sum_{n=0}^\infty \frac{1}{n+1}x^{n+1}\text{.}\)</p></li>
+<li id="li-575"><p id="p-derived-li-575">\(G(x)=C+\displaystyle\sum_{n=1}^\infty \frac{1}{n+1}x^{n}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-146"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-600">Recall that \(\tilde{G}(x)=\ln|1-x|\) is an antiderivative of \(g(x)=\displaystyle \frac{1}{1-x}\text{.}\)  For which \(C\) is your chosen \(G(x)=\ln|1-x|\text{?}\)</p></article><article class="task exercise-like" id="task-147"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-601">Use \(G_4(x)\) to estimate \(\displaystyle \int_2^4 \ln|1-x|dx\text{.}\)</p></article></article> <article class="activity project-like" id="activity-PS1arctan"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.18</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-59">
+<p id="p-602">Recall that</p>
+<div class="displaymath">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div>
+<p class="continuation">for \(-1&lt; x&lt; 1\) and \(\frac{d}{dx}[\arctan(x)]=\frac{1}{1+x^2}=g(-x^2).\)</p>
+</div>
+<article class="task exercise-like" id="task-148"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-603">Find the power series for \(g(-x^2)\text{.}\)</p></article><article class="task exercise-like" id="task-149"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-604">Anti differentiate this power series and find \(C\) to find a power series for \(H(x)=\arctan(x)\text{.}\)</p></article><article class="task exercise-like" id="task-150"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-605">Use the 6th degree polynomial approximation for \(\arctan(x)\text{,}\) \(H_6(x)\) to estimate \(\arctan(4)\) by computing \(H_6(4)\text{.}\)</p></article></article> <article class="activity project-like" id="activity-PS1generic"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.19</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-60"><p id="p-606">Let \(\alpha(x)\) be defined by the power series \(\alpha(x)=\sum_{n=0}^\infty \frac{2^n}{(2n)!}x^n.\)</p></div>
+<article class="task exercise-like" id="task-151"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-607">Find the 4th degree polynomial approximation for \(\alpha\text{,}\) \(\alpha_4(x)\text{.}\)</p></article><article class="task exercise-like" id="task-152"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-608">Use \(\alpha_4(x)\) to estimate \(\alpha(-1)\) by computing \(\alpha_4(-1)\text{.}\)</p></article></article></p></section></div></main>
+</div>
+</body>
+</html>
