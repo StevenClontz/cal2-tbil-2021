@@ -20,7 +20,7 @@
                 <p>If one were to cut this prism, parallel to the base, into 4 pieces with height 5 m, what would the volume of each piece be?</p>
             </task>
             <task>
-                <p>Consider the piece sitting on top the slice made at height <m>h=5</m>.  Using <m>\delta(5)=15</m>  kg/m<m>^3</m>, estimate the mass of this piece.</p>
+                <p>Consider the piece sitting on top the slice made at height <m>h=5</m>.  Using a density of <m>\delta(5)=15</m>  kg/m<m>^3</m>, and the volume you found, estimate the mass of this piece.</p>
             </task>
             <task>
                 <p>
@@ -160,7 +160,7 @@
         <activity xml:id="activity-AI4comparison">
             <statement>
                 Which of the estimates computed in <xref ref="activity-AI4rectangularprism4pieces"/> and <xref ref="activity-AI4rectangularprism5pieces"/> is a better estimate of the mass of the prism?
-                <ol>
+                <ol label="A">
                     <li><xref ref="activity-AI4rectangularprism4pieces"/>, 4 pieces is a better estimate.</li>
                     <li><xref ref="activity-AI4rectangularprism5pieces"/>, 5 pieces is a better estimate.</li>
                 </ol>
@@ -198,7 +198,7 @@
                 </p>
                 <p>
                     Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=10+h_i</m> as the estimate for the density of this piece, what is the mass of this piece?
-                    <ol>
+                    <ol label="A">
                         <li><m>(10+h)100\cdot h_i</m>.</li>
                         <li><m>(10+\Delta h)100\cdot h_i</m>.</li>
                         <li><m>(10+h_i)100\cdot \Delta h</m>.</li>
@@ -436,7 +436,7 @@
                 </p>
                 <p>
                     Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=15+\sqrt{h_i}</m> as the estimate for the density of this cylinder, what is the mass of this cylinder?
-                    <ol>
+                    <ol label="A">
                         <li><m>(15+\sqrt{h})\pi r_i^2\cdot \Delta h</m>.</li>
                         <li><m>(15+\sqrt{h_i})\pi r_i^2\cdot \Delta h</m>.</li>
                         <li><m>(15+\Delta h)\pi r_i^2\cdot \Delta h_i</m>.</li>
@@ -480,7 +480,7 @@
             </figure>
                 </p>
                 <p>If we used prisms of width <m>\Delta x</m> to approximate this solid, what is the mass of the slice associated with <m>x_i?</m>
-                    <ol>
+                    <ol label="A">
                         <li><m>A(x)\delta(x)\Delta x</m>.</li>
                         <li><m>\pi A(x)^2\delta(x_i)\Delta x</m>.</li>
                         <li><m>A(x_i)\delta(x_i)\Delta x</m>.</li>
@@ -718,7 +718,7 @@
                 </p>
                 <p>
                     Which of the following describes the <m>x</m>-value where the center of gravity of these blocks lie?
-                    <ol>
+                    <ol label="A">
                         <li><m>\displaystyle\frac{1+6}{2}=3.5</m>.</li>
                         <li><m>\displaystyle\frac{1+2+6}{3}=3</m>.</li>
                         <li><m>\displaystyle\frac{2\cdot1+3\cdot2+1\cdot6}{6}\approx 2.3333</m>.</li>

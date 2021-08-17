@@ -69,7 +69,7 @@
                         </latex-image>
                     </image>
             </figure>
-                    <ol>
+                    <ol label="A">
                         <li><m>4</m>.</li>
                         <li><m>2</m>.</li>
                         <li><m>\frac{7}{3}</m>.</li>
@@ -83,7 +83,7 @@
             <statement>
                 <p>
                     Consider a function <m>f(x)</m> which has average value <m>v</m> on the interval <m>[a,b]</m>.  Which of the following is most likely always true about <m>v</m>?
-                    <ol>
+                    <ol label="A">
                         <li><m>v</m> is the average of <m>a</m> and <m>b</m>.</li>
                         <li><m>v</m> is the average of <m>f(a)</m> and <m>f(b)</m>.</li>
                         <li><m>v</m> is the average of <m>\min\{f(x)\}</m> and <m>\max\{f(x)\}</m> on the interval <m>[a,b]</m>.</li>
@@ -104,7 +104,7 @@
                 <p>
                     Which of the following expressions represent the average value of <m>f(x)=x\cos(x^2)+x</m> on the interval <m>[\pi, 4\pi]</m>?
                     
-                    <ol>
+                    <ol label="A">
                         <li><m>\displaystyle \int_{0}^{4\pi}x\cos(x^2)+x</m>.</li>
                         <li><m>\displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}x\cos(x^2)+x</m>.</li>
                         <li><m>\displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}x\cos(x^2)+x</m>.</li>
