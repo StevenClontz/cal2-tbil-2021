@@ -21,6 +21,11 @@
             </task>
             <task>
                 <p>Consider the piece sitting on top the slice made at height <m>h=5</m>.  Using a density of <m>\delta(5)=15</m>  kg/m<m>^3</m>, and the volume you found, estimate the mass of this piece.</p>
+                    <ol label="A">
+                        <li><m>500\cdot 5=2500</m> kg.</li>
+                        <li><m>500\cdot 15=7500</m> kg.</li>
+                        <li><m>500\cdot 15\cdot 5=37500</m> kg.</li>
+                    </ol>
             </task>
             <task>
                 <p>
@@ -73,7 +78,7 @@
                         \hline
                         h_3=10\ \text{m} &amp; \delta(10)=20\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; \\
                         \hline
-                        h_2=5\ \text{m} &amp; \delta(5)=15\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; 6500\ \text{kg}\\
+                        h_2=5\ \text{m} &amp; \delta(5)=15\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; 7500\ \text{kg}\\
                         \hline
                         h_1=0\ \text{m} &amp; \delta(0)=10\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; \\
                         \hline
@@ -139,7 +144,7 @@
                         \hline
                         h_3=8\ \text{m} &amp; \delta(8)=18\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
                         \hline
-                        h_2=4\ \text{m} &amp; \delta(4)=14\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \phantom{6500\ \text{kg}}\\
+                        h_2=4\ \text{m} &amp; \delta(4)=14\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \phantom{7500\ \text{kg}}\\
                         \hline
                         h_1=0\ \text{m} &amp; \delta(0)=10\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
                         \hline
@@ -255,7 +260,13 @@
             </introduction>
             <task>
                 <p>
-                    Using the fact that <m>\Delta ABC, \Delta AB'C'</m> are similar triangles, what is <m>r_2</m>?
+                    Let <m>r_2</m> be the radius of the circular cross section of the cone, made at height 30 inches.  Recall that <m>\Delta ABC, \Delta AB'C'</m> are similar triangles, what is <m>r_2</m>?
+                    <ol label="A">
+                        <li>15 inches.</li>
+                        <li>7.5 inches.</li>
+                        <li>30 inches.</li>
+                        <li>60 inches.</li>
+                    </ol>
                 </p>
             </task>
             

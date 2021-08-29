@@ -37,4 +37,88 @@
             </statement>
     </activity>
     </p>
+    
+    <p>
+    <activity xml:id="activity-TI3evenEven">
+            <statement>
+                <p>
+                    Consider <m>\displaystyle\int \sin^2(x)\cos^2(x) \, dx</m>.  Which strategy would you choose to evaluate this integral?
+                    <ol>
+                        <li>The method of substitution</li>
+                        <li>Integration by parts</li>
+                        <li>Other (specify your strategy)</li>
+                    </ol>
+                </p>
+            </statement>
+    </activity>
+    </p>
+    
+    
+    <p>
+    <activity xml:id="activity-TI3evenEvenRedux">
+            <statement>
+                <p>
+                    Let's consider <m>\displaystyle\int \sin^2(x)\cos^2(x) \, dx</m> again.
+                    <ol>
+                        <li>Use the fact that <m>\cos^2(\theta)=\displaystyle\frac{1+cos(2\theta)}{2}</m> and <m>\sin^2(\theta)=\displaystyle\frac{1-cos(2\theta)}{2}</m> to rewrite the integrand using the above identities to an integral involving <m>\cos^2(2x)</m>. </li>
+                        <li>Use the above identities to rewrite this new integrand as one involving <m>\cos(4x)</m>. </li>
+                        <li>Evaluate the integral.</li>
+                    </ol>
+                </p>
+            </statement>
+    </activity>
+    </p>
+    
+    
+        <p>
+    <activity xml:id="activity-TI3evenOddGeneral">
+            <statement>
+                <p>
+                    Consider <m>\displaystyle\int \sin^m(x)\cos^n(x) \, dx</m>, where <m>m</m> is even and <m>n</m> is odd.  Which strategy would you choose to evaluate this integral?
+                    <ol>
+                        <li>Rewrite sine in terms of cosine by using a double-angle/half-angle identity.</li>
+                        <li>Rewrite cosine in terms of sine by using a double-angle/half-angle identity.</li>
+                        <li>Rewrite cosine in terms of sine by using a pythagorean identity.</li>
+                    </ol>
+                </p>
+            </statement>
+    </activity>
+    </p>
+    
+    
+           <p>
+    <activity xml:id="activity-TI3oddOddGeneral">
+            <statement>
+                <p>
+                    Consider <m>\displaystyle\int \sin^m(x)\cos^n(x) \, dx</m>, where <m>m</m> and <m>n</m> are both odd and <m>m\geq n</m>.  Which strategy would you choose to evaluate this integral?
+                    <ol>
+                        <li>Rewrite sine in terms of cosine by using a pythagorean identity.</li>
+                        <li>Rewrite cosine in terms of sine by using a double-angle/half-angle identity.</li>
+                        <li>Rewrite cosine in terms of sine by using a pythagorean identity.</li>
+                    </ol>
+                </p>
+            </statement>
+    </activity>
+    </p>
+    
+    
+    
+    
+    
+    
+        <p>
+    <activity xml:id="activity-TI3evenEvenGeneral">
+            <statement>
+                <p>
+                    Consider <m>\displaystyle\int \sin^m(x)\cos^n(x) \, dx</m>, where <m>m</m> and <m>n</m> are both even and <m>m\geq n</m>.  Which strategy would you choose to evaluate this integral?
+                    <ol>
+                        <li>Rewrite sine in terms of cosine by using a pythagorean identity.</li>
+                        <li>Rewrite cosine in terms of sine by using a pythagorean identity.</li>
+                        <li>Rewrite everything in terms of cosine by using a double-angle/half-angle identity.</li>                        
+                    </ol>
+                </p>
+            </statement>
+    </activity>
+    </p>
+    
 </section>
