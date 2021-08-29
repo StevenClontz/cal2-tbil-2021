@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-17T18:15:33Z       *-->
+<!--*       on 2021-08-29T22:19:40Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -121,151 +121,151 @@
 <span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Trigonometric Substitution (TI4)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-5"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-107"><p id="p-183">Use trigonometric substitution to compute indefinite integrals.</p></li></ul></article><p id="p-184"><article class="activity project-like" id="activity-TI4fakeusub"><h6 class="heading">
+<ul class="disc"><li id="li-122"><p id="p-193">Use trigonometric substitution to compute indefinite integrals.</p></li></ul></article><p id="p-194"><article class="activity project-like" id="activity-TI4fakeusub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span>
 </h6>
-<p id="p-185">Consider the integral \(\displaystyle \int \frac{\sqrt{1-x^2}}{x} dx\text{.}\)  If one were to use the method of substitution to evaluate this integral, what would be the best choice of \(u\text{?}\)</p>
+<p id="p-195">Consider the integral \(\displaystyle \int \frac{\sqrt{1-x^2}}{x} dx\text{.}\)  If one were to use the method of substitution to evaluate this integral, what would be the best choice of \(u\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-108"><p id="p-derived-li-108">\(\displaystyle u=1-x^2.\)</p></li>
-<li id="li-109"><p id="p-derived-li-109">\(\displaystyle u=\sqrt{x^2-1}.\)</p></li>
-<li id="li-110"><p id="p-derived-li-110">\(\displaystyle u=\frac{1}{x}.\)</p></li>
-<li id="li-111"><p id="p-derived-li-111">There is no u for which the method of substitution will work.</p></li>
+<li id="li-123"><p id="p-derived-li-123">\(\displaystyle u=1-x^2.\)</p></li>
+<li id="li-124"><p id="p-derived-li-124">\(\displaystyle u=\sqrt{x^2-1}.\)</p></li>
+<li id="li-125"><p id="p-derived-li-125">\(\displaystyle u=\frac{1}{x}.\)</p></li>
+<li id="li-126"><p id="p-derived-li-126">There is no u for which the method of substitution will work.</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4intropythagoras"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
 </h6>
-<p id="p-186">It would be good if \(\sqrt{1-x^2}\) were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?</p>
+<p id="p-196">It would be good if \(\sqrt{1-x^2}\) were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?</p>
 <ol class="upper-alpha">
-<li id="li-112"><p id="p-derived-li-112">For any real number, \(x^2\) must be positive (note: this isn’t even true).</p></li>
-<li id="li-113"><p id="p-derived-li-113">\(\displaystyle u=\sqrt{x^2-1}.\)</p></li>
-<li id="li-114"><p id="p-derived-li-114">The Pythagorean theorem allows us to write \((\cos(\theta))^2\) as \(1-(\sin(\theta))^2\text{.}\)</p></li>
-<li id="li-115"><p id="p-derived-li-115">The ratio of an even function and an odd function is odd.</p></li>
+<li id="li-127"><p id="p-derived-li-127">For any real number, \(x^2\) must be positive (note: this isn’t even true).</p></li>
+<li id="li-128"><p id="p-derived-li-128">\(\displaystyle u=\sqrt{x^2-1}.\)</p></li>
+<li id="li-129"><p id="p-derived-li-129">The Pythagorean theorem allows us to write \((\cos(\theta))^2\) as \(1-(\sin(\theta))^2\text{.}\)</p></li>
+<li id="li-130"><p id="p-derived-li-130">The ratio of an even function and an odd function is odd.</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4sinsub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
 </h6>
-<p id="p-187">Suppose we let \(x=\sin(\theta)\text{,}\) then \(\frac{dx}{d\theta}=\cos(\theta)\) and \(dx=\cos(\theta) d\theta\text{.}\)  Which of the following best represents the integral \(\displaystyle \int \sqrt{1-x^2}dx\text{?}\)</p>
+<p id="p-197">Suppose we let \(x=\sin(\theta)\text{,}\) then \(\frac{dx}{d\theta}=\cos(\theta)\) and \(dx=\cos(\theta) d\theta\text{.}\)  Which of the following best represents the integral \(\displaystyle \int \sqrt{1-x^2}dx\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-116"><p id="p-derived-li-116">\(\displaystyle \int \sqrt{1-\sin^2(\theta)}dx\text{.}\)</p></li>
-<li id="li-117"><p id="p-derived-li-117">\(\displaystyle \int \sqrt{ 1-\sin^2(\theta)\cos(\theta)}d\theta\text{.}\)</p></li>
-<li id="li-118"><p id="p-derived-li-118">\(\displaystyle  \int \sqrt{ 1-\sin^2(\theta)}\cos(\theta)d\theta\text{.}\)</p></li>
+<li id="li-131"><p id="p-derived-li-131">\(\displaystyle \int \sqrt{1-\sin^2(\theta)}dx\text{.}\)</p></li>
+<li id="li-132"><p id="p-derived-li-132">\(\displaystyle \int \sqrt{ 1-\sin^2(\theta)\cos(\theta)}d\theta\text{.}\)</p></li>
+<li id="li-133"><p id="p-derived-li-133">\(\displaystyle  \int \sqrt{ 1-\sin^2(\theta)}\cos(\theta)d\theta\text{.}\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4sinsubrewrite"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
 </h6>
-<p id="p-188">Use the fact from <a class="xref" data-knowl="./knowl/activity-TI4intropythagoras.html" title="Activity 1.4.2">Activity 1.4.2</a> to rewrite your choice of integral from <a class="xref" data-knowl="./knowl/activity-TI4sinsub.html" title="Activity 1.4.3">Activity 1.4.3</a> to an integral without any \(\sin(\theta)\) terms.</p>
+<p id="p-198">Use the fact from <a class="xref" data-knowl="./knowl/activity-TI4intropythagoras.html" title="Activity 1.4.2">Activity 1.4.2</a> to rewrite your choice of integral from <a class="xref" data-knowl="./knowl/activity-TI4sinsub.html" title="Activity 1.4.3">Activity 1.4.3</a> to an integral without any \(\sin(\theta)\) terms.</p>
 <ol class="upper-alpha">
-<li id="li-119"><p id="p-derived-li-119">\(\displaystyle\int \cos(\theta) d\theta\text{.}\)</p></li>
-<li id="li-120"><p id="p-derived-li-120">\(\displaystyle\int \cos^2(\theta) d\theta\text{.}\)</p></li>
-<li id="li-121"><p id="p-derived-li-121">\(\displaystyle\int \sqrt{cos(\theta)} d\theta\text{.}\)</p></li>
+<li id="li-134"><p id="p-derived-li-134">\(\displaystyle\int \cos(\theta) d\theta\text{.}\)</p></li>
+<li id="li-135"><p id="p-derived-li-135">\(\displaystyle\int \cos^2(\theta) d\theta\text{.}\)</p></li>
+<li id="li-136"><p id="p-derived-li-136">\(\displaystyle\int \sqrt{cos(\theta)} d\theta\text{.}\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4cosdoubleanglesub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
 </h6>
-<p id="p-189">Use the fact that \(\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}\) to rewrite the integral from <a class="xref" data-knowl="./knowl/activity-TI4sinsubrewrite.html" title="Activity 1.4.4">Activity 1.4.4</a>.</p>
+<p id="p-199">Use the fact that \(\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}\) to rewrite the integral from <a class="xref" data-knowl="./knowl/activity-TI4sinsubrewrite.html" title="Activity 1.4.4">Activity 1.4.4</a>.</p>
 <ol class="upper-alpha">
-<li id="li-122"><p id="p-derived-li-122">\(\displaystyle\int \sqrt{\frac{1+\cos(2\theta)}{2}} d\theta\text{.}\)</p></li>
-<li id="li-123"><p id="p-derived-li-123">\(\displaystyle\int \frac{1+\cos(2\theta)}{2} d\theta\text{.}\)</p></li>
-<li id="li-124"><p id="p-derived-li-124">\(\displaystyle\int \left(\frac{1+\cos(2\theta)}{2} \right)^2d\theta\text{.}\)</p></li>
+<li id="li-137"><p id="p-derived-li-137">\(\displaystyle\int \sqrt{\frac{1+\cos(2\theta)}{2}} d\theta\text{.}\)</p></li>
+<li id="li-138"><p id="p-derived-li-138">\(\displaystyle\int \frac{1+\cos(2\theta)}{2} d\theta\text{.}\)</p></li>
+<li id="li-139"><p id="p-derived-li-139">\(\displaystyle\int \left(\frac{1+\cos(2\theta)}{2} \right)^2d\theta\text{.}\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4evaluatesinsub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span>
 </h6>
-<p id="p-190">Evaluate the integral in terms of \(\theta\) that you found in <a class="xref" data-knowl="./knowl/activity-TI4sinsubrewrite.html" title="Activity 1.4.4">Activity 1.4.4</a>.</p></article> <article class="activity project-like" id="activity-TI4turnbacktox"><h6 class="heading">
+<p id="p-200">Evaluate the integral in terms of \(\theta\) that you found in <a class="xref" data-knowl="./knowl/activity-TI4sinsubrewrite.html" title="Activity 1.4.4">Activity 1.4.4</a>.</p></article> <article class="activity project-like" id="activity-TI4turnbacktox"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span>
 </h6>
-<p id="p-191">Consider the fact that \(x=\sin(\theta)\) and thus \(\theta=\arcsin(x)\text{.}\)  Use this to rewrite the solution you found in (previous) in terms of \(x\text{.}\)</p></article> <article class="activity project-like" id="activity-TI4sinsubadjust"><h6 class="heading">
+<p id="p-201">Consider the fact that \(x=\sin(\theta)\) and thus \(\theta=\arcsin(x)\text{.}\)  Use this to rewrite the solution you found in (previous) in terms of \(x\text{.}\)</p></article> <article class="activity project-like" id="activity-TI4sinsubadjust"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span>
 </h6>
-<p id="p-192">Consider the integral \(\displaystyle \int \sqrt{9-x^2} dx\text{;}\) how can we best modify our approach in <a class="xref" data-knowl="./knowl/activity-TI4sinsub.html" title="Activity 1.4.3">Activity 1.4.3</a> and adapt it here?</p>
+<p id="p-202">Consider the integral \(\displaystyle \int \sqrt{9-x^2} dx\text{;}\) how can we best modify our approach in <a class="xref" data-knowl="./knowl/activity-TI4sinsub.html" title="Activity 1.4.3">Activity 1.4.3</a> and adapt it here?</p>
 <ol class="upper-alpha">
-<li id="li-125"><p id="p-derived-li-125">Let \(x=\sin(\theta), dx=\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(\theta)} \cos(\theta) d\theta.\)</p></li>
-<li id="li-126"><p id="p-derived-li-126">Let \(x=3\sin(\theta), dx=3\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-(3\sin(\theta))^2} \cos(\theta) d\theta.\)</p></li>
-<li id="li-127"><p id="p-derived-li-127">Let \(x=\sin(3\theta), dx=3\cos(3\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(3\theta)} 3\cos(3\theta) d\theta.\)</p></li>
+<li id="li-140"><p id="p-derived-li-140">Let \(x=\sin(\theta), dx=\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(\theta)} \cos(\theta) d\theta.\)</p></li>
+<li id="li-141"><p id="p-derived-li-141">Let \(x=3\sin(\theta), dx=3\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-(3\sin(\theta))^2} \cos(\theta) d\theta.\)</p></li>
+<li id="li-142"><p id="p-derived-li-142">Let \(x=\sin(3\theta), dx=3\cos(3\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(3\theta)} 3\cos(3\theta) d\theta.\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4rewrite3sinsub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.9</span><span class="period">.</span>
 </h6>
-<p id="p-193">Using your choice of substitution in <a class="xref" data-knowl="./knowl/activity-TI4sinsubadjust.html" title="Activity 1.4.8">Activity 1.4.8</a> and the fact that \(\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}\) to rewrite the integral from <a class="xref" data-knowl="./knowl/activity-TI4sinsubadjust.html" title="Activity 1.4.8">Activity 1.4.8</a></p>
+<p id="p-203">Using your choice of substitution in <a class="xref" data-knowl="./knowl/activity-TI4sinsubadjust.html" title="Activity 1.4.8">Activity 1.4.8</a> and the fact that \(\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}\) to rewrite the integral from <a class="xref" data-knowl="./knowl/activity-TI4sinsubadjust.html" title="Activity 1.4.8">Activity 1.4.8</a></p>
 <ol class="upper-alpha">
-<li id="li-128"><p id="p-derived-li-128">\(\displaystyle \displaystyle \int \sqrt{\frac{9+9\cos(2\theta)}{2}} \cos(\theta) d\theta.\)</p></li>
-<li id="li-129"><p id="p-derived-li-129">\(\displaystyle \displaystyle \int \frac{9+9\cos(2\theta)}{2} \cos(\theta) d\theta.\)</p></li>
-<li id="li-130"><p id="p-derived-li-130">\(\displaystyle \displaystyle \int \left(\frac{9+9\cos(2\theta)}{2}\right)^2 \cos(\theta) d\theta.\)</p></li>
+<li id="li-143"><p id="p-derived-li-143">\(\displaystyle \displaystyle \int \sqrt{\frac{9+9\cos(2\theta)}{2}} \cos(\theta) d\theta.\)</p></li>
+<li id="li-144"><p id="p-derived-li-144">\(\displaystyle \displaystyle \int \frac{9+9\cos(2\theta)}{2} \cos(\theta) d\theta.\)</p></li>
+<li id="li-145"><p id="p-derived-li-145">\(\displaystyle \displaystyle \int \left(\frac{9+9\cos(2\theta)}{2}\right)^2 \cos(\theta) d\theta.\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4evaluate3sinsub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.10</span><span class="period">.</span>
 </h6>
-<p id="p-194">Evaluate the integral that you found in <a class="xref" data-knowl="./knowl/activity-TI4rewrite3sinsub.html" title="Activity 1.4.9">Activity 1.4.9</a>.  (Recall that since \(x=3\sin(\theta), \theta=\arcsin\left(\frac{x}{3}\right)\text{.}\))</p></article> <article class="activity project-like" id="activity-TI4pythagorasagain"><h6 class="heading">
+<p id="p-204">Evaluate the integral that you found in <a class="xref" data-knowl="./knowl/activity-TI4rewrite3sinsub.html" title="Activity 1.4.9">Activity 1.4.9</a>.  (Recall that since \(x=3\sin(\theta), \theta=\arcsin\left(\frac{x}{3}\right)\text{.}\))</p></article> <article class="activity project-like" id="activity-TI4pythagorasagain"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.11</span><span class="period">.</span>
 </h6>
-<p id="p-195">Consider the integral \(\displaystyle \int \frac{1}{1+x^2} dx\text{.}\)  Which of the following facts would best simplify this expression?</p>
+<p id="p-205">Consider the integral \(\displaystyle \int \frac{1}{1+x^2} dx\text{.}\)  Which of the following facts would best simplify this expression?</p>
 <ol class="upper-alpha">
-<li id="li-131"><p id="p-derived-li-131">\(\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}\text{.}\)</p></li>
-<li id="li-132"><p id="p-derived-li-132">\(\displaystyle (\cos(\theta))^2=1-(\sin(\theta))^2\)</p></li>
-<li id="li-133"><p id="p-derived-li-133">Since \(\sin^2(\theta) + \cos^2(\theta)=1, \tan^2(\theta)+1=\sec^2(\theta)\text{.}\)</p></li>
+<li id="li-146"><p id="p-derived-li-146">\(\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}\text{.}\)</p></li>
+<li id="li-147"><p id="p-derived-li-147">\(\displaystyle (\cos(\theta))^2=1-(\sin(\theta))^2\)</p></li>
+<li id="li-148"><p id="p-derived-li-148">Since \(\sin^2(\theta) + \cos^2(\theta)=1, \tan^2(\theta)+1=\sec^2(\theta)\text{.}\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4tansub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.12</span><span class="period">.</span>
 </h6>
-<p id="p-196">Suppose we let \(x=\tan(\theta), dx =\sec^2(\theta)\text{.}\)  Which of the following best represents the integral \(\displaystyle \int \frac{1}{1+x^2} dx\text{?}\)</p>
+<p id="p-206">Suppose we let \(x=\tan(\theta), dx =\sec^2(\theta)\text{.}\)  Which of the following best represents the integral \(\displaystyle \int \frac{1}{1+x^2} dx\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-134"><p id="p-derived-li-134">\(\displaystyle \int \frac{1}{1+\tan^2(\theta)} dx\text{.}\)</p></li>
-<li id="li-135"><p id="p-derived-li-135">\(\displaystyle \int \frac{1}{1+\tan^2(\theta)\sec^2(\theta)} d\theta\text{.}\)</p></li>
-<li id="li-136"><p id="p-derived-li-136">\(\displaystyle \int \frac{1}{1+\tan^2(\theta)} \sec^2(\theta)d\theta\text{.}\)</p></li>
+<li id="li-149"><p id="p-derived-li-149">\(\displaystyle \int \frac{1}{1+\tan^2(\theta)} dx\text{.}\)</p></li>
+<li id="li-150"><p id="p-derived-li-150">\(\displaystyle \int \frac{1}{1+\tan^2(\theta)\sec^2(\theta)} d\theta\text{.}\)</p></li>
+<li id="li-151"><p id="p-derived-li-151">\(\displaystyle \int \frac{1}{1+\tan^2(\theta)} \sec^2(\theta)d\theta\text{.}\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4tansubevaluate"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.13</span><span class="period">.</span>
 </h6>
-<p id="p-197">Using the fact from <a class="xref" data-knowl="./knowl/activity-TI4pythagorasagain.html" title="Activity 1.4.11">Activity 1.4.11</a>, simplify and evaluate your choice of integral from <a class="xref" data-knowl="./knowl/activity-TI4tansub.html" title="Activity 1.4.12">Activity 1.4.12</a>.  (Recall that since \(x=\tan(\theta), \theta=\arctan(x)\text{.}\))</p></article> <article class="activity project-like" id="activity-TI4tansubadjust"><h6 class="heading">
+<p id="p-207">Using the fact from <a class="xref" data-knowl="./knowl/activity-TI4pythagorasagain.html" title="Activity 1.4.11">Activity 1.4.11</a>, simplify and evaluate your choice of integral from <a class="xref" data-knowl="./knowl/activity-TI4tansub.html" title="Activity 1.4.12">Activity 1.4.12</a>.  (Recall that since \(x=\tan(\theta), \theta=\arctan(x)\text{.}\))</p></article> <article class="activity project-like" id="activity-TI4tansubadjust"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.14</span><span class="period">.</span>
 </h6>
-<p id="p-198">Consider the integral \(\displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx\text{;}\) how can we best modify our approach in <a class="xref" data-knowl="./knowl/activity-TI4tansub.html" title="Activity 1.4.12">Activity 1.4.12</a> and adapt it here?</p>
+<p id="p-208">Consider the integral \(\displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx\text{;}\) how can we best modify our approach in <a class="xref" data-knowl="./knowl/activity-TI4tansub.html" title="Activity 1.4.12">Activity 1.4.12</a> and adapt it here?</p>
 <ol class="upper-alpha">
-<li id="li-137"><p id="p-derived-li-137">Let \(x=\frac{1}{2}\tan(\theta), dx=\frac{1}{2}\sec^2(\theta)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{2}\tan(\theta) \right)^2} \frac{1}{2} \sec^2(\theta)d\theta.\)</p></li>
-<li id="li-138"><p id="p-derived-li-138">Let \(x=\frac{1}{4}\tan(\theta), dx=\frac{1}{4}\sec^2(\theta)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{4}\tan(\theta) \right)^2}  \frac{1}{4}\sec^2(\theta) d\theta.\)</p></li>
-<li id="li-139"><p id="p-derived-li-139">Let \(x=\tan\left(\frac{1}{2}\theta\right), dx=\sec^2\left(\frac{1}{2}\theta\right)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\tan\left(\frac{1}{2}\theta\right) \right)^2}  \frac{1}{2} \sec^2\left(\frac{1}{2}\theta\right)d\theta.\)</p></li>
+<li id="li-152"><p id="p-derived-li-152">Let \(x=\frac{1}{2}\tan(\theta), dx=\frac{1}{2}\sec^2(\theta)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{2}\tan(\theta) \right)^2} \frac{1}{2} \sec^2(\theta)d\theta.\)</p></li>
+<li id="li-153"><p id="p-derived-li-153">Let \(x=\frac{1}{4}\tan(\theta), dx=\frac{1}{4}\sec^2(\theta)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{4}\tan(\theta) \right)^2}  \frac{1}{4}\sec^2(\theta) d\theta.\)</p></li>
+<li id="li-154"><p id="p-derived-li-154">Let \(x=\tan\left(\frac{1}{2}\theta\right), dx=\sec^2\left(\frac{1}{2}\theta\right)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\tan\left(\frac{1}{2}\theta\right) \right)^2}  \frac{1}{2} \sec^2\left(\frac{1}{2}\theta\right)d\theta.\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-T4subhalftan"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.15</span><span class="period">.</span>
 </h6>
-<p id="p-199">Evaluate the choice of integral you found in <a class="xref" data-knowl="./knowl/activity-TI4sinsubadjust.html" title="Activity 1.4.8">Activity 1.4.8</a>, using the fact that if \(x=\frac{1}{2}\tan(\theta), \theta=\arctan(2x)\text{.}\)</p></article> <article class="activity project-like" id="activity-TI4lastpythagoras"><h6 class="heading">
+<p id="p-209">Evaluate the choice of integral you found in <a class="xref" data-knowl="./knowl/activity-TI4sinsubadjust.html" title="Activity 1.4.8">Activity 1.4.8</a>, using the fact that if \(x=\frac{1}{2}\tan(\theta), \theta=\arctan(2x)\text{.}\)</p></article> <article class="activity project-like" id="activity-TI4lastpythagoras"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.16</span><span class="period">.</span>
 </h6>
-<p id="p-200">Consider the integral \(\displaystyle \int \sqrt{x^2-1} dx\text{.}\)   Which of the following facts <em class="emphasis">best</em> simplifies this integral?</p>
+<p id="p-210">Consider the integral \(\displaystyle \int \sqrt{x^2-1} dx\text{.}\)   Which of the following facts <em class="emphasis">best</em> simplifies this integral?</p>
 <ol class="upper-alpha">
-<li id="li-140"><p id="p-derived-li-140">\(\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}\text{.}\)</p></li>
-<li id="li-141"><p id="p-derived-li-141">\(\tan^2(\theta)+1=\sec^2(\theta)\text{.}\)</p></li>
-<li id="li-142"><p id="p-derived-li-142">Since \(\sin^2(\theta) =1- \cos^2(\theta), \tan^2(\theta)=\sec^2(\theta)-1\text{.}\)</p></li>
+<li id="li-155"><p id="p-derived-li-155">\(\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}\text{.}\)</p></li>
+<li id="li-156"><p id="p-derived-li-156">\(\tan^2(\theta)+1=\sec^2(\theta)\text{.}\)</p></li>
+<li id="li-157"><p id="p-derived-li-157">Since \(\sin^2(\theta) =1- \cos^2(\theta), \tan^2(\theta)=\sec^2(\theta)-1\text{.}\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4secsub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.17</span><span class="period">.</span>
 </h6>
-<p id="p-201">Using your choice in <a class="xref" data-knowl="./knowl/activity-TI4lastpythagoras.html" title="Activity 1.4.16">Activity 1.4.16</a>, pick an appropriate trignometric substitution for \(x\) and rewrite \(\displaystyle \int \sqrt{x^2-1} dx\) as an integral in terms of \(\theta\text{.}\)  (Remember to compute \(dx\) as well!)</p></article> <article class="activity project-like" id="activity-T4arcsec"><h6 class="heading">
+<p id="p-211">Using your choice in <a class="xref" data-knowl="./knowl/activity-TI4lastpythagoras.html" title="Activity 1.4.16">Activity 1.4.16</a>, pick an appropriate trignometric substitution for \(x\) and rewrite \(\displaystyle \int \sqrt{x^2-1} dx\) as an integral in terms of \(\theta\text{.}\)  (Remember to compute \(dx\) as well!)</p></article> <article class="activity project-like" id="activity-T4arcsec"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.18</span><span class="period">.</span>
 </h6>
-<p id="p-202">Evaluate the  integral you found in <a class="xref" data-knowl="./knowl/activity-TI4secsub.html" title="Activity 1.4.17">Activity 1.4.17</a>, using the fact that if \(x=\sec(\theta), \theta=\arcsec(x)\text{.}\) <a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><p id="p-203">To better understand the relationship between \(x\) and functions of \(\theta\text{,}\) consider this right triangle where \(\sec(\theta)=x\text{.}\) <figure class="figure figure-like" id="figure-1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/secthetaisx.svg" role="img" class="contained" alt="Right triangle with hypotenuse length x, adjacent length 1, and opposite length sqrt(x^2-1)."></div>
+<p id="p-212">Evaluate the  integral you found in <a class="xref" data-knowl="./knowl/activity-TI4secsub.html" title="Activity 1.4.17">Activity 1.4.17</a>, using the fact that if \(x=\sec(\theta), \theta=\arcsec(x)\text{.}\) <a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><p id="p-213">To better understand the relationship between \(x\) and functions of \(\theta\text{,}\) consider this right triangle where \(\sec(\theta)=x\text{.}\) <figure class="figure figure-like" id="figure-1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/secthetaisx.svg" role="img" class="contained" alt="Right triangle with hypotenuse length x, adjacent length 1, and opposite length sqrt(x^2-1)."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.19<span class="period">.</span></span><span class="space"> </span>A right triangle where \(\sec(\theta)=x\text{.}\)</figcaption></figure></p></div></div></p></article> <article class="activity project-like" id="activity-TI4whensinsub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.20</span><span class="period">.</span>
 </h6>
-<p id="p-204">If we wish to simplify an expression that contained a \(k^2-x^2\) expression, which would be the best substitution?</p>
+<p id="p-214">If we wish to simplify an expression that contained a \(k^2-x^2\) expression, which would be the best substitution?</p>
 <ol class="upper-alpha">
-<li id="li-143"><p id="p-derived-li-143">\(\displaystyle x=\sin(x)\)</p></li>
-<li id="li-144"><p id="p-derived-li-144">\(\displaystyle x=\tan(x)\)</p></li>
-<li id="li-145"><p id="p-derived-li-145">\(\displaystyle x=\sec(x)\)</p></li>
+<li id="li-158"><p id="p-derived-li-158">\(\displaystyle x=\sin(x)\)</p></li>
+<li id="li-159"><p id="p-derived-li-159">\(\displaystyle x=\tan(x)\)</p></li>
+<li id="li-160"><p id="p-derived-li-160">\(\displaystyle x=\sec(x)\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4whentansub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.21</span><span class="period">.</span>
 </h6>
-<p id="p-205">If we wish to simplify an expression that contained a \(k^2+x^2\) expression, which would be the best substitution?</p>
+<p id="p-215">If we wish to simplify an expression that contained a \(k^2+x^2\) expression, which would be the best substitution?</p>
 <ol class="upper-alpha">
-<li id="li-146"><p id="p-derived-li-146">\(\displaystyle x=\sin(x)\)</p></li>
-<li id="li-147"><p id="p-derived-li-147">\(\displaystyle x=\tan(x)\)</p></li>
-<li id="li-148"><p id="p-derived-li-148">\(\displaystyle x=\sec(x)\)</p></li>
+<li id="li-161"><p id="p-derived-li-161">\(\displaystyle x=\sin(x)\)</p></li>
+<li id="li-162"><p id="p-derived-li-162">\(\displaystyle x=\tan(x)\)</p></li>
+<li id="li-163"><p id="p-derived-li-163">\(\displaystyle x=\sec(x)\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4whensecsub"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.22</span><span class="period">.</span>
 </h6>
-<p id="p-206">If we wish to simplify an expression that contained a \(x^2-k^2\) expression, which would be the best substitution?</p>
+<p id="p-216">If we wish to simplify an expression that contained a \(x^2-k^2\) expression, which would be the best substitution?</p>
 <ol class="upper-alpha">
-<li id="li-149"><p id="p-derived-li-149">\(\displaystyle x=\sin(x)\)</p></li>
-<li id="li-150"><p id="p-derived-li-150">\(\displaystyle x=\tan(x)\)</p></li>
-<li id="li-151"><p id="p-derived-li-151">\(\displaystyle x=\sec(x)\)</p></li>
+<li id="li-164"><p id="p-derived-li-164">\(\displaystyle x=\sin(x)\)</p></li>
+<li id="li-165"><p id="p-derived-li-165">\(\displaystyle x=\tan(x)\)</p></li>
+<li id="li-166"><p id="p-derived-li-166">\(\displaystyle x=\sec(x)\)</p></li>
 </ol></article> <article class="activity project-like" id="activity-TI4semicircle"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.23</span><span class="period">.</span>
 </h6>
-<p id="p-207">Consider the unit circle \(x^2+y^2=1\text{.}\)  Find a function \(f(x)\) so that \(y=f(x)\) is the graph of the upper-half semicircle of the unit circle.</p></article> <article class="activity project-like" id="activity-TI4semicirclearea"><h6 class="heading">
+<p id="p-217">Consider the unit circle \(x^2+y^2=1\text{.}\)  Find a function \(f(x)\) so that \(y=f(x)\) is the graph of the upper-half semicircle of the unit circle.</p></article> <article class="activity project-like" id="activity-TI4semicirclearea"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.24</span><span class="period">.</span>
 </h6>
 <article class="task exercise-like" id="task-26"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-208">Find the area under the curve \(y=f(x)\) from <a class="xref" data-knowl="./knowl/activity-TI4semicircle.html" title="Activity 1.4.23">Activity 1.4.23</a>.</p></article><article class="task exercise-like" id="task-27"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-209">How does this value compare to what we know about areas of circles?</p></article></article></p></section></div></main>
+<p id="p-218">Find the area under the curve \(y=f(x)\) from <a class="xref" data-knowl="./knowl/activity-TI4semicircle.html" title="Activity 1.4.23">Activity 1.4.23</a>.</p></article><article class="task exercise-like" id="task-27"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-219">How does this value compare to what we know about areas of circles?</p></article></article></p></section></div></main>
 </div>
 </body>
 </html>
