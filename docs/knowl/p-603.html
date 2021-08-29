@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-29T22:33:46Z       *-->
+<!--*       on 2021-08-29T22:40:32Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,18 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Given \(f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\text{,}\) which of the following represents \(f'(x)=\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\right]\text{?}\)</p>
-<ol class="upper-alpha">
-<li><p>\(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\text{.}\)</p></li>
-<li><p>\(\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^{n-1}\text{.}\)</p></li>
-<li><p>\(\displaystyle n\sum_{n=0}^\infty \frac{1}{n!}x^{n-1}\text{.}\)</p></li>
-</ol>
+<p>Consider the power series \(\displaystyle \sum_{n=0}^\infty a_nx^n\text{.}\)  We could compute \(\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]\) by:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}\\
+(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;\\
+&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}\\
+(\text{Then let }m=n-1, n=m+1)&amp;\\
+&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}\\
+(\text{Then renaming indices}.)&amp;\\
+&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
+\end{align*}
+</div>
 <span class="incontext"><a href="PS1.html#p-603">in-context</a></span>
 </body>
 </html>
