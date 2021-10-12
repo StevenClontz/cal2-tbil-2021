@@ -9,7 +9,6 @@
             </li>
         </ul>
     </objectives>
-    <p>
     <activity xml:id="activity-TI3oddOdd">
             <statement>
                 <p>
@@ -22,8 +21,6 @@
                 </p>
             </statement>
     </activity>
-    </p>
-    <p>
     <activity xml:id="activity-TI3evenOdd">
             <statement>
                 <p>
@@ -36,9 +33,7 @@
                 </p>
             </statement>
     </activity>
-    </p>
     
-    <p>
     <activity xml:id="activity-TI3evenEven">
             <statement>
                 <p>
@@ -51,10 +46,8 @@
                 </p>
             </statement>
     </activity>
-    </p>
     
     
-    <p>
     <activity xml:id="activity-TI3evenEvenRedux">
             <statement>
                 <p>
@@ -67,10 +60,8 @@
                 </p>
             </statement>
     </activity>
-    </p>
     
     
-        <p>
     <activity xml:id="activity-TI3evenOddGeneral">
             <statement>
                 <p>
@@ -83,10 +74,8 @@
                 </p>
             </statement>
     </activity>
-    </p>
     
     
-           <p>
     <activity xml:id="activity-TI3oddOddGeneral">
             <statement>
                 <p>
@@ -99,7 +88,6 @@
                 </p>
             </statement>
     </activity>
-    </p>
     
     
     
@@ -123,7 +111,6 @@
     
     
     
-        <p>
     <activity xml:id="activity-TI3evenEvenFluency">
             <statement>
                 <p>
@@ -136,10 +123,8 @@
                 </p>
             </statement>
     </activity>
-    </p>
     
     
-           <p>
     <activity xml:id="activity-TI3oddOddFluency">
             <statement>
                 <p>
@@ -152,45 +137,21 @@
                 </p>
             </statement>
     </activity>
-    </p>
     
     
     
-    We might also use some other trigonometric identities to manipulate our integrands; please see below.
+    <remark>
+        <statement>
+            <p>
+We might also use some other trigonometric identities to manipulate our integrands, listed in
+<xref ref="trig-table"/>.
+            </p>
+        </statement>
+    </remark>
     
     
-    <m>[\sin(\alpha)]^2+[\cos(\alpha)]^2=1</m>
-    
-    <m>\cos(\alpha+\beta)=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)</m>
-    
-    <m>\sin(\alpha+\beta)=\sin(\alpha)\cos(\beta)+\cos(\alpha)\sin(\beta)</m>
-    
-    <m>\cos(2\alpha) = [\cos(\alpha)]^2-[\sin(\alpha)]^2 = 2[\cos(\alpha)]^2-1 = 1-2[\sin(\alpha)]^2</m>
-    
-    <m>\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)</m>
-    
-    <m>[\cos(\alpha)]^2=\displaystyle\frac{1+\cos(2\alpha)}{2}</m>
-    
-    <m>[\sin(\alpha)]^2=\displaystyle\frac{1-\cos(2\alpha)}{2}</m>
-    
-    <m>\sin(\alpha)\cos(\beta)=\displaystyle\frac{\sin(\alpha+\beta)+\sin(\alpha-\beta)}{2}</m>
-    
-    <m>\sin(\alpha)\sin(\beta)=\displaystyle\frac{\cos(\alpha-\beta)-\cos(\alpha+\beta)}{2}</m>
-    
-    <m>\cos(\alpha)\sin(\beta)=\displaystyle\frac{\sin(\alpha+\beta)-\sin(\alpha-\beta)}{2}</m>
-    
-    <m>\cos(\alpha)\cos(\beta)=\displaystyle\frac{\cos(\alpha-\beta)+\cos(\alpha+\beta)}{2}</m>
-    
-    <m>\sin(\alpha)+\sin(\beta)=2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m>
-    
-    <m>\sin(\alpha)-\sin(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m>
-    
-    <m>\cos(\alpha)+\cos(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m>
-    
-    <m>\cos(\alpha)-\cos(\beta)=-2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m>
     
     
-           <p>
     <activity xml:id="activity-TI3productSumFlex">
             <statement>
                 <p>
@@ -203,7 +164,6 @@
                 </p>
             </statement>
     </activity>
-    </p>
     
     
     

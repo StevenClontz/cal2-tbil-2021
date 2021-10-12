@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PS2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Convergence of Power Series (PS2)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/02.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+
+</section>

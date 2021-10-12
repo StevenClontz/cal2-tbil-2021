@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="SQ8" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Absolute Convergence (SQ8)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/08.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+
+</section>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="SQ1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sequence Formulas (SQ1)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/01.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+
+</section>

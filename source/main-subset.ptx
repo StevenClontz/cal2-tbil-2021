@@ -7,13 +7,23 @@
     <title>Calculus 2 for Team-Based Inquiry Learning</title>
     <subtitle>Subset Preview</subtitle>
       <!-- Use this for a single section -->
-      <!-- <chapter>
+      <!--  -->
+        <!-- --> <chapter>
           <title>Chapter Title</title>
-          <xi:include href="01-TI/07.ptx"/>
-      </chapter> -->
+          <xi:include href="02-AI/04.ptx"/>
+      </chapter> 
 
-      <!-- Use this for a single chapter -->
-        <xi:include href="01-TI/main.ptx"/>
-       
+        
+  
+        
+      
+      
+
+      <!-- Use this for a single chapter 
+<xi:include href="03-CO/main.ptx"/> 
+      
+      <xi:include href="02-AI/main.ptx"/>
+      
+       -->
   </book>
 </pretext>

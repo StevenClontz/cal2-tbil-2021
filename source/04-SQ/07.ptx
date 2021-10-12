@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="SQ7" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Ratio and Root Tests (SQ7)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/07.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+
+    
+    <fact xml:id="fact-SQ7rootTest">
+          
+      <p permid="QCd">
+        Let <m>N</m> be an integer and let <m>\displaystyle\sum a_n</m> be a series with <m>a_n\geq 0</m> for <m>n\geq N</m>,
+          and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{a_n}=\rho</m>.
+          Then
+          <ol>
+          <li><m>\displaystyle\sum a_n</m> converges if <m>\rho</m> is less than 1, and</li>
+              <li><m>\displaystyle\sum a_n</m> diverges if <m>\rho</m> is greater than 1.</li>
+          </ol>
+       
+      </p>
+        </fact>
+    
+    
+    <fact xml:id="fact-SQ7ratioTest">
+          
+      <p permid="QCd">
+        Let <m>\displaystyle\sum a_n</m> be a series with positive terms,
+          and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\frac{a_{n+1}}{a_n}=\rho</m>.
+          Then
+          <ol>
+          <li><m>\displaystyle\sum a_n</m> converges if <m>\rho</m> is less than 1, and</li>
+              <li><m>\displaystyle\sum a_n</m> diverges if <m>\rho</m> is greater than 1.</li>
+          </ol>
+       
+      </p>
+        </fact>
+    
+    
+    <activity xml:id="activity-SQ7rootRatioComparison">
+            <introduction>
+                <p>
+                    Consider the series <m>\displaystyle \sum_{n=0}^\infty \displaystyle\frac{n^2}{2^n}</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                Use the root test to check for convergence of this series.
+                </p>
+            </task>
+        
+       <task>
+                <p>
+                Use the ratio test to check for convergence of this series.
+                </p>
+            </task>
+            
+            
+            <task>
+                <p>
+                Use the comparison (or limit comparison) test to check for convergence of this series.
+                </p>
+            </task>
+            
+        </activity>
+    
+    
+    <activity xml:id="activity-SQ7rootRatioComparison2">
+            <introduction>
+                <p>
+                    Consider the series <m>\displaystyle \sum_{n=0}^\infty \displaystyle\frac{2^n+5}{3^n}</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                Use the root test to check for convergence of this series.
+                </p>
+            </task>
+        
+       <task>
+                <p>
+                Use the ratio test to check for convergence of this series.
+                </p>
+            </task>
+            
+            
+            <task>
+                <p>
+                Use the comparison (or limit comparison) test to check for convergence of this series.
+                </p>
+            </task>
+        
+        
+            <task>
+                <p>
+                Find the sum of this series.
+                </p>
+            </task>
+            
+        </activity>
+    
+    
+    
+    <activity xml:id="activity-SQ7rootRatioChoices">
+            <introduction>
+                <p>
+                    For each series, determine whether the root test or the ratio test would be preferable, and then determine if the series converges.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                <m>\displaystyle \sum_{n=1}^\infty \displaystyle\left(\frac{1}{1+n}\right)^n</m>
+                </p>
+            </task>
+        
+       <task>
+                <p>
+                <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{2^n}{n^n}</m>
+                </p>
+            </task>
+            
+            
+            <task>
+                <p>
+                <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(2n)!}{(n!)(n!)}</m>
+                </p>
+            </task>
+        
+        
+            <task>
+                <p>
+                <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{4^n(n!)(n!)}{(2n)!}</m>
+                </p>
+            </task>
+            
+        </activity>
+    
+</section>

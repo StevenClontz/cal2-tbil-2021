@@ -23,6 +23,7 @@
 \newcommand{\R}{\mathbb R}
     \newcommand{\arcsec}{\mathrm{arcsec}\,}
     \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
 </macros>
 
 <!-- If you put any latex-image elements you can include preambles  -->

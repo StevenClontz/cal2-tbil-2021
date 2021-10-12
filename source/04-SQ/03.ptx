@@ -9,7 +9,6 @@
             </li>
         </ul>
     </objectives>
-    <p>
     <activity xml:id="activity-SQ3intropartialsumsgeometric">
         <introduction>
             <p>
@@ -326,7 +325,5 @@
             </task>
         </activity>
         
-        
     
-    </p>
 </section>
