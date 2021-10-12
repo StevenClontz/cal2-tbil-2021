@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-12T13:37:54Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal2 Basic Convergence Tests (SQ5)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 2 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="SQ4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="SQ.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="SQ6.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="SQ4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="SQ.html" title="Up">Up</a><a class="next-button button toolbar-item" href="SQ6.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO"><span class="codenumber">3</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul><li><a href="CO1.html" data-scroll="CO1">Parametric/vector equations (CO1)</a></li></ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ"><span class="codenumber">4</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="active">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS"><span class="codenumber">5</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="SQ5"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.5</span> <span class="title">Basic Convergence Tests (SQ5)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-24"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-633"><p id="p-668">Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ5investigateDivergentSeries"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-62"><p id="p-669">For each of the following series, write out the first several terms, and then argue whether the series converges or diverges.</p></div>
+<article class="task exercise-like" id="task-169"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-670">\(\displaystyle \sum_{n=0}^\infty n^2\)</p></article><article class="task exercise-like" id="task-170"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-671">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{n+1}{n}\)</p></article><article class="task exercise-like" id="task-171"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-672">\(\displaystyle \sum_{n=0}^\infty (-1)^n\)</p></article></article><article class="fact theorem-like" id="fact-SQ5convergenceTheorem"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span>
+</h6>
+<p id="QCd">If the series \(\displaystyle\sum a_n\) is convergent, then  \(\displaystyle\lim_{n\rightarrow\infty} a_n=0\text{.}\)</p></article><article class="fact theorem-like" id="fact-SQ5divergenceTest"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">The Divergence (\(n^{th}\) term) Test.</span>
+</h6>
+<p id="QCd">If the  \(\displaystyle\lim_{n\rightarrow\infty} a_n\neq 0\text{,}\) then \(\displaystyle\sum a_n\) diverges.</p></article><article class="fact theorem-like" id="fact-SQ5sumAndMultipleRules"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.4</span><span class="period">.</span>
+</h6>
+<p id="QCd">If \(\displaystyle\sum a_n=A\text{,}\) \(\displaystyle\sum b_n=B\text{,}\) and \(c\) is a real number, then</p>
+<ol class="decimal">
+<li id="li-634"><p id="p-derived-li-634">\(\displaystyle\sum ca_n=c\displaystyle\sum a_n=cA\text{,}\) and</p></li>
+<li id="li-635"><p id="p-derived-li-635">\(\displaystyle\sum a_n+\displaystyle\sum b_n=\displaystyle\sum (a_n+b_n)=A+B\text{.}\)</p></li>
+</ol></article><article class="fact theorem-like" id="fact-SQ5boundedPartialSums"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.5</span><span class="period">.</span>
+</h6>
+<p id="QCd">If \(a_n&gt;0\) for all \(n\text{,}\) then \(\displaystyle\sum a_n\) is convergent if and only if the sequence of partial sums is bounded from above.</p></article><article class="activity project-like" id="activity-SQ5harmonicSeries"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.6</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-63"><p id="p-677">Consider the so-called <em class="emphasis">harmonic series</em>, \(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n}\text{,}\) and let \(S_n\) be its \(n^{th}\) partial sum.</p></div>
+<article class="task exercise-like" id="task-172"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-678">Show that \(S_4\geq S_2+\displaystyle\frac{1}{2}\text{.}\)</p></article><article class="task exercise-like" id="task-173"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-679">Show that \(S_8\geq S_4+\displaystyle\frac{1}{2}\text{.}\)</p></article><article class="task exercise-like" id="task-174"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-680">Argue that the series converges or diverges.</p></article></article><article class="activity project-like" id="activity-SQ5p=2Series"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.7</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-64"><p id="p-681">Consider the series \(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2}\text{.}\)</p></div>
+<article class="task exercise-like" id="task-175"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-682">How does this series to \(\displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{?}\)</p></article><article class="task exercise-like" id="task-176"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-683">Draw a picture relating the sum and the integral (try comparing areas of appropriate regions in the plane).</p></article><article class="task exercise-like" id="task-177"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-684">Argue that the series converges or diverges.</p></article></article><article class="fact theorem-like" id="fact-SQ5integralTest"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.8</span><span class="period">.</span><span class="space"> </span><span class="title">The Integral Test.</span>
+</h6>
+<p id="QCd">Let \(\{a_n\}\) be a sequence of positive numbers. If \(f(x)\) is continuous, positive, and decreasing, and there is some positive integer \(N\) such that \(f(n)=a_n\) for all \(n\geq N\text{,}\) then \(\displaystyle \sum_{n=N}^\infty a_n\) and \(\displaystyle\int_N^\infty \displaystyle f(x) \, dx\) both converge or both diverge.</p></article><article class="fact theorem-like" id="fact-SQ5pTest"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.9</span><span class="period">.</span><span class="space"> </span><span class="title">The \(p\)-Test.</span>
+</h6>
+<p id="QCd">The series \(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}\) converges for _______, and diverges otherwise.</p></article><article class="activity project-like" id="activity-SQ5pSeries"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.10</span><span class="period">.</span>
+</h6>
+<article class="task exercise-like" id="task-178"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-687">What value of \(p\) corresponds to the harmonic series?</p></article><article class="task exercise-like" id="task-179"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-688">What do we know about the \(p\)-series with \(p=2\text{?}\)</p></article><article class="task exercise-like" id="task-180"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-689">Fill in the blank in the above fact, and then prove it.</p></article></article><article class="activity project-like" id="activity-SQ5pSeriesAlmost"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.11</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-65"><p id="p-690">Consider the series \(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2+1}\text{.}\)</p></div>
+<article class="task exercise-like" id="task-181"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-691">If we aim to use the integral test, what is an appropriate choice for \(f(x)\text{?}\)</p></article><article class="task exercise-like" id="task-182"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-692">Does the series converge or diverge?</p></article></article> I feel like the alternating series stuff should be in the section with absolute convergence, rather than this one (due to the inclusion of negative terms). -pj <article class="fact theorem-like" id="fact-SQ8alternatingSeriesTest"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.12</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Series Test (Leibniz's Theorem).</span>
+</h6>
+<p id="QCd">The series \(\displaystyle\sum (-1)^{n+1}u_n\) converges if all of the following conditions are satisfied:</p>
+<ol class="decimal">
+<li id="li-636"><p id="p-derived-li-636">\(u_n\) is always positive,</p></li>
+<li id="li-637"><p id="p-derived-li-637">there is an integer \(N\) such that \(u_n\geq u_{n+1}\) for all \(n\geq N\text{,}\) and</p></li>
+<li id="li-638"><p id="p-derived-li-638">\(\displaystyle\lim_{n\rightarrow\infty}u_n=0\text{.}\)</p></li>
+</ol></article><article class="fact theorem-like" id="fact-SQ8alternatingSeriesEstimation"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.13</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Series Estimation Theorem.</span>
+</h6>
+<p id="QCd">If the alternating series \(\displaystyle\sum a_n=\displaystyle\sum (-1)^{n+1}u_n\) converges to \(L\) and has \(n^{th}\) partial sum \(S_n\text{,}\) then for \(n\geq N\) (as in the alternating series test):</p>
+<ol class="decimal">
+<li id="li-639"><p id="p-derived-li-639">\(|L-S_n|\) is less than \(|a_{n+1}|\text{,}\) and</p></li>
+<li id="li-640"><p id="p-derived-li-640">\((L-S_n)\) has the same sign as \(a_{n+1}\text{.}\)</p></li>
+</ol></article><article class="activity project-like" id="activity-SQ5alternatingHarmonicSeries"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.14</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-66"><p id="p-695">Consider the so-called <em class="emphasis">alternating harmonic series</em>, \(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(-1)^{n+1}}{n}\text{.}\)</p></div>
+<article class="task exercise-like" id="task-183"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-696">Use the alternating series test to determine if the series converges.</p></article><article class="task exercise-like" id="task-184"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-697">If so, estimate the series using the first 3 terms.</p></article></article></section></div></main>
+</div>
+</body>
+</html>

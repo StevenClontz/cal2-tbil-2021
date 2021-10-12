@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-12T13:37:52Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal2 Arclength (AI2)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 2 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AI1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AI3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AI1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AI3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="active">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO"><span class="codenumber">3</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul><li><a href="CO1.html" data-scroll="CO1">Parametric/vector equations (CO1)</a></li></ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ"><span class="codenumber">4</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS"><span class="codenumber">5</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AI2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Arclength (AI2)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-12"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-346"><p id="p-382">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li></ul></article><article class="activity project-like" id="activity-132"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-18"><p id="p-383">Suppose we wanted to find the arclength of the parabola \(y=-x^2+6x\) over the interval \([0,4]\text{.}\) <figure class="figure figure-like" id="figure-7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/parabolaarclength.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.2<span class="period">.</span></span><span class="space"> </span>Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)</figcaption></figure></p></div>
+<article class="task exercise-like" id="task-46"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-384">Suppose we wished to estimate this length with two line segments, where \(\Delta x=2\text{.}\) <figure class="figure figure-like" id="figure-8"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/parabolaarclengthtwopieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.3<span class="period">.</span></span><span class="space"> </span>Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)</figcaption></figure> Which of  the following expressions represents the sum of the lengths of the line segments with endpoints \((0,0)\text{,}\) \((2,8)\) and  \((4,8)\text{.}\)</p>
+<ol class="upper-alpha">
+<li id="li-347"><p id="p-derived-li-347">\(\sqrt{4+8}\text{.}\)</p></li>
+<li id="li-348"><p id="p-derived-li-348">\(\sqrt{4^2+8^2}\text{.}\)</p></li>
+<li id="li-349"><p id="p-derived-li-349">\(\sqrt{2^2+8^2}+\sqrt{4^2+8^2}\text{.}\)</p></li>
+<li id="li-350"><p id="p-derived-li-350">\(\sqrt{2^2+8^2}+\sqrt{(4-2)^2+(8-2)^2}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-47"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-385">Suppose we wished to estimate this length with four line segments, where \(\Delta x=1\text{.}\) <figure class="figure figure-like" id="figure-9"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/parabolaarclengthfourpieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.4<span class="period">.</span></span><span class="space"> </span>Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)</figcaption></figure> Which of  the following expressions represents the sum of the lengths of the line segments with endpoints \((0,0)\text{,}\) \((1,5)\text{,}\) \((2,8)\text{,}\) \((3,9)\) and \((4,8)\text{.}\)</p>
+<ol class="upper-alpha">
+<li id="li-351"><p id="p-derived-li-351">\(\sqrt{4^2+8^2}\text{.}\)</p></li>
+<li id="li-352"><p id="p-derived-li-352">\(\sqrt{1^2+(5-0)^2}+\sqrt{1^2+(8-5)^2}+\sqrt{1^2+(9-8)^2}+\sqrt{1^2+(8-9)^2}\text{.}\)</p></li>
+<li id="li-353"><p id="p-derived-li-353">\(\sqrt{1^2+5^2}+\sqrt{2^2+8^2}+\sqrt{3^2+9^2}+\sqrt{4^2+8^2}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-48"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-386">Suppose we wished to estimate this length with \(n\) line segments  \(\Delta x=4/n\text{.}\)  Let \(f(x)=-x^2+6x\text{.}\) <figure class="figure figure-like" id="figure-10"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/parabolaarclengthnpieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.5<span class="period">.</span></span><span class="space"> </span>Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)</figcaption></figure> Which of  the following expressions represents the length of the line segment from \((x_0, f(x_0))\) to \((\Delta x, f(x_0+\Delta x))\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-354"><p id="p-derived-li-354">\(\sqrt{x_0^2+f(x_0)^2}\text{.}\)</p></li>
+<li id="li-355"><p id="p-derived-li-355">\(\sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}\text{.}\)</p></li>
+<li id="li-356"><p id="p-derived-li-356">\(\sqrt{(\Delta x)^2+(f(x_0+\Delta)-f(x_0))^2}\text{.}\)</p></li>
+<li id="li-357"><p id="p-derived-li-357">\(\sqrt{(\Delta x)^2+f(\Delta x)^2}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-49"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-387">Which of  the following Riemann sums best estimates the arclength of the parabola \(y=-x^2+6x\) over the interval \([0,4]\text{?}\)  Let \(f(x)=-x^2+6x\text{.}\)</p>
+<ol class="upper-alpha">
+<li id="li-358"><p id="p-derived-li-358">\(\displaystyle \sum \sqrt{x_i^2+f(x_i)^2}\text{.}\)</p></li>
+<li id="li-359"><p id="p-derived-li-359">\(\displaystyle \sum \sqrt{(x_i+\Delta x)^2+f(x_i+\Delta x)^2}\text{.}\)</p></li>
+<li id="li-360"><p id="p-derived-li-360">\(\displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2}\text{.}\)</p></li>
+<li id="li-361"><p id="p-derived-li-361">\(\displaystyle \sum \sqrt{(\Delta x)^2+f(\Delta x)^2}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-50"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-388">Note that</p>
+<div class="displaymath">
+\begin{align*}
+\sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; = \sqrt{(\Delta x)^2\left(1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2\right)}\\
+&amp;=\sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x
+\end{align*}
+</div>
+<p class="continuation">Which of the following best describes \(\displaystyle\lim_{\Delta x\to 0} \frac{f(x_i+\Delta x)-f(x_i)}{\Delta x}\text{?}\)</p>
+<ol class="lower-alpha">
+<li id="li-362"><p id="p-derived-li-362">\(0\text{.}\)</p></li>
+<li id="li-363"><p id="p-derived-li-363">\(1\text{.}\)</p></li>
+<li id="li-364"><p id="p-derived-li-364">\(f'(x_i)\text{.}\)</p></li>
+<li id="li-365"><p id="p-derived-li-365">This limit is undefined.</p></li>
+</ol></article></article><article class="fact theorem-like" id="fact-arclength"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+</h6>
+<p id="p-389">Given a differentiable function \(f(x)\text{,}\) the arclength of \(y=f(x)\) defined on \([a,b]\) is computed by the integral:</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{n\to \infty}\sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2} &amp; =\lim_{n\to \infty}\sum \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x\\
+&amp; = \int_a^b \sqrt{1+(f'(x))^2}dx.
+\end{align*}
+</div></article><article class="activity project-like" id="activity-133"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+</h6>
+<p id="p-390">Use <a class="xref" data-knowl="./knowl/fact-arclength.html" title="Fact 2.2.6">Fact 2.2.6</a> to find an integral which measures the arclength of the parabola \(y=-x^2+6x\) over the interval \([0,4]\text{.}\)</p></article><article class="activity project-like" id="activity-134"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-19"><p id="p-391">Consider the curve \(y=2^x-1\) defined on \([1,5]\text{.}\)</p></div>
+<article class="task exercise-like" id="task-51"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-392">Estimate the arclength of this curve with two line segments with \(\Delta x=2\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{|c|c|c|c|}
+\hline
+x_i &amp; (x_i, f(x_i)) &amp; (x_i+\Delta x, f(x_i+\Delta x)) &amp; \text{Length of segment}\\
+\hline
+1 &amp; &amp; &amp; \\
+\hline
+3 &amp; &amp; &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-52"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-393">Estimate the arclength of this curve with four line segments with \(\Delta x=1\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{|c|c|c|c|}
+\hline
+x_i &amp; (x_i, f(x_i)) &amp; (x_i+\Delta x, f(x_i+\Delta x)) &amp; \text{Length of segment}\\
+\hline
+1 &amp; &amp; &amp; \\
+\hline
+2 &amp; &amp; &amp; \\
+\hline
+3 &amp; &amp; &amp; \\
+\hline
+4 &amp; &amp; &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-53"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-394">Find an integral which computes the arclength of the curve \(y=2^x-1\) defined on \([1,5]\text{.}\)</p></article></article><article class="activity project-like" id="activity-135"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-20"><p id="p-395">Consider the curve \(y=5e^{-x^2}\)  over the interval \([-1,4]\)</p></div>
+<article class="task exercise-like" id="task-54"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-396">Estimate this arclength with 5 line segments with \(\Delta x=1\text{.}\)</p></article><article class="task exercise-like" id="task-55"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-397">Find an integral which computes this arclength.</p></article></article></section></div></main>
+</div>
+</body>
+</html>

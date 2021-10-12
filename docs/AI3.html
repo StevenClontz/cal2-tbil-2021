@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-12T13:37:52Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal2 Volumes of Revolution (AI3)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 2 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AI2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AI4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AI2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AI4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="active">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO"><span class="codenumber">3</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul><li><a href="CO1.html" data-scroll="CO1">Parametric/vector equations (CO1)</a></li></ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ"><span class="codenumber">4</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS"><span class="codenumber">5</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AI3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Volumes of Revolution (AI3)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-13"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-366"><p id="p-398">Compute volumes of solids of revolution.</p></li></ul></article><article class="activity project-like" id="activity-AI3rotatex+1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-21">
+<p id="p-399">Consider the function \(f(x)=x+1\) and the solid of revolution generated by rotating the region bound by:</p>
+<div class="displaymath">
+\begin{align*}
+0&amp;\leq y \leq f(x)\\
+0&amp; \leq x  \leq 6
+\end{align*}
+</div>
+<p class="continuation">about the \(x\)-axis. <figure class="figure figure-like" id="figure-11"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotatingxplus1.svg" role="img" class="contained" alt="A plot of f(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.2<span class="period">.</span></span><span class="space"> </span>Plot of \(f(x)=x+1\) over \([0,6]\text{.}\)</figcaption></figure> We wish to find the volume of this solid.</p>
+</div>
+<article class="task exercise-like" id="task-56"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-400">Suppose we estimate the surface area of this solid by approximating it with two cylinders of “height” \(\Delta x=3\) and radii \(f(0)=1, f(3)=4\text{:}\) <figure class="figure figure-like" id="figure-12"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotatingxplus11with2cylinder.svg" role="img" class="contained" alt="A plot of f(x) approximated by 2 cylinders."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.3<span class="period">.</span></span><span class="space"> </span>Plot of \(f(x)=x+1\) over \([0,6]\) and cross section of two cylinders.</figcaption></figure></p>
+<p id="p-401">What is the volume of the cylinder with radius \(f(0)=1\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-367"><p id="p-derived-li-367">\(\pi\cdot 0^2\cdot 3\text{.}\)</p></li>
+<li id="li-368"><p id="p-derived-li-368">\(\pi\cdot 1^2\cdot 3\text{.}\)</p></li>
+<li id="li-369"><p id="p-derived-li-369">\(\pi\cdot 3^2\cdot 3\text{.}\)</p></li>
+<li id="li-370"><p id="p-derived-li-370">\(\pi\cdot 4^2\cdot 3\text{.}\)</p></li>
+<li id="li-371"><p id="p-derived-li-371">\(\pi\cdot 6^2\cdot 3\text{.}\)</p></li>
+<li id="li-372"><p id="p-derived-li-372">\(\pi\cdot 7^2\cdot 3\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-57"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-402"><figure class="figure figure-like" id="figure-13"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotatingxplus11with2cylinder.svg" role="img" class="contained" alt="A plot of f(x) approximated by 2 cylinders."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.4<span class="period">.</span></span><span class="space"> </span>Plot of \(f(x)=x+1\) over \([0,6]\) and cross section of two cylinders.</figcaption></figure></p>
+<p id="p-403">What is the volume of the cylinder with radius \(f(3)=4\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-373"><p id="p-derived-li-373">\(\pi\cdot 0^2\cdot 3\text{.}\)</p></li>
+<li id="li-374"><p id="p-derived-li-374">\(\pi\cdot 1^2\cdot 3\text{.}\)</p></li>
+<li id="li-375"><p id="p-derived-li-375">\(\pi\cdot 3^2\cdot 3\text{.}\)</p></li>
+<li id="li-376"><p id="p-derived-li-376">\(\pi\cdot 4^2\cdot 3\text{.}\)</p></li>
+<li id="li-377"><p id="p-derived-li-377">\(\pi\cdot 6^2\cdot 3\text{.}\)</p></li>
+<li id="li-378"><p id="p-derived-li-378">\(\pi\cdot 7^2\cdot 3\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-58"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-404">Suppose we now use a “height” of \(\Delta x=2\text{:}\) <figure class="figure figure-like" id="figure-14"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotatingxplus11with3cylinder.svg" role="img" class="contained" alt="A plot of f(x) and cross section of 3 cylinders."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.5<span class="period">.</span></span><span class="space"> </span>Plot of \(f(x)=x+1\) over \([0,6]\) and cross section of 3 cylinders.</figcaption></figure></p>
+<p id="p-405">Fill out the following table:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{|c|c|c|c|}
+\hline
+x_i &amp; \Delta x &amp; \text{Radius of Cross Section}=f(x_i) &amp; \text{Estimated Volume}\\
+\hline
+x_1=0 &amp; 2 &amp;  &amp; \\
+\hline
+x_2=2 &amp; 2 &amp;  &amp; \\
+\hline
+x_3=4 &amp; 2 &amp;  &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-59"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-406">Which of the following Reimann sums best approximates the volume of our solid?</p>
+<ol class="upper-alpha">
+<li id="li-379"><p id="p-derived-li-379">\(\displaystyle \displaystyle \sum \pi x_i^2\Delta x\)</p></li>
+<li id="li-380"><p id="p-derived-li-380">\(\displaystyle \displaystyle \sum \pi (x_i+1)^2\Delta x\)</p></li>
+<li id="li-381"><p id="p-derived-li-381">\(\displaystyle \displaystyle \sum 2\pi x_i\Delta x\)</p></li>
+<li id="li-382"><p id="p-derived-li-382">\(\displaystyle \displaystyle \sum 2\pi (x_i+1)\Delta x\)</p></li>
+</ol></article><article class="task exercise-like" id="task-60"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-407">Which of the following integrals computes the volume of our solid?</p>
+<ol class="upper-alpha">
+<li id="li-383"><p id="p-derived-li-383">\(\displaystyle \displaystyle \int_0^6 \pi x^2dx\)</p></li>
+<li id="li-384"><p id="p-derived-li-384">\(\displaystyle \displaystyle \int_0^6 \pi (x+1)^2dx\)</p></li>
+<li id="li-385"><p id="p-derived-li-385">\(\displaystyle \displaystyle \int_0^6 2\pi xdx\)</p></li>
+<li id="li-386"><p id="p-derived-li-386">\(\displaystyle \displaystyle \int_0^6 2\pi (x+1)dx\)</p></li>
+</ol></article><article class="task exercise-like" id="task-61"><h6 class="heading"><span class="codenumber">(f)</span></h6>
+<p id="p-408">What is the volume of our solid?</p></article></article><article class="activity project-like" id="activity-"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-22">
+<p id="p-409">Suppose we wanted to find the volume of the the solid of revolution generated by rotating the region in the first quadrant bound by the curves:</p>
+<div class="displaymath">
+\begin{equation*}
+x=0, y=2, y=\sqrt{x}
+\end{equation*}
+</div>
+<p class="continuation">about the \(y\)-axis. <figure class="figure figure-like" id="figure-15"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotatingrootxabouty.svg" role="img" class="contained" alt="Bounded region rotated about \(y\)-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.7<span class="period">.</span></span><span class="space"> </span>Plot of Bounded region rotated about \(y\)-axis.</figcaption></figure></p>
+</div>
+<article class="task exercise-like" id="task-62"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-410"><figure class="figure figure-like" id="figure-16"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotatingrootxabouty.svg" role="img" class="contained" alt="Bounded region rotated about \(y\)-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.8<span class="period">.</span></span><span class="space"> </span>Plot of Bounded region rotated about \(y\)-axis.</figcaption></figure> Consider a cross section at height \(y\text{,}\) what is the radius of this cross section?</p>
+<ol class="upper-alpha">
+<li id="li-387"><p id="p-derived-li-387">\(r=4\text{.}\)</p></li>
+<li id="li-388"><p id="p-derived-li-388">\(r=2\text{.}\)</p></li>
+<li id="li-389"><p id="p-derived-li-389">\(r=\sqrt{x}\text{.}\)</p></li>
+<li id="li-390"><p id="p-derived-li-390">\(r=x^2\text{.}\)</p></li>
+<li id="li-391"><p id="p-derived-li-391">\(r=\sqrt{y}\text{.}\)</p></li>
+<li id="li-392"><p id="p-derived-li-392">\(r=y^2\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-63"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-411">Suppose we wanted to estimate this volume with 4 cylinders with \(\Delta y=0.5\text{.}\)  Fill out the following table:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{|c|c|c|c|}
+\hline
+y_i &amp; \Delta y &amp; \text{Radius of Cross Section} &amp; \text{Estimated Volume}\\
+\hline
+y_1=0 &amp; 0.5 &amp;  &amp; \\
+\hline
+y_2=0.5 &amp; 0.5 &amp;  &amp; \\
+\hline
+y_3=1 &amp; 0.5 &amp;  &amp; \\
+\hline
+y_4=1.5 &amp; 0.5 &amp;  &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-64"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-412">Which of the following Reimann sums best approximates the volume of our solid?</p>
+<ol class="upper-alpha">
+<li id="li-393"><p id="p-derived-li-393">\(\displaystyle \displaystyle \sum 2\pi y_i^2\Delta y\)</p></li>
+<li id="li-394"><p id="p-derived-li-394">\(\displaystyle \displaystyle \sum \pi (y_i^2)^2\Delta y\)</p></li>
+<li id="li-395"><p id="p-derived-li-395">\(\displaystyle \displaystyle \sum 2\pi \sqrt{y_i}\Delta y\)</p></li>
+<li id="li-396"><p id="p-derived-li-396">\(\displaystyle \displaystyle \sum \pi (\sqrt{y_i})^2\Delta y\)</p></li>
+</ol></article><article class="task exercise-like" id="task-65"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-413">Which of the following integrals computes the volume of our solid?</p>
+<ol class="upper-alpha">
+<li id="li-397"><p id="p-derived-li-397">\(\displaystyle \displaystyle \int_0^2 \pi y^4  dy\)</p></li>
+<li id="li-398"><p id="p-derived-li-398">\(\displaystyle \displaystyle \int_0^4 \pi y^4 dy\)</p></li>
+<li id="li-399"><p id="p-derived-li-399">\(\displaystyle \displaystyle \int_{-4}^4 \pi y^4 dy\)</p></li>
+</ol></article><article class="task exercise-like" id="task-66"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-414">What is the volume of our solid?</p></article></article><article class="fact theorem-like" id="fact-disk"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Volumes of Revolution: Disk Method..</span>
+</h6>
+<p id="p-415">If \(y = r(x)\) is a nonnegative continuous function on \([a,b]\text{,}\) then the volume of the solid of revolution generated by revolving the curve about the \(x\)-axis over this interval is given by</p>
+<div class="displaymath">
+\begin{equation*}
+V = \int_a^b \pi r(x)^2 \, dx\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-138"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-23">
+<p id="p-416">Consider the solid of revolution generated by rotating the region bound by</p>
+<div class="displaymath">
+\begin{equation*}
+x=0, x=4, y=0, y=x, y=2x+1
+\end{equation*}
+</div>
+<p class="continuation">about the \(y\)-axis. <figure class="figure figure-like" id="figure-17"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotatingbetweenfunctionsaboutx.svg" role="img" class="contained" alt="Bounded region rotated about \(x\)-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.11<span class="period">.</span></span><span class="space"> </span>Plot of Bounded region rotated about \(x\)-axis.</figcaption></figure></p>
+</div>
+<article class="task exercise-like" id="task-67"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-417">What is the shape of the cross section made at \(x=x_i\text{?}\) <figure class="figure figure-like" id="figure-18"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotatingbetweenfunctionsaboutxwithcrosssection.svg" role="img" class="contained" alt="Bounded region rotated about \(x\)-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.12<span class="period">.</span></span><span class="space"> </span>Plot of Bounded region rotated about \(x\)-axis.</figcaption></figure></p>
+<ol class="upper-alpha">
+<li id="li-400"><p id="p-derived-li-400">A circle with radius \(r=x_i\text{.}\)</p></li>
+<li id="li-401"><p id="p-derived-li-401">A circle with radius \(r=2x_i+1\text{.}\)</p></li>
+<li id="li-402"><p id="p-derived-li-402">A circle with radius \(r=2x_i+1-x_i=x_i+1\text{.}\)</p></li>
+<li id="li-403"><p id="p-derived-li-403">An annulus with outside radius \(R=2x_i+1\) and inner radius \(r=x_i\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-68"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-418">Suppose we wanted to estimate this volume with 4 cylinders or annular cylinders with \(\Delta x=1\text{.}\)  What is the volume of the (annular) cylinder formed at the cross section \(x_i=1\text{?}\)</p>
+<ol class="decimal">
+<li id="li-404"><p id="p-derived-li-404">\(\pi\cdot 1^2\cdot 1\text{.}\)</p></li>
+<li id="li-405"><p id="p-derived-li-405">\(\pi\cdot 3^2\cdot 1\text{.}\)</p></li>
+<li id="li-406"><p id="p-derived-li-406">\(\pi\cdot 2^2\cdot 1\text{.}\)</p></li>
+<li id="li-407"><p id="p-derived-li-407">\((\pi\cdot 3^2-\pi\cdot 1^2)\cdot 1\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-69"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-419">We continue to estimate this volume with 4 cylinders or annular cylinders with \(\Delta x=1\text{.}\)  Fill out the following table:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{|c|c|c|c|}
+\hline
+x_i &amp; \Delta x &amp; \text{Area of Cross Section} &amp; \text{Estimated Volume}\\
+\hline
+x_1=0 &amp; 1 &amp;  &amp; \\
+\hline
+x_2=1 &amp; 1 &amp; 7\pi  &amp; 7\pi\cdot 1 \\
+\hline
+x_3=2 &amp; 1 &amp;  &amp; \\
+\hline
+x_4=3 &amp; 1 &amp;  &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-70"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-420">Which of the following Reimann sums best approximates the volume of our solid?</p>
+<ol class="upper-alpha">
+<li id="li-408"><p id="p-derived-li-408">\(\displaystyle \displaystyle \sum \pi x_i^2\Delta x\)</p></li>
+<li id="li-409"><p id="p-derived-li-409">\(\displaystyle \displaystyle \sum \pi (2x_i+1)^2\Delta x\)</p></li>
+<li id="li-410"><p id="p-derived-li-410">\(\displaystyle \displaystyle \sum \pi (2x_i+1-x_i)^2\Delta x\)</p></li>
+<li id="li-411"><p id="p-derived-li-411">\(\displaystyle \displaystyle \sum \pi \left((2x_i+1)^2-x_i^2 \right)\Delta x\)</p></li>
+</ol></article><article class="task exercise-like" id="task-71"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-421">Which of the following integrals computes the volume of our solid?</p>
+<ol class="upper-alpha">
+<li id="li-412"><p id="p-derived-li-412">\(\displaystyle \displaystyle \int_0^4 \pi x^2 dx\)</p></li>
+<li id="li-413"><p id="p-derived-li-413">\(\displaystyle \displaystyle \int_0^4 \pi (2x+1)^2 dx\)</p></li>
+<li id="li-414"><p id="p-derived-li-414">\(\displaystyle \displaystyle \int_0^4 \pi (x+1)^2 dx\)</p></li>
+<li id="li-415"><p id="p-derived-li-415">\(\displaystyle \displaystyle \int_0^4 \pi ((2x+1)^2-x^2) dx\)</p></li>
+</ol></article><article class="task exercise-like" id="task-72"><h6 class="heading"><span class="codenumber">(f)</span></h6>
+<p id="p-422">What is the volume of our solid?</p></article><article class="task exercise-like" id="task-73"><h6 class="heading"><span class="codenumber">(g)</span></h6>
+<p id="p-423">How else could we have computed the volume?</p>
+<ol class="upper-alpha">
+<li id="li-416"><p id="p-derived-li-416">Found the volume of the region bounded by \(f(x)=2x+1\) on \([0,4]\) rotated about the \(x\)-axis, subtract the volume of the region bounded by \(g(x)=x\) on \([0,4]\) rotated about the \(x\)-axis.</p></li>
+<li id="li-417"><p id="p-derived-li-417">Found the volume of the region bounded by \(f(x)=2x+1-x=x+1\) on \([0,4]\) rotated about the \(x\)-axis.</p></li>
+</ol></article></article><article class="fact theorem-like" id="fact-washer"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.3.13</span><span class="period">.</span><span class="space"> </span><span class="title">The Washer Method.</span>
+</h6>
+<p id="p-424">If \(y = R(x)\) and \(y = r(x)\) are nonnegative continuous functions on \([a,b]\) that satisfy \(R(x) \ge r(x)\) for all \(x\) in \([a,b]\text{,}\) then the volume of the solid of revolution generated by revolving the region between them about the \(x\)-axis over this interval is given by</p>
+<div class="displaymath">
+\begin{equation*}
+V = \int_a^b \pi [R(x)^2 - r(x)^2] \, dx\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-139"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.14</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-24">
+<p id="p-425">Suppose we wanted to find the volume of the the solid of revolution generated by rotating the region in the first quadrant bound by the curves:</p>
+<div class="displaymath">
+\begin{equation*}
+x=0, x=3, y=0, y=\frac{4}{2^x}
+\end{equation*}
+</div>
+<p class="continuation">about the \(y\)-axis.</p>
+<p id="p-426"><figure class="figure figure-like" id="figure-19"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/shellmethod.svg" role="img" class="contained" alt="Bounded region rotated about \(y\)-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.15<span class="period">.</span></span><span class="space"> </span>Plot of Bounded region rotated about \(y\)-axis.</figcaption></figure></p>
+</div>
+<article class="task exercise-like" id="task-74"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-427">Suppose we wanted to estimate this volume with 3 concentric annular cylinders with heights \(h_i=f(r_i)=\frac{4}{2^{r_i}}\text{,}\) where \(r_i\) are the inner radii and \(R_i\) are the outer radii.  Over which values do the \(r_i, R_i\) range?</p>
+<ol class="upper-alpha">
+<li id="li-418"><p id="p-derived-li-418">\([-3,3]\text{.}\)</p></li>
+<li id="li-419"><p id="p-derived-li-419">\([0,3]\text{.}\)</p></li>
+<li id="li-420"><p id="p-derived-li-420">\([-4,4]\text{.}\)</p></li>
+<li id="li-421"><p id="p-derived-li-421">\([0,4]\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-75"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-428">Recall that the volume of an annular cylinder of height \(h\text{,}\) inner radius \(r\) and outer radius \(R\) is \(V=\pi(R^2-r^2)h\text{.}\) <figure class="figure figure-like" id="figure-20"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/shellmethodthreeshells.svg" role="img" class="contained" alt="Bounded region rotated about \(y\)-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.16<span class="period">.</span></span><span class="space"> </span>Plot of Bounded region rotated about \(y\)-axis.</figcaption></figure> Fill out the following table:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{|c|c|c|c|c|}
+\hline
+r_i  &amp; \Delta r_i &amp; ; R_i=r_i+\Delta r &amp; h_i=f(r_i)=\frac{4}{2^{r_i}} &amp; \text{Estimated Volume}\\
+\hline
+r_1=0 &amp; 1 &amp; R_1=0+1=1 &amp; &amp; \\
+\hline
+r_2=1 &amp; 1 &amp; R_2=1+1=2 &amp; &amp; \\
+\hline
+r_3=2 &amp; 1 &amp; R_3=2+1=3 &amp; &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-76"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-429">Consider an arbitrary annular cylinder with inner radius \(r_i\text{,}\) outer radius \(r_i+\Delta r\text{,}\) and height \(h_i=\frac{4}{2^{r_i}}\text{.}\) <figure class="figure figure-like" id="figure-21"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/shellmethodgeneralshell.svg" role="img" class="contained" alt="Bounded region rotated about \(y\)-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.17<span class="period">.</span></span><span class="space"> </span>Plot of Bounded region rotated about \(y\)-axis.</figcaption></figure> Which of the following represents the volume of this annular cylinder?</p>
+<ol class="upper-alpha">
+<li id="li-422"><p id="p-derived-li-422">\(\pi r_i^2\cdot \frac{4}{2^{r_i}}\text{.}\)</p></li>
+<li id="li-423"><p id="p-derived-li-423">\(\pi (r_i+\Delta r)^2\cdot \frac{4}{2^{r_i+\Delta r}}\text{.}\)</p></li>
+<li id="li-424"><p id="p-derived-li-424">\(\pi ((r_i+\Delta r)^2-r_i^2)\cdot \frac{4}{2^{r_i}}\text{.}\)</p></li>
+<li id="li-425"><p id="p-derived-li-425">\(\pi ((r_i+\Delta r)-r_i)^2\cdot \frac{4}{2^{r_i}}\text{.}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-77"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-430">Recall that \(\pi ((r_i+\Delta r)^2-r_i^2)=\pi(2(\Delta r) r_i+(\Delta r)^2)=\pi(2 r_i+(\Delta r))\Delta r\text{.}\)  Which of the following Riemann sums best estimates the volume of our solid?</p>
+<ol class="upper-alpha">
+<li id="li-426"><p id="p-derived-li-426">\(\displaystyle \displaystyle \sum \pi(2 r_i+(\Delta r))\frac{4}{2^{r_i}}\Delta r\)</p></li>
+<li id="li-427"><p id="p-derived-li-427">\(\displaystyle \displaystyle \sum \pi r_i^2\frac{4}{2^{r_i}}\Delta r\)</p></li>
+<li id="li-428"><p id="p-derived-li-428">\(\displaystyle \displaystyle \sum \pi (r_i+\Delta r)^2\frac{4}{2^{r_i}}\Delta r\)</p></li>
+</ol></article><article class="task exercise-like" id="task-78"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-431">Which of the following integrals computes the volume of our solid?</p>
+<ol class="upper-alpha">
+<li id="li-429"><p id="p-derived-li-429">\(\displaystyle \displaystyle \int_{-3}^3 2\pi r \frac{4}{2^r}  dr\)</p></li>
+<li id="li-430"><p id="p-derived-li-430">\(\displaystyle \displaystyle \int_{0}^3 2\pi r \frac{4}{2^r}  dr\)</p></li>
+<li id="li-431"><p id="p-derived-li-431">\(\displaystyle \displaystyle \int_{0}^3 2\pi r \frac{4}{2^r}  dr\)</p></li>
+</ol></article><article class="task exercise-like" id="task-79"><h6 class="heading"><span class="codenumber">(f)</span></h6>
+<p id="p-432">What is the volume of our solid?</p></article></article><article class="fact theorem-like" id="fact-shell"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.3.18</span><span class="period">.</span><span class="space"> </span><span class="title">The Shell Method.</span>
+</h6>
+<p id="p-433">Let a solid be formed by revolving a region \(R\text{,}\) bounded by \(x=a\) and \(x=b\text{,}\) around a vertical axis. Let \(r(x)\) represent the distance from the axis of rotation to \(x\) (i.e., the radius of a sample shell) and let \(h(x)\) represent the height of the solid at \(x\) (i.e., the height of the shell). The volume of the solid is</p>
+<div class="displaymath">
+\begin{equation*}
+V = 2\pi\int_a^b r(x)h(x)\ dx.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-140"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.19</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-25">
+<p id="p-434">Consider the region bounded by</p>
+<div class="displaymath">
+\begin{equation*}
+x=0, y=2, x=4, y=\sqrt{x}.
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-80"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-435">Find the volume of the solid generated by rotating this region about the \(x\)-axis.</p></article><article class="task exercise-like" id="task-81"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-436">Find the volume of the solid generated by rotating this region about the \(y\)-axis.</p></article></article><article class="activity project-like" id="activity-141"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.20</span><span class="period">.</span>
+</h6>
+<p id="p-437">Consider the region bounded by</p>
+<div class="displaymath">
+\begin{equation*}
+x=0, y=0, y=x+3, x=4.
+\end{equation*}
+</div>
+<p id="p-438">Find the volume of the solid generated by rotating this region about the line \(x=10\text{.}\)  (Hint: Sketch this figure, what is \(R(x)\) the outer radius?  What is \(r(x)\) the inner radius?)</p></article></section></div></main>
+</div>
+</body>
+</html>

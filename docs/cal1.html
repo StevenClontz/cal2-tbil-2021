@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-29T22:44:33Z       *-->
+<!--*       on 2021-10-12T13:37:50Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -56,6 +56,7 @@
 \newcommand{\R}{\mathbb R}
     \newcommand{\arcsec}{\mathrm{arcsec}\,}
     \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -97,22 +98,40 @@
 <li class="link">
 <a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span></a><ul>
 <li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
-<li><a href="AI4.html" data-scroll="AI4">Density, Mass, and Center of Mass (AI4)</a></li>
-<li><a href="AI5.html" data-scroll="AI5">Physics Applications (AI5)</a></li>
+<li><a href="AI2.html" data-scroll="AI2">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6">Physics Applications (AI6)</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="SQ.html" data-scroll="SQ"><span class="codenumber">3</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<a href="CO.html" data-scroll="CO"><span class="codenumber">3</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul><li><a href="CO1.html" data-scroll="CO1">Parametric/vector equations (CO1)</a></li></ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ"><span class="codenumber">4</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2">Sequence Properties and Limits (SQ2)</a></li>
 <li><a href="SQ3.html" data-scroll="SQ3">Partial Sum Sequence (SQ3)</a></li>
 <li><a href="SQ4.html" data-scroll="SQ4">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5">Basic Convergence Tests (SQ5)</a></li>
 <li><a href="SQ6.html" data-scroll="SQ6">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9">Series Convergence Strategy (SQ9)</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="PS.html" data-scroll="PS"><span class="codenumber">4</span> <span class="title">Power Series (PS)</span></a><ul><li><a href="PS1.html" data-scroll="PS1">Power Series (PS1)</a></li></ul>
+<a href="PS.html" data-scroll="PS"><span class="codenumber">5</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4">Taylor Series (PS4)</a></li>
+</ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
 <li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
 <li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
 <li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -121,8 +140,9 @@
 <li><a href="frontmatter.html"><span class="title">Front Matter</span></a></li>
 <li><a href="TI.html"><span class="codenumber">1</span> <span class="title">Techniques of Integration (TI)</span></a></li>
 <li><a href="AI.html"><span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span></a></li>
-<li><a href="SQ.html"><span class="codenumber">3</span> <span class="title">Sequences and Series (SQ)</span></a></li>
-<li><a href="PS.html"><span class="codenumber">4</span> <span class="title">Power Series (PS)</span></a></li>
+<li><a href="CO.html"><span class="codenumber">3</span> <span class="title">Coordinates and Vectors (CO)</span></a></li>
+<li><a href="SQ.html"><span class="codenumber">4</span> <span class="title">Sequences and Series (SQ)</span></a></li>
+<li><a href="PS.html"><span class="codenumber">5</span> <span class="title">Power Series (PS)</span></a></li>
 <li><a href="backmatter.html"><span class="title">Backmatter</span></a></li>
 </ul></nav></section></div></main>
 </div>

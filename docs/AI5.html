@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-29T22:44:35Z       *-->
+<!--*       on 2021-10-12T13:37:53Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal2 Physics Applications (AI5)</title>
+<title>TBIL-Cal2 Density, Mass, and Center of Mass (AI5)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -56,6 +56,7 @@
 \newcommand{\R}{\mathbb R}
     \newcommand{\arcsec}{\mathrm{arcsec}\,}
     \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -68,10 +69,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AI4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="SQ.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AI4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AI6.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AI4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="SQ.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AI4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AI6.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -97,214 +98,295 @@
 <li class="link">
 <a href="AI.html" data-scroll="AI"><span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span></a><ul>
 <li><a href="AI1.html" data-scroll="AI1">Average Value (AI1)</a></li>
-<li><a href="AI4.html" data-scroll="AI4">Density, Mass, and Center of Mass (AI4)</a></li>
-<li><a href="AI5.html" data-scroll="AI5" class="active">Physics Applications (AI5)</a></li>
+<li><a href="AI2.html" data-scroll="AI2">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="active">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6">Physics Applications (AI6)</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="SQ.html" data-scroll="SQ"><span class="codenumber">3</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<a href="CO.html" data-scroll="CO"><span class="codenumber">3</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul><li><a href="CO1.html" data-scroll="CO1">Parametric/vector equations (CO1)</a></li></ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ"><span class="codenumber">4</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2">Sequence Properties and Limits (SQ2)</a></li>
 <li><a href="SQ3.html" data-scroll="SQ3">Partial Sum Sequence (SQ3)</a></li>
 <li><a href="SQ4.html" data-scroll="SQ4">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5">Basic Convergence Tests (SQ5)</a></li>
 <li><a href="SQ6.html" data-scroll="SQ6">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9">Series Convergence Strategy (SQ9)</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="PS.html" data-scroll="PS"><span class="codenumber">4</span> <span class="title">Power Series (PS)</span></a><ul><li><a href="PS1.html" data-scroll="PS1">Power Series (PS1)</a></li></ul>
+<a href="PS.html" data-scroll="PS"><span class="codenumber">5</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4">Taylor Series (PS4)</a></li>
+</ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
 <li class="link"><a href="integral-table.html" data-scroll="integral-table"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
 <li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
 <li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AI5"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Physics Applications (AI5)</span>
+<span class="type">Section</span> <span class="codenumber">2.5</span> <span class="title">Density, Mass, and Center of Mass (AI5)</span>
 </h2>
-<article class="objectives goal-like" id="objectives-13"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-371"><p id="p-442">Set up integrals to solve problems involving work, force, and/or pressure.</p></li></ul></article><p id="p-443"><article class="fact theorem-like" id="fact-AI5work"><h6 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
+<article class="objectives goal-like" id="objectives-15"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-446"><p id="p-456">Set up integrals to solve problems involving density, mass, and center of mass.</p></li></ul></article><p id="p-457"><article class="activity project-like" id="activity-AI4rectangularprism"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span>
 </h6>
-<p id="p-444">Given a physical object \(m\text{,}\) the <em class="emphasis">work</em> done on that object is</p>
-<div class="displaymath">
-\begin{equation*}
-W=Fd=mad,
-\end{equation*}
-</div>
-<p class="continuation">where \(F\) is the force applied to the object over a distance of \(d\text{.}\)  Recall that force \(F=ma\text{,}\) where \(m\) is the mass of the object, and \(a\) is the acceleration applied to it.</p></article> <article class="activity project-like" id="activity-AI5bucket"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
-</h6>
-<p id="p-445">Consider a bucket with 10 kg of water, being pulled against the acceleration of gravity, \(g=9.8\) m/s\(^2\text{,}\) at a constant speed for 20 meters.  Using <a class="xref" data-knowl="./knowl/fact-AI5work.html" title="Fact 2.3.1">Fact 2.3.1</a>, what is the work needed to pull this bucket up 20 meters in kgm\(^2\)/\(s^2\) (or Nm)?</p>
+<div class="introduction" id="introduction-29"><p id="p-458">Consider a rectangular prism with a 10 m \(\times\) 10 m square base and height 20 m.  Suppose the density of the material in the prism increases with height, following the function \(\delta(h)=10+h\) kg/m\(^3\text{,}\) where \(h\) is the height in meters.</p></div>
+<article class="task exercise-like" id="task-92"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-459">If one were to cut this prism, parallel to the base, into 4 pieces with height 5 m, what would the volume of each piece be?</p></article><article class="task exercise-like" id="task-93"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-460">Consider the piece sitting on top the slice made at height \(h=5\text{.}\)  Using a density of \(\delta(5)=15\)  kg/m\(^3\text{,}\) and the volume you found, estimate the mass of this piece.</p>
 <ol class="upper-alpha">
-<li id="li-372"><p id="p-derived-li-372">10 kgm\(^2\)/\(s^2\text{.}\)</p></li>
-<li id="li-373"><p id="p-derived-li-373">20 kgm\(^2\)/\(s^2\text{.}\)</p></li>
-<li id="li-374"><p id="p-derived-li-374">98 kgm\(^2\)/\(s^2\text{.}\)</p></li>
-<li id="li-375"><p id="p-derived-li-375">200 kgm\(^2\)/\(s^2\text{.}\)</p></li>
-<li id="li-376"><p id="p-derived-li-376">1960 kgm\(^2\)/\(s^2\text{.}\)</p></li>
-</ol></article> <article class="activity project-like" id="activity-AI5bucket2"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
+<li id="li-447"><p id="p-derived-li-447">\(500\cdot 5=2500\) kg.</p></li>
+<li id="li-448"><p id="p-derived-li-448">\(500\cdot 15=7500\) kg.</p></li>
+<li id="li-449"><p id="p-derived-li-449">\(500\cdot 15\cdot 5=37500\) kg.</p></li>
+</ol></article><article class="task exercise-like" id="task-94"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-461">Is this estimate the actual mass of this piece?</p></article></article> <article class="activity project-like" id="activity-AI4rectangularprism4pieces"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="period">.</span>
 </h6>
-<p id="p-446">Consider the bucket from <a class="xref" data-knowl="./knowl/activity-AI5bucket.html" title="Activity 2.3.2">Activity 2.3.2</a>  with 10 kg of water, being pulled against the acceleration of gravity, \(g=9.8\) m/s\(^2\text{,}\) at a constant speed for 20 meters.  Suppose that halfway up at a height of 10m, 5kg of water spilled out, leaving 5kg left.  How much work total does it take to get this bucket to a height of 20m?</p>
-<ol class="upper-alpha">
-<li id="li-377"><p id="p-derived-li-377">980 kgm\(^2\)/\(s^2\) or (Nm).</p></li>
-<li id="li-378"><p id="p-derived-li-378">1477.5 kgm\(^2\)/\(s^2\) or (Nm).</p></li>
-<li id="li-379"><p id="p-derived-li-379">1960 kgm\(^2\)/\(s^2\) or (Nm).</p></li>
-</ol></article> <article class="activity project-like" id="activity-A5bucket3"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
-</h6>
-<div class="introduction" id="introduction-29"><p id="p-447">Suppose a 10 kg bucket of water is constantly losing water as it's pulled up, so at a height of \(h\) meters, the mass of the bucket is \(m(h)=2+8e^{-0.2x}\) kg. <figure class="figure figure-like" id="figure-23"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/bucket5meters.svg" role="img" class="contained" alt="Bucket 5 m in the air, to be hoisted by another 5 meters."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.5<span class="period">.</span></span><span class="space"> </span>Bucket 5 m in the air, to be hoisted by another 5 meters.</figcaption></figure></p></div>
-<article class="task exercise-like" id="task-65"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-448">What is the mass of the bucket at height \(h_i=5\) m?</p></article><article class="task exercise-like" id="task-66"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-449">Assume that the bucket does not lose water to estimate the amount of work needed to lift this bucket up \(\Delta h=5\) meters.</p></article></article> <article class="activity project-like" id="activity-A5bucketestimate"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span>
-</h6>
-<div class="introduction" id="introduction-30"><p id="p-450">Consider the bucket from <a class="xref" data-knowl="./knowl/activity-A5bucket3.html" title="Activity 2.3.4">Activity 2.3.4</a>.  Consider the buckets mass at heights \(h_i=0, 5, 10, 15\) meters. <figure class="figure figure-like" id="figure-24"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/bucketestimate.svg" role="img" class="contained" alt="Bucket raised 5 m at a time, h_i are 0, 5, 10, 15 meters."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.7<span class="period">.</span></span><span class="space"> </span>Bucket lifted 5 m at a time.</figcaption></figure></p></div>
-<article class="task exercise-like" id="task-67"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-451">Fill out the following table, estimating the work it would take to lift the bucket 20 meters:</p>
+<div class="introduction" id="introduction-30"><p id="p-462">Consider all 4 slices from <a class="xref" data-knowl="./knowl/activity-AI4rectangularprism.html" title="Activity 2.5.1">Activity 2.5.1</a>. <figure class="figure figure-like" id="figure-28"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/prism4pieces.svg" role="img" class="contained" alt="\(10\times 10\times 20\) prism sliced into 4 pieces."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.3<span class="period">.</span></span><span class="space"> </span>\(10\times 10\times 20\) prism sliced into 4 pieces.</figcaption></figure></p></div>
+<article class="task exercise-like" id="task-95"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-463">Fill out the following table:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{|c|c|c|c|}
 \hline
-h_i &amp; \text{Mass } m(h_i) &amp; \text{Distance} &amp; \text{Estimated Work}\\
+h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
 \hline
-h_4=15\ \text{m} &amp; m(15)=2+8e^{-0.2\cdot 15}\approx 2.398\ \text{kg} &amp; 5\ \text{m} &amp; \\
+h_4=15\ \text{m} &amp; \delta(15)=25\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; \\
 \hline
-h_3=10\ \text{m} &amp; m(10)=2+8e^{-0.2\cdot 10}\approx 3.083\ \text{kg} &amp; 5\ \text{m} &amp; \\
+h_3=10\ \text{m} &amp; \delta(10)=20\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; \\
 \hline
-h_2=5\ \text{m} &amp; m(5)=2+8e^{-0.2\cdot 5}\approx 4.943\ \text{kg} &amp;   5\ \text{m} &amp; 242.207\ \text{Nm}\\
+h_2=5\ \text{m} &amp; \delta(5)=15\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; 7500\ \text{kg}\\
 \hline
-h_1=0\ \text{m} &amp; m(5)=2+8e^{-0.2\cdot 0}= 10\ \text{kg} &amp;  5\ \text{m} &amp; \\
+h_1=0\ \text{m} &amp; \delta(0)=10\ \text{kg/m}^3 &amp; 500\ \text{m}^3 &amp; \\
 \hline
 \end{array}
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-68"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-452">What is the total estimated work to lift this bucket 20 meters?</p></article></article> <article class="activity project-like" id="activity-AI5bucketriemann"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span>
+</div></article><article class="task exercise-like" id="task-96"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-464">What is the estimated mass of the rectangular prism?</p></article></article> <article class="activity project-like" id="activity-AI4rectangularprism5pieces"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="period">.</span>
 </h6>
-<p id="p-453">If we estimated the mass and work of the bucket from <a class="xref" data-knowl="./knowl/activity-A5bucketestimate.html" title="Activity 2.3.6">Activity 2.3.6</a> at height \(h_i\) with intervals of length \(\Delta h\) meters, which of the following best represents the Riemann sum of the work it would take to lift this bucket 20 meters?</p>
-<ol class="upper-alpha">
-<li id="li-380"><p id="p-derived-li-380">\(\displaystyle \sum h_i\cdot 9.8\Delta h\text{.}\) Nm</p></li>
-<li id="li-381"><p id="p-derived-li-381">\(\displaystyle \sum \left( 2+8e^{-0.02h}\right)\cdot 9.8\Delta m\text{.}\) Nm</p></li>
-<li id="li-382"><p id="p-derived-li-382">\(\displaystyle \sum \left( 2+8e^{-0.02h_i}\right)\cdot 9.8\Delta h\text{.}\) Nm</p></li>
-<li id="li-383"><p id="p-derived-li-383">\(\displaystyle \sum \left( 2+8e^{-0.02h_i}\right)\cdot 9.8\Delta m\text{.}\) Nm</p></li>
-</ol></article> <article class="activity project-like" id="activity-AI5bucketintegral"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span>
-</h6>
-<p id="p-454">Based on the Riemann sum chosen in <a class="xref" data-knowl="./knowl/activity-AI5bucketriemann.html" title="Activity 2.3.8">Activity 2.3.8</a>, which of the following integrals computes the work it would take to lift this bucket 20 meters?</p>
-<ol class="upper-alpha">
-<li id="li-384"><p id="p-derived-li-384">\(\displaystyle \int_0^{20} h_i\cdot 9.8 dh\text{.}\) Nm</p></li>
-<li id="li-385"><p id="p-derived-li-385">\(\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8 dm\text{.}\) Nm</p></li>
-<li id="li-386"><p id="p-derived-li-386">\(\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8 dh\text{.}\) Nm</p></li>
-<li id="li-387"><p id="p-derived-li-387">\(\displaystyle \int_0^{20} \left( 2+8e^{-0.02h_i}\right)\cdot 9.8 dh\text{.}\) Nm</p></li>
-</ol></article> <article class="activity project-like" id="activity-AI5bucketwork"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span>
-</h6>
-<p id="p-455">Based on the integral chosen in <a class="xref" data-knowl="./knowl/activity-AI5bucketintegral.html" title="Activity 2.3.9">Activity 2.3.9</a>, compute the work it would take to lift this bucket 20 meters.</p></article> <article class="observation remark-like" id="observation-AI5howtophysics"><h6 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.11</span><span class="period">.</span><span class="space"> </span><span class="title">A “how to” for applying integrals to physics.</span>
-</h6>
-<ol id="p-456" class="upper-alpha">
-<li id="li-388"><p id="p-derived-li-388">Estimate the value over a piece of the problem with \(x\) value \(x_i\) over interval of length \(\Delta x\text{.}\)</p></li>
-<li id="li-389"><p id="p-derived-li-389">Find a Riemann sum using (1) which estimates the value in question.</p></li>
-<li id="li-390"><p id="p-derived-li-390">Convert the Riemann sum to an integral and solve.</p></li>
-</ol></article> <article class="activity project-like" id="activity-AI5slicewater"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.12</span><span class="period">.</span>
-</h6>
-<p id="p-457">Consider a cylindrical tank filled with water, where the base of the cylinder has a 3 meter radius, and a height of 10 meters.  Consider a 2 m thick slice of water sitting 6 meters high in the tank.  Using the fact that the mass of this water is \(1000\cdot \pi (3)^2\cdot 2=18000\pi\) kg, estimate how much work is needed to lift this slice 4 more meters to the top of the tank. <figure class="figure figure-like" id="figure-25"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/tankslicelift.svg" role="img" class="contained" alt="2m thick slice of water lifted 4m."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.13<span class="period">.</span></span><span class="space"> </span>2m thick slice of water lifted 4m.</figcaption></figure></p>
-<ol class="upper-alpha">
-<li id="li-391"><p id="p-derived-li-391">\(18000\pi\cdot 4\) Nm.</p></li>
-<li id="li-392"><p id="p-derived-li-392">\(18000\pi\cdot 9.8\) Nm.</p></li>
-<li id="li-393"><p id="p-derived-li-393">\(18000\pi\cdot 4\cdot 9.8\) Nm.</p></li>
-<li id="li-394"><p id="p-derived-li-394">\(18000\pi\cdot 6\) Nm.</p></li>
-<li id="li-395"><p id="p-derived-li-395">\(18000\pi\cdot 6\cdot 9.8\) Nm.</p></li>
-</ol></article> <article class="activity project-like" id="activity-AI5estimatewater"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.14</span><span class="period">.</span>
-</h6>
-<div class="introduction" id="introduction-31"><p id="p-458">Consider the cylindrical tank filled with water, from <a class="xref" data-knowl="./knowl/activity-AI5slicewater.html" title="Activity 2.3.12">Activity 2.3.12</a>.  Suppose we wished to estimate the amount of work required to pump all the water out of the tank.  Suppose we sliced the water into 5 pieces and estimated the work it would take to lift each piece out <figure class="figure figure-like" id="figure-26"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/tanksliceliftpieces.svg" role="img" class="contained" alt="2m thick slice of water at 0, 2, 4, 6, 8m."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.15<span class="period">.</span></span><span class="space"> </span>2m thick slices of water.</figcaption></figure></p></div>
-<article class="task exercise-like" id="task-69"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-459">Fill out the following table, estimating the work it would take to pump all the water out:</p>
+<div class="introduction" id="introduction-31"><p id="p-465">Suppose instead that we sliced the prism from <a class="xref" data-knowl="./knowl/activity-AI4rectangularprism.html" title="Activity 2.5.1">Activity 2.5.1</a> into 5 pices of height 4 m. <figure class="figure figure-like" id="figure-29"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/prism5pieces.svg" role="img" class="contained" alt="\(10\times 10\times 20\) prism sliced into 5 pieces."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.5<span class="period">.</span></span><span class="space"> </span>\(10\times 10\times 20\) prism sliced into 5 pieces.</figcaption></figure></p></div>
+<article class="task exercise-like" id="task-97"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-466">Fill out the following table:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{|c|c|c|c|}
 \hline
-h_i &amp; \text{Mass}  &amp; \text{Distance} &amp; \text{Estimated Work}\\
+h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
 \hline
-h_5=8\ \text{m} &amp; 18000\pi\ \text{kg} &amp;    &amp; \\
+h_5=16\ \text{m} &amp; \delta(16)=26\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
 \hline
-h_4=6\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  4\ \text{m} &amp; 705600\pi\ \text{Nm}\\
+h_4=12\ \text{m} &amp; \delta(12)=22\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
 \hline
-h_3=4\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  &amp; \\
+h_3=8\ \text{m} &amp; \delta(8)=18\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
 \hline
-h_2=2\ \text{m} &amp; 18000\pi\ \text{kg} &amp;    &amp; \\
+h_2=4\ \text{m} &amp; \delta(4)=14\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \phantom{7500\ \text{kg}}\\
 \hline
-h_1=0\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  10\ \text{m} &amp; \\
+h_1=0\ \text{m} &amp; \delta(0)=10\ \text{kg/m}^3 &amp; 400\ \text{m}^3 &amp; \\
 \hline
 \end{array}
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-70"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-460">What is the total estimated work to pump out all the water?</p></article></article> <article class="activity project-like" id="activity-AI5waterriemann"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.16</span><span class="period">.</span>
+</div></article><article class="task exercise-like" id="task-98"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-467">What is the estimated mass of the rectangular prism?</p></article></article> <article class="activity project-like" id="activity-AI4comparison"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.6</span><span class="period">.</span>
+</h6>Which of the estimates computed in <a class="xref" data-knowl="./knowl/activity-AI4rectangularprism4pieces.html" title="Activity 2.5.2">Activity 2.5.2</a> and <a class="xref" data-knowl="./knowl/activity-AI4rectangularprism5pieces.html" title="Activity 2.5.4">Activity 2.5.4</a> is a better estimate of the mass of the prism? <ol class="upper-alpha">
+<li id="li-450"><p id="p-derived-li-450"><a class="xref" data-knowl="./knowl/activity-AI4rectangularprism4pieces.html" title="Activity 2.5.2">Activity 2.5.2</a>, 4 pieces is a better estimate.</p></li>
+<li id="li-451"><p id="p-derived-li-451"><a class="xref" data-knowl="./knowl/activity-AI4rectangularprism5pieces.html" title="Activity 2.5.4">Activity 2.5.4</a>, 5 pieces is a better estimate.</p></li>
+</ol></article> <article class="activity project-like" id="activity-AI4rectangularprismmanypieces"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.7</span><span class="period">.</span>
 </h6>
-<p id="p-461">Recall <a class="xref" data-knowl="./knowl/activity-AI5estimatewater.html" title="Activity 2.3.14">Activity 2.3.14</a>.  If we estimated the work needed to lift slices of thickness \(\Delta h\) m at heights \(h_i\) m, which of the following Riemann sums best estimates the total work needed to pump all the water from the tank?</p>
+<div class="introduction" id="introduction-32">
+<p id="p-468">Suppose now that we slice the prism from <a class="xref" data-knowl="./knowl/activity-AI4rectangularprism.html" title="Activity 2.5.1">Activity 2.5.1</a> into slices of height \(\Delta h\) m. <figure class="figure figure-like" id="figure-30"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/prismmanypieces.svg" role="img" class="contained" alt="\(10\times 10\times 20\) prism sliced into many pieces."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.8<span class="period">.</span></span><span class="space"> </span>\(10\times 10\times 20\) prism sliced into many pieces.</figcaption></figure></p>
+<p id="p-469">Consider the piece sitting atop the slice made at height \(h_i\text{.}\)  Using \(\delta(h_i)=10+h_i\) as the estimate for the density of this piece, what is the mass of this piece?</p>
 <ol class="upper-alpha">
-<li id="li-396"><p id="p-derived-li-396">\(\displaystyle \sum 1000\cdot \pi3^2 \cdot 9.8(10-h)\Delta h\text{.}\) Nm</p></li>
-<li id="li-397"><p id="p-derived-li-397">\(\displaystyle \sum 1000\cdot\pi3^2 \cdot 9.8(10-h_i)\Delta h\text{.}\) Nm</p></li>
-<li id="li-398"><p id="p-derived-li-398">\(\displaystyle \sum 1000\cdot\pi(h_i)^2 \cdot 9.8(10-h)\Delta h\text{.}\) Nm</p></li>
-<li id="li-399"><p id="p-derived-li-399">\(\displaystyle \sum 1000\cdot\pi(h_i)^2 \cdot 9.8(10-h_i)\Delta h\text{.}\) Nm</p></li>
-</ol></article> <article class="activity project-like" id="activity-AI5waterintegral"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.17</span><span class="period">.</span>
+<li id="li-452"><p id="p-derived-li-452">\((10+h)100\cdot h_i\text{.}\)</p></li>
+<li id="li-453"><p id="p-derived-li-453">\((10+\Delta h)100\cdot h_i\text{.}\)</p></li>
+<li id="li-454"><p id="p-derived-li-454">\((10+h_i)100\cdot \Delta h\text{.}\)</p></li>
+<li id="li-455"><p id="p-derived-li-455">\((10+h_i)100\cdot h\text{.}\)</p></li>
+</ol>
+</div></article> <article class="activity project-like" id="activity-AI4cone"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.9</span><span class="period">.</span>
 </h6>
-<p id="p-462">Based on the Riemann sum chosen in <a class="xref" data-knowl="./knowl/activity-AI5waterriemann.html" title="Activity 2.3.16">Activity 2.3.16</a>, which of the following integrals computes the work it would take to pump all the water from the tank?</p>
+<div class="introduction" id="introduction-33"><p id="p-470">Consider a cylindrical cone with a base radius of 15 inches and a height of 60 inches.  Suppose the density of the cone is \(\delta(h)= 15+\sqrt{h}\) oz/in\(^3\text{.}\) <figure class="figure figure-like" id="figure-31"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/conesliced.svg" role="img" class="contained" alt="15\(\times\) 60 cylindrical cone sliced into two pieces."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.10<span class="period">.</span></span><span class="space"> </span>15\(\times\) 60 cylindrical cone sliced into two pieces.</figcaption></figure></p></div>
+<article class="task exercise-like" id="task-99"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-471">Let \(r_2\) be the radius of the circular cross section of the cone, made at height 30 inches.  Recall that \(\Delta ABC, \Delta AB'C'\) are similar triangles, what is \(r_2\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-400"><p id="p-derived-li-400">\(\displaystyle \int_0^{10} 9000\pi\cdot 9.8 (10-h) dh\text{.}\) Nm</p></li>
-<li id="li-401"><p id="p-derived-li-401">\(\displaystyle \int_0^{10} 1000\pi\cdot 9.8 h^2(10-h) dh\text{.}\) Nm</p></li>
-</ol></article> <article class="activity project-like" id="activity-AI5waterwork"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.18</span><span class="period">.</span>
+<li id="li-456"><p id="p-derived-li-456">15 inches.</p></li>
+<li id="li-457"><p id="p-derived-li-457">7.5 inches.</p></li>
+<li id="li-458"><p id="p-derived-li-458">30 inches.</p></li>
+<li id="li-459"><p id="p-derived-li-459">60 inches.</p></li>
+</ol></article><article class="task exercise-like" id="task-100"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-472">What is the volume of a cylinder with radius \(r_1=15\) in and height \(30\) in?</p></article><article class="task exercise-like" id="task-101"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-473">What is the volume of a cylinder with radius \(r_2\) and height \(30\) in?</p></article></article> <article class="activity project-like" id="activity-AI4cone2pieces"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.11</span><span class="period">.</span>
 </h6>
-<p id="p-463">Based on the integral chosen in <a class="xref" data-knowl="./knowl/activity-AI5waterintegral.html" title="Activity 2.3.17">Activity 2.3.17</a>, compute the work it would take to pump all the water out of the tank.</p></article> <article class="activity project-like" id="activity-AI5cone"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.19</span><span class="period">.</span>
-</h6>
-<div class="introduction" id="introduction-32"><p id="p-464">Consider a cylindrical truncated-cone tank where the radius on the bottom of the tank is 10 m, the radius at the top of the tank is 100 m, and the height of the tank is 100m. <figure class="figure figure-like" id="figure-27"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/coneslicelift.svg" role="img" class="contained" alt="A slice at height \(h_i\) of width \(\Delta h\text{,}\) with radius \(r_i\text{.}\)"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.20<span class="period">.</span></span><span class="space"> </span>A slice at height \(h_i\) of width \(\Delta h\text{.}\)</figcaption></figure></p></div>
-<article class="task exercise-like" id="task-71"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-465">What is the radius \(r_i\) in meters of the cross section made at height \(h_i\) meters?</p></article><article class="task exercise-like" id="task-72"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-466">What is the volume of a cylinder with radius \(r_i\) meters with width \(\Delta h\) meters?</p></article><article class="task exercise-like" id="task-73"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-467">Using the fact that water has density 1000 kg/m\(^3\text{,}\) how much mass is the volume of water found in (b)?</p></article><article class="task exercise-like" id="task-74"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-468">How far must this cylinder of water be lifted to be out of this tank?</p></article></article> <article class="activity project-like" id="activity-AI5conesolve"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.21</span><span class="period">.</span>
-</h6>
-<div class="introduction" id="introduction-33"><p id="p-469">Recall the computations done in <a class="xref" data-knowl="./knowl/activity-AI5cone.html" title="Activity 2.3.19">Activity 2.3.19</a>.</p></div>
-<article class="task exercise-like" id="task-75"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-470">Find a Riemann sum which estimates the total work needed to pump all the water out of this tank, using slices at heights \(h_i\) m, of width \(\Delta h\) m.</p></article><article class="task exercise-like" id="task-76"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-471">Use (a) to find an integral expression which computes the amount of work needed to pump all the water out of this tank.</p></article><article class="task exercise-like" id="task-77"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-472">Evaluate the integral found in (b).</p></article></article> <article class="fact theorem-like" id="fact-AI5pressure"><h6 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.3.22</span><span class="period">.</span>
-</h6>
-<p id="p-473">Recall that \(pressure\) is measured as <em class="emphasis">force</em> over <em class="emphasis">area</em>.</p>
+<div class="introduction" id="introduction-34"><p id="p-474">Suppose that we estimate the mass of the cone from  <a class="xref" data-knowl="./knowl/activity-AI4cone.html" title="Activity 2.5.9">Activity 2.5.9</a> with 2 cylinders of height 30 in. <figure class="figure figure-like" id="figure-32"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/conesliced2pieces.svg" role="img" class="contained" alt="15\(\times\) 60 cylindrical cone sliced into two pieces."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.12<span class="period">.</span></span><span class="space"> </span>15\(\times\) 60 cylindrical cone sliced into two pieces.</figcaption></figure></p></div>
+<article class="task exercise-like" id="task-102"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-475">Fill out the following table:</p>
 <div class="displaymath">
 \begin{equation*}
-P=F/A.
+\begin{array}{|c|c|c|c|}
+\hline
+h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
+\hline
+h_2=30\ \text{m} &amp; \delta(30)=15+\sqrt{30}\ \text{oz/in}^3 &amp; \pi(7.5)^2\cdot30\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+\hline
+h_1=0\ \text{m} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot30\ \text{in}^3 &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-103"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-476">What is the estimated mass of the cone?</p></article></article> <article class="activity project-like" id="activity-AI4cone3pieces"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.13</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-35"><p id="p-477">Suppose that we estimate the mass of the cone from  <a class="xref" data-knowl="./knowl/activity-AI4cone.html" title="Activity 2.5.9">Activity 2.5.9</a> with 3 cylinders of height 20 in. <figure class="figure figure-like" id="figure-33"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/conesliced3pieces.svg" role="img" class="contained" alt="15\(\times\) 60 cylindrical cone sliced into three pieces."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.14<span class="period">.</span></span><span class="space"> </span>15\(\times\) 60 cylindrical cone sliced into three pieces.</figcaption></figure></p></div>
+<article class="task exercise-like" id="task-104"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-478">Fill out the following table:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{|c|c|c|c|}
+\hline
+h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
+\hline
+h_2=40\ \text{m} &amp; \delta(40)=15+\sqrt{40}\ \text{oz/in}^3 &amp; \pi(5)^2\cdot20\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+\hline
+h_2=20\ \text{m} &amp; \delta(20)=15+\sqrt{20}\ \text{oz/in}^3 &amp; \pi(10)^2\cdot20\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+\hline
+h_1=0\ \text{m} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot20\ \text{in}^3 &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-105"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-479">What is the estimated mass of the cone?</p></article></article> <article class="activity project-like" id="activity-AI4conemanypieces"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.15</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-36">
+<p id="p-480">Suppose that we estimate the mass of the cone from  <a class="xref" data-knowl="./knowl/activity-AI4cone.html" title="Activity 2.5.9">Activity 2.5.9</a> with cylinders of height \(\Delta h\text{.}\) <figure class="figure figure-like" id="figure-34"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/coneslicedmanypieces.svg" role="img" class="contained" alt="15\(\times\) 60 cylindrical cone sliced into many pieces."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.16<span class="period">.</span></span><span class="space"> </span>15\(\times\) 60 cylindrical cone sliced into many pieces.</figcaption></figure></p>
+<p id="p-481">Consider the piece sitting atop the slice made at height \(h_i\text{.}\)  Using \(\delta(h_i)=15+\sqrt{h_i}\) as the estimate for the density of this cylinder, what is the mass of this cylinder?</p>
+<ol class="upper-alpha">
+<li id="li-460"><p id="p-derived-li-460">\((15+\sqrt{h})\pi r_i^2\cdot \Delta h\text{.}\)</p></li>
+<li id="li-461"><p id="p-derived-li-461">\((15+\sqrt{h_i})\pi r_i^2\cdot \Delta h\text{.}\)</p></li>
+<li id="li-462"><p id="p-derived-li-462">\((15+\Delta h)\pi r_i^2\cdot \Delta h_i\text{.}\)</p></li>
+<li id="li-463"><p id="p-derived-li-463">\((15+\sqrt{h_i})\pi r^2\cdot \Delta h\text{.}\)</p></li>
+</ol>
+</div></article> <article class="activity project-like" id="fact-AI4discreteform"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.17</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-37">
+<p id="p-482">Consider a solid where the cross section of the solid at \(x=x_i\) has area \(A(x_i)\text{,}\) and the density when \(x=x_i\) is \(\delta(x_i)\text{.}\) <figure class="figure figure-like" id="figure-35"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/Generalsolidsliced.svg" role="img" class="contained" alt="Solid approximated with prisms of width \(\Delta x\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.18<span class="period">.</span></span><span class="space"> </span>Solid approximated with prisms of width \(\Delta x\text{.}\)</figcaption></figure></p>
+<p id="p-483">If we used prisms of width \(\Delta x\) to approximate this solid, what is the mass of the slice associated with \(x_i?\)</p>
+<ol class="upper-alpha">
+<li id="li-464"><p id="p-derived-li-464">\(A(x)\delta(x)\Delta x\text{.}\)</p></li>
+<li id="li-465"><p id="p-derived-li-465">\(\pi A(x)^2\delta(x_i)\Delta x\text{.}\)</p></li>
+<li id="li-466"><p id="p-derived-li-466">\(A(x_i)\delta(x_i)\Delta x\text{.}\)</p></li>
+<li id="li-467"><p id="p-derived-li-467">\(A(x_i)\delta(x_i)\Delta x_i\text{.}\)</p></li>
+</ol>
+</div></article> <article class="fact theorem-like" id="fact-AI4masscomputation"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.5.19</span><span class="period">.</span>
+</h6>
+<p id="p-484">Consider a solid where the cross section of the solid at \(x=x_i\) has area \(A(x_i)\text{,}\) and the density when \(x=x_i\) is \(\delta(x_i)\text{.}\)  Suppose the interval \([a,b]\) represented the \(x\) values of this solid.  If one sliced the solid into \(n\) pieces of width \(\Delta x=\frac{b-a}{n}\text{,}\) then one can approximate the mass of the solid by</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x.
 \end{equation*}
 </div>
-<p class="continuation">Rewriting this, we have that \(F=PA.\)</p></article> <article class="activity project-like" id="activity-AI5dam"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.23</span><span class="period">.</span>
+<p class="continuation"><figure class="figure figure-like" id="figure-36"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/Solidmassapproximation.svg" role="img" class="contained" alt="Solid approximated with prisms of width \(\Delta x\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.20<span class="period">.</span></span><span class="space"> </span>Solid approximated with prisms of width \(\Delta x\text{.}\)</figcaption></figure></p>
+<p id="p-485">We can then find actual mass by taking the limit as \(n\to\infty\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b \delta(x)A(x) dx.
+\end{equation*}
+</div>
+<p class="continuation"><figure class="figure figure-like" id="figure-37"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/Solidmass.svg" role="img" class="contained" alt="Solid mass."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.21<span class="period">.</span></span><span class="space"> </span>Solid mass.</figcaption></figure></p></article> <article class="activity project-like" id="activity-TI4prismmass"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.22</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-34"><p id="p-474">Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top, and assume the dam is 20 feet tall with water that rises to it's top. Water weighs 62.4 pounds per cubic foot, and exerts \(P=62.4d\) lbs/ft\(^2\) of pressure at depth \(d\) ft. Consider a rectangular slice of this damn at height \(h_i\) feet and width \(b_i\text{.}\) <figure class="figure figure-like" id="figure-28"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/damslice.svg" role="img" class="contained" alt="A slice at height \(h_i\) of width \(\Delta h\text{,}\) with base \(b_i\) of a damn with base 60 ft, top 90 ft, 20 ft tall."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.24<span class="period">.</span></span><span class="space"> </span>A slice at height \(h_i\) of width \(\Delta h\text{.}\)</figcaption></figure></p></div>
-<article class="task exercise-like" id="task-78"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-475">At a height of \(h_i\) feet, what is the base of the rectangle \(b_i\text{?}\)</p></article><article class="task exercise-like" id="task-79"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-476">What is the area of a rectangle with base \(b_i\) feet and height \(\Delta h\) feet?</p></article><article class="task exercise-like" id="task-80"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-477">Using a depth of \(20-h_i\) feet, how much pressure is exerted on this rectangle?</p></article><article class="task exercise-like" id="task-81"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-478">Using the pressure found in (c), the area in (b) and <a class="xref" data-knowl="./knowl/fact-AI5pressure.html" title="Fact 2.3.22">Fact 2.3.22</a>, how much force is exerted on this rectangle?</p></article></article> <article class="activity project-like" id="activity-AI5damsolve"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.25</span><span class="period">.</span>
+<p id="p-486">Consider that for the prism from <a class="xref" data-knowl="./knowl/activity-AI4rectangularprism.html" title="Activity 2.5.1">Activity 2.5.1</a>, a cross section of height \(h\) is \(A(h)=10^2=100\) m\(^2\text{.}\)  Also recall that the density of the prism is \(\delta(h)=10+h\) kg/m\(^3\text{,}\) where \(h\) is the height in meters.</p>
+<p id="p-487">Use <a class="xref" data-knowl="./knowl/fact-AI4masscomputation.html" title="Fact 2.5.19">Fact 2.5.19</a> to find the mass of the prism.</p></article> <article class="activity project-like" id="activity-TI4conemass"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.23</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-35"><p id="p-479">Recall the computations done in <a class="xref" data-knowl="./knowl/activity-AI5dam.html" title="Activity 2.3.23">Activity 2.3.23</a>.</p></div>
-<article class="task exercise-like" id="task-82"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-480">Find a Riemann sum which estimates the total force exerted on the dam, using slices at heights \(h_i\) m, of width \(\Delta h\) m.</p></article><article class="task exercise-like" id="task-83"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-481">Use (a) to find an integral expression which computes the amount of force exerted on this dam.</p></article><article class="task exercise-like" id="task-84"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-482">Evaluate the integral found in (b).</p></article></article></p></section></div></main>
+<div class="introduction" id="introduction-38"><p id="p-488">Consider that for the cone from <a class="xref" data-knowl="./knowl/activity-AI4cone.html" title="Activity 2.5.9">Activity 2.5.9</a>, a cross section of height \(h\) is \(A(h)=\pi r^2\) in\(^2\text{,}\) where \(r\) is the radius of the circular cross-section at height \(h\) inches.  Also recall that the density of the cone is \(\delta(h)=15+\sqrt{h}\) oz/in\(^3\text{,}\) where \(h\) is the height in inches.</p></div>
+<article class="task exercise-like" id="task-106"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-489">When the height is \(h\) in, what is \(r\text{?}\)</p>
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-3" id="hint-3"><span class="type">Hint.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-hint-3"><div class="hint solution-like"><p id="p-490">Use similar triangles: <figure class="figure figure-like" id="figure-38"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/similartrianglecone.svg" role="img" class="contained" alt="a 15 by 60 triangle, with a similar r by 60-h triangle."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.24<span class="period">.</span></span><span class="space"> </span>The right triangles in this figure are similar.</figcaption></figure></p></div></div></article><article class="task exercise-like" id="task-107"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-491">Find \(A(h)\) as a function of \(h\) using this information.</p></article><article class="task exercise-like" id="task-108"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-492">Use <a class="xref" data-knowl="./knowl/fact-AI4masscomputation.html" title="Fact 2.5.19">Fact 2.5.19</a> to find the mass of the cone.</p></article></article> <article class="activity project-like" id="activity-A4pyramidmass"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.25</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-39">Consider a pyramid with a \(8\times8\) ft square base and a height of 16 ft.  Suppose the density of the pyramid is \(\delta(h)=10+\cos(\pi h)\) lb/ft\(^3\) where \(h\) is the height in feet.</div>
+<article class="task exercise-like" id="task-109"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-493">When the height is \(h\) ft, what is the area of the square cross section at that height, \(A(h)\text{?}\)</p>
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-4" id="hint-4"><span class="type">Hint.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-hint-4"><div class="hint solution-like"><p id="p-494">Use similar triangles: <figure class="figure figure-like" id="figure-39"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/similartrianglepyramid.svg" role="img" class="contained" alt="a 8 by 60 triangle, with a similar r by 16-h triangle."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.26<span class="period">.</span></span><span class="space"> </span>The  triangles in this figure are similar.</figcaption></figure></p></div></div></article><article class="task exercise-like" id="task-110"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-495">Use <a class="xref" data-knowl="./knowl/fact-AI4masscomputation.html" title="Fact 2.5.19">Fact 2.5.19</a> to find the mass of the pyramid.</p></article></article> <article class="activity project-like" id="activity-AI4balance"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.27</span><span class="period">.</span>
+</h6>
+<p id="p-496">Consider a board sitting atop the \(x\)-axis with six \(1\times 1\) blocks each weighing 1 kg are placed upon it.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6. <figure class="figure figure-like" id="figure-40"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/blocksonaxis1.svg" role="img" class="contained" alt="Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.28<span class="period">.</span></span><span class="space"> </span>Six 1 kg blocks atop the \(x\)-axis.</figcaption></figure></p>
+<p id="p-497">Which of the following describes the \(x\)-value where the center of gravity of these blocks lie?</p>
+<ol class="upper-alpha">
+<li id="li-468"><p id="p-derived-li-468">\(\displaystyle\frac{1+6}{2}=3.5\text{.}\)</p></li>
+<li id="li-469"><p id="p-derived-li-469">\(\displaystyle\frac{1+2+6}{3}=3\text{.}\)</p></li>
+<li id="li-470"><p id="p-derived-li-470">\(\displaystyle\frac{2\cdot1+3\cdot2+1\cdot6}{6}\approx 2.3333\text{.}\)</p></li>
+</ol></article> <article class="activity project-like" id="activity-AI4balance2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.29</span><span class="period">.</span>
+</h6>
+<p id="p-498">Consider a board sitting atop the \(x\)-axis with six \(1\times 1\) blocks each weighing 1 kg are placed upon it.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8. <figure class="figure figure-like" id="figure-41"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/blocksonaxis2.svg" role="img" class="contained" alt="Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.30<span class="period">.</span></span><span class="space"> </span>Six 1 kg blocks atop the \(x\)-axis.</figcaption></figure></p>
+<p id="p-499">Find the \(x\)-value where the center of gravity of these blocks lie.</p></article> <article class="fact theorem-like" id="fact-AI4centerofmass"><h6 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.5.31</span><span class="period">.</span>
+</h6>
+<p id="p-500">Consider a solid where the cross section of the solid at \(x=x_i\) has area \(A(x_i)\text{,}\) and the density when \(x=x_i\) is \(\delta(x_i)\text{.}\)  Suppose the interval \([a,b]\) represented the \(x\) values of this solid.  Since each slice has approximated mass \(\delta(x_i)A(x_i)\delta(x_i)\text{,}\) we can approximate the center of mass by taking the weighted “average” of the \(x_i\)-values weighted by the associated mass:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.
+\end{equation*}
+</div>
+<p class="continuation"><figure class="figure figure-like" id="figure-42"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/Solidmassapproximation.svg" role="img" class="contained" alt="Solid approximated with prisms of width \(\Delta x\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.32<span class="period">.</span></span><span class="space"> </span>Solid approximated with prisms of width \(\Delta x\text{.}\)</figcaption></figure></p>
+<p id="p-501">We can then find actual center of mass by taking the limit as \(n\to\infty\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{n\to\infty} \left(\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\int_a^b x\delta(x)A(x)dx}{\int_a^b \delta(x)A(x)dx}=\frac{\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.
+\end{equation*}
+</div>
+<p class="continuation"><figure class="figure figure-like" id="figure-43"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/Solidmass.svg" role="img" class="contained" alt="Solid mass."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.33<span class="period">.</span></span><span class="space"> </span>Solid mass.</figcaption></figure></p></article> <article class="activity project-like" id="activity-160"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.34</span><span class="period">.</span>
+</h6>
+<p id="p-502">Consider that for the prism from <a class="xref" data-knowl="./knowl/activity-TI4prismmass.html" title="Activity 2.5.22">Activity 2.5.22</a>, a cross section of height \(h\) is \(A(h)=10^2=100\) m\(^2\text{.}\)  Also recall that the density of the prism is \(\delta(h)=10+h\) kg/m\(^3\text{,}\) where \(h\) is the height in meters, and that we found the total mass to be 40000  kg.</p>
+<p id="p-503">Use <a class="xref" data-knowl="./knowl/fact-AI4centerofmass.html" title="Fact 2.5.31">Fact 2.5.31</a> to find the height where the center of mass occurs.</p></article> <article class="activity project-like" id="activity-161"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.35</span><span class="period">.</span>
+</h6>
+<p id="p-504">Consider that for the prism from <a class="xref" data-knowl="./knowl/activity-TI4conemass.html" title="Activity 2.5.23">Activity 2.5.23</a>, a cross section of height \(h\) is \(A(h)=\pi\cdot \left( \frac{60-h}{4}\right)^2\) in\(^2\text{.}\)  Also recall that the density of the cone is \(\delta(h)=15+\sqrt{h}\) oz/in\(^3\text{,}\) where \(h\) is the height in inches, and that we found the total mass to be about 142492.6  oz.</p>
+<p id="p-505">Use <a class="xref" data-knowl="./knowl/fact-AI4centerofmass.html" title="Fact 2.5.31">Fact 2.5.31</a> to find the height where the center of mass occurs.</p></article> <article class="activity project-like" id="activity-162"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.36</span><span class="period">.</span>
+</h6>
+<p id="p-506">Consider that for the pyramid from <a class="xref" data-knowl="./knowl/activity-A4pyramidmass.html" title="Activity 2.5.25">Activity 2.5.25</a>, a cross section of height \(h\) is \(A(h)=\pi\cdot \left( \frac{16-h}{2}\right)^2\) ft\(^2\text{.}\)  Also recall that the density of the pyramid is \(\delta(h)=10+\cos{\pi h}\) lb/feet\(^3\text{,}\) where \(h\) is the height in feet, and that we found the total mass to be about 3414.14.6  lb's.</p>
+<p id="p-507">Use <a class="xref" data-knowl="./knowl/fact-AI4centerofmass.html" title="Fact 2.5.31">Fact 2.5.31</a> to find the height where the center of mass occurs.</p></article></p></section></div></main>
 </div>
 </body>
 </html>
