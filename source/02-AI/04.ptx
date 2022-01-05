@@ -192,7 +192,7 @@
                 
                 <figure>
                 <caption>Plot of Bounded region rotated about <m>x</m>-axis.</caption>
-                    <image xml:id="rotatingrootxaboutxtwopiece" width="100%">
+                    <image xml:id="rotatingrootxaboutxtwopiece2" width="100%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
                         <latex-image>
                           \begin{tikzpicture}

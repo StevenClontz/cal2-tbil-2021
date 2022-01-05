@@ -234,7 +234,7 @@
     </activity>
     
     
-    <activity xml:id="activity-PS3seriesnegexp">
+    <activity xml:id="activity-PS3seriesnegexp2">
         <statement>
             <p>
                 What function <m>f(x)</m> has power series <m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{x^{n+3}}{n!}=x^3+x^4+\frac{x^5}{2}+\frac{x^6}{6}+\cdots</m>?

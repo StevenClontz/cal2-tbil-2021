@@ -113,7 +113,7 @@
     
     
     
-        <activity xml:id="activity-SQ5p=2Series">
+        <activity xml:id="activity-SQ5pEquals2Series">
             <introduction>
                 <p>
                     Consider the series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2}</m>.

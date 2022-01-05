@@ -9,5 +9,46 @@
             </li>
         </ul>
     </objectives>
+    
+    <activity>
+        <introduction><p>We will consider the fnuciton <m>\displaystyle \frac{4x+8}{x}</m>.</p></introduction>
+        <task>
+            <p>Compute the limit <m>\displaystyle  \lim_{x\to \infty} \frac{4x+8}{x}</m>.</p>
+        <ol label="A">
+            <li><m>0</m></li>
+            <li><m>8</m></li>
+            <li><m>1</m></li>
+            <li><m>4</m></li>
+        </ol>            
+        </task>
+        <task>
+            <p>What value does <m>f(x)</m> converge to as <m>x\to\infty</m>?</p>
+        <ol label="A">
+            <li><m>0</m></li>
+            <li><m>8</m></li>
+            <li><m>1</m></li>
+            <li><m>4</m></li>
+        </ol>               
+        </task>
+        <task>
+            <p>Determine on which intervals <m>f(x)</m> is increasing and/or decreasting.</p>
+        </task>
+        <task>
+            <p>Which statement best describes <m>f(x)</m> for <m>x>0</m>?</p>
+          <ol label="A">
+            <li><m>f(x)</m> is bounded above by 4</li>
+            <li><m>f(x)</m> is bounded below by 4</li>
+            <li><m>f(x)</m> is bounded above and below by 4</li>
+            <li><m>f(x)</m> is not bounded above</li>
+            <li><m>f(x)</m> is not bounded below</li>
+          </ol>   
+        </task>
+        <task>
+            <p>Determine on which intervals <m>f(x)</m> is concave up and/or concave down.</p>
+        </task>
+        <task><p>Sketch a graph of the function <m>f(x)</m>.</p></task>
+    </activity>
 
 </section>
+
+
