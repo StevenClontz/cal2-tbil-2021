@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-01-05T22:17:24Z       *-->
+<!--*       on 2022-01-17T22:17:20Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,45 +14,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<p><article class="remark remark-like"><h3 class="heading">
-<span class="type">Remark</span><span xmlns:svg="http://www.w3.org/2000/svg" class="space"> </span><span class="codenumber">1.6.16</span><span xmlns:svg="http://www.w3.org/2000/svg" class="period">.</span>
-</h3>
-<p>This is all well and good, but given a rational function, how might one actually find coefficients for the partial fractions if we weren't given them?</p></article> <article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span xmlns:svg="http://www.w3.org/2000/svg" class="space"> </span><span class="codenumber">1.6.17</span><span xmlns:svg="http://www.w3.org/2000/svg" class="period">.</span>
-</h3>
-<p>Consider that the partial decomposition of <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}\)</span> is</p>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Quadratic Terms:</em> Let <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(x^2+bx+c\)</span>  be an irreducible quadratic that divides <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(q(x)\text{,}\)</span> where <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\((x^2+bx+c)^n\)</span> is the highest power of <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(x^2+bx+c\)</span> that divides <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(q(x)\text{.}\)</span> Then the decomposition of <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the sum</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath process-math">
 \begin{equation*}
-\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}.
+\frac{B_1x+C_1}{x^2+bx+c}+\frac{B_2x+C_2}{(x^2+bx+c)^2}+\cdots+\frac{B_nx+C_n}{(x^2+bx+c)^n}\text{.}
 \end{equation*}
 </div>
-<p class="continuation">What equality do we obtain if we multiply both sides of the above equation by <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\((x+1)^2x\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li><p><span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(\displaystyle x^2+5x+3=A(x+1)+B(x+1)^2+Cx.\)</span></p></li>
-<li><p><span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2.\)</span></p></li>
-</ol></article> <article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span xmlns:svg="http://www.w3.org/2000/svg" class="space"> </span><span class="codenumber">1.6.18</span><span xmlns:svg="http://www.w3.org/2000/svg" class="period">.</span>
-</h3>
-<p>By taking <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2\)</span> and setting <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(x=0\text{,}\)</span> can we solve for any values <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(A, B\)</span> or <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(C\text{?}\)</span></p></article> <article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span xmlns:svg="http://www.w3.org/2000/svg" class="space"> </span><span class="codenumber">1.6.19</span><span xmlns:svg="http://www.w3.org/2000/svg" class="period">.</span>
-</h3>
-<p>By taking <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(x^2+5x+3=Ax(x+1)+Bx+3(x+1)^2\)</span> and setting <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(x=-1\text{,}\)</span> can we solve for any values <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(A\)</span> or <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(B\text{?}\)</span></p></article> <article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span xmlns:svg="http://www.w3.org/2000/svg" class="space"> </span><span class="codenumber">1.6.20</span><span xmlns:svg="http://www.w3.org/2000/svg" class="period">.</span>
-</h3>
-<p>Rewrite <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(Ax(x+1)-x+3(x+1)^2\)</span> so that <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(Ax(x+1)-x+3(x+1)^2=?x^2+?x+?\text{.}\)</span>  Knowing that</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath process-math">
-\begin{equation*}
-1x^2+5x+3=Ax(x+1)-x+3(x+1)^2=?x^2+?x+?,
-\end{equation*}
-</div>
-<p class="continuation">can we solve for  <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(A\text{?}\)</span></p></article> <article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span xmlns:svg="http://www.w3.org/2000/svg" class="space"> </span><span class="codenumber">1.6.21</span><span xmlns:svg="http://www.w3.org/2000/svg" class="period">.</span>
-</h3>
-<p>By using the form of the decomposition <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}\)</span>  and the coefficients found in <a href="" class="xref" data-knowl="./knowl/activity-TI6SolveaCoeff.html" title="Activity 1.6.18">Activity 1.6.18</a>, <a href="" class="xref" data-knowl="./knowl/activity-TI6SolveanotherCoeff.html" title="Activity 1.6.19">Activity 1.6.19</a> and <a href="" class="xref" data-knowl="./knowl/activity-TI6SolvelastCoeff.html" title="Activity 1.6.20">Activity 1.6.20</a>, evaluate <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(\displaystyle \int \frac{x^2+5x+3}{(x+1)^2x} dx\text{.}\)</span></p></article> <article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span xmlns:svg="http://www.w3.org/2000/svg" class="space"> </span><span class="codenumber">1.6.22</span><span xmlns:svg="http://www.w3.org/2000/svg" class="period">.</span>
-</h3>
-<p>Evaluate <span xmlns:svg="http://www.w3.org/2000/svg" class="process-math">\(\displaystyle \int \frac{4x^2-3x+1}{(2x+1)(x+2)(x-3)}dx.\)</span></p></article></p>
 <span class="incontext"><a href="TI6.html#p-276">in-context</a></span>
 </body>
 </html>
