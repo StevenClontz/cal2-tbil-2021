@@ -150,17 +150,23 @@
     <activity estimated-time="99" xml:id="activity-TI2GoodPartsChoice">
         <statement>
             <p>Consider the integral <m>\int x^9\ln(x) \,dx</m>. Suppose we proceed using integration by parts. We choose <m>u=\ln(x)</m> and <m>dv=x^9\,dx</m>.</p>
-            <ol label="A">
-                <li><p>What is <m>du</m>?</p></li>
-                <li><p>What is <m>v</m>?</p></li>
-                <li><p>What do you get when plugging these pieces into integration by parts?</p></li>
-                <li><p>Does the new integral <m>\int v\,du</m> seem easier or harder to compute than the original integral <m>\int x^9\ln(x) \,dx</m>?</p></li>
-                    <ol label="i">
+            <task>
+                <p>What is <m>du</m>?</p>
+            </task>
+            <task>
+                <p>What is <m>v</m>?</p>
+            </task>
+            <task>
+                <p>What do you get when plugging these pieces into integration by parts?</p>
+            </task>
+            <task>
+                <p>Does the new integral <m>\int v\,du</m> seem easier or harder to compute than the original integral <m>\int x^9\ln(x) \,dx</m>?</p>
+                    <ol label="A">
                     <li><p>The original integral is easier to compute.</p></li>
                     <li><p>The new integral is easier to compute.</p></li>
                     <li><p>Neither integral seems harder than the other one.</p></li>
                     </ol>
-            </ol>
+            </task>
         </statement>
     </activity>
     <activity estimated-time="99" xml:id="activity-TI2WorseSubChoice">
@@ -279,22 +285,31 @@
     </activity>
     <activity estimated-time="99" xml:id="activity-TI2DefiniteSinePoly">
         <statement>
-            <p>Use integration by parts to evaluate the integral <m>\displaystyle \int_0^{\frac{\pi}{4}} x\sin(2x)\,dx</m>.</p>
+            <p>Use integration by parts to show that <m>\displaystyle \int_0^{\frac{\pi}{4}} x\sin(2x)\,dx=\frac{1}{4}</m>.</p>
         </statement>
     </activity>
     <activity estimated-time="99" xml:id="activity-TI2ExtensionProductChain">
-        <statement>
-            <p>Use integration by parts to evaluate the integral <m>\int t^5 \sin(t^3)\,dt</m>.</p>
-        </statement>
+        <introduction>
+            <p>Consider the integral <m>\int t^5 \sin(t^3)\,dt</m>.</p>
+        </introduction>
+        <task>
+            <p>Use the substitution <m>x=t^3</m> to rewrite the integral in terms of <m>x</m>.</p>
+        </task>
+        <task>
+            <p>Use integration by parts to evaluate the integral in terms of <m>x</m>.</p>
+        </task>
+        <task>
+            <p>Replace <m>x</m> with <m>t^3</m> to finish evaluating the original integral.</p>
+        </task>
     </activity>
     <activity estimated-time="99" xml:id="activity-TI2ExtensionNatLog">
         <statement>
-            <p>Use integration by parts to evaluate the integral <m>\ln(z)\,dz</m>.</p>
+            <p>Use integration by parts to show that <m>\displaystyle \int \ln(z)\,dz=z \ln(z) - z + C</m>.</p>
         </statement>
     </activity>
     <activity estimated-time="99" xml:id="activity-TI2ExtensionNatLogSquared">
         <statement>
-            <p>Use integration by parts to evaluate the integral <m>(\ln(z))^2\,dz</m>.</p>
+            <p>Given that that <m>\displaystyle \int \ln(z)\,dz=z \ln(z) - z + C</m>, evaluate <m>\displaystyle \int (\ln(z))^2\,dz</m>.</p>
         </statement>
     </activity>
 </section>
