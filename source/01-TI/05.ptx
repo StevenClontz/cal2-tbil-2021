@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="TI5" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="TI5" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Tables of Integrals (TI5)</title>
     <objectives>
         <ul>
@@ -156,4 +156,10 @@
             <p>Evaluate the integral <m>\int 8\sqrt{4x^2-81} \,dx</m>. Be sure to specify which entry is used from <xref ref="integral-table"/> at the corresponding step.</p>
         </statement>
     </activity>
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI5.slides.html"/>.</p>
+    </subsection>
+    
 </section>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="TI4" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="TI4" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Trigonometric Substitution (TI4)</title>
     <objectives>
         <ul>
@@ -314,7 +314,10 @@
         </activity>
         
         
-        
+        <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI4.slides.html"/>.</p>
+    </subsection>
         
         
     </p>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="TI8" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="TI8" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Improper integrals (TI8)</title>
     <objectives>
         <ul>
@@ -9,7 +9,6 @@
             </li>
         </ul>
     </objectives>
-    <p>
         <activity xml:id="activity-T8Exploration1">
                     <p>
                         Consider <m>f(x)=\frac{1}{x^2}.</m>
@@ -465,6 +464,11 @@
             </p>
             </introduction>    
         </activity>
+    
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI7.slides.html"/>.</p>
+    </subsection>
         
-    </p>
 </section>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="TI3" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="TI3" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Integration of trigonometry (TI3)</title>
     <objectives>
         <ul>
@@ -21,7 +21,7 @@
                 </p>
             </statement>
     </activity>
-    <activity xml:id="activity-TI3evenOdd">
+    <activity xml:id="activity-TI3evenOdd" tbil-slides="build">
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin^2(x)\cos(x) \, dx</m>.  Which strategy would you choose to evaluate this integral?
@@ -165,6 +165,9 @@ We might also use some other trigonometric identities to manipulate our integran
             </statement>
     </activity>
     
-    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI3.slides.html"/>.</p>
+    </subsection>
     
 </section>

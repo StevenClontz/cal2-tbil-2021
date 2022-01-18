@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="TI7" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="TI7" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Integration strategy (TI7)</title>
     <objectives>
         <ul>
@@ -81,5 +81,11 @@
             </ol>
         </statement>
     </activity>
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI7.slides.html"/>.</p>
+    </subsection>
+    
 </section>
 
