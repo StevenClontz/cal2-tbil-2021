@@ -263,13 +263,13 @@ to use yourself?
 &amp;= \int \left(\frac{1}{8}u^4-\frac{1}{2}u^2\right)\,du
                 </mrow>
                 <mrow>
-&amp;= \frac{1}{40}u^5-\frac{1}{3}u^3+C
+&amp;= \frac{1}{40}u^5-\frac{1}{6}u^3+C
                 </mrow>
                 <mrow>
 &amp;= \frac{1}{40}(4x+4)^{5/2}
                 </mrow>
                 <mrow>
-&amp;\phantom{=}-\frac{1}{3}(4x+4)^{3/2}+C
+&amp;\phantom{=}-\frac{1}{6}(4x+4)^{3/2}+C
                 </mrow>
             </md>
                 </p>
