@@ -16,7 +16,7 @@
                     Consider the integral <m>\displaystyle \int \frac{\sqrt{1-x^2}}{x} dx</m>.  If one were to use the method of substitution to evaluate this integral, what would be the best choice of <m>u</m>?
                     <ol label="A">
                         <li><m>u=1-x^2.</m></li>
-                        <li><m>u=\sqrt{x^2-1}.</m></li>
+                        <li><m>u=\sqrt{1-x^2}.</m></li>
                         <li><m>u=\frac{1}{x}.</m></li>
                         <li>There is no u for which the method of substitution will work.</li>
                     </ol>
@@ -30,7 +30,7 @@
                     It would be good if <m>\sqrt{1-x^2}</m> were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?
                     <ol label="A">
                         <li>For any real number, <m>x^2</m> must be positive (note: this isn’t even true).</li>
-                        <li><m>u=\sqrt{x^2-1}.</m></li>
+                        <li><m>u=\sqrt{1-x^2}.</m></li>
                         <li>The Pythagorean theorem allows us to write <m>(\cos(\theta))^2</m> as <m>1-(\sin(\theta))^2</m>.</li>
                         <li>The ratio of an even function and an odd function is odd.</li>
                     </ol>
@@ -83,7 +83,7 @@
         <activity xml:id="activity-TI4evaluatesinsub">
             <statement>
                 <p>
-                    Evaluate the integral in terms of <m>\theta</m> that you found in <xref ref="activity-TI4sinsubrewrite"/>.
+                    Evaluate the integral in terms of <m>\theta</m> that you found in <xref ref="activity-TI4cosdoubleanglesub"/>.
                 </p>
             </statement>
         </activity>
@@ -91,7 +91,7 @@
         <activity xml:id="activity-TI4turnbacktox">
             <statement>
                 <p>
-                    Consider the fact that <m>x=\sin(\theta)</m> and thus <m>\theta=\arcsin(x)</m>.  Use this to rewrite the solution you found in (previous) in terms of <m>x</m>.
+                    Consider the fact that <m>x=\sin(\theta)</m> and thus <m>\theta=\arcsin(x)</m>.  Use this to rewrite the solution you found in <xref ref="activity-TI4evaluatesinsub"/> in terms of <m>x</m>.
                 </p>
             </statement>
         </activity>
@@ -257,9 +257,9 @@
                 <p>
                     If we wish to simplify an expression that contained a <m>k^2-x^2</m> expression, which would be the best substitution?
                     <ol label="A">
-                        <li><m>x=\sin(x)</m></li>
-                        <li><m>x=\tan(x)</m></li>
-                        <li><m>x=\sec(x)</m></li>
+                        <li><m>x=k\sin(\theta)</m></li>
+                        <li><m>x=k\tan(\theta)</m></li>
+                        <li><m>x=k\sec(\theta)</m></li>
                     </ol>
                 </p>
             </statement>
@@ -270,9 +270,9 @@
                 <p>
                     If we wish to simplify an expression that contained a <m>k^2+x^2</m> expression, which would be the best substitution?
                     <ol label="A">
-                        <li><m>x=\sin(x)</m></li>
-                        <li><m>x=\tan(x)</m></li>
-                        <li><m>x=\sec(x)</m></li>
+                        <li><m>x=k\sin(\theta)</m></li>
+                        <li><m>x=k\tan(\theta)</m></li>
+                        <li><m>x=k\sec(\theta)</m></li>
                     </ol>
                 </p>
             </statement>
@@ -283,9 +283,9 @@
                 <p>
                     If we wish to simplify an expression that contained a <m>x^2-k^2</m> expression, which would be the best substitution?
                     <ol label="A">
-                        <li><m>x=\sin(x)</m></li>
-                        <li><m>x=\tan(x)</m></li>
-                        <li><m>x=\sec(x)</m></li>
+                        <li><m>x=k\sin(\theta)</m></li>
+                        <li><m>x=k\tan(\theta)</m></li>
+                        <li><m>x=k\sec(\theta)</m></li>
                     </ol>
                 </p>
             </statement>
