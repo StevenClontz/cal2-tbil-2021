@@ -60,7 +60,7 @@
                     <ol label="A">
                         <li><m>\displaystyle\int \cos(\theta) d\theta</m>.</li>
                         <li><m>\displaystyle\int \cos^2(\theta) d\theta</m>.</li>
-                        <li><m>\displaystyle\int \sqrt{cos(\theta)} d\theta</m>.</li>
+                        <li><m>\displaystyle\int \sqrt{\cos(\theta)} d\theta</m>.</li>
                     </ol>
                 </p>
             </statement>
