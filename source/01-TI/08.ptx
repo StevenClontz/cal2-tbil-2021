@@ -178,9 +178,9 @@
         <task>
             <p>If <m>0&lt; p&lt; 1</m>, which of the following statements must be true? Select all that apply.</p>
             <ol label="A">
+                <li><p><m>1-p&lt; 0</m>.</p></li>
+                <li><p><m>1-p&gt; 0</m>.</p></li>
                 <li><p><m>1-p&lt; 1</m>.</p></li>
-                <li><p><m>1-p&gt; 1</m>.</p></li>
-                <li><p><m>1-p=1</m>.</p></li>
                 <li><p><m>\displaystyle \int_1^\infty \frac{1}{x^p} dx</m> converges.</p></li>
                 <li><p><m>\displaystyle \int_1^\infty \frac{1}{x^p} dx</m> diverges.</p></li>
             </ol>
@@ -188,9 +188,9 @@
         <task>
             <p>If <m>p>1</m>, which of the following statements must be true? Select all that apply.</p>
             <ol label="A">
+                <li><p><m>1-p&lt; 0</m>.</p></li>
+                <li><p><m>1-p&gt; 0</m>.</p></li>
                 <li><p><m>1-p&lt; 1</m>.</p></li>
-                <li><p><m>1-p&gt; 1</m>.</p></li>
-                <li><p><m>1-p=1</m>.</p></li>
                 <li><p><m>\displaystyle \int_1^\infty \frac{1}{x^p} dx</m> converges.</p></li>
                 <li><p><m>\displaystyle \int_1^\infty \frac{1}{x^p} dx</m> diverges.</p></li>
             </ol>            
@@ -213,7 +213,7 @@
         </task>        
     </activity>
     <activity xml:id="activity-TI8prule3">
-        <introduciton><p>Consider when <m>p=1</m>. Then <m>\frac{1}{x^p}=\frac{1}{x}</m> and <m>\displaystyle \int \frac{1}{x^p}\ dx=\displaystyle \int \frac{1}{x}\ dx=\ln|x|+C</m>.</p></introduciton>
+        <introduction><p>Consider when <m>p=1</m>. Then <m>\frac{1}{x^p}=\frac{1}{x}</m> and <m>\displaystyle \int \frac{1}{x^p}\ dx=\displaystyle \int \frac{1}{x}\ dx=\ln|x|+C</m>.</p></introduction>
         <task>
             <p>What can we conclude about <m>\displaystyle \int_1^\infty \frac{1}{x} dx</m>?</p>
             <ol label="A">
