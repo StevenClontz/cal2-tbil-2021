@@ -9,7 +9,6 @@
             </li>
         </ul>
     </objectives>
-    <p>
         <activity xml:id="activity-TI4fakeusub">
             <statement>
                 <p>
@@ -320,5 +319,4 @@
     </subsection>
         
         
-    </p>
 </section>

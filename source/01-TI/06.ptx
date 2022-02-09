@@ -9,7 +9,6 @@
             </li>
         </ul>
     </objectives>
-    <p>
         <activity xml:id="activity-TI6oneoverlinear">
             <statement>
                 <p>
@@ -224,10 +223,6 @@
             </statement>
         </activity>
         
-        
-    </p>
-    
-    <p>
         <remark>
             <statement>
                 <p>
@@ -298,7 +293,6 @@
             </statement>
         </activity>
         
-    </p>
     
     <subsection>
         <title>Slideshow</title>

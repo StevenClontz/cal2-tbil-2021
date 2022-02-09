@@ -9,7 +9,7 @@
             </li>
         </ul>
     </objectives>
-        <activity estimated-time="99" xml:id="activity-TI2ProductRuleParts">
+        <activity epretexstimated-time="99" xml:id="activity-TI2ProductRuleParts">
         <introduction><p>Answer the following.</p></introduction>
         <task>
             <p>Using the product rule, which of these is derivative of <m>x^3e^x</m> with respect to <m>x</m>?</p>
