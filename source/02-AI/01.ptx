@@ -20,7 +20,7 @@
                 <p>How far did the car travel in these 3 hours?</p>
             </task>
             <task>
-                <p>What was their average veclocity over these 3 hours?</p>
+                <p>What was their average velocity over these 3 hours?</p>
             </task>
         </activity>
         
@@ -34,7 +34,7 @@
                 <p>How far did the car travel in these 3 hours?</p>
             </task>
             <task>
-                <p>What was their average veclocity over these 3 hours?</p>
+                <p>What was their average velocity over these 3 hours?</p>
             </task>
         </activity>
         
@@ -42,7 +42,7 @@
         <activity xml:id="activity-AI1piecewise">
             <statement>
                 <p>
-                    Which of the following is the average value of <m>f(x)</m> over the interval <m>[0,8]</m>?  Note <m>f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 3, &amp; 6 &lt; x \leq 8 \end{cases}</m>.
+                    Which of the following is the average value of <m>f(x)</m> over the interval <m>[0,8]</m>?  Note <m>f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}</m>.
                     
                     <figure>
                 <caption>Plot of <m>f(x)</m>.</caption>
