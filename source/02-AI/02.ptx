@@ -84,7 +84,7 @@
                     <li><m>\sqrt{4+8}</m>.</li>
                     <li><m>\sqrt{4^2+8^2}</m>.</li>
                     <li><m>\sqrt{2^2+8^2}+\sqrt{4^2+8^2}</m>.</li>
-                    <li><m>\sqrt{2^2+8^2}+\sqrt{(4-2)^2+(8-2)^2}</m>.</li>
+                    <li><m>\sqrt{2^2+8^2}+\sqrt{(4-2)^2+(8-8)^2}</m>.</li>
                 </ol>
             </p>
         </task>
@@ -180,7 +180,7 @@
                 <ol label='A'>
                     <li><m>\sqrt{x_0^2+f(x_0)^2}</m>.</li>
                     <li><m>\sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}</m>.</li>
-                    <li><m>\sqrt{(\Delta x)^2+(f(x_0+\Delta)-f(x_0))^2}</m>.</li>
+                    <li><m>\sqrt{(\Delta x)^2+(f(x_0+\Delta x)-f(x_0))^2}</m>.</li>
                     <li><m>\sqrt{(\Delta x)^2+f(\Delta x)^2}</m>.</li>
                     
                 </ol>
@@ -193,7 +193,7 @@
                 <ol label='A'>
                     <li><m>\displaystyle \sum \sqrt{x_i^2+f(x_i)^2}</m>.</li>
                     <li><m>\displaystyle \sum \sqrt{(x_i+\Delta x)^2+f(x_i+\Delta x)^2}</m>.</li>
-                    <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2}</m>.</li>
+                    <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2}</m>.</li>
                     <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+f(\Delta x)^2}</m>.</li>
                     
                 </ol>
@@ -262,6 +262,7 @@
                     \hline
                     3 &amp; &amp; &amp; \\
                     \hline
+                    
                     \end{array}
                 </me>
             </p>
@@ -281,8 +282,7 @@
                     \hline
                     3 &amp; &amp; &amp; \\
                     \hline
-                    4 &amp; &amp; &amp; \\
-                    \hline
+                   
                     \end{array}
                 </me>
             </p>
