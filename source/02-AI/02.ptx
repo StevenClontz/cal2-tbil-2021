@@ -176,7 +176,7 @@
                         </latex-image>
                     </image>
             </figure>
-                Which of  the following expressions represents the length of the line segment from <m>(x_0, f(x_0))</m> to <m>(\Delta x, f(x_0+\Delta x))</m>?
+                Which of  the following expressions represents the length of the line segment from <m>(x_0, f(x_0))</m> to <m>(x_0+\Delta x, f(x_0+\Delta x))</m>?
                 <ol label='A'>
                     <li><m>\sqrt{x_0^2+f(x_0)^2}</m>.</li>
                     <li><m>\sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}</m>.</li>

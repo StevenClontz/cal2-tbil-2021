@@ -31,10 +31,23 @@
                 </p>
             </introduction>
             <task>
-                <p>How far did the car travel in these 3 hours?</p>
+                <p>Which of the following expressions measures how far the car travel travels in these 3 hours?</p>
+                <ol label='A'>
+                    <li><m>\displaystyle \int_0^2 70x \,dx + \int_2^3 40x \,dx</m>.</li>
+                    <li><m>\displaystyle \int_0^2 70 \,dx + \int_2^3 40 \,dx</m>.</li>
+                    <li><m>\displaystyle \int_0^2 70x \,dx + \int_0^1 40x \,dx</m>.</li>
+                    <li><m>\displaystyle \int_0^2 70 \,dx + \int_0^1 40 \,dx</m>.</li>
+                    <li><m>70(2)+40(1)</m>.</li>
+                </ol>
             </task>
             <task>
                 <p>What was their average velocity over these 3 hours?</p>
+                <ol label='A'>
+                    <li><m>180</m> mi.</li>
+                    <li><m>180</m> mph.</li>
+                    <li><m>60</m> mi.</li>
+                    <li><m>60</m> mph.</li>
+                </ol>                
             </task>
         </activity>
         
