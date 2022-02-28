@@ -11,7 +11,7 @@
     </objectives>
     
     <activity>
-        <introduction><p>We will consider the fnuciton <m>\displaystyle \frac{4x+8}{x}</m>.</p></introduction>
+        <introduction><p>We will consider the function <m>\displaystyle \frac{4x+8}{x}</m>.</p></introduction>
         <task>
             <p>Compute the limit <m>\displaystyle  \lim_{x\to \infty} \frac{4x+8}{x}</m>.</p>
         <ol label="A">
@@ -31,7 +31,7 @@
         </ol>               
         </task>
         <task>
-            <p>Determine on which intervals <m>f(x)</m> is increasing and/or decreasting.</p>
+            <p>Determine on which intervals <m>f(x)</m> is increasing and/or decreasing.</p>
         </task>
         <task>
             <p>Which statement best describes <m>f(x)</m> for <m>x>0</m>?</p>

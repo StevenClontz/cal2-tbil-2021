@@ -99,13 +99,13 @@
         <p>Let <m>a_n</m> be the <m>n</m>th term in the sequence <m>1, 1, 2, 3, 5, 8, \ldots</m>. Find a formula for <m>a_n</m>.</p>
     </activity>
     
-    <definition>recursive definition</definition>
+    <definition>A sequence is <it>recursive</it> if the terms are defined as a function of previous terms (with the necessary initial terms provided).</definition>
     
     <activity> <p>Consider the sequence <m>2, 7, 22, 67, 202, \ldots</m>. Which of the following offers the best recursive formula for this sequence?</p>
         <ol label="A">
             <li><m>3a_n+1</m></li>
-            <li><m>a_1=2, a_k=3a_{k-1}</m> for <m>k>1</m></li>
-            <li><m>a_1=2, a_2=7, a_k=3a_{k-1}</m> for <m>k>2</m></li>
+            <li><m>a_1=2, a_k=3a_{k-1}+1</m> for <m>k>1</m></li>
+            <li><m>a_1=2, a_2=7, a_k=3a_{k-1}+1</m> for <m>k>2</m></li>
         </ol>
     </activity>
     
@@ -115,7 +115,7 @@
     <activity><p>Give a recursive formula that generates the sequence <m>1, 2, 4, 8, 16, 32, \ldots</m>.</p>
     </activity>
     
-    <activity><p>Consdier the sequence defined by <m>a_1=6</m> and <m>a_{k+1}=44a_k-87</m> for <m>k\geq 1</m>. What are the first four terms?</p>
+    <activity><p>Consider the sequence defined by <m>a_1=6</m> and <m>a_{k+1}=4a_k-7</m> for <m>k\geq 1</m>. What are the first four terms?</p>
     </activity>
     
 </section>
