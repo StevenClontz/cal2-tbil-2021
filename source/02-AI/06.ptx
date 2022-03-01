@@ -38,7 +38,7 @@
                     Consider the bucket from <xref ref="activity-AI5bucket"/>  with 10 kg of water, being pulled against the acceleration of gravity, <m>g=9.8</m> m/s<m>^2</m>, at a constant speed for 20 meters.  Suppose that halfway up at a height of 10m, 5kg of water spilled out, leaving 5kg left.  How much work total does it take to get this bucket to a height of 20m?
                     <ol label="A">
                         <li>980 kgm<m>^2</m>/<m>s^2</m> or (Nm).</li>
-                        <li>1477.5 kgm<m>^2</m>/<m>s^2</m> or (Nm).</li>
+                        <li>1470 kgm<m>^2</m>/<m>s^2</m> or (Nm).</li>
                         <li>1960 kgm<m>^2</m>/<m>s^2</m> or (Nm).</li>
                     </ol>
                 </p>
@@ -48,7 +48,7 @@
         <activity xml:id="activity-A5bucket3">
             <introduction>
                 <p>
-                    Suppose a 10 kg bucket of water is constantly losing water as it's pulled up, so at a height of <m>h</m> meters, the mass of the bucket is <m>m(h)=2+8e^{-0.2x}</m> kg.
+                    Suppose a 10 kg bucket of water is constantly losing water as it's pulled up, so at a height of <m>h</m> meters, the mass of the bucket is <m>m(h)=2+8e^{-0.2h}</m> kg.
                     <figure>
                 <caption>Bucket 5 m in the air, to be hoisted by another 5 meters.</caption>
                     <image xml:id="bucket5meters" width="100%">
