@@ -14,7 +14,7 @@
         <activity xml:id="activity-SQ6multipleofsequence">
             <introduction>
                 <p>
-                    Let <m>\{a_n\}_{n=1}^\infty</m> be a sequence, with infinite series <m>\displaystyle \sum_{n=1}^\infty a_n=a_1+a_2+\cdots </m>.  Suppose <m>\{b_n\}_{n=1}^\infty</m> is a sequence where each <m>b_n=2a_n</m>, whith infinite series <m>\displaystyle \sum_{n=1}^\infty b_n=\sum_{n=1}^\infty 3a_n=3a_1+3a_2+\cdots </m>.
+                    Let <m>\{a_n\}_{n=1}^\infty</m> be a sequence, with infinite series <m>\displaystyle \sum_{n=1}^\infty a_n=a_1+a_2+\cdots </m>.  Suppose <m>\{b_n\}_{n=1}^\infty</m> is a sequence where each <m>b_n=3a_n</m>, whith infinite series <m>\displaystyle \sum_{n=1}^\infty b_n=\sum_{n=1}^\infty 3a_n=3a_1+3a_2+\cdots </m>.
                 </p>
             </introduction>
             <task>
@@ -22,8 +22,8 @@
                 If <m>\displaystyle \sum_{n=1}^\infty a_n=5</m> what can be said about <m>\displaystyle\sum_{n=1}^\infty b_n</m>?
                 <ol label="A">
                     <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges but the value cannot be determined.</li>
-                    <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges to <m>2\cdot 5=10</m>.</li>
-                    <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges to some value other than 10.</li>
+                    <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges to <m>3\cdot 5=15</m>.</li>
+                    <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges to some value other than 15.</li>
                     <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> diverges.</li>
                     <li>It cannot be determined whether <m>\displaystyle\sum_{n=1}^\infty b_n</m> converges or diverges.</li>
                 </ol>
@@ -47,18 +47,18 @@
         <activity xml:id="activity-SQ6sortofmultiplesequence">
             <introduction>
                 <p>
-                    Recall that <me>\displaystyle \frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots+\frac{1}{2^n}+\cdots=1.</me>
+                    Recall that <me>\displaystyle 1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots+\frac{1}{2^n}+\cdots=2.</me>
                 </p>
             </introduction>
             
             <task>
                 <p>
-                    What can we say about the series <me>\displaystyle \frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots?</me>
+                    What can we say about the series <me>\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots?</me>
                     
                     <ol label="A">
-                    <li><m>\displaystyle \frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> converges to <m>3\cdot 2=6</m>.</li>
-                    <li><m>\displaystyle \frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> converges to some value other than 6.</li>    
-                    <li><m>\displaystyle \frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> diverges.</li>
+                    <li><m>\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> converges to <m>3\cdot 2=6</m>.</li>
+                    <li><m>\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> converges to some value other than 6.</li>    
+                    <li><m>\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> diverges.</li>
                     
                 </ol>
                 </p>
@@ -133,15 +133,17 @@
         
         
         <activity xml:id="activity-SQ6conversenottrue">
-            <statement>
+            <introduction>
                 
                 <p>
                     Recall that <me>\displaystyle \sum_{n=1}^\infty \frac{1}{2^n}</me> converges.
                 </p>
                 
-            </statement>
+            </introduction>
             <task>
+                <p>
                Let <m>b_n=\frac{1}{n}</m>. Compute <m>\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n}}{\frac{1}{2^n}}</m>.
+                </p>    
             </task>
             <task>
                 <p>
@@ -356,9 +358,9 @@
                 <p>
                     Suppose that <m>\displaystyle \sum_{n=0}^\infty b_n</m> was some series that converges.  What could be said about <m>\{a_n\}</m>?
                     <ol label="A">
-                        <li><m>\displaystyle \sum_{n=0}^\infty b_n</m> converges.</li>
-                        <li><m>\displaystyle \sum_{n=0}^\infty b_n</m> diverges.</li>
-                        <li>Whether or not <m>\displaystyle \sum_{n=0}^\infty b_n</m> converges or diverges cannot be determined with this information.</li>
+                        <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> converges.</li>
+                        <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> diverges.</li>
+                        <li>Whether or not <m>\displaystyle \sum_{n=0}^\infty a_n</m> converges or diverges cannot be determined with this information.</li>
                     </ol>
                 </p>
             </task>
@@ -370,8 +372,8 @@
             <p>
                 Supppose we have sequences <m>\{a_n\}, \{b_n\}</m> so that for some <m>k</m> we have that <m>0\leq b_n\leq a_n</m> for each <m>k\geq n</m> then we have:
                 <ul>
-                    <li>If <m>\displaystyle_{k=n}^\infty a_n</m> converges, then so does  <m>\displaystyle_{k=n}^\infty b_n</m>.</li>
-                    <li>If <m>\displaystyle_{k=n}^\infty b_n</m> diverges, then so does  <m>\displaystyle_{k=n}^\infty a_n</m>.</li>
+                    <li>If <m>\displaystyle\sum_{k=n}^\infty a_n</m> converges, then so does  <m>\displaystyle\sum_{k=n}^\infty b_n</m>.</li>
+                    <li>If <m>\displaystyle\sum_{k=n}^\infty b_n</m> diverges, then so does  <m>\displaystyle\sum_{k=n}^\infty a_n</m>.</li>
                 </ul>
             </p>
         </fact>
