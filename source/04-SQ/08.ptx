@@ -34,7 +34,7 @@
     
     <definition xml:id="definition-absoluteconvergence">
         <p>
-            Given a series <me>\sum x_n</me> we say that <m>\displaystyle \sum x_n</m> is <em>absolutely convergent</em> if <m>\displaystyle \sum |x_n|</m> converges.
+            Given a series <me>\sum a_n</me> we say that <m>\displaystyle \sum a_n</m> is <em>absolutely convergent</em> if <m>\displaystyle \sum |a_n|</m> converges.
         </p>
     </definition>
     
@@ -54,7 +54,7 @@
             <p>For each of the series, determine if the series converges using any method.</p>
         </task>
         <task>
-            <p>For each of the series, compute <m>|x_n|</m>.</p>
+            <p>For each of the series, compute <m>|a_n|</m>.</p>
         </task>
         <task>
             <p>For each of the series, determine if the series is <em>absolutely convergent</em>.</p>
@@ -64,7 +64,7 @@
     <activity>
         <statement>
             <p>
-                If you know a series <m>\displaystyle \sum x_n</m> is absolutely convergent, what can you conclude about whether or not <m>\displaystyle \sum x_n</m> is convergent?
+                If you know a series <m>\displaystyle \sum a_n</m> is absolutely convergent, what can you conclude about whether or not <m>\displaystyle \sum a_n</m> is convergent?
                 
                 <ol>
                     <li>We cannot determine if <m>\displaystyle \sum x_n</m> is convergent.</li>
@@ -76,7 +76,7 @@
     
     
     <fact>
-        If <m>\displaystyle \sum x_n</m> is absolutely convergent, then it must be convergent.
+        If <m>\displaystyle \sum a_n</m> is absolutely convergent, then it must be convergent.
     </fact>
     
     
