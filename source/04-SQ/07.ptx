@@ -11,6 +11,159 @@
     </objectives>
 
     
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}.</m>
+            </p>
+            
+        </introduction>
+        <task>
+            <p>
+                Which of these series most closely resembles <m>\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}</m>?
+                <ol label="A">
+                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{2}{3}</m>.</li>
+                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{2}{3}n</m>.</li>
+                    <li><m>\displaystyle \sum_{n=0}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Based on your previous choice, do we think this series is more likely to converge or diverge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\lim_{n\to\infty}\frac{2^{n+1}(3^n-2)}{(3^{n+1}-2)2^n}=\lim_{n\to\infty}\frac{2\cdot 2^{n}(3^n-2)}{3(3^{n}-\frac{2}{3})2^n}.</m>
+                <ol label="A">
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=0</m>.</li>
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\frac{2}{3}</m>.</li>
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=1</m>.</li>
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=2</m>.</li>
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=3</m>.</li>
+                </ol>
+            </p>
+        </task>
+    </activity>
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does <m>\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}</m> converge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\frac{a_{n+1}}{a_n}</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}</m> converge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\frac{a_{n+1}}{a_n}</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n}</m> converge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\frac{a_{n+1}}{a_n}</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}</m> converge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\frac{a_{n+1}}{a_n}</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    
+    <fact xml:id="fact-SQ7ratioTest">
+          
+      <p permid="QCd">
+        Let <m>\displaystyle\sum a_n</m> be a series 
+          and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_n}\right|=\rho</m>.
+          Then
+          <ol>
+          <li><m>\displaystyle\sum a_n</m> converges if <m>\rho</m> is less than 1, and</li>
+              <li><m>\displaystyle\sum a_n</m> diverges if <m>\rho</m> is greater than 1.</li>
+              <li>If <m>\rho=1</m>, we cannot determine if <m>\displaystyle\sum a_n</m> converges or diverges <em>with this method</em>.</li>
+          </ol>
+       
+      </p>
+        </fact>
+    
+    
     <fact xml:id="fact-SQ7rootTest">
           
       <p permid="QCd">
@@ -20,25 +173,101 @@
           <ol>
           <li><m>\displaystyle\sum a_n</m> converges if <m>\rho</m> is less than 1, and</li>
               <li><m>\displaystyle\sum a_n</m> diverges if <m>\rho</m> is greater than 1.</li>
+              <li>If <m>\rho=1</m>, we cannot determine if <m>\displaystyle\sum a_n</m> converges or diverges <em>with this method</em>.</li>
           </ol>
        
       </p>
         </fact>
     
     
-    <fact xml:id="fact-SQ7ratioTest">
-          
-      <p permid="QCd">
-        Let <m>\displaystyle\sum a_n</m> be a series with positive terms,
-          and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\frac{a_{n+1}}{a_n}=\rho</m>.
-          Then
-          <ol>
-          <li><m>\displaystyle\sum a_n</m> converges if <m>\rho</m> is less than 1, and</li>
-              <li><m>\displaystyle\sum a_n</m> diverges if <m>\rho</m> is greater than 1.</li>
-          </ol>
-       
-      </p>
-        </fact>
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Which of the following is <m>a_n</m>?
+                <ol label="A">
+                    <li><m>n^2</m>.</li>
+                    <li><m>n!</m>.</li>
+                    <li><m>\frac{n^2}{n!}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Which of the following is <m>a_{n+1}</m>?
+                <ol label="A">
+                    <li><m>\frac{n^2}{n!}</m>.</li>
+                    <li><m>(n+1)^2</m>.</li>
+                    <li><m>(n+1)!</m>.</li>
+                    <li><m>\frac{(n+1)^2}{(n+1)!}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Which of the following is <m>\displaystyle\left|\frac{a_{n+1}}{a_n}\right|</m>?
+                <ol label="A">
+                    <li><m>\frac{(n+1)^2n^2}{(n+1)!n!}</m>.</li>
+                    <li><m>\frac{(n+1)^2n!}{(n+1)!n^2}</m>.</li>
+                    <li><m>\frac{(n+1)!n!}{(n+1)^2n^2}</m>.</li>
+                    <li><m>\frac{(n+1)!n^2}{(n+1)^2n!}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Using the fact <m>(n+1)!=(n+1)\cdot n!</m>, simplify <m>\displaystyle\left|\frac{a_{n+1}}{a_n}\right|</m> as much as possible.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|</m>.
+            </p>
+        </task>
+        <task>
+            <p>Does <m>\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}</m> converge?</p>
+        </task>
+    </activity>
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider <m>\displaystyle\sum_{n=1}^\infty \frac{n}{3^n}</m>.  Recall that <m>\displaystyle \sqrt[n]{\frac{n}{3^n}}=\left(\frac{n}{3^n}\right)^{1/n}=\frac{n^{1/n}}{(3^n)^{1/n}}.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Let <m>\displaystyle \alpha=\lim_{n\to\infty}\ln(n^{1/n})=\lim_{n\to\infty}\frac{1}{n}\ln(n)</m>.  Find <m>\alpha</m>.
+            </p>
+            
+        </task>
+        <task>
+            <p>
+                Recall that <m>\displaystyle \lim_{n\to\infty}n^{1/n}=\lim_{n\to\infty} e^{\ln(n^{1/n})}=e^\alpha.</m> Find <m>\displaystyle \lim_{n\to\infty}n^{1/n}</m>.
+            </p>
+            
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \sqrt[n]{\frac{n}{3^n}}=\lim_{n\to\infty}\left(\frac{n}{3^n}\right)^{1/n}=\lim_{n\to\infty}\frac{n^{1/n}}{(3^n)^{1/n}}</m>.
+            </p>
+            
+        </task>
+        
+        <task>
+            <p>
+                Does <m>\displaystyle\sum_{n=1}^\infty \frac{n}{3^n}</m> converge?
+            </p>
+        </task>
+    </activity>
+    
+    
+    
     
     
     <activity xml:id="activity-SQ7rootRatioComparison">

@@ -319,11 +319,30 @@
         <task>
             <p>
                 For each of the following, determine if the sequence converges.
-                <ol>
+                <ol label="A">
                     <li><m>\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.</m></li>
                     <li><m>\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.</m></li>
                     <li><m>\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.</m></li>
                     <li><m>\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.</m></li>
+                </ol>
+            </p>
+        </task>
+    </activity>
+    
+    <activity>
+        <task>
+            <p>
+                Determine to what value <m>\left\{\displaystyle \frac{4n}{n+1}\right\}_{n=0}^\infty</m> converges.
+            </p>
+        </task>
+        <task>
+            <p>
+                Which of the following ia most likely true about <m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m>?
+                <ol label="A">
+                    <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to 4.</li>
+                    <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to 0.</li>
+                    <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to -4.</li>
+                    <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> does not converge.</li>
                 </ol>
             </p>
         </task>

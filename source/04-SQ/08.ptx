@@ -9,5 +9,87 @@
             </li>
         </ul>
     </objectives>
+    
+    <activity>
+        <introduction>
+            <p>
+                
+                Consider the series: <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}</m>.
+                
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}</m> converge or diverge?  (Recall <xref ref="fact-SQ8alternatingSeriesTest"/>.)
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n}\right|</m> converge or diverge?  (Recall <xref ref="activity-SQ5harmonicSeries"/>.)
+            </p>
+        </task>
+    </activity>
+    
+    
+    <definition xml:id="definition-absoluteconvergence">
+        <p>
+            Given a series <me>\sum x_n</me> we say that <m>\displaystyle \sum x_n</m> is <em>absolutely convergent</em> if <m>\displaystyle \sum |x_n|</m> converges.
+        </p>
+    </definition>
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the following series:
+                <ol>
+                    <li><m>\displaystyle \sum_{n=1}^\infty \frac{n^2(-1)^n}{n^3+1}</m>.</li>
+                    <li><m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}</m>.</li>
+                    <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \left(\frac{2}{3}\right)^n</m>.</li>
+                    <li><m>\displaystyle \sum_{n=1}^\infty -n</m>.</li>
+                </ol>
+            </p>
+        </introduction>
+        <task>
+            <p>For each of the series, determine if the series converges using any method.</p>
+        </task>
+        <task>
+            <p>For each of the series, compute <m>|x_n|</m>.</p>
+        </task>
+        <task>
+            <p>For each of the series, determine if the series is <em>absolutely convergent</em>.</p>
+        </task>
+    </activity>
+    
+    <activity>
+        <statement>
+            <p>
+                If you know a series <m>\displaystyle \sum x_n</m> is absolutely convergent, what can you conclude about whether or not <m>\displaystyle \sum x_n</m> is convergent?
+                
+                <ol>
+                    <li>We cannot determine if <m>\displaystyle \sum x_n</m> is convergent.</li>
+                    <li><m>\displaystyle \sum x_n</m> is convergent since it <q>grows slower</q> than <m>\displaystyle \sum |x_n|</m> (and falls slower than <m>\displaystyle \sum -|x_n|</m>).</li>
+                </ol>
+            </p>
+        </statement>
+    </activity>
+    
+    
+    <fact>
+        If <m>\displaystyle \sum x_n</m> is absolutely convergent, then it must be convergent.
+    </fact>
+    
+    
+    <activity>
+        <statement>
+            <p>
+                Find 3 series that are convergent but not absolutely convergent (recall <xref ref="fact-SQ8alternatingSeriesTest"/>, <xref ref="SQ6"/>).
+            </p>
+        </statement>
+    </activity>
 
+    
+    
+    
+    
 </section>

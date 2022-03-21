@@ -9,5 +9,79 @@
             </li>
         </ul>
     </objectives>
+    
+    <remark>
+        <p>Consider a power series <m>\displaystyle\sum c_n(x-a)^n</m>.  Recall from <xref ref="fact-SQ7ratioTest"/> that if 
+            <md>
+                <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; &lt; 1</mrow>
+                <!--<mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right| &amp; &lt; 1</mrow>
+                <mrow>\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| &amp; &lt; 1</mrow>
+                <mrow>\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &amp; &lt; 1</mrow>-->
+            </md>
+            then <m>\displaystyle\sum c_n(x-a)^n</m> converges.
+        </p>
+        
+        <p>Then recall:
+            <md>
+                <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; = \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right|</mrow>
+                <mrow>&amp;=\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| </mrow>
+                <mrow>&amp;=\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|. </mrow>
+            </md>
+        
+        
+        </p>
+    </remark>
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Letting <m>c_n=\frac{1}{n^2+1}</m> find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+            </p>
+            
+        </task>
+        
+        <task>
+            <p>
+                For what values of <m>x</m> is <m>\displaystyle |x|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                <ol label="A">
+                    <li><m>x &lt; 1</m>.</li>
+                    <li><m>0\leq x &lt; 1</m>.</li>
+                    <li><m>-1 &lt; x &lt; 1</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=1</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n</m> converge?
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=-1</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n</m> converge?
+            </p>
+        </task>
+        
+        
+         <task>
+            <p>
+                Which of the following describe the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n</m> converges?
+                <ol label="A">
+                    <li><m>(-1,1)</m>.</li>
+                    <li><m>[-1,1)</m>.</li>
+                    <li><m>(-1,1]</m>.</li>
+                    <li><m>[-1,1]</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+    </activity>
 
 </section>
