@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-11T21:38:25Z       *-->
+<!--*       on 2022-03-21T22:59:52Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -150,7 +150,44 @@
 <span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">Convergence of Power Series (PS2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-36"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-975"><p id="p-1072">Determine the interval of convergence for a given power series.</p></li></ul></article></section></div></main>
+<ul class="disc"><li id="li-1006"><p id="p-1116">Determine the interval of convergence for a given power series.</p></li></ul></article><article class="remark remark-like" id="remark-4"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
+</h3>
+<p id="p-1117">Consider a power series <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\text{.}\)</span>  Recall from <a href="" class="xref" data-knowl="./knowl/fact-SQ7ratioTest.html" title="Fact 4.7.6">Fact 4.7.6</a> that if</p>
+<div class="displaymath process-math">
+\begin{align*}
+\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; &lt; 1
+\end{align*}
+</div>
+<p class="continuation">then <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\)</span> converges.</p>
+<p id="p-1118">Then recall:</p>
+<div class="displaymath process-math">
+\begin{align*}
+\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; = \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right|\\
+&amp;=\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| \\
+&amp;=\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|. 
+\end{align*}
+</div></article><article class="activity project-like" id="activity-275"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-123"><p id="p-1119">Consider <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n.\)</span></p></div>
+<article class="task exercise-like" id="task-373"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1120">Letting <span class="process-math">\(c_n=\frac{1}{n^2+1}\)</span> find <span class="process-math">\(\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-374"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1121">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(\displaystyle |x|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-1007"><p id="p-derived-li-1007"><span class="process-math">\(x &lt; 1\text{.}\)</span></p></li>
+<li id="li-1008"><p id="p-derived-li-1008"><span class="process-math">\(0\leq x &lt; 1\text{.}\)</span></p></li>
+<li id="li-1009"><p id="p-derived-li-1009"><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-375"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1122">If <span class="process-math">\(x=1\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converge?</p></article><article class="task exercise-like" id="task-376"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1123">If <span class="process-math">\(x=-1\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converge?</p></article><article class="task exercise-like" id="task-377"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1124">Which of the following describe the values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converges?</p>
+<ol class="upper-alpha">
+<li id="li-1010"><p id="p-derived-li-1010"><span class="process-math">\((-1,1)\text{.}\)</span></p></li>
+<li id="li-1011"><p id="p-derived-li-1011"><span class="process-math">\([-1,1)\text{.}\)</span></p></li>
+<li id="li-1012"><p id="p-derived-li-1012"><span class="process-math">\((-1,1]\text{.}\)</span></p></li>
+<li id="li-1013"><p id="p-derived-li-1013"><span class="process-math">\([-1,1]\text{.}\)</span></p></li>
+</ol></article></article></section></div></main>
 </div>
 </body>
 </html>
