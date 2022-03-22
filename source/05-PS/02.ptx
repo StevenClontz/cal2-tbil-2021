@@ -83,5 +83,141 @@
         </task>
         
     </activity>
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Letting <m>c_n=\frac{2^n}{5^n}</m> find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+            </p>
+            
+        </task>
+        
+        <task>
+            <p>
+                For what values of <m>x</m> is <m>\displaystyle |x-2|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                <ol label="A">
+                    <li><m>-\frac{2}{5} &lt; x &lt; \frac{2}{5}</m>.</li>
+                    <li><m>\frac{8}{5} &lt; x &lt; \frac{12}{5}</m>.</li>
+                    <li><m>-\frac{5}{2} &lt; x &lt; \frac{5}{2}</m>.</li>
+                    <li><m>-\frac{1}{2} &lt; x &lt; \frac{9}{2}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=\frac{9}{2}</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converge?
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=-\frac{1}{2}</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converge?
+            </p>
+        </task>
+        
+        
+         <task>
+            <p>
+                Which of the following describe the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converges?
+                <ol label="A">
+                    <li><m>(-\frac{1}{2},\frac{9}{2})</m>.</li>
+                    <li><m>[-\frac{1}{2},\frac{9}{2})</m>.</li>
+                    <li><m>(-\frac{1}{2},\frac{9}{2}]</m>.</li>
+                    <li><m>[-\frac{1}{2},\frac{9}{2}]</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+    </activity>
+    
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider <m>\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\left(x+\frac{1}{2}\right)^n.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Letting <m>c_n=\frac{n^2}{n!}</m> find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+            </p>
+            
+        </task>
+        
+        <task>
+            <p>
+                For what values of <m>x</m> is <m>\displaystyle \left|x+\frac{1}{2}\right|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                <ol label="A">
+                    <li><m>0\leq x &lt; \infty</m>.</li>
+                    <li>All real numbers.</li>
+                </ol>
+            </p>
+        </task>
+        
+        
+         <task>
+            <p>
+                What describes the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\left(x+\frac{1}{2}\right)^n</m> converges?
+                
+            </p>
+        </task>
+        
+    </activity>
+    
+    
+    <fact xml:id="intervalofconvergence">
+        <p>
+            Given the power series <m>\displaystyle\sum c_n(x-a)^n</m>, the <em>center of convergence</em> is <m>x=a</m>.  The <em>radius of convergence</em> is <me>r=\frac{1}{\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|}.</me>  If <m>\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|=0</m>, we say that <m>r=\infty</m>.
+        </p>
+        
+        <p>
+            The <em>interval of convergence</em> represents all possible values of <m>x</m> for which <m>\displaystyle\sum c_n(x-a)^n</m> converges, which is of the form:
+            <ul>
+                <li><m>(a-r, a+r)</m></li>
+                <li><m>[a-r, a+r)</m></li>
+                <li><m>(a-r, a+r]</m></li>
+                <li><m>[a-r, a+r]</m></li>
+            </ul>
+            Depending on if <m>\displaystyle\sum c_n(x-a)^n</m> converges when <m>x=a-r</m> or <m>x=a+r</m>.  If <m>r=\infty</m> the interval of convergence is all real numbers.
+        </p>
+    </fact>
+    
+    <activity>
+        <introduction>
+            <p>Consider the power series <m>\displaystyle \sum_{n=0}^\infty \frac{2^n+1}{n3^n}(x+1)^n</m>.</p>
+        </introduction>
+        <task>
+            <p>
+                What is the center of convergence for this power series?
+            </p>
+        </task>
+        <task>
+            <p>
+                What is the radius of convergence for this power series?
+            </p>
+        </task>    
+            <p>
+                What is the interval of convergence for this power series?
+            </p>
+        <task>
+            <p>
+                If <m>x=-0.5</m> does this interval converge? (Use the interval of convergence.)
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=1</m> does this interval converge? (Use the interval of convergence.)
+            </p>
+        </task>
+    </activity>
 
 </section>
