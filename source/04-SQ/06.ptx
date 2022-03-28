@@ -66,12 +66,12 @@
             
             <task>
                 <p>
-                    What can we say about the series <me>\displaystyle \frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots?</me>
+                    What do you think we can say about the series <me>\displaystyle \frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots?</me>
                     
                     <ol label="A">
-                    <li><m>\displaystyle \frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> converges to <m>3\cdot 2=6</m>.</li>
-                    <li><m>\displaystyle \frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> converges to some value other than 6.</li>    
-                    <li><m>\displaystyle \frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> diverges.</li>
+                    <li><m>\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> converges to <m>3\cdot 2=6</m>.</li>
+                    <li><m>\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> converges to some value other than 6.</li>    
+                    <li><m>\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> diverges.</li>
                     
                 </ol>
                 </p>
@@ -83,7 +83,7 @@
         <activity xml:id="activity-SQ6sortofmultiplesequencediverge">
             <introduction>
                 <p>
-                    Recall that <me>\displaystyle 1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots+\frac{1}{5}+\cdots</me> diverges.
+                    Recall that <me>\displaystyle 1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots+\frac{1}{n}+\cdots</me> diverges.
                 </p>
             </introduction>
             
@@ -92,9 +92,9 @@
                     What can we say about the series <me>\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots?</me>
                     
                     <ol label="A">
-                    <li><m>\displaystyle \frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> converges to a known value we can compute.</li>
-                    <li><m>\displaystyle \frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> converges to some unknown value.</li>    
-                    <li><m>\displaystyle \frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> diverges.</li>
+                    <li><m>\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> converges to a known value we can compute.</li>
+                    <li><m>\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> converges to some unknown value.</li>    
+                    <li><m>\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> diverges.</li>
                     
                 </ol>
                 </p>
@@ -102,7 +102,7 @@
             
             <task>
                 <p>
-                    What can we say about the series <me>\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots?</me>
+                    What do you think we can say about the series <me>\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots?</me>
                     
                     <ol label="A">
                     <li><m>\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots</m> converges to a known value we can compute.</li>
