@@ -76,7 +76,9 @@
     
     
     <fact>
-        If <m>\displaystyle \sum a_n</m> is absolutely convergent, then it must be convergent.
+        <p>
+            If <m>\displaystyle \sum a_n</m> is absolutely convergent, then it must be convergent.
+        </p>
     </fact>
     
     
