@@ -192,7 +192,7 @@
     
     <activity>
         <introduction>
-            <p>Consider the power series <m>\displaystyle \sum_{n=0}^\infty \frac{2^n+1}{n3^n}(x+1)^n</m>.</p>
+            <p>Consider the power series <m>\displaystyle \sum_{n=0}^\infty \frac{2^n+1}{n3^n}\left(x+1\right)^n</m>.</p>
         </introduction>
         <task>
             <p>
@@ -204,9 +204,13 @@
                 What is the radius of convergence for this power series?
             </p>
         </task>    
+        
+        <task>
             <p>
                 What is the interval of convergence for this power series?
             </p>
+        </task>
+            
         <task>
             <p>
                 If <m>x=-0.5</m> does this interval converge? (Use the interval of convergence.)
