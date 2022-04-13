@@ -124,7 +124,7 @@
     <activity xml:id="activity-PS3series1overoneminus2x">
         <introduction>
             <p>
-                Suppose we wished to find the power series for the function <m>f(x)=\frac{1}{1-2x}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
+                Suppose we wished to find the power series for the function <m>f(x)=\frac{1}{3-2x}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
             </p>
         </introduction>
         
@@ -282,7 +282,7 @@
                     <ol label="A">
                         <li><m>n(x)=\displaystyle -x^2\sum_{n=0}^\infty \frac{1}{n!}x^n=\displaystyle \sum_{n=0}^\infty -\frac{1}{n!}x^{n+2}</m>.</li>
                         <li><m>n(x)=\displaystyle x^{-2}\sum_{n=0}^\infty \frac{1}{n!}(-x)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n+2}x^{n+2}</m>.</li>
-                        <li><m>n(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-x^2)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n+2}x^{2n}</m>.</li>
+                        <li><m>n(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-x^2)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n}x^{2n}</m>.</li>
                     </ol>
                 </p>
             </task>
