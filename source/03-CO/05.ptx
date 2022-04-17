@@ -21,7 +21,7 @@
           
       <p permid="QCd">
         The area of the ``fan-shaped'' region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> is given by
-          <me>\int_{\theta=a}^{\theta=b} \frac{r^2}{2}d\theta</me>.
+          <me>\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}d\theta</me>.
 
       </p>
         </fact>

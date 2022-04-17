@@ -20,7 +20,7 @@ Recall that the length of a parametric curve is given by <me>\int_{t=a}^{t=b} \s
         <task>
             <p>
 Let <m>x(t)=r\cos(\theta)</m> and <m>y(t)=r\sin(\theta)</m> and show that the length of a polar curve <m>r=f(\theta)</m> with <m>\alpha\leq\theta\leq\beta</m> is given by
-                <me>\int_{\theta=a}^{\theta=b} \sqrt{\left(r\right)^2+\left(\frac{dr}{d\theta}\right)^2}d\theta</me>.
+                <me>\int_{\theta=\alpha}^{\theta=\beta} \sqrt{\left(r\right)^2+\left(\frac{dr}{d\theta}\right)^2}d\theta</me>.
                 
             </p>
             
