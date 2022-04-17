@@ -9,6 +9,34 @@
             </li>
         </ul>
     </objectives>
+    
+    
+    
+    
+    TODO discussion and illustration of area differential for polar integrals
+    
+    
+    
+      <fact xml:id="fact-CO5polarIntegral">
+          
+      <p permid="QCd">
+        The area of the ``fan-shaped'' region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> is given by
+          <me>\int_{\theta=a}^{\theta=b} \frac{r^2}{2}d\theta</me>.
+
+      </p>
+        </fact>
+    
+    
+    <activity xml:id="co5-activity-polar-area">
+        
+        <task>
+            <p>Find the area enclosed by the cardioid <m>r=2(1+\cos(\theta)</m>.</p>
+        </task>
+        <task>
+            <p>Find the area enclosed by one loop of the 4-petaled rose <m>r=\cos(2\theta)</m>.</p>
+        </task>
+    </activity>
+    
 
 <!--     <activity xml:id="co1-activity-xy-chart">
         <introduction>

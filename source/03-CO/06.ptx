@@ -11,7 +11,7 @@
     </objectives>
 
     
-    <activity xml:id="co1-activity-xy-chart">
+    <activity xml:id="co6-activity-polar-length">
         <introduction>
             <p>
 Recall that the length of a parametric curve is given by <me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</me>.
