@@ -20,54 +20,13 @@ Recall that the length of a parametric curve is given by <me>\int_{t=a}^{t=b} \s
         <task>
             <p>
 Let <m>x(t)=r\cos(\theta)</m> and <m>y(t)=r\sin(\theta)</m> and show that the length of a polar curve <m>r=f(\theta)</m> with <m>\alpha\leq\theta\leq\beta</m> is given by
-                <me>\int_{t=a}^{t=b} \sqrt{\left(r\right)^2+\left(\frac{dr}{d\theta}\right)^2}d\theta</me>.
+                <me>\int_{\theta=a}^{\theta=b} \sqrt{\left(r\right)^2+\left(\frac{dr}{d\theta}\right)^2}d\theta</me>.
                 
             </p>
-            <table>
-                <title>Chart of <m>x</m> and <m>y</m> values to graph</title>
-                <tabular>
-                    <row bottom="minor"><cell><m>x</m></cell><cell><m>y</m></cell></row>
-                    <row><cell><m>-2</m></cell><cell></cell></row>
-                    <row><cell><m>-1</m></cell><cell><m>1</m></cell></row>
-                    <row><cell><m>0</m></cell><cell></cell></row>
-                    <row><cell><m>1</m></cell><cell></cell></row>
-                    <row><cell><m>2</m></cell><cell></cell></row>
-                </tabular>
-            </table>
+            
         </task>
         <task>
-            <p>Plot each point <m>(x,y)</m> in your chart in the <m>xy</m> plane.</p>
-            <figure>
-                <caption>Plot of <m>y=2-x^2</m>.</caption>
-                <image width="100%">
-                    <description>Plot of <m>y=2-x^2</m>.</description>
-                    <latex-image>
-                        \begin{tikzpicture}
-                        \begin{axis}[
-                            axis lines=middle,
-                            grid=major,
-                            xmin=-3,
-                            xmax=3,
-                            ymin=-3,
-                            ymax=3,
-                            xlabel=$x$,
-                            ylabel=$y$,
-                            xtick={-2,-1,...,2},
-                            ytick={-2,-1,...,2},
-                            tick style={very thick},
-                            legend style={
-                            at={(rel axis cs:0,1)},
-                            anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
-                        ]
-                        \node[label={180:{(-1,1)}},circle,fill,inner sep=2pt] at (axis cs:-1,1) {};
-                        \end{axis}
-                        \end{tikzpicture}
-                    </latex-image>
-                </image>
-            </figure> 
-        </task>
-        <task>
-            <p>Connect the dots to obtain a reasonable sketch of the equation's graph.</p>
+            <p>Find the length of the cardioid <m>r=1-\cos(\theta)</m>.</p>
         </task>
     </activity>
     
