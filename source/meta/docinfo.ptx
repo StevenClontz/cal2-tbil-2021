@@ -33,6 +33,8 @@
   \usetikzlibrary{positioning,matrix,arrows}
   \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
   \usetikzlibrary{decorations.markings} 
+  \usetikzlibrary{angles, quotes, intersections}
+  
 </latex-image-preamble>
 
 <!-- It is possible to rename elements using the tags below -->
