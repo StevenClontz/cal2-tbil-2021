@@ -10,7 +10,10 @@
         </ul>
     </objectives>
 
-      
+    <fact xml:id="fact-CO4polar">
+          
+      <p permid="QCd">
+        
     ``As the crow flies'' is an idiom used to describe the most direct path between two points.
     The <em>polar coordinate system</em> is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction.
     The origin is also known as the <em>pole</em> (hence polar coordinates).
@@ -24,6 +27,9 @@
     Rather than the grid lines defined by specific values for <m>x</m> and <m>y</m> in the rectangular coordinate system, specific values of <m>r</m> correspond to circles of radius <m>r</m> centered about the origin, and specific values of <m>\theta</m> correspond to lines going through the pole (called <em>radial lines</em>).
     
     
+      </p>
+        </fact>
+      
     
     <figure>
                 <caption>A point in the polar coordinate system.</caption>

@@ -173,7 +173,7 @@ as which of the following functions of <m>t</m>?
             <ol label="A">
                 <li><p><m>\frac{6t}{t^2+3}</m></p></li>
                 <li><p><m>\frac{6t}{t^2+1}</m></p></li>
-                <li><p><m>\frac{2t}{t^2-1}</m></p></li><!--correct-->
+                <li><p><m>\frac{t^2-1}{2t}</m></p></li><!--correct-->
                 <li><p><m>\frac{2t}{3t^2-1}</m></p></li>
             </ol>
         </task>
