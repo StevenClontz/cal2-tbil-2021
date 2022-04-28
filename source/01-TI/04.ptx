@@ -311,6 +311,17 @@
                 </p>
             </task>
         </activity>
+    
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-TI4" youtube="FTFtiiDARf0">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Use trigonometric substitution to compute indefinite integrals</caption>
+    </figure>
+    </subsection>
         
         
         <subsection>

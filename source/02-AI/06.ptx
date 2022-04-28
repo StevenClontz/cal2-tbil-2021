@@ -9,7 +9,6 @@
             </li>
         </ul>
     </objectives>
-    <p>
         <fact xml:id="fact-AI5work">
             <statement>
                 <p>
@@ -520,6 +519,20 @@
         </activity>
     
     
-    </p>
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-AI6" youtube="mky7ZYL642Y">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Set up integrals to solve problems involving work, force, and/or pressure</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
+    
 </section>
 

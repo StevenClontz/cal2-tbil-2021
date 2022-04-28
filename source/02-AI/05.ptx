@@ -9,7 +9,6 @@
             </li>
         </ul>
     </objectives>
-    <p>
         <activity xml:id="activity-AI4rectangularprism">
             <introduction>
                 <p>
@@ -886,6 +885,22 @@
         </activity>
     
     
-    </p>
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-AI5" youtube="6r1X-ISoePU">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Set up integrals to solve problems involving density, mass, and center of mass</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
+    
+    
 </section>
 

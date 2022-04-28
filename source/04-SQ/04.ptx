@@ -154,4 +154,21 @@
         
         
     
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-SQ4" youtube="e_ol6EmAO_I">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Determine if a geometric series converges, and if so, the value it converges to.
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
 </section>

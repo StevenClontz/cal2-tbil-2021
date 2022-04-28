@@ -378,6 +378,20 @@
     
     
     
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-SQ2" youtube="Bt2sx5amiVo">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
 
 </section>
 

@@ -165,6 +165,22 @@ We might also use some other trigonometric identities to manipulate our integran
             </statement>
     </activity>
     
+    
+    
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-TI3" youtube="1iPsINVuHuQ">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute integrals involving products of trigonometric functions</caption>
+    </figure>
+    </subsection>
+    
+    
+    
+    
     <subsection>
         <title>Slideshow</title>
         <p>Slideshow of activities available at <url href="TI3.slides.html"/>.</p>

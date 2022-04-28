@@ -292,6 +292,18 @@
                 </p>
             </statement>
         </activity>
+    
+    
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-TI6" youtube="3Bb2l-_LszM">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: I can integrate functions using the method of partial fractions</caption>
+    </figure>
+    </subsection>
         
     
     <subsection>

@@ -313,7 +313,15 @@
         </task>
     </activity>
        
-    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-AI2" youtube="SFflh9YOhK8">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength</caption>
+    </figure>
+    </subsection>
     
         
        

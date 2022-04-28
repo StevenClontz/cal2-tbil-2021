@@ -223,5 +223,27 @@
             </p>
         </task>
     </activity>
+    
+    
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-PS2" youtube="npxONByK-GQ">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Determine the interval of convergence for a given power series
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
+    
 
 </section>

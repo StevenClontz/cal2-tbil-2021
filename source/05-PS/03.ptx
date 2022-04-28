@@ -397,5 +397,38 @@
             </p>
         </statement>
     </activity>
+    
+    
+    
+    
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-PS3" youtube="39g1YKi1cnI">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute power series by manipulating known exponential/trigonometric/binomial power series
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 </section>

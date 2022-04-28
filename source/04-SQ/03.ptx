@@ -324,6 +324,22 @@
                 </p>
             </task>
         </activity>
+    
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-SQ3" youtube="egshCNxf5FE">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
         
     
 </section>

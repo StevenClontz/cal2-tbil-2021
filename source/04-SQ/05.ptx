@@ -254,4 +254,22 @@ The series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}</m> con
      </activity>
     
     
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-SQ5" youtube="XPGsG1Usjxg">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
 </section>

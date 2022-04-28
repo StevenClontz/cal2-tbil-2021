@@ -1029,7 +1029,36 @@
     </activity>
     
     
-    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-AI31" youtube="CBL66Ro9Vcc">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute volumes of solids of revolution, washer <m>x</m>-axis</caption>
+    </figure>
+        <figure>
+		<video xml:id="video-AI32" youtube="KOPFv12uC68">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute volumes of solids of revolution, shell <m>x</m>-axis</caption>
+    </figure>
+        
+    <figure>
+		<video xml:id="video-AI33" youtube="Y16cc0Z43Uc">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute volumes of solids of revolution, washer <m>y</m>-axis</caption>
+    </figure>
+        <figure>
+		<video xml:id="video-AI34" youtube="j8A0rflmA2I">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute volumes of solids of revolution, shell <m>y</m>-axis</caption>
+    </figure>    
+        
+        
+    </subsection>
     
     
         
