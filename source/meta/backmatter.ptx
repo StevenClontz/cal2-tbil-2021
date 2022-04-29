@@ -33,14 +33,14 @@
       <title>TBIL Resource Library</title>
       <p>
 This work is made available as part of the
-<url href="https://sites.google.com/southalabama.edu/tbil">TBIL Resource Library</url>,
-a product of <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award #2011807</url>.
+<url href="https://sites.google.com/southalabama.edu/tbil" visual="https://sites.google.com/southalabama.edu/tbil">TBIL Resource Library</url>,
+a product of <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807" visual="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award #2011807</url>.
       </p>
   </colophon>
   <colophon xml:id="pretext">
       <title>Authored with <pretext/></title>
       <p>
-This book was authored using the <url href="https://pretextbook.org"><pretext/></url> markup language.
+This book was authored using the <url href="https://pretextbook.org" visual="https://pretextbook.org"><pretext/></url> markup language.
       </p>
   </colophon>
 </backmatter>
