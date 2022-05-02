@@ -1,0 +1,125 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html><head><title>Calculus 2 for Team-Based Inquiry Learning</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/simple.css" rel="stylesheet"/><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"> </script><style>
+ul {
+  display: block !important;
+}
+.reveal img {
+  border: 0.5px !important;
+  border-radius: 2px 10px 2px;
+  padding: 4px;
+  max-height:50vh;
+}
+.figure-like {
+  text-align: center;
+}
+.definition,.theorem,.activity {
+  border-width: 0.5px;
+  border-style: solid;
+  border-radius: 2px 10px 2px;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+.definition {
+  background: #00608010;
+}
+.theorem {
+  background: #ff000010;
+}
+.proof {
+  background: #ffffff90;
+}
+.activity {
+  background: #60800010;
+}
+dfn {
+  font-weight: bold;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker,
+.pretext-content li.no-marker {
+    list-style-type: none;
+}
+
+.pretext-content ol.decimal {
+    list-style-type: decimal;
+}
+.pretext-content ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.pretext-content ol.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.pretext-content ol.lower-roman {
+    list-style-type: lower-roman;
+}
+.pretext-content ol.upper-roman {
+    list-style-type: upper-roman;
+}
+.pretext-content ul.disc {
+    list-style-type: disc;
+}
+.pretext-content ul.square {
+    list-style-type: square;
+}
+.pretext-content ul.circle {
+    list-style-type: circle;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker {
+    list-style-type: none;
+}
+.pretext-content .cols1 li,
+.pretext-content .cols2 li,
+.pretext-content .cols3 li,
+.pretext-content .cols4 li,
+.pretext-content .cols5 li,
+.pretext-content .cols6 li {
+    float: left;
+    padding-right:2em;
+}
+          </style></head><body><div class="reveal pretext-content"><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div><div class="slides"><section><section><h1>Calculus 2 for Team-Based Inquiry LearningCalculus 2 for Team-Based Inquiry LearningCalculus 2 for Team-Based Inquiry LearningCalculus 2 for Team-Based Inquiry Learning</h1><h2>Live Development EditionLive Development EditionLive Development EditionLive Development Edition</h2><table><tr><th align="center" style="border-bottom: 0px;">TBIL Institute Fellows</th></tr><tr><td align="center" style="border-bottom: 0px;"/></tr><tr><td align="center"/></tr></table><h4><div class="date">May 2, 2022</div></h4></section></section><section><section><h1>Chapter 5: Power Series (PS)</h1></section></section><section><section><h1>Section 5.4: Taylor Series (PS4)</h1></section><section><h3>Activity 5.4.1</h3><div align="left"><p><em class="emphasis">Part 1.</em></p><p>Find the 2nd derivative of <span class="process-math">\(f(x)=x^2\text{.}\)</span></p></div></section><section><h3>Activity 5.4.1</h3><div align="left"><p><em class="emphasis">Part 2.</em></p><p>Find the 4th derivative of <span class="process-math">\(f(x)=x^4\text{.}\)</span></p></div></section><section><h3>Activity 5.4.1</h3><div align="left"><p><em class="emphasis">Part 3.</em></p><p>Find the 9th derivative of <span class="process-math">\(f(x)=x^9\text{.}\)</span></p></div></section><section><h3>Activity 5.4.1</h3><div align="left"><p><em class="emphasis">Part 4.</em></p><p>Which of the following represent the <span class="process-math">\(n\)</span>th and  derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span>  (Make sure it is consistent with <span class="process-math">\(n=2, 4, 9\)</span> that you found above.)<ol class="upper-alpha"><li><span class="process-math">\(\displaystyle n.\)</span></li><li><span class="process-math">\(\displaystyle n!.\)</span></li><li><span class="process-math">\(\displaystyle x.\)</span></li><li><span class="process-math">\(\displaystyle nx.\)</span></li></ol></p></div></section><section><h3>Activity 5.4.1</h3><div align="left"><p><em class="emphasis">Part 5.</em></p><p>What then is the <span class="process-math">\(n+1\)</span>st derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span>   (We are differentiating with respect to <span class="process-math">\(x\text{.}\)</span>)</p></div></section><section><h3>Activity 5.4.2</h3><div align="left"><p>Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p><p><em class="emphasis">Part 1.</em></p><p>What must <span class="process-math">\(a_0\)</span> be for <span class="process-math">\(p(0)=2\text{?}\)</span></p></div></section><section><h3>Activity 5.4.2</h3><div align="left"><p>Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Using your choice of <span class="process-math">\(a_0\text{,}\)</span> what must <span class="process-math">\(a_1\)</span> be for <span class="process-math">\(p'(0)=1\text{?}\)</span></p></div></section><section><h3>Activity 5.4.2</h3><div align="left"><p>Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Using your choice of <span class="process-math">\(a_0, a_1\text{,}\)</span> what must <span class="process-math">\(a_2\)</span> be for <span class="process-math">\(p''(0)=-2\text{?}\)</span></p></div></section><section><h3>Activity 5.4.2</h3><div align="left"><p>Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p><p><em class="emphasis">Part 4.</em></p><p>Using your choice of <span class="process-math">\(a_0, a_1, a_2\text{,}\)</span> what must <span class="process-math">\(a_3\)</span> be for <span class="process-math">\(p'''(0)=4\text{?}\)</span></p></div></section><section><h3>Activity 5.4.2</h3><div align="left"><p>Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p><p><em class="emphasis">Part 5.</em></p><p>What is <span class="process-math">\(p(x)\text{?}\)</span></p></div></section><section><h3>Activity 5.4.3</h3><div align="left"><p>Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Use term-by-term differentiation to find a power series for <span class="process-math">\(f^\prime(x)\text{.}\)</span></p></div></section><section><h3>Activity 5.4.3</h3><div align="left"><p>Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Use this power series to find <span class="process-math">\(f'(c)\text{.}\)</span></p></div></section><section><h3>Activity 5.4.3</h3><div align="left"><p>Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Use term-by-term differentiation to find a power series for <span class="process-math">\(f^{\prime\prime}(x)\text{.}\)</span></p></div></section><section><h3>Activity 5.4.3</h3><div align="left"><p>Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p><p><em class="emphasis">Part 4.</em></p><p>Use this power series to find <span class="process-math">\(f''(c)\text{.}\)</span></p></div></section><section><h3>Activity 5.4.3</h3><div align="left"><p>Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p><p><em class="emphasis">Part 5.</em></p><p>Use term-by-term differentiation to find a power series for <span class="process-math">\(f^{\prime\prime\prime}(x)\text{.}\)</span></p></div></section><section><h3>Activity 5.4.3</h3><div align="left"><p>Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p><p><em class="emphasis">Part 6.</em></p><p>Use this power series to find <span class="process-math">\(f'''(c)\text{.}\)</span></p></div></section><section><h3>Activity 5.4.3</h3><div align="left"><p>Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p><p><em class="emphasis">Part 7.</em></p><p>Deduce that <span class="process-math">\(f^{(n)}(c)=n!a_n\)</span> and hence <span class="process-math">\(a_n=\displaystyle\frac{f^{(n)}(c)}{n!}\text{.}\)</span></p></div></section><section><h3>Fact 5.4.4</h3><div align="left"><p>If <span class="process-math">\(f(x)\)</span> can be written as a power series, then there is a real number <span class="process-math">\(c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(c)}{n!}(x-c)^n=f(c)+f^\prime(c)(x-c)+\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots\)</span> on some interval centered at <span class="process-math">\(x=c\text{.}\)</span></p></div></section><section><h3>Fact 5.4.5</h3><div align="left"><p>A function can be represented as a power series if and only if it is infinitely differentiable on some open interval.</p></div></section><section><h3>Definition 5.4.6</h3><div align="left"><p>The <em class="emphasis">Taylor series</em> generated by <span class="process-math">\(f(x)\)</span> and <em class="emphasis">centered</em> at <span class="process-math">\(x=c\)</span> is given by <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(c)}{n!}(x-c)^n
+=f(c)+f^\prime(c)(x-c)+\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots\text{,}\)</span> along with its interval of convergence (or <em class="emphasis">interval of validity</em>).</p><p>When <span class="process-math">\(c=0\text{,}\)</span> <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!}(x^n)
+=f(0)+f^\prime(0)(x)+\frac{f^{\prime\prime}(0)}{2!}(x^2)+\frac{f^{(3)}(0)}{3!}(x^3)+\ldots\)</span> is called the <em class="emphasis">Maclaurin series</em> generated by <span class="process-math">\(f\text{.}\)</span></p></div></section><section><h3>Definition 5.4.7</h3><div align="left"><p><span class="process-math">\(f(x) \approx T_k(x) = \displaystyle\sum_{n=0}^k \frac{f^{(n)}(c)}{n!}(x-c)^n = 
+f(c)+f^\prime(c)(x-c)+\displaystyle\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\displaystyle\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots+\displaystyle\frac{f^{(k)}(c)}{k!}(x-c)^k\text{,}\)</span> where <span class="process-math">\(T_k(x)\)</span> is called the <span class="process-math">\(k^{th}\)</span> degree <em class="emphasis">Taylor polynomial</em> generated by <span class="process-math">\(f\)</span> and centered at <span class="process-math">\(x=c\text{.}\)</span></p><p>The <span class="process-math">\(k^{th}\)</span> degree Taylor polynomial can be seen as the &#8220;best&#8221; polynomial of degree <span class="process-math">\(k\)</span> or less for approximating <span class="process-math">\(f(x)\)</span> for values close to <span class="process-math">\(x=c\text{.}\)</span> Note that polynomials of degree less than <span class="process-math">\(k\)</span> are their own Taylor polynomials, and the <span class="process-math">\(1^{st}\)</span> degree Taylor polynomial is also known as the <em class="emphasis">linearization</em> of <span class="process-math">\(f\text{.}\)</span></p></div></section><section><h3>Activity 5.4.8</h3><div align="left"><p><em class="emphasis">Part 1.</em></p><p>Find the Maclaurin series for <span class="process-math">\(f(x)=\sin(x)\)</span> about <span class="process-math">\(x=0\text{,}\)</span> along with the interval of validity.</p></div></section><section><h3>Activity 5.4.8</h3><div align="left"><p><em class="emphasis">Part 2.</em></p><p>Find the Taylor series generated by <span class="process-math">\(f(x)=\cos(x)\)</span> about <span class="process-math">\(x=0\text{.}\)</span></p></div></section><section><h3>Activity 5.4.8</h3><div align="left"><p><em class="emphasis">Part 3.</em></p><p>Find the Maclaurin series for <span class="process-math">\(f(x)=e^x\)</span> about <span class="process-math">\(x=0\text{,}\)</span> along with the interval of validity.</p></div></section><section><h3>Remark 5.4.9</h3><div align="left"><p>You might have seen <span class="process-math">\(\sqrt{-1}\)</span> written as <span class="process-math">\(i\text{,}\)</span> and know that <span class="process-math">\(z\)</span> is a complex number if <span class="process-math">\(z=a+bi\)</span> for some real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> Note that <span class="process-math">\(i^2=-1\text{,}\)</span> <span class="process-math">\(i^3=(i^2)i=-i\text{,}\)</span> <span class="process-math">\(i^4=(i^2)^2=1\text{,}\)</span> <span class="process-math">\(i^5=(i^4)i=i\text{,}\)</span> and so on. This gives rise to the following notion.</p></div></section><section><h3>Definition 5.4.10: Euler's Identity</h3><div align="left"><p>For any real number <span class="process-math">\(\theta\text{,}\)</span><div class="displaymath process-math" data-contains-math-knowls="" id="md-1">
+\begin{align*}
+e^{i\theta}  &amp; =  1+\displaystyle\frac{i\theta}{1!}+\displaystyle\frac{(i\theta)^2}{2!}+\displaystyle\frac{(i\theta)^3}{3!}+\displaystyle\frac{(i\theta)^4}{4!}+\displaystyle\frac{(i\theta)^5}{5!}+\displaystyle\frac{(i\theta)^6}{6!}+\displaystyle\frac{(i\theta)^7}{7!}+\displaystyle\frac{(i\theta)^8}{8!}+\ldots\\
+&amp; =  1+i\theta-\displaystyle\frac{\theta^2}{2!}-\displaystyle\frac{i\theta^3}{3!}+\displaystyle\frac{\theta^4}{4!}+\displaystyle\frac{i\theta^5}{5!}-\displaystyle\frac{\theta^6}{6!}-\displaystyle\frac{i\theta^7}{7!}+\displaystyle\frac{\theta^8}{8!}+\ldots\\
+&amp; =  \left(1-\displaystyle\frac{\theta^2}{2!}+\displaystyle\frac{\theta^4}{4!}-\displaystyle\frac{\theta^6}{6!}+\ldots\right)+i\left(\theta-\displaystyle\frac{\theta^3}{3!}+\displaystyle\frac{\theta^5}{5!}-\displaystyle\frac{\theta^7}{7!}+\ldots\right)\\
+&amp; =  \cos(\theta)+i\sin(\theta).
+\end{align*}
+</div></p></div></section><section><h3>Activity 5.4.11</h3><div align="left"><p>Use Euler's identity to evaluate <span class="process-math">\(e^{i\pi}\text{.}\)</span></p></div></section></section></div></div></body><script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script></html>

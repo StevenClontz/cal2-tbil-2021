@@ -1,0 +1,119 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html><head><title>Calculus 2 for Team-Based Inquiry Learning</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/simple.css" rel="stylesheet"/><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"> </script><style>
+ul {
+  display: block !important;
+}
+.reveal img {
+  border: 0.5px !important;
+  border-radius: 2px 10px 2px;
+  padding: 4px;
+  max-height:50vh;
+}
+.figure-like {
+  text-align: center;
+}
+.definition,.theorem,.activity {
+  border-width: 0.5px;
+  border-style: solid;
+  border-radius: 2px 10px 2px;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+.definition {
+  background: #00608010;
+}
+.theorem {
+  background: #ff000010;
+}
+.proof {
+  background: #ffffff90;
+}
+.activity {
+  background: #60800010;
+}
+dfn {
+  font-weight: bold;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker,
+.pretext-content li.no-marker {
+    list-style-type: none;
+}
+
+.pretext-content ol.decimal {
+    list-style-type: decimal;
+}
+.pretext-content ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.pretext-content ol.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.pretext-content ol.lower-roman {
+    list-style-type: lower-roman;
+}
+.pretext-content ol.upper-roman {
+    list-style-type: upper-roman;
+}
+.pretext-content ul.disc {
+    list-style-type: disc;
+}
+.pretext-content ul.square {
+    list-style-type: square;
+}
+.pretext-content ul.circle {
+    list-style-type: circle;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker {
+    list-style-type: none;
+}
+.pretext-content .cols1 li,
+.pretext-content .cols2 li,
+.pretext-content .cols3 li,
+.pretext-content .cols4 li,
+.pretext-content .cols5 li,
+.pretext-content .cols6 li {
+    float: left;
+    padding-right:2em;
+}
+          </style></head><body><div class="reveal pretext-content"><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div><div class="slides"><section><section><h1>Calculus 2 for Team-Based Inquiry Learning</h1><h2>Live Development Edition</h2><table><tr><th align="center" style="border-bottom: 0px;">TBIL Institute Fellows</th></tr><tr><td align="center" style="border-bottom: 0px;"/></tr><tr><td align="center"/></tr></table><h4><div class="date">May 2, 2022</div></h4></section></section><section><section><h1>Chapter 2: Applications of Integration (AI)</h1></section></section><section><section><h1>Section 2.1: Average Value (AI1)</h1></section><section><h3>Activity 2.1.1</h3><div align="left"><p>Suppose a car drives due east at 70 mph for 2 hours, and then slows down to 40 mph for an additional hour.</p><p><em class="emphasis">Part 1.</em></p><p>How far did the car travel in these 3 hours?</p></div></section><section><h3>Activity 2.1.1</h3><div align="left"><p>Suppose a car drives due east at 70 mph for 2 hours, and then slows down to 40 mph for an additional hour.</p><p><em class="emphasis">Part 2.</em></p><p>What was their average velocity over these 3 hours?</p></div></section><section><h3>Activity 2.1.2</h3><div align="left"><p>Suppose a car drives due east at a velocity of <span class="process-math">\(v(t)=40+\sqrt{300t}\)</span> mph, where <span class="process-math">\(t\)</span> is the number of hours after they start driving.</p><p><em class="emphasis">Part 1.</em></p><p>Which of the following expressions measures how far the car travel travels in these 3 hours?</p><ol class="upper-alpha"><li><span class="process-math">\(\displaystyle \int_0^2 70x \,dx + \int_2^3 40x \,dx\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \int_0^2 70 \,dx + \int_2^3 40 \,dx\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \int_0^2 70x \,dx + \int_0^1 40x \,dx\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \int_0^2 70 \,dx + \int_0^1 40 \,dx\text{.}\)</span></li><li><span class="process-math">\(70(2)+40(1)\text{.}\)</span></li></ol></div></section><section><h3>Activity 2.1.2</h3><div align="left"><p>Suppose a car drives due east at a velocity of <span class="process-math">\(v(t)=40+\sqrt{300t}\)</span> mph, where <span class="process-math">\(t\)</span> is the number of hours after they start driving.</p><p><em class="emphasis">Part 2.</em></p><p>What was their average velocity over these 3 hours?</p><ol class="upper-alpha"><li><span class="process-math">\(180\)</span> mi.</li><li><span class="process-math">\(180\)</span> mph.</li><li><span class="process-math">\(60\)</span> mi.</li><li><span class="process-math">\(60\)</span> mph.</li></ol></div></section><section><h3>Activity 2.1.3</h3><div align="left"><p>Which of the following is the average value of <span class="process-math">\(f(x)\)</span> over the interval <span class="process-math">\([0,8]\text{?}\)</span>  Note <span class="process-math">\(f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}\text{.}\)</span> <figure class="figure-like"><a href="generated/latex-image/piecewiseaverage.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/piecewiseaverage.svg"/></a></figure><ol class="upper-alpha"><li><span class="process-math">\(4\text{.}\)</span></li><li><span class="process-math">\(2\text{.}\)</span></li><li><span class="process-math">\(\frac{7}{3}\text{.}\)</span></li><li><span class="process-math">\(2.375\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 2.1.4</h3><div align="left"><p>Consider a function <span class="process-math">\(f(x)\)</span> which has average value <span class="process-math">\(v\)</span> on the interval <span class="process-math">\([a,b]\text{.}\)</span>  Which of the following is most likely always true about <span class="process-math">\(v\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(v\)</span> is the average of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span></li><li><span class="process-math">\(v\)</span> is the average of <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(b)\text{.}\)</span></li><li><span class="process-math">\(v\)</span> is the average of <span class="process-math">\(\min\{f(x)\}\)</span> and <span class="process-math">\(\max\{f(x)\}\)</span> on the interval <span class="process-math">\([a,b]\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \int_a^b f(x)dx=\int_a^b vdx\text{.}\)</span></li></ol></p></div></section><section><h3>Definition 2.1.5</h3><div align="left"><p>Given a function <span class="process-math">\(f(x)\)</span> defined on <span class="process-math">\([a,b]\text{,}\)</span> it's average value <span class="process-math">\(v\)</span> is:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+v=\frac{1}{b-a}\int_a^b f(x) dx.
+\end{equation*}
+</div></p></div></section><section><h3>Activity 2.1.6</h3><div align="left"><p>Which of the following expressions represent the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(\displaystyle \int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \frac{1}{3\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\text{.}\)</span></li><li><span class="process-math">\(\displaystyle \frac{1}{4\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 2.1.7</h3><div align="left"><p>Find the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\)</span> using the chosen expression from Activity 2.1.6 .</p></div></section><section><h3>Activity 2.1.8</h3><div align="left"><p>Find the average value of <span class="process-math">\(g(t)=\frac{t}{t^2+1}\)</span> on the interval <span class="process-math">\([0, 4]\text{.}\)</span></p></div></section><section><h3>Activity 2.1.9</h3><div align="left"><p>A shot of a drug is administered to a patient and the quantity of the drug in the bloodstream over time is <span class="process-math">\(q(t)=3te^{-0.25t}\)</span> where <span class="process-math">\(t\)</span> is measured in hours and <span class="process-math">\(q\)</span> is measured in mg.  What is the average quantity of this drug in the patient's bloodstream over the first 6 hours after injection?</p></div></section></section></div></div></body><script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script></html>

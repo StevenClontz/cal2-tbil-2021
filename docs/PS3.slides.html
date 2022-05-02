@@ -1,0 +1,139 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html><head><title>Calculus 2 for Team-Based Inquiry Learning</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/simple.css" rel="stylesheet"/><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"> </script><style>
+ul {
+  display: block !important;
+}
+.reveal img {
+  border: 0.5px !important;
+  border-radius: 2px 10px 2px;
+  padding: 4px;
+  max-height:50vh;
+}
+.figure-like {
+  text-align: center;
+}
+.definition,.theorem,.activity {
+  border-width: 0.5px;
+  border-style: solid;
+  border-radius: 2px 10px 2px;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+.definition {
+  background: #00608010;
+}
+.theorem {
+  background: #ff000010;
+}
+.proof {
+  background: #ffffff90;
+}
+.activity {
+  background: #60800010;
+}
+dfn {
+  font-weight: bold;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker,
+.pretext-content li.no-marker {
+    list-style-type: none;
+}
+
+.pretext-content ol.decimal {
+    list-style-type: decimal;
+}
+.pretext-content ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.pretext-content ol.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.pretext-content ol.lower-roman {
+    list-style-type: lower-roman;
+}
+.pretext-content ol.upper-roman {
+    list-style-type: upper-roman;
+}
+.pretext-content ul.disc {
+    list-style-type: disc;
+}
+.pretext-content ul.square {
+    list-style-type: square;
+}
+.pretext-content ul.circle {
+    list-style-type: circle;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker {
+    list-style-type: none;
+}
+.pretext-content .cols1 li,
+.pretext-content .cols2 li,
+.pretext-content .cols3 li,
+.pretext-content .cols4 li,
+.pretext-content .cols5 li,
+.pretext-content .cols6 li {
+    float: left;
+    padding-right:2em;
+}
+          </style></head><body><div class="reveal pretext-content"><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div><div class="slides"><section><section><h1>Calculus 2 for Team-Based Inquiry Learning</h1><h2>Live Development Edition</h2><table><tr><th align="center" style="border-bottom: 0px;">TBIL Institute Fellows</th></tr><tr><td align="center" style="border-bottom: 0px;"/></tr><tr><td align="center"/></tr></table><h4><div class="date">May 2, 2022</div></h4></section></section><section><section><h1>Chapter 5: Power Series (PS)</h1></section></section><section><section><h1>Section 5.3: Manipulation of Power Series (PS3)</h1></section><section><h3>Activity 5.3.1</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=e^{2x}\text{.}\)</span>  Recall that <span class="process-math">\(\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Which of the following represents the power series for <span class="process-math">\(\exp(a)=e^a\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(\exp(a)=\displaystyle\sum_{n=0}^\infty a\frac{x^n}{n!}\text{.}\)</span></li><li><span class="process-math">\(\exp(a)=\displaystyle\sum_{n=0}^\infty \frac{a^n}{n!}\text{.}\)</span></li><li><span class="process-math">\(\exp(a)=\displaystyle\sum_{n=0}^\infty \frac{x^n}{a!}\text{.}\)</span></li><li><span class="process-math">\(\exp(a)=\displaystyle\sum_{a=0}^\infty \frac{x^n}{n!}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.1</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=e^{2x}\text{.}\)</span>  Recall that <span class="process-math">\(\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>What is the interval of convergence for <span class="process-math">\(a\)</span> in the series you found in part (a)?</p></div></section><section><h3>Activity 5.3.1</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=e^{2x}\text{.}\)</span>  Recall that <span class="process-math">\(\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Evaluating <span class="process-math">\(a=2x\text{,}\)</span> what is the power series for <span class="process-math">\(\exp(a)=\exp(2x)=f(x)\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(\exp(2x)=\displaystyle\sum_{n=0}^\infty 2x\frac{x^n}{n!}\text{.}\)</span></li><li><span class="process-math">\(\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{(2x)^n}{n!}\text{.}\)</span></li><li><span class="process-math">\(\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{x^n}{(2x)!}\text{.}\)</span></li><li><span class="process-math">\(\exp(2x)=\displaystyle\sum_{2x=0}^\infty \frac{x^n}{n!}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.1</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=e^{2x}\text{.}\)</span>  Recall that <span class="process-math">\(\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.\)</span></p><p><em class="emphasis">Part 4.</em></p><p>What is the interval of convergence for <span class="process-math">\(x\)</span> in the series you found in part (c)?</p></div></section><section><h3>Activity 5.3.2</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Which of the following represents the power series for <span class="process-math">\(\frac{1}{1-a}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(g(a)=\displaystyle\sum_{n=0}^\infty ax^n\text{.}\)</span></li><li><span class="process-math">\(g(a)=\displaystyle\sum_{n=0}^\infty (ax)^n\text{.}\)</span></li><li><span class="process-math">\(g(a)=\displaystyle\sum_{n=0}^\infty a^n\text{.}\)</span></li><li><span class="process-math">\(g(a)=\displaystyle\sum_{a=0}^\infty x^a\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.2</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>What is the radius of convergence for <span class="process-math">\(a\)</span> in the series you found in part (a)?</p></div></section><section><h3>Activity 5.3.2</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>For what value of <span class="process-math">\(a\)</span> is <span class="process-math">\(\frac{1}{1-a}=\frac{1}{x}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(a=x\text{.}\)</span></li><li><span class="process-math">\(a=-x\text{.}\)</span></li><li><span class="process-math">\(a=1-x\text{.}\)</span></li><li><span class="process-math">\(a=x-1\text{.}\)</span></li><li><span class="process-math">\(a=x+1\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.2</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 4.</em></p><p>Evaluating <span class="process-math">\(a\)</span> at the previously found value, which of the following is the power series of <span class="process-math">\(f(x)=\frac{1}{x}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty x^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (-x)^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (1-x)^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (x-1)^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (1+x)^n\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.2</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 5.</em></p><p>Given that the interval of convergence for <span class="process-math">\(a\)</span> is <span class="process-math">\(-1 &lt; a &lt; 1\text{,}\)</span> what is the interval of convergence for <span class="process-math">\(x\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></li><li><span class="process-math">\(-2 &lt; x &lt; 0\text{.}\)</span></li><li><span class="process-math">\(0 &lt; x &lt; 2\text{.}\)</span></li><li><span class="process-math">\(-2 &lt; x &lt; 0\text{.}\)</span></li><li><span class="process-math">\(2 &lt; x &lt; 0\text{.}\)</span></li><li><span class="process-math">\(-2 &lt; x &lt; 2\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.3</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{3-2x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>For what value of <span class="process-math">\(a\)</span> is <span class="process-math">\(\frac{1}{1-a}=\frac{1}{3-2x}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(a=x\text{.}\)</span></li><li><span class="process-math">\(a=2x-3\text{.}\)</span></li><li><span class="process-math">\(a=2x-2\text{.}\)</span></li><li><span class="process-math">\(a=2-2x\text{.}\)</span></li><li><span class="process-math">\(a=3-2x\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.3</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{3-2x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Evaluating <span class="process-math">\(a\)</span> at the previously found value, which of the following is the power series of <span class="process-math">\(f(x)=\frac{1}{3-2x}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty x^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (2x-3)^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (2x-2)^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (2-2x)^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (3-2x)^n\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.3</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{3-2x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Given that the interval of convergence for <span class="process-math">\(a\)</span> is <span class="process-math">\(-1 &lt; a &lt; 1\text{,}\)</span> what is the interval of convergence for <span class="process-math">\(x\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></li><li><span class="process-math">\(-1 &lt; x &lt; \frac{3}{2}\text{.}\)</span></li><li><span class="process-math">\(-\frac{1}{2} &lt; x &lt; 1\text{.}\)</span></li><li><span class="process-math">\(\frac{1}{2} &lt; x &lt; \frac{3}{2}\text{.}\)</span></li><li><span class="process-math">\(-\frac{1}{2} &lt; x &lt; \frac{3}{2}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.4</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{1+x^2}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>For what value of <span class="process-math">\(a\)</span> is <span class="process-math">\(\frac{1}{1-a}=\frac{1}{1+x^2}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(a=x^2\text{.}\)</span></li><li><span class="process-math">\(a=-x^2\text{.}\)</span></li><li><span class="process-math">\(a=1+x^2\text{.}\)</span></li><li><span class="process-math">\(a=1-x^2\text{.}\)</span></li><li><span class="process-math">\(a=x^2-1\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.4</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{1+x^2}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Evaluating <span class="process-math">\(a\)</span> at the previously found value, which of the following is the power series of <span class="process-math">\(f(x)=\frac{1}{1+x^2}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (x^2)^{n}=\sum_{n=0}^\infty x^{2n}\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (-x^2)^{n}=\sum_{n=0}^\infty (-1)^nx^{2n}\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (1+x^2)^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (1-x^2)^n\text{.}\)</span></li><li><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (x^2-1)^n\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.4</h3><div align="left"><p>Suppose we wished to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{1+x^2}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Given that the interval of convergence for <span class="process-math">\(a\)</span> is <span class="process-math">\(-1 &lt; a &lt; 1\text{,}\)</span> what is the interval of convergence for <span class="process-math">\(x\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></li><li><span class="process-math">\(-1 &lt; x &lt; 0\text{.}\)</span></li><li><span class="process-math">\(0 &lt; x &lt; 1\text{.}\)</span></li><li><span class="process-math">\(0 &lt; x &lt; 2\text{.}\)</span></li><li><span class="process-math">\(-2 &lt; x &lt; 0\text{.}\)</span></li><li><span class="process-math">\(-2 &lt; x &lt; 2\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.5</h3><div align="left"><p>What function <span class="process-math">\(f(x)\)</span> has power series <span class="process-math">\(f(x)=\displaystyle \sum_{n=0}^\infty \frac{(-1)^nx^n}{n!}=1-x+\frac{x^2}{2}-\frac{x^3}{6}+\cdots\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(f(x)=(-1)^ne^x\text{.}\)</span></li><li><span class="process-math">\(f(x)=e^{-1}\text{.}\)</span></li><li><span class="process-math">\(f(x)=-e^x\text{.}\)</span></li><li><span class="process-math">\(f(x)=e^{-x}\text{.}\)</span></li><li><span class="process-math">\(f(x)=-e^{-x}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.6</h3><div align="left"><p>What function <span class="process-math">\(f(x)\)</span> has power series <span class="process-math">\(f(x)=\displaystyle \sum_{n=0}^\infty \frac{x^{n+3}}{n!}=x^3+x^4+\frac{x^5}{2}+\frac{x^6}{6}+\cdots\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(f(x)=e^{x+3}\text{.}\)</span></li><li><span class="process-math">\(f(x)=e^{x^3}\text{.}\)</span></li><li><span class="process-math">\(f(x)=e^{3x}\text{.}\)</span></li><li><span class="process-math">\(f(x)=x^3e^{x}\text{.}\)</span></li><li><span class="process-math">\(f(x)=3e^{x}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.7</h3><div align="left"><p>What function <span class="process-math">\(f(x)\)</span> has power series <span class="process-math">\(f(x)=\displaystyle \sum_{n=3}^\infty x^n=x^3+x^4+\cdots\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(f(x)=\frac{1}{1-3x}\text{.}\)</span></li><li><span class="process-math">\(f(x)=\frac{3}{1-x}\text{.}\)</span></li><li><span class="process-math">\(f(x)=\frac{1}{1-x}-x^2-x-1\text{.}\)</span></li><li><span class="process-math">\(f(x)=\frac{x^3}{1-x}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.8</h3><div align="left"><p>The function <span class="process-math">\(n(x)=e^{-x^2}\)</span> is one whose integrals are very important for statistics.  However, it does not admit an elementary anti-derivative.</p><p><em class="emphasis">Part 1.</em></p><p>Which of the following best represents the power series for <span class="process-math">\(n(x)=e^{-x^2}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(n(x)=\displaystyle -x^2\sum_{n=0}^\infty \frac{1}{n!}x^n=\displaystyle \sum_{n=0}^\infty -\frac{1}{n!}x^{n+2}\text{.}\)</span></li><li><span class="process-math">\(n(x)=\displaystyle x^{-2}\sum_{n=0}^\infty \frac{1}{n!}(-x)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n+2}x^{n+2}\text{.}\)</span></li><li><span class="process-math">\(n(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-x^2)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n}x^{2n}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.8</h3><div align="left"><p>The function <span class="process-math">\(n(x)=e^{-x^2}\)</span> is one whose integrals are very important for statistics.  However, it does not admit an elementary anti-derivative.</p><p><em class="emphasis">Part 2.</em></p><p>Which of the following best represents a degree 10 polynomial that approximates <span class="process-math">\(n(x)\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(n_{10}(x)=\displaystyle -x^2-x^3-\frac{1}{2}x^4-\frac{1}{6}x^5-\frac{1}{24}x^6-\frac{1}{120}x^7-\frac{1}{720}x^8-\frac{1}{5040}x^9-\frac{1}{40320}x^{10}\text{.}\)</span></li><li><span class="process-math">\(n_{10}(x)=\displaystyle x^2-x^3+\frac{1}{2}x^4-\frac{1}{6}x^5+\frac{1}{24}x^6-\frac{1}{120}x^7+\frac{1}{720}x^8-\frac{1}{5040}x^9+\frac{1}{40320}x^{10}\text{.}\)</span></li><li><span class="process-math">\(n_{10}(x)=1-x^2+\frac{1}{2}x^4-\frac{1}{6}x^6+\frac{1}{24}x^8-\frac{1}{120}x^{10}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.8</h3><div align="left"><p>The function <span class="process-math">\(n(x)=e^{-x^2}\)</span> is one whose integrals are very important for statistics.  However, it does not admit an elementary anti-derivative.</p><p><em class="emphasis">Part 3.</em></p><p>Use your choice of <span class="process-math">\(n_{10}(x)\)</span> to estimate <span class="process-math">\(\displaystyle \int_0^1 n(x)dx\)</span> by computing <span class="process-math">\(\displaystyle \int_0^1 n_{10}(x)dx\text{.}\)</span></p></div></section><section><h3>Activity 5.3.9</h3><div align="left"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div><span class="process-math">\(-1&lt; x&lt; 1\)</span><p><em class="emphasis">Part 1.</em></p><p>Which of the following represents an antiderivative of <span class="process-math">\(g(x)=\displaystyle \frac{1}{1-x}\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(G(x)=C+\displaystyle\sum_{n=0}^\infty x^{n+1}\text{.}\)</span></li><li><span class="process-math">\(G(x)=C+\displaystyle\sum_{n=1}^\infty \frac{1}{n}x^{n+1}\text{.}\)</span></li><li><span class="process-math">\(G(x)=C+\displaystyle\sum_{n=0}^\infty \frac{1}{n+1}x^{n+1}\text{.}\)</span></li><li><span class="process-math">\(G(x)=C+\displaystyle\sum_{n=1}^\infty \frac{1}{n+1}x^{n}\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 5.3.9</h3><div align="left"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div><span class="process-math">\(-1&lt; x&lt; 1\)</span><p><em class="emphasis">Part 2.</em></p><p>Find the interval of convergence for this series.</p></div></section><section><h3>Activity 5.3.9</h3><div align="left"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div><span class="process-math">\(-1&lt; x&lt; 1\)</span><p><em class="emphasis">Part 3.</em></p><p>Recall that <span class="process-math">\(\tilde{G}(x)=\ln|1-x|\)</span> is an antiderivative of <span class="process-math">\(g(x)=\displaystyle \frac{1}{1-x}\text{.}\)</span>  For which <span class="process-math">\(C\)</span> is your chosen <span class="process-math">\(G(x)=\ln|1-x|\text{?}\)</span></p></div></section><section><h3>Activity 5.3.9</h3><div align="left"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div><span class="process-math">\(-1&lt; x&lt; 1\)</span><p><em class="emphasis">Part 4.</em></p><p>Use <span class="process-math">\(G_4(x)\)</span> to estimate <span class="process-math">\(\displaystyle \int_2^4 \ln|1-x|dx\text{.}\)</span></p></div></section><section><h3>Activity 5.3.10</h3><div align="left"><p>Recall that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div>for <span class="process-math">\(-1&lt; x&lt; 1\)</span> and <span class="process-math">\(\frac{d}{dx}[\arctan(x)]=\frac{1}{1+x^2}=g(-x^2)\text{.}\)</span>  We computed the power series for  <span class="process-math">\(g(-x^2)\)</span> in Activity 5.3.4 .</p><p><em class="emphasis">Part 1.</em></p><p>Anti differentiate this power series and find <span class="process-math">\(C\)</span> to find a power series for <span class="process-math">\(H(x)=\arctan(x)\text{.}\)</span>  Recall that <span class="process-math">\(\arctan(0)=0\text{.}\)</span></p></div></section><section><h3>Activity 5.3.10</h3><div align="left"><p>Recall that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div>for <span class="process-math">\(-1&lt; x&lt; 1\)</span> and <span class="process-math">\(\frac{d}{dx}[\arctan(x)]=\frac{1}{1+x^2}=g(-x^2)\text{.}\)</span>  We computed the power series for  <span class="process-math">\(g(-x^2)\)</span> in Activity 5.3.4 .</p><p><em class="emphasis">Part 2.</em></p><p>Find the interval of convergence for this series.</p></div></section><section><h3>Activity 5.3.11</h3><div align="left"><p><ol id="p-72" class="decimal"><li>Find the power series for <span class="process-math">\(\alpha(x)=\ln|x|\text{.}\)</span></li><li>Find the interval of convergence for this series.</li></ol></p></div></section><section><h3>Activity 5.3.12</h3><div align="left"><p><ol id="p-73" class="decimal"><li>Find the power series for <span class="process-math">\(\beta(x)=\arctan(-3x^2)\text{.}\)</span></li><li>Find the interval of convergence for this series.</li></ol></p></div></section></section></div></div></body><script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script></html>

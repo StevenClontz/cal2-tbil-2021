@@ -1,0 +1,123 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html><head><title>Calculus 2 for Team-Based Inquiry Learning</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/simple.css" rel="stylesheet"/><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"> </script><style>
+ul {
+  display: block !important;
+}
+.reveal img {
+  border: 0.5px !important;
+  border-radius: 2px 10px 2px;
+  padding: 4px;
+  max-height:50vh;
+}
+.figure-like {
+  text-align: center;
+}
+.definition,.theorem,.activity {
+  border-width: 0.5px;
+  border-style: solid;
+  border-radius: 2px 10px 2px;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+.definition {
+  background: #00608010;
+}
+.theorem {
+  background: #ff000010;
+}
+.proof {
+  background: #ffffff90;
+}
+.activity {
+  background: #60800010;
+}
+dfn {
+  font-weight: bold;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker,
+.pretext-content li.no-marker {
+    list-style-type: none;
+}
+
+.pretext-content ol.decimal {
+    list-style-type: decimal;
+}
+.pretext-content ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.pretext-content ol.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.pretext-content ol.lower-roman {
+    list-style-type: lower-roman;
+}
+.pretext-content ol.upper-roman {
+    list-style-type: upper-roman;
+}
+.pretext-content ul.disc {
+    list-style-type: disc;
+}
+.pretext-content ul.square {
+    list-style-type: square;
+}
+.pretext-content ul.circle {
+    list-style-type: circle;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker {
+    list-style-type: none;
+}
+.pretext-content .cols1 li,
+.pretext-content .cols2 li,
+.pretext-content .cols3 li,
+.pretext-content .cols4 li,
+.pretext-content .cols5 li,
+.pretext-content .cols6 li {
+    float: left;
+    padding-right:2em;
+}
+          </style></head><body><div class="reveal pretext-content"><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div><div class="slides"><section><section><h1>Calculus 2 for Team-Based Inquiry Learning</h1><h2>Live Development Edition</h2><table><tr><th align="center" style="border-bottom: 0px;">TBIL Institute Fellows</th></tr><tr><td align="center" style="border-bottom: 0px;"/></tr><tr><td align="center"/></tr></table><h4><div class="date">May 2, 2022</div></h4></section></section><section><section><h1>Chapter 4: Sequences and Series (SQ)</h1></section></section><section><section><h1>Section 4.2: Sequence Properties and Limits (SQ2)</h1></section><section><h3>Activity 4.2.1</h3><div align="left"><p>We will consider the function <span class="process-math">\(f(x) = \displaystyle \frac{4x+8}{x}\text{.}\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Compute the limit <span class="process-math">\(\displaystyle  \lim_{x\to \infty} \frac{4x+8}{x}\text{.}\)</span></p><ol class="upper-alpha"><li><span class="process-math">\(\displaystyle 0\)</span></li><li><span class="process-math">\(\displaystyle 8\)</span></li><li><span class="process-math">\(\displaystyle 1\)</span></li><li><span class="process-math">\(\displaystyle 4\)</span></li></ol></div></section><section><h3>Activity 4.2.1</h3><div align="left"><p>We will consider the function <span class="process-math">\(f(x) = \displaystyle \frac{4x+8}{x}\text{.}\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Determine on which intervals <span class="process-math">\(f(x)\)</span> is increasing and/or decreasing. (Hint: compute <span class="process-math">\(f'(x)\)</span> first.)</p></div></section><section><h3>Activity 4.2.1</h3><div align="left"><p>We will consider the function <span class="process-math">\(f(x) = \displaystyle \frac{4x+8}{x}\text{.}\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Which statement best describes <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(x&gt;0\text{?}\)</span></p><ol class="upper-alpha"><li><span class="process-math">\(f(x)\)</span> is bounded above by 4</li><li><span class="process-math">\(f(x)\)</span> is bounded below by 4</li><li><span class="process-math">\(f(x)\)</span> is bounded above and below by 4</li><li><span class="process-math">\(f(x)\)</span> is not bounded above</li><li><span class="process-math">\(f(x)\)</span> is not bounded below</li></ol></div></section><section><h3>Definition 4.2.2</h3><div align="left"><p>Given a sequence <span class="process-math">\(\{x_n\}\text{:}\)</span><ul class="disc"><li><span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">monotonically increasing</em> if <span class="process-math">\(x_{n+1}&gt;x_n\)</span> for <em class="emphasis">every</em> choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">monotonically non-decreasing</em> if <span class="process-math">\(x_{n+1}\geq x_n\)</span> for <em class="emphasis">every</em> choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">monotonically decreasing</em> if <span class="process-math">\(x_{n+1} &lt; x_n\)</span> for <em class="emphasis">every</em> choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">monotonically non-increasing</em> if <span class="process-math">\(x_{n+1}\leq x_n\)</span> for <em class="emphasis">every</em> choice of <span class="process-math">\(n\text{.}\)</span></li></ul>All of these sequences would be <em class="emphasis">monotonic</em>.</p></div></section><section><h3>Activity 4.2.3</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></div></section><section><h3>Activity 4.2.3</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.<ol class="decimal"><li><span class="process-math">\(x_{n+1}-x_n&gt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n\geq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n &lt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n\leq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 4.2.3</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty?\)</span><ol class="decimal"><li>Monotonically increasing.</li><li>Monotonically non-decreasing.</li><li>Monotonically decreasing.</li><li>Monotonically non-increasing.</li></ol></p></div></section><section><h3>Activity 4.2.4</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></div></section><section><h3>Activity 4.2.4</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.<ol class="decimal"><li><span class="process-math">\(x_{n+1}-x_n&gt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n\geq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n &lt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n\leq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 4.2.4</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty?\)</span><ol class="decimal"><li>Monotonically increasing.</li><li>Monotonically non-decreasing.</li><li>Monotonically decreasing.</li><li>Monotonically non-increasing.</li></ol></p></div></section><section><h3>Activity 4.2.5</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></div></section><section><h3>Activity 4.2.5</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.<ol class="decimal"><li><span class="process-math">\(x_{n+1}-x_n&gt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n\geq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n &lt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n\leq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 4.2.5</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty?\)</span><ol class="decimal"><li>Monotonically increasing.</li><li>Monotonically non-decreasing.</li><li>Monotonically decreasing.</li><li>Monotonically non-increasing.</li></ol></p></div></section><section><h3>Activity 4.2.6</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></div></section><section><h3>Activity 4.2.6</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.<ol class="decimal"><li><span class="process-math">\(x_{n+1}-x_n&gt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n\geq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n &lt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li><li><span class="process-math">\(x_{n+1}-x_n\leq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 4.2.6</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty?\)</span><ol class="decimal"><li>Monotonically increasing.</li><li>Monotonically non-decreasing.</li><li>Monotonically decreasing.</li><li>Monotonically non-increasing.</li></ol></p></div></section><section><h3>Definition 4.2.7</h3><div align="left"><p>A sequence <span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">bounded</em> if there are real numbers <span class="process-math">\(b_u, b_{\ell}\)</span> such that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+b_{\ell}\leq x_n \leq b_u
+\end{equation*}
+</div>for every <span class="process-math">\(n\text{?}\)</span></p></div></section><section><h3>Activity 4.2.8</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></div></section><section><h3>Activity 4.2.8</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></div></section><section><h3>Activity 4.2.8</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Is <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></div></section><section><h3>Activity 4.2.9</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></div></section><section><h3>Activity 4.2.9</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></div></section><section><h3>Activity 4.2.9</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Is <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></div></section><section><h3>Activity 4.2.10</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></div></section><section><h3>Activity 4.2.10</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></div></section><section><h3>Activity 4.2.10</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Is <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></div></section><section><h3>Activity 4.2.11</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 1.</em></p><p>Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></div></section><section><h3>Activity 4.2.11</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 2.</em></p><p>Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></div></section><section><h3>Activity 4.2.11</h3><div align="left"><p>Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty.\)</span></p><p><em class="emphasis">Part 3.</em></p><p>Is <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty\)</span> bounded?</p></div></section><section><h3>Definition 4.2.12</h3><div align="left"><p>Given a sequence <span class="process-math">\(\{x_n\}\text{,}\)</span> we say <span class="process-math">\(x_n\)</span> has <em class="emphasis">limit</em> <span class="process-math">\(L\text{,}\)</span> denoted<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{n\to\infty} x_n=L
+\end{equation*}
+</div>if we can make <span class="process-math">\(x_n\)</span> as close to <span class="process-math">\(L\)</span> as we like by making <span class="process-math">\(n\)</span> sufficiently large.  If such an <span class="process-math">\(L\)</span> exists, we say <em class="emphasis"><span class="process-math">\(\{x_n\}\)</span> converges to <span class="process-math">\(L\text{.}\)</span></em>  If no such <span class="process-math">\(L\)</span> exists, we say <em class="emphasis"><span class="process-math">\(\{x_n\}\)</span> does not converge.</em></p></div></section><section><h3>Activity 4.2.13</h3><div align="left"><p><em class="emphasis">Part 1.</em></p><p>For each of the following, determine if the sequence converges.<ol class="upper-alpha"><li><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></li><li><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></li><li><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></li><li><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.\)</span></li></ol></p></div></section><section><h3>Activity 4.2.14</h3><div align="left"><p><em class="emphasis">Part 1.</em></p><p>Determine to what value <span class="process-math">\(\left\{\displaystyle \frac{4n}{n+1}\right\}_{n=0}^\infty\)</span> converges.</p></div></section><section><h3>Activity 4.2.14</h3><div align="left"><p><em class="emphasis">Part 2.</em></p><p>Which of the following ia most likely true about <span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\text{?}\)</span><ol class="upper-alpha"><li><span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\)</span> converges to 4.</li><li><span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\)</span> converges to 0.</li><li><span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\)</span> converges to -4.</li><li><span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\)</span> does not converge.</li></ol></p></div></section><section><h3>Activity 4.2.15</h3><div align="left"><p><em class="emphasis">Part 1.</em></p><p>For each of the following, determine determine which of the properties: <em class="emphasis">monotonic</em>, <em class="emphasis">bounded</em> and <em class="emphasis">convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges.<ol class="decimal"><li><span class="process-math">\(\displaystyle \left\{\displaystyle 3n\right\}_{n=0}^\infty.\)</span></li><li><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{n^3}{3^n}\right\}_{n=0}^\infty.\)</span></li><li><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{n}{n+3}\right\}_{n=1}^\infty.\)</span></li><li><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{(-1)^n}{n+3}\right\}_{n=1}^\infty.\)</span></li></ol></p></div></section><section><h3>Activity 4.2.15</h3><div align="left"><p><em class="emphasis">Part 2.</em></p><p>Of the above sequences, which of them were monotonic?</p></div></section><section><h3>Activity 4.2.15</h3><div align="left"><p><em class="emphasis">Part 3.</em></p><p>Of the monotonic sequences, which of them were convergent?</p></div></section><section><h3>Fact 4.2.16</h3><div align="left"><p>If a sequence is monotonic and bounded, then it is convergent.</p></div></section></section></div></div></body><script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script></html>

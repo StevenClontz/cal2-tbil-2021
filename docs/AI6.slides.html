@@ -1,0 +1,157 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html><head><title>Calculus 2 for Team-Based Inquiry Learning</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/simple.css" rel="stylesheet"/><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"> </script><style>
+ul {
+  display: block !important;
+}
+.reveal img {
+  border: 0.5px !important;
+  border-radius: 2px 10px 2px;
+  padding: 4px;
+  max-height:50vh;
+}
+.figure-like {
+  text-align: center;
+}
+.definition,.theorem,.activity {
+  border-width: 0.5px;
+  border-style: solid;
+  border-radius: 2px 10px 2px;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+.definition {
+  background: #00608010;
+}
+.theorem {
+  background: #ff000010;
+}
+.proof {
+  background: #ffffff90;
+}
+.activity {
+  background: #60800010;
+}
+dfn {
+  font-weight: bold;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker,
+.pretext-content li.no-marker {
+    list-style-type: none;
+}
+
+.pretext-content ol.decimal {
+    list-style-type: decimal;
+}
+.pretext-content ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.pretext-content ol.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.pretext-content ol.lower-roman {
+    list-style-type: lower-roman;
+}
+.pretext-content ol.upper-roman {
+    list-style-type: upper-roman;
+}
+.pretext-content ul.disc {
+    list-style-type: disc;
+}
+.pretext-content ul.square {
+    list-style-type: square;
+}
+.pretext-content ul.circle {
+    list-style-type: circle;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker {
+    list-style-type: none;
+}
+.pretext-content .cols1 li,
+.pretext-content .cols2 li,
+.pretext-content .cols3 li,
+.pretext-content .cols4 li,
+.pretext-content .cols5 li,
+.pretext-content .cols6 li {
+    float: left;
+    padding-right:2em;
+}
+          </style></head><body><div class="reveal pretext-content"><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+    \newcommand{\arcsec}{\mathrm{arcsec}\,}
+    \newcommand{\unknown}{{\color{gray} ?}}
+    \newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div><div class="slides"><section><section><h1>Calculus 2 for Team-Based Inquiry Learning</h1><h2>Live Development Edition</h2><table><tr><th align="center" style="border-bottom: 0px;">TBIL Institute Fellows</th></tr><tr><td align="center" style="border-bottom: 0px;"/></tr><tr><td align="center"/></tr></table><h4><div class="date">May 2, 2022</div></h4></section></section><section><section><h1>Chapter 2: Applications of Integration (AI)</h1></section></section><section><section><h1>Section 2.6: Physics Applications (AI6)</h1></section><section><h3>Fact 2.6.1</h3><div align="left"><p>Given a physical object <span class="process-math">\(m\text{,}\)</span> the <em class="emphasis">work</em> done on that object is<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+W=Fd=mad,
+\end{equation*}
+</div>where <span class="process-math">\(F\)</span> is the force applied to the object over a distance of <span class="process-math">\(d\text{.}\)</span>  Recall that force <span class="process-math">\(F=ma\text{,}\)</span> where <span class="process-math">\(m\)</span> is the mass of the object, and <span class="process-math">\(a\)</span> is the acceleration applied to it.</p></div></section><section><h3>Activity 2.6.2</h3><div align="left"><p>Consider a bucket with 10 kg of water, being pulled against the acceleration of gravity, <span class="process-math">\(g=9.8\)</span> m/s<span class="process-math">\(^2\text{,}\)</span> at a constant speed for 20 meters.  Using Fact 2.6.1 , what is the work needed to pull this bucket up 20 meters in kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\)</span> (or Nm)?<ol class="upper-alpha"><li>10 kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\text{.}\)</span></li><li>20 kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\text{.}\)</span></li><li>98 kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\text{.}\)</span></li><li>200 kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\text{.}\)</span></li><li>1960 kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\text{.}\)</span></li></ol></p></div></section><section><h3>Activity 2.6.3</h3><div align="left"><p>Consider the bucket from Activity 2.6.2   with 10 kg of water, being pulled against the acceleration of gravity, <span class="process-math">\(g=9.8\)</span> m/s<span class="process-math">\(^2\text{,}\)</span> at a constant speed for 20 meters.  Suppose that halfway up at a height of 10m, 5kg of water spilled out, leaving 5kg left.  How much work total does it take to get this bucket to a height of 20m?<ol class="upper-alpha"><li>980 kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\)</span> or (Nm).</li><li>1470 kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\)</span> or (Nm).</li><li>1960 kgm<span class="process-math">\(^2\)</span>/<span class="process-math">\(s^2\)</span> or (Nm).</li></ol></p></div></section><section><h3>Activity 2.6.4</h3><div align="left"><p>Suppose a 10 kg bucket of water is constantly losing water as it's pulled up, so at a height of <span class="process-math">\(h\)</span> meters, the mass of the bucket is <span class="process-math">\(m(h)=2+8e^{-0.2h}\)</span> kg. <figure class="figure-like"><a href="generated/latex-image/bucket5meters.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/bucket5meters.svg"/></a></figure></p><p><em class="emphasis">Part 1.</em></p><p>What is the mass of the bucket at height <span class="process-math">\(h_i=5\)</span> m?</p></div></section><section><h3>Activity 2.6.4</h3><div align="left"><p>Suppose a 10 kg bucket of water is constantly losing water as it's pulled up, so at a height of <span class="process-math">\(h\)</span> meters, the mass of the bucket is <span class="process-math">\(m(h)=2+8e^{-0.2h}\)</span> kg. <figure class="figure-like"><a href="generated/latex-image/bucket5meters.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/bucket5meters.svg"/></a></figure></p><p><em class="emphasis">Part 2.</em></p><p>Assume that the bucket does not lose water to estimate the amount of work needed to lift this bucket up <span class="process-math">\(\Delta h=5\)</span> meters.</p></div></section><section><h3>Activity 2.6.5</h3><div align="left"><p>Consider the bucket from Activity 2.6.4 .  Consider the buckets mass at heights <span class="process-math">\(h_i=0, 5, 10, 15\)</span> meters. <figure class="figure-like"><a href="generated/latex-image/bucketestimate.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/bucketestimate.svg"/></a></figure></p><p><em class="emphasis">Part 1.</em></p><p>Fill out the following table, estimating the work it would take to lift the bucket 20 meters:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{|c|c|c|c|}
+\hline
+h_i &amp; \text{Mass } m(h_i) &amp; \text{Distance} &amp; \text{Estimated Work}\\
+\hline
+h_4=15\ \text{m} &amp; m(15)=2+8e^{-0.2\cdot 15}\approx 2.398\ \text{kg} &amp; 5\ \text{m} &amp; \\
+\hline
+h_3=10\ \text{m} &amp; m(10)=2+8e^{-0.2\cdot 10}\approx 3.083\ \text{kg} &amp; 5\ \text{m} &amp; \\
+\hline
+h_2=5\ \text{m} &amp; m(5)=2+8e^{-0.2\cdot 5}\approx 4.943\ \text{kg} &amp;   5\ \text{m} &amp; 242.207\ \text{Nm}\\
+\hline
+h_1=0\ \text{m} &amp; m(5)=2+8e^{-0.2\cdot 0}= 10\ \text{kg} &amp;  5\ \text{m} &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></p></div></section><section><h3>Activity 2.6.5</h3><div align="left"><p>Consider the bucket from Activity 2.6.4 .  Consider the buckets mass at heights <span class="process-math">\(h_i=0, 5, 10, 15\)</span> meters. <figure class="figure-like"><a href="generated/latex-image/bucketestimate.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/bucketestimate.svg"/></a></figure></p><p><em class="emphasis">Part 2.</em></p><p>What is the total estimated work to lift this bucket 20 meters?</p></div></section><section><h3>Activity 2.6.6</h3><div align="left"><p>If we estimated the mass and work of the bucket from Activity 2.6.5  at height <span class="process-math">\(h_i\)</span> with intervals of length <span class="process-math">\(\Delta h\)</span> meters, which of the following best represents the Riemann sum of the work it would take to lift this bucket 20 meters?<ol class="upper-alpha"><li><span class="process-math">\(\displaystyle \sum h_i\cdot 9.8\Delta h\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \sum \left( 2+8e^{-0.02h}\right)\cdot 9.8\Delta m\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \sum \left( 2+8e^{-0.02h_i}\right)\cdot 9.8\Delta h\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \sum \left( 2+8e^{-0.02h_i}\right)\cdot 9.8\Delta m\text{.}\)</span> Nm</li></ol></p></div></section><section><h3>Activity 2.6.7</h3><div align="left"><p>Based on the Riemann sum chosen in Activity 2.6.6 , which of the following integrals computes the work it would take to lift this bucket 20 meters?<ol class="upper-alpha"><li><span class="process-math">\(\displaystyle \int_0^{20} h_i\cdot 9.8 dh\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8 dm\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8 dh\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \int_0^{20} \left( 2+8e^{-0.02h_i}\right)\cdot 9.8 dh\text{.}\)</span> Nm</li></ol></p></div></section><section><h3>Activity 2.6.8</h3><div align="left"><p>Based on the integral chosen in Activity 2.6.7 , compute the work it would take to lift this bucket 20 meters.</p></div></section><section><h3>Observation 2.6.9: A how to for applying integrals to physics</h3><div align="left"><p><ol id="p-19" class="upper-alpha"><li>Estimate the value over a piece of the problem with <span class="process-math">\(x\)</span> value <span class="process-math">\(x_i\)</span> over interval of length <span class="process-math">\(\Delta x\text{.}\)</span></li><li>Find a Riemann sum using (1) which estimates the value in question.</li><li>Convert the Riemann sum to an integral and solve.</li></ol></p></div></section><section><h3>Activity 2.6.10</h3><div align="left"><p>Consider a cylindrical tank filled with water, where the base of the cylinder has a 3 meter radius, and a height of 10 meters.  Consider a 2 m thick slice of water sitting 6 meters high in the tank.  Using the fact that the mass of this water is <span class="process-math">\(1000\cdot \pi (3)^2\cdot 2=18000\pi\)</span> kg, estimate how much work is needed to lift this slice 4 more meters to the top of the tank. <figure class="figure-like"><a href="generated/latex-image/tankslicelift.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/tankslicelift.svg"/></a></figure><ol class="upper-alpha"><li><span class="process-math">\(18000\pi\cdot 4\)</span> Nm.</li><li><span class="process-math">\(18000\pi\cdot 9.8\)</span> Nm.</li><li><span class="process-math">\(18000\pi\cdot 4\cdot 9.8\)</span> Nm.</li><li><span class="process-math">\(18000\pi\cdot 6\)</span> Nm.</li><li><span class="process-math">\(18000\pi\cdot 6\cdot 9.8\)</span> Nm.</li></ol></p></div></section><section><h3>Activity 2.6.11</h3><div align="left"><p>Consider the cylindrical tank filled with water, from Activity 2.6.10 .  Suppose we wished to estimate the amount of work required to pump all the water out of the tank.  Suppose we sliced the water into 5 pieces and estimated the work it would take to lift each piece out <figure class="figure-like"><a href="generated/latex-image/tanksliceliftpieces.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/tanksliceliftpieces.svg"/></a></figure></p><p><em class="emphasis">Part 1.</em></p><p>Fill out the following table, estimating the work it would take to pump all the water out:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{|c|c|c|c|}
+\hline
+h_i &amp; \text{Mass}  &amp; \text{Distance} &amp; \text{Estimated Work}\\
+\hline
+h_5=8\ \text{m} &amp; 18000\pi\ \text{kg} &amp;    &amp; \\
+\hline
+h_4=6\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  4\ \text{m} &amp; 705600\pi\ \text{Nm}\\
+\hline
+h_3=4\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  &amp; \\
+\hline
+h_2=2\ \text{m} &amp; 18000\pi\ \text{kg} &amp;    &amp; \\
+\hline
+h_1=0\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  10\ \text{m} &amp; \\
+\hline
+\end{array}
+\end{equation*}
+</div></p></div></section><section><h3>Activity 2.6.11</h3><div align="left"><p>Consider the cylindrical tank filled with water, from Activity 2.6.10 .  Suppose we wished to estimate the amount of work required to pump all the water out of the tank.  Suppose we sliced the water into 5 pieces and estimated the work it would take to lift each piece out <figure class="figure-like"><a href="generated/latex-image/tanksliceliftpieces.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/tanksliceliftpieces.svg"/></a></figure></p><p><em class="emphasis">Part 2.</em></p><p>What is the total estimated work to pump out all the water?</p></div></section><section><h3>Activity 2.6.12</h3><div align="left"><p>Recall Activity 2.6.11 .  If we estimated the work needed to lift slices of thickness <span class="process-math">\(\Delta h\)</span> m at heights <span class="process-math">\(h_i\)</span> m, which of the following Riemann sums best estimates the total work needed to pump all the water from the tank?<ol class="upper-alpha"><li><span class="process-math">\(\displaystyle \sum 1000\cdot \pi3^2 \cdot 9.8(10-h)\Delta h\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \sum 1000\cdot\pi3^2 \cdot 9.8(10-h_i)\Delta h\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \sum 1000\cdot\pi(h_i)^2 \cdot 9.8(10-h)\Delta h\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \sum 1000\cdot\pi(h_i)^2 \cdot 9.8(10-h_i)\Delta h\text{.}\)</span> Nm</li></ol></p></div></section><section><h3>Activity 2.6.13</h3><div align="left"><p>Based on the Riemann sum chosen in Activity 2.6.12 , which of the following integrals computes the work it would take to pump all the water from the tank?<ol class="upper-alpha"><li><span class="process-math">\(\displaystyle \int_0^{10} 9000\pi\cdot 9.8 (10-h) dh\text{.}\)</span> Nm</li><li><span class="process-math">\(\displaystyle \int_0^{10} 1000\pi\cdot 9.8 h^2(10-h) dh\text{.}\)</span> Nm</li></ol></p></div></section><section><h3>Activity 2.6.14</h3><div align="left"><p>Based on the integral chosen in Activity 2.6.13 , compute the work it would take to pump all the water out of the tank.</p></div></section><section><h3>Activity 2.6.15</h3><div align="left"><p>Consider a cylindrical truncated-cone tank where the radius on the bottom of the tank is 10 m, the radius at the top of the tank is 100 m, and the height of the tank is 100m. <figure class="figure-like"><a href="generated/latex-image/coneslicelift.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/coneslicelift.svg"/></a></figure></p><p><em class="emphasis">Part 1.</em></p><p>What is the radius <span class="process-math">\(r_i\)</span> in meters of the cross section made at height <span class="process-math">\(h_i\)</span> meters?</p></div></section><section><h3>Activity 2.6.15</h3><div align="left"><p>Consider a cylindrical truncated-cone tank where the radius on the bottom of the tank is 10 m, the radius at the top of the tank is 100 m, and the height of the tank is 100m. <figure class="figure-like"><a href="generated/latex-image/coneslicelift.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/coneslicelift.svg"/></a></figure></p><p><em class="emphasis">Part 2.</em></p><p>What is the volume of a cylinder with radius <span class="process-math">\(r_i\)</span> meters with width <span class="process-math">\(\Delta h\)</span> meters?</p></div></section><section><h3>Activity 2.6.15</h3><div align="left"><p>Consider a cylindrical truncated-cone tank where the radius on the bottom of the tank is 10 m, the radius at the top of the tank is 100 m, and the height of the tank is 100m. <figure class="figure-like"><a href="generated/latex-image/coneslicelift.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/coneslicelift.svg"/></a></figure></p><p><em class="emphasis">Part 3.</em></p><p>Using the fact that water has density 1000 kg/m<span class="process-math">\(^3\text{,}\)</span> how much mass is the volume of water found in (b)?</p></div></section><section><h3>Activity 2.6.15</h3><div align="left"><p>Consider a cylindrical truncated-cone tank where the radius on the bottom of the tank is 10 m, the radius at the top of the tank is 100 m, and the height of the tank is 100m. <figure class="figure-like"><a href="generated/latex-image/coneslicelift.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/coneslicelift.svg"/></a></figure></p><p><em class="emphasis">Part 4.</em></p><p>How far must this cylinder of water be lifted to be out of this tank?</p></div></section><section><h3>Activity 2.6.16</h3><div align="left"><p>Recall the computations done in Activity 2.6.15 .</p><p><em class="emphasis">Part 1.</em></p><p>Find a Riemann sum which estimates the total work needed to pump all the water out of this tank, using slices at heights <span class="process-math">\(h_i\)</span> m, of width <span class="process-math">\(\Delta h\)</span> m.</p></div></section><section><h3>Activity 2.6.16</h3><div align="left"><p>Recall the computations done in Activity 2.6.15 .</p><p><em class="emphasis">Part 2.</em></p><p>Use (a) to find an integral expression which computes the amount of work needed to pump all the water out of this tank.</p></div></section><section><h3>Activity 2.6.16</h3><div align="left"><p>Recall the computations done in Activity 2.6.15 .</p><p><em class="emphasis">Part 3.</em></p><p>Evaluate the integral found in (b).</p></div></section><section><h3>Fact 2.6.17</h3><div align="left"><p>Recall that <span class="process-math">\(pressure\)</span> is measured as <em class="emphasis">force</em> over <em class="emphasis">area</em>.<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P=F/A.
+\end{equation*}
+</div>Rewriting this, we have that <span class="process-math">\(F=PA.\)</span></p></div></section><section><h3>Activity 2.6.18</h3><div align="left"><p>Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top, and assume the dam is 20 feet tall with water that rises to it's top. Water weighs 62.4 pounds per cubic foot, and exerts <span class="process-math">\(P=62.4d\)</span> lbs/ft<span class="process-math">\(^2\)</span> of pressure at depth <span class="process-math">\(d\)</span> ft. Consider a rectangular slice of this damn at height <span class="process-math">\(h_i\)</span> feet and width <span class="process-math">\(b_i\text{.}\)</span> <figure class="figure-like"><a href="generated/latex-image/damslice.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/damslice.svg"/></a></figure></p><p><em class="emphasis">Part 1.</em></p><p>At a height of <span class="process-math">\(h_i\)</span> feet, what is the base of the rectangle <span class="process-math">\(b_i\text{?}\)</span></p></div></section><section><h3>Activity 2.6.18</h3><div align="left"><p>Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top, and assume the dam is 20 feet tall with water that rises to it's top. Water weighs 62.4 pounds per cubic foot, and exerts <span class="process-math">\(P=62.4d\)</span> lbs/ft<span class="process-math">\(^2\)</span> of pressure at depth <span class="process-math">\(d\)</span> ft. Consider a rectangular slice of this damn at height <span class="process-math">\(h_i\)</span> feet and width <span class="process-math">\(b_i\text{.}\)</span> <figure class="figure-like"><a href="generated/latex-image/damslice.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/damslice.svg"/></a></figure></p><p><em class="emphasis">Part 2.</em></p><p>What is the area of a rectangle with base <span class="process-math">\(b_i\)</span> feet and height <span class="process-math">\(\Delta h\)</span> feet?</p></div></section><section><h3>Activity 2.6.18</h3><div align="left"><p>Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top, and assume the dam is 20 feet tall with water that rises to it's top. Water weighs 62.4 pounds per cubic foot, and exerts <span class="process-math">\(P=62.4d\)</span> lbs/ft<span class="process-math">\(^2\)</span> of pressure at depth <span class="process-math">\(d\)</span> ft. Consider a rectangular slice of this damn at height <span class="process-math">\(h_i\)</span> feet and width <span class="process-math">\(b_i\text{.}\)</span> <figure class="figure-like"><a href="generated/latex-image/damslice.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/damslice.svg"/></a></figure></p><p><em class="emphasis">Part 3.</em></p><p>Using a depth of <span class="process-math">\(20-h_i\)</span> feet, how much pressure is exerted on this rectangle?</p></div></section><section><h3>Activity 2.6.18</h3><div align="left"><p>Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top, and assume the dam is 20 feet tall with water that rises to it's top. Water weighs 62.4 pounds per cubic foot, and exerts <span class="process-math">\(P=62.4d\)</span> lbs/ft<span class="process-math">\(^2\)</span> of pressure at depth <span class="process-math">\(d\)</span> ft. Consider a rectangular slice of this damn at height <span class="process-math">\(h_i\)</span> feet and width <span class="process-math">\(b_i\text{.}\)</span> <figure class="figure-like"><a href="generated/latex-image/damslice.svg" target="&#10;        _BLANK&#10;      "><img src="generated/latex-image/damslice.svg"/></a></figure></p><p><em class="emphasis">Part 4.</em></p><p>Using the pressure found in (c), the area in (b) and Fact 2.6.17 , how much force is exerted on this rectangle?</p></div></section><section><h3>Activity 2.6.19</h3><div align="left"><p>Recall the computations done in Activity 2.6.18 .</p><p><em class="emphasis">Part 1.</em></p><p>Find a Riemann sum which estimates the total force exerted on the dam, using slices at heights <span class="process-math">\(h_i\)</span> m, of width <span class="process-math">\(\Delta h\)</span> m.</p></div></section><section><h3>Activity 2.6.19</h3><div align="left"><p>Recall the computations done in Activity 2.6.18 .</p><p><em class="emphasis">Part 2.</em></p><p>Use (a) to find an integral expression which computes the amount of force exerted on this dam.</p></div></section><section><h3>Activity 2.6.19</h3><div align="left"><p>Recall the computations done in Activity 2.6.18 .</p><p><em class="emphasis">Part 3.</em></p><p>Evaluate the integral found in (b).</p></div></section></section></div></div></body><script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script></html>
