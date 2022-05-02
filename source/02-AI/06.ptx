@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="AI6" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="AI6" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Physics Applications (AI6)</title>
     <objectives>
         <ul>
@@ -517,6 +517,12 @@
                 </p>
             </task>
         </activity>
+    
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="AI6.slides.html"/>.</p>
+    </subsection>
     
     
     <subsection>

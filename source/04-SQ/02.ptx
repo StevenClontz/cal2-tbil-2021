@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="SQ2" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="SQ2" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Sequence Properties and Limits (SQ2)</title>
     <objectives>
         <ul>
@@ -40,6 +40,7 @@
     
     
     <definition xml:id="definitionmonotonicsequence">
+        <statement>
         <p>
             Given a sequence <m>\{x_n\}</m>:
             <ul>
@@ -51,6 +52,7 @@
             
             All of these sequences would be <em>monotonic</em>.
         </p>
+            </statement>
     </definition>
     
     
@@ -199,9 +201,11 @@
     
     
     <definition xml:id="definitionboundedsequence">
+        <statement>
         <p>
             A sequence <m>\{x_n\}</m> is <em>bounded</em> if there are real numbers <m>b_u, b_{\ell}</m> such that <me>b_{\ell}\leq x_n \leq b_u</me> for every <m>n</m>?
         </p>
+            </statement>
     </definition>
     
     <activity>
@@ -309,9 +313,11 @@
     
     
     <definition xml:id="definitionlimitsequence">
+        <statement>
         <p>
             Given a sequence <m>\{x_n\}</m>, we say <m>x_n</m> has <em>limit</em> <m>L</m>, denoted <me>\lim_{n\to\infty} x_n=L</me> if we can make <m>x_n</m> as close to <m>L</m> as we like by making <m>n</m> sufficiently large.  If such an <m>L</m> exists, we say <em><m>\{x_n\}</m> converges to <m>L</m>.</em>  If no such <m>L</m> exists, we say <em><m>\{x_n\}</m> does not converge.</em>
         </p>
+            </statement>
     </definition>
     
     
@@ -371,10 +377,17 @@
     
     
     <fact xml:id="boundedmonotonicsequence">
+        <statement>
         <p>
             If a sequence is monotonic and bounded, then it is convergent.
         </p>
+            </statement>
     </fact>
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ2.slides.html"/>.</p>
+    </subsection>
     
     
     

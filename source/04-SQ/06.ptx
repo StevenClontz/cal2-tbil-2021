@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="SQ6" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="SQ6" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Comparison Tests (SQ6)</title>
     <objectives>
         <ul>
@@ -120,6 +120,7 @@
         
         <fact xml:id="fact-SQ6limitcomparisontest">
             <title>The Limit Comparison Test</title>
+            <statement>
       <p permid="QCd">
         Let <m>\displaystyle\sum a_n</m> and <m>\displaystyle\sum b_n</m> be series with positive terms.
         If
@@ -129,6 +130,7 @@
         for some positive (finite) constant <m>c</m>,
         then <m>\displaystyle\sum a_n</m> and <m>\displaystyle\sum b_n</m> either both converge or both diverge.
       </p>
+                </statement>
         </fact>
         
         
@@ -369,6 +371,7 @@
         </activity>
         
         <fact xml:id="fact-SQ6comparesequence">
+            <statement>
             <p>
                 Supppose we have sequences <m>\{a_n\}, \{b_n\}</m> so that for some <m>k</m> we have that <m>0\leq b_n\leq a_n</m> for each <m>k\geq n</m> then we have:
                 <ul>
@@ -376,6 +379,7 @@
                     <li>If <m>\displaystyle\sum_{k=n}^\infty b_n</m> diverges, then so does  <m>\displaystyle\sum_{k=n}^\infty a_n</m>.</li>
                 </ul>
             </p>
+           </statement>     
         </fact>
         
         
@@ -469,6 +473,7 @@
         
         <fact xml:id="fact-SQ6directcomparisontest">
             <title>The Direct Comparison Test</title>
+            <statement>
       <p permid="QCd">
         Let <m>\displaystyle\sum a_n</m> and <m>\displaystyle\sum b_n</m> be series with positive terms.
         If there is a <m>k</m> such that <m>b_n\leq a_n</m> for each <m>n\geq k</m>, then:
@@ -477,6 +482,7 @@
                     <li>If <m>\displaystyle \sum b_n</m> diverges, then so does  <m>\displaystyle \sum a_n</m>.</li>
                 </ul>
       </p>
+                </statement>
         </fact>
         
         
@@ -544,6 +550,13 @@
             </task>
         
         </activity>
+    
+    
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ6.slides.html"/>.</p>
+    </subsection>
         
         
         

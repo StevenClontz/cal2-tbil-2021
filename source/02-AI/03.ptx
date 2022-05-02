@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="AI3" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="AI3" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Volumes of Revolution (AI3)</title>
     <objectives>
         <ul>
@@ -65,7 +65,6 @@
             
             
             <task>
-                
                 
                 <p>
                     Suppose we estimate the volume of this solid by approximating it with two cylinders of <q>height</q> <m>\Delta x=3</m> and radii <m>f(0)=1, f(3)=4</m>:
@@ -698,6 +697,7 @@
     
     <fact xml:id="fact-washer">
         <title>The Washer Method</title>
+        <statement>
       <p>
         If <m>y = R(x)</m> and <m>y = r(x)</m> are nonnegative continuous functions on <m>[a,b]</m> that satisfy
         <m>R(x) \ge r(x)</m> for all <m>x</m> in <m>[a,b]</m>,
@@ -706,6 +706,7 @@
           V = \int_a^b \pi [R(x)^2 - r(x)^2] \, dx
         </me>.
       </p>
+            </statement>
     </fact>
     
     
@@ -982,10 +983,12 @@
     
     <fact xml:id="fact-shell">
         <title>The Shell Method</title>
+        <statement>
       <p>
         Let a solid be formed by revolving a region <m>R</m>, bounded by <m>x=a</m> and <m>x=b</m>, around a vertical axis. Let <m>r(x)</m> represent the distance from the axis of rotation to <m>x</m> (i.e., the radius of a sample shell) and let <m>h(x)</m> represent the height of the solid at <m>x</m> (i.e., the height of the shell). The volume of the solid is 
 <me>V = 2\pi\int_a^b r(x)h(x)\ dx.</me>
       </p>
+            </statement>
     </fact>
     
     
@@ -1027,6 +1030,11 @@
         
         
     </activity>
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="AI3.slides.html"/>.</p>
+    </subsection>
     
     
     <subsection>

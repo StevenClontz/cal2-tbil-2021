@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="PS2" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="PS2" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Convergence of Power Series (PS2)</title>
     <objectives>
         <ul>
@@ -11,6 +11,7 @@
     </objectives>
     
     <remark>
+        <statement>
         <p>Consider a power series <m>\displaystyle\sum c_n(x-a)^n</m>.  Recall from <xref ref="fact-SQ7ratioTest"/> that if 
             <md>
                 <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; &lt; 1</mrow>
@@ -30,6 +31,8 @@
         
         
         </p>
+            
+            </statement>
     </remark>
     
     
@@ -174,6 +177,7 @@
     
     
     <fact xml:id="intervalofconvergence">
+        <statement>
         <p>
             Given the power series <m>\displaystyle\sum c_n(x-a)^n</m>, the <em>center of convergence</em> is <m>x=a</m>.  The <em>radius of convergence</em> is <me>r=\frac{1}{\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|}.</me>  If <m>\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|=0</m>, we say that <m>r=\infty</m>.
         </p>
@@ -188,6 +192,7 @@
             </ul>
             Depending on if <m>\displaystyle\sum c_n(x-a)^n</m> converges when <m>x=a-r</m> or <m>x=a+r</m>.  If <m>r=\infty</m> the interval of convergence is all real numbers.
         </p>
+            </statement>
     </fact>
     
     <activity>
@@ -224,7 +229,10 @@
         </task>
     </activity>
     
-    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="PS2.slides.html"/>.</p>
+    </subsection>
     
     <subsection>
         <title>Videos</title>

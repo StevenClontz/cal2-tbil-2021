@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="PS4" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="PS4" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Taylor Series (PS4)</title>
     <objectives>
         <ul>
@@ -147,20 +147,22 @@ centered at <m>x=c</m> such that <m>f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)
     
     
     <fact xml:id="fact-PS4taylorSeriesForm">
-          
+          <statement>
       <p permid="QCd">
         If <m>f(x)</m> can be written as a power series, then there is a real number <m>c</m> such that
           <m>f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(c)}{n!}(x-c)^n=f(c)+f^\prime(c)(x-c)+\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots</m>
           on some interval centered at <m>x=c</m>.
 
       </p>
+              </statement>
         </fact>
        
     <fact xml:id="fact-PS4taylorSeriesExistence">
-          
+          <statement>
       <p permid="QCd">
         A function can be represented as a power series if and only if it is infinitely differentiable on some open interval.
       </p>
+              </statement>
         </fact>
     
     <definition xml:id="definition-PS4taylorSeries">
@@ -220,12 +222,13 @@ Note that polynomials of degree less than <m>k</m> are their own Taylor polynomi
     
     
     <remark>
+        <statement>
         <p>
             You might have seen <m>\sqrt{-1}</m> written as <m>i</m>, and know that <m>z</m> is a complex number if <m>z=a+bi</m> for some real numbers <m>a</m> and <m>b</m>.
 Note that <m>i^2=-1</m>, <m>i^3=(i^2)i=-i</m>, <m>i^4=(i^2)^2=1</m>, <m>i^5=(i^4)i=i</m>, and so on.
 This gives rise to the following notion.
         </p>
-    
+    </statement>
     </remark>
         
     
@@ -256,15 +259,19 @@ This gives rise to the following notion.
     
     
      <activity xml:id="activity-PS4eulerIdentityExample">
+         <statement>
             <p>
                 Use Euler's identity to evaluate <m>e^{i\pi}</m>.
             </p>
-        
+        </statement>
     </activity>
     
     
     
-    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="PS4.slides.html"/>.</p>
+    </subsection>
     
     
     <subsection>

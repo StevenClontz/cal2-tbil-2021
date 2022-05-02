@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="SQ7" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="SQ7" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Ratio and Root Tests (SQ7)</title>
     <objectives>
         <ul>
@@ -149,7 +149,7 @@
     
     
     <fact xml:id="fact-SQ7ratioTest">
-          
+          <statement>
       <p permid="QCd">
         Let <m>\displaystyle\sum a_n</m> be a series 
           and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_n}\right|=\rho</m>.
@@ -161,11 +161,13 @@
           </ol>
        
       </p>
+              
+              </statement>
         </fact>
     
     
     <fact xml:id="fact-SQ7rootTest">
-          
+          <statement>
       <p permid="QCd">
         Let <m>N</m> be an integer and let <m>\displaystyle\sum a_n</m> be a series with <m>a_n\geq 0</m> for <m>n\geq N</m>,
           and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{a_n}=\rho</m>.
@@ -177,6 +179,7 @@
           </ol>
        
       </p>
+              </statement>
         </fact>
     
     
@@ -367,6 +370,13 @@
             </task>
             
         </activity>
+    
+    
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ7.slides.html"/>.</p>
+    </subsection>
     
     
     

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="SQ3" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="SQ3" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Partial Sum Sequence (SQ3)</title>
     <objectives>
         <ul>
@@ -325,6 +325,11 @@
             </task>
         </activity>
     
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ3.slides.html"/>.</p>
+    </subsection>
     
     <subsection>
         <title>Videos</title>

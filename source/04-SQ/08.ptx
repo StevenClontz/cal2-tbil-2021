@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="SQ8" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="SQ8" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Absolute Convergence (SQ8)</title>
     <objectives>
         <ul>
@@ -33,9 +33,11 @@
     
     
     <definition xml:id="definition-absoluteconvergence">
+        <statement>
         <p>
             Given a series <me>\sum a_n</me> we say that <m>\displaystyle \sum a_n</m> is <em>absolutely convergent</em> if <m>\displaystyle \sum |a_n|</m> converges.
         </p>
+        </statement>    
     </definition>
     
     <activity>
@@ -76,9 +78,11 @@
     
     
     <fact>
+        <statement>
         <p>
             If <m>\displaystyle \sum a_n</m> is absolutely convergent, then it must be convergent.
         </p>
+        </statement>    
     </fact>
     
     
@@ -89,6 +93,13 @@
             </p>
         </statement>
     </activity>
+    
+    
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ8.slides.html"/>.</p>
+    </subsection>
 
     
     <subsection>

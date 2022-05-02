@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="AI2" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="AI2" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Arclength (AI2)</title>
     <objectives>
         <ul>
@@ -9,6 +9,7 @@
             </li>
         </ul>
     </objectives>
+    
     <activity>
         <introduction>
             <p>
@@ -208,9 +209,10 @@
                     <mrow>\sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; = \sqrt{(\Delta x)^2\left(1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2\right)}</mrow>
                     <mrow>&amp;=\sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x</mrow>
                 </md>
-                
+              </p>
+            <p>
                  Which of the following best describes <m>\displaystyle\lim_{\Delta x\to 0} \frac{f(x_i+\Delta x)-f(x_i)}{\Delta x}</m>?
-                <ol label='a'>
+                <ol label='A'>
                     <li><m>0</m>.</li>
                     <li><m>1</m>.</li>
                     <li><m>f'(x_i)</m>.</li>
@@ -224,7 +226,7 @@
     </activity>
     
     <fact xml:id="fact-arclength">
-        <p>
+        <statement>        <p>
             Given a differentiable function <m>f(x)</m>, the arclength of <m>y=f(x)</m> defined on <m>[a,b]</m> is computed by the integral: 
             
             <md>
@@ -233,6 +235,8 @@
             </md>
             
         </p>
+            </statement>
+
     </fact>
     
     <activity>
@@ -312,6 +316,11 @@
             </p>
         </task>
     </activity>
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="AI2.slides.html"/>.</p>
+    </subsection>
        
     <subsection>
         <title>Videos</title>

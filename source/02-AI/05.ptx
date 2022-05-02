@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="AI5" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="AI5" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Density, Mass, and Center of Mass (AI5)</title>
     <objectives>
         <ul>
@@ -163,11 +163,13 @@
         
         <activity xml:id="activity-AI4comparison">
             <statement>
+                <p>
                 Which of the estimates computed in <xref ref="activity-AI4rectangularprism4pieces"/> and <xref ref="activity-AI4rectangularprism5pieces"/> is a better estimate of the mass of the prism?
                 <ol label="A">
                     <li><xref ref="activity-AI4rectangularprism4pieces"/>, 4 pieces is a better estimate.</li>
                     <li><xref ref="activity-AI4rectangularprism5pieces"/>, 5 pieces is a better estimate.</li>
                 </ol>
+                    </p>
             </statement>
         </activity>
         
@@ -200,6 +202,8 @@
                     </image>
             </figure>
                 </p>
+            </introduction>
+            <task>
                 <p>
                     Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=10+h_i</m> as the estimate for the density of this piece, what is the mass of this piece?
                     <ol label="A">
@@ -209,7 +213,7 @@
                         <li><m>(10+h_i)100\cdot h</m>.</li>
                     </ol>
                 </p>
-            </introduction>
+            </task>
         </activity>
         
         
@@ -444,6 +448,9 @@
             </figure>
                     
                 </p>
+                 </introduction>
+            
+            <task>
                 <p>
                     Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=15+\sqrt{h_i}</m> as the estimate for the density of this cylinder, what is the mass of this cylinder?
                     <ol label="A">
@@ -453,7 +460,7 @@
                         <li><m>(15+\sqrt{h_i})\pi r^2\cdot \Delta h</m>.</li>
                     </ol>
                 </p>
-            </introduction>
+           </task>
         </activity>
         
         <activity xml:id="fact-AI4discreteform">
@@ -489,7 +496,12 @@
                     </image>
             </figure>
                 </p>
-                <p>If we used prisms of width <m>\Delta x</m> to approximate this solid, what is the mass of the slice associated with <m>x_i?</m>
+               
+                
+            </introduction>
+            
+            <task>
+                 <p>If we used prisms of width <m>\Delta x</m> to approximate this solid, what is the mass of the slice associated with <m>x_i?</m>
                     <ol label="A">
                         <li><m>A(x)\delta(x)\Delta x</m>.</li>
                         <li><m>\pi A(x)^2\delta(x_i)\Delta x</m>.</li>
@@ -497,8 +509,7 @@
                         <li><m>A(x_i)\delta(x_i)\Delta x_i</m>.</li>
                     </ol>
                 </p>
-                
-            </introduction>
+            </task>
         </activity>
         
         <fact xml:id="fact-AI4masscomputation">
@@ -883,6 +894,13 @@
                 </p>
             </statement>
         </activity>
+    
+    
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="AI5.slides.html"/>.</p>
+    </subsection>
     
     
     

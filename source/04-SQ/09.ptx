@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="SQ9" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="SQ9" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
   <title>Series Convergence Strategy (SQ9)</title>
     <objectives>
         <ul>
@@ -345,6 +345,10 @@
     </activity>
     
     
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ9.slides.html"/>.</p>
+    </subsection>
     
     
     <subsection>
