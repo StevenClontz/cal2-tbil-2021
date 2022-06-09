@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-05T21:47:34Z       *-->
+<!--*       on 2022-06-09T18:39:54Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,7 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -62,6 +61,8 @@
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
@@ -149,63 +150,63 @@
 <span class="type">Section</span> <span class="codenumber">4.6</span> <span class="title">Comparison Tests (SQ6)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-30"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-865"><p id="p-1002">Use the direct comparison and limit comparison tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ6multipleofsequence"><h3 class="heading">
+<ul class="disc"><li id="li-869"><p id="p-1007">Use the direct comparison and limit comparison tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ6multipleofsequence"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-98"><p id="p-1003">Let <span class="process-math">\(\{a_n\}_{n=1}^\infty\)</span> be a sequence, with infinite series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=a_1+a_2+\cdots \text{.}\)</span>  Suppose <span class="process-math">\(\{b_n\}_{n=1}^\infty\)</span> is a sequence where each <span class="process-math">\(b_n=3a_n\text{,}\)</span> whith infinite series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty b_n=\sum_{n=1}^\infty 3a_n=3a_1+3a_2+\cdots \text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-299"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1004">If <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=5\)</span> what can be said about <span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\text{?}\)</span></p>
+<div class="introduction" id="introduction-99"><p id="p-1008">Let <span class="process-math">\(\{a_n\}_{n=1}^\infty\)</span> be a sequence, with infinite series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=a_1+a_2+\cdots \text{.}\)</span>  Suppose <span class="process-math">\(\{b_n\}_{n=1}^\infty\)</span> is a sequence where each <span class="process-math">\(b_n=3a_n\text{,}\)</span> whith infinite series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty b_n=\sum_{n=1}^\infty 3a_n=3a_1+3a_2+\cdots \text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-302"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1009">If <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=5\)</span> what can be said about <span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-866"><p id="p-derived-li-866"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges but the value cannot be determined.</p></li>
-<li id="li-867"><p id="p-derived-li-867"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges to <span class="process-math">\(3\cdot 5=15\text{.}\)</span></p></li>
-<li id="li-868"><p id="p-derived-li-868"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges to some value other than 15.</p></li>
-<li id="li-869"><p id="p-derived-li-869"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> diverges.</p></li>
-<li id="li-870"><p id="p-derived-li-870">It cannot be determined whether <span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges or diverges.</p></li>
-</ol></article><article class="task exercise-like" id="task-300"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1005">If <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> diverges, what can be said about <span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-871"><p id="p-derived-li-871"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges but the value cannot be determined.</p></li>
-<li id="li-872"><p id="p-derived-li-872"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges and the value can be determined.</p></li>
+<li id="li-870"><p id="p-derived-li-870"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges but the value cannot be determined.</p></li>
+<li id="li-871"><p id="p-derived-li-871"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges to <span class="process-math">\(3\cdot 5=15\text{.}\)</span></p></li>
+<li id="li-872"><p id="p-derived-li-872"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges to some value other than 15.</p></li>
 <li id="li-873"><p id="p-derived-li-873"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> diverges.</p></li>
 <li id="li-874"><p id="p-derived-li-874">It cannot be determined whether <span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges or diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-303"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1010">If <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> diverges, what can be said about <span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-875"><p id="p-derived-li-875"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges but the value cannot be determined.</p></li>
+<li id="li-876"><p id="p-derived-li-876"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges and the value can be determined.</p></li>
+<li id="li-877"><p id="p-derived-li-877"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> diverges.</p></li>
+<li id="li-878"><p id="p-derived-li-878">It cannot be determined whether <span class="process-math">\(\displaystyle\sum_{n=1}^\infty b_n\)</span> converges or diverges.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ6sortofmultiplesequence"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-99">
-<p id="p-1006">Recall that</p>
+<div class="introduction" id="introduction-100">
+<p id="p-1011">Recall that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle 1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots+\frac{1}{2^n}+\cdots=2.
 \end{equation*}
 </div>
 </div>
-<article class="task exercise-like" id="task-301"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1007">What can we say about the series</p>
+<article class="task exercise-like" id="task-304"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1012">What can we say about the series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots?
 \end{equation*}
 </div>
 <ol class="upper-alpha">
-<li id="li-875"><p id="p-derived-li-875"><span class="process-math">\(\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots\)</span> converges to <span class="process-math">\(3\cdot 2=6\text{.}\)</span></p></li>
-<li id="li-876"><p id="p-derived-li-876"><span class="process-math">\(\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots\)</span> converges to some value other than 6.</p></li>
-<li id="li-877"><p id="p-derived-li-877"><span class="process-math">\(\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots\)</span> diverges.</p></li>
-</ol></article><article class="task exercise-like" id="task-302"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1008">What do you think we can say about the series</p>
+<li id="li-879"><p id="p-derived-li-879"><span class="process-math">\(\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots\)</span> converges to <span class="process-math">\(3\cdot 2=6\text{.}\)</span></p></li>
+<li id="li-880"><p id="p-derived-li-880"><span class="process-math">\(\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots\)</span> converges to some value other than 6.</p></li>
+<li id="li-881"><p id="p-derived-li-881"><span class="process-math">\(\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots\)</span> diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-305"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1013">What do you think we can say about the series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle \frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots?
 \end{equation*}
 </div>
 <ol class="upper-alpha">
-<li id="li-878"><p id="p-derived-li-878"><span class="process-math">\(\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots\)</span> converges to <span class="process-math">\(3\cdot 2=6\text{.}\)</span></p></li>
-<li id="li-879"><p id="p-derived-li-879"><span class="process-math">\(\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots\)</span> converges to some value other than 6.</p></li>
-<li id="li-880"><p id="p-derived-li-880"><span class="process-math">\(\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots\)</span> diverges.</p></li>
+<li id="li-882"><p id="p-derived-li-882"><span class="process-math">\(\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots\)</span> converges to <span class="process-math">\(3\cdot 2=6\text{.}\)</span></p></li>
+<li id="li-883"><p id="p-derived-li-883"><span class="process-math">\(\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots\)</span> converges to some value other than 6.</p></li>
+<li id="li-884"><p id="p-derived-li-884"><span class="process-math">\(\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots\)</span> diverges.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ6sortofmultiplesequencediverge"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-100">
-<p id="p-1009">Recall that</p>
+<div class="introduction" id="introduction-101">
+<p id="p-1014">Recall that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle 1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots+\frac{1}{n}+\cdots
@@ -213,28 +214,28 @@
 </div>
 <p class="continuation">diverges.</p>
 </div>
-<article class="task exercise-like" id="task-303"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1010">What can we say about the series</p>
+<article class="task exercise-like" id="task-306"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1015">What can we say about the series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots?
 \end{equation*}
 </div>
 <ol class="upper-alpha">
-<li id="li-881"><p id="p-derived-li-881"><span class="process-math">\(\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots\)</span> converges to a known value we can compute.</p></li>
-<li id="li-882"><p id="p-derived-li-882"><span class="process-math">\(\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots\)</span> converges to some unknown value.</p></li>
-<li id="li-883"><p id="p-derived-li-883"><span class="process-math">\(\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots\)</span> diverges.</p></li>
-</ol></article><article class="task exercise-like" id="task-304"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1011">What do you think we can say about the series</p>
+<li id="li-885"><p id="p-derived-li-885"><span class="process-math">\(\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots\)</span> converges to a known value we can compute.</p></li>
+<li id="li-886"><p id="p-derived-li-886"><span class="process-math">\(\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots\)</span> converges to some unknown value.</p></li>
+<li id="li-887"><p id="p-derived-li-887"><span class="process-math">\(\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots\)</span> diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-307"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1016">What do you think we can say about the series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots?
 \end{equation*}
 </div>
 <ol class="upper-alpha">
-<li id="li-884"><p id="p-derived-li-884"><span class="process-math">\(\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots\)</span> converges to a known value we can compute.</p></li>
-<li id="li-885"><p id="p-derived-li-885"><span class="process-math">\(\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots\)</span> converges to some unknown value.</p></li>
-<li id="li-886"><p id="p-derived-li-886"><span class="process-math">\(\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots\)</span> diverges.</p></li>
+<li id="li-888"><p id="p-derived-li-888"><span class="process-math">\(\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots\)</span> converges to a known value we can compute.</p></li>
+<li id="li-889"><p id="p-derived-li-889"><span class="process-math">\(\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots\)</span> converges to some unknown value.</p></li>
+<li id="li-890"><p id="p-derived-li-890"><span class="process-math">\(\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots\)</span> diverges.</p></li>
 </ol></article></article><article class="fact theorem-like" id="fact-SQ6limitcomparisontest"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.6.4</span><span class="period">.</span><span class="space"> </span><span class="title">The Limit Comparison Test.</span>
 </h3>
@@ -247,8 +248,8 @@
 <p class="continuation">for some positive (finite) constant <span class="process-math">\(c\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum a_n\)</span> and <span class="process-math">\(\displaystyle\sum b_n\)</span> either both converge or both diverge.</p></article><article class="activity project-like" id="activity-SQ6conversenottrue"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-101">
-<p id="p-1013">Recall that</p>
+<div class="introduction" id="introduction-102">
+<p id="p-1018">Recall that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle \sum_{n=1}^\infty \frac{1}{2^n}
@@ -256,12 +257,12 @@
 </div>
 <p class="continuation">converges.</p>
 </div>
-<article class="task exercise-like" id="task-305"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1014">Let <span class="process-math">\(b_n=\frac{1}{n}\text{.}\)</span> Compute <span class="process-math">\(\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n}}{\frac{1}{2^n}}\text{.}\)</span></p></article><article class="task exercise-like" id="task-306"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1015">Does <span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n}\)</span> converge or diverge?.</p></article><article class="task exercise-like" id="task-307"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1016">Let <span class="process-math">\(b_n=\frac{1}{n^2}\text{.}\)</span>  Compute <span class="process-math">\(\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n^2}}{\frac{1}{2^n}}\text{.}\)</span></p></article><article class="task exercise-like" id="task-308"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1017">Does <span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n^2}\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-309"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1018">Let <span class="process-math">\(\displaystyle\sum a_n\)</span> and <span class="process-math">\(\displaystyle\sum b_n\)</span> be series with positive terms. If</p>
+<article class="task exercise-like" id="task-308"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1019">Let <span class="process-math">\(b_n=\frac{1}{n}\text{.}\)</span> Compute <span class="process-math">\(\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n}}{\frac{1}{2^n}}\text{.}\)</span></p></article><article class="task exercise-like" id="task-309"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1020">Does <span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n}\)</span> converge or diverge?.</p></article><article class="task exercise-like" id="task-310"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1021">Let <span class="process-math">\(b_n=\frac{1}{n^2}\text{.}\)</span>  Compute <span class="process-math">\(\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n^2}}{\frac{1}{2^n}}\text{.}\)</span></p></article><article class="task exercise-like" id="task-311"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1022">Does <span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n^2}\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-312"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1023">Let <span class="process-math">\(\displaystyle\sum a_n\)</span> and <span class="process-math">\(\displaystyle\sum b_n\)</span> be series with positive terms. If</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \lim_{n \to \infty} \frac{b_n}{a_n}
@@ -270,133 +271,133 @@
 <p class="continuation">diverges, can we conclude that <span class="process-math">\(\displaystyle \sum b_n\)</span> converges or diverges?</p></article></article><article class="activity project-like" id="activity-SQ6useLCT"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.6</span><span class="period">.</span>
 </h3>
-<article class="task exercise-like" id="task-310"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1020">Compute</p>
+<article class="task exercise-like" id="task-313"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1025">Compute</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \lim_{n\to\infty}\frac{\frac{1}{4^n-1}}{\frac{1}{4^n}}.
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-311"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1021">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{4^n-1}\)</span> converge or diverge by <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>?</p></article></article><article class="activity project-like" id="activity-SQ6pickandcompare1"><h3 class="heading">
+</div></article><article class="task exercise-like" id="task-314"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1026">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{4^n-1}\)</span> converge or diverge by <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>?</p></article></article><article class="activity project-like" id="activity-SQ6pickandcompare1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-102"><p id="p-1022">We wish to determine if <span class="process-math">\(\displaystyle \sum_{n=2}^\infty \frac{2}{\sqrt{n+3}}\)</span> converges or diverges using <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>.</p></div>
-<article class="task exercise-like" id="task-312"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1023">To which of the following should we compare <span class="process-math">\(\displaystyle \{x_n\}=\left\{\frac{2}{\sqrt{n+3}}\right\}\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-887"><p id="p-derived-li-887"><span class="process-math">\(\displaystyle \left\{\frac{1}{n}\right\}\text{.}\)</span></p></li>
-<li id="li-888"><p id="p-derived-li-888"><span class="process-math">\(\displaystyle \left\{\frac{1}{\sqrt{n}}\right\}\text{.}\)</span></p></li>
-<li id="li-889"><p id="p-derived-li-889"><span class="process-math">\(\displaystyle \left\{\frac{1}{n^2}\right\}\text{.}\)</span></p></li>
-<li id="li-890"><p id="p-derived-li-890"><span class="process-math">\(\displaystyle \left\{\frac{1}{2^n}\right\}\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-313"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1024">Using your chosen sequence and <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>, does <span class="process-math">\(\displaystyle \sum_{n=2}^\infty \frac{2}{\sqrt{n+3}}\)</span> converge or diverge?</p></article></article><article class="activity project-like" id="activity-SQ6pickandcompare2"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.8</span><span class="period">.</span>
-</h3>
-<div class="introduction" id="introduction-103"><p id="p-1025">We wish to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{3}{n^2+8n+5}\)</span> converges or diverges using <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>.</p></div>
-<article class="task exercise-like" id="task-314"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1026">To which of the following should we compare <span class="process-math">\(\displaystyle \{x_n\}=\left\{\frac{3}{n^2+8n+5} \right\}\text{?}\)</span></p>
+<div class="introduction" id="introduction-103"><p id="p-1027">We wish to determine if <span class="process-math">\(\displaystyle \sum_{n=2}^\infty \frac{2}{\sqrt{n+3}}\)</span> converges or diverges using <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>.</p></div>
+<article class="task exercise-like" id="task-315"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1028">To which of the following should we compare <span class="process-math">\(\displaystyle \{x_n\}=\left\{\frac{2}{\sqrt{n+3}}\right\}\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-891"><p id="p-derived-li-891"><span class="process-math">\(\displaystyle \left\{\frac{1}{n}\right\}\text{.}\)</span></p></li>
 <li id="li-892"><p id="p-derived-li-892"><span class="process-math">\(\displaystyle \left\{\frac{1}{\sqrt{n}}\right\}\text{.}\)</span></p></li>
 <li id="li-893"><p id="p-derived-li-893"><span class="process-math">\(\displaystyle \left\{\frac{1}{n^2}\right\}\text{.}\)</span></p></li>
 <li id="li-894"><p id="p-derived-li-894"><span class="process-math">\(\displaystyle \left\{\frac{1}{2^n}\right\}\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-315"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1027">Using your chosen sequence and <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>, does <span class="process-math">\(\displaystyle \frac{3}{n^2+8n+5}\)</span> converge or diverge?</p></article></article><article class="activity project-like" id="activity-SQ6comparesequences"><h3 class="heading">
+</ol></article><article class="task exercise-like" id="task-316"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1029">Using your chosen sequence and <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>, does <span class="process-math">\(\displaystyle \sum_{n=2}^\infty \frac{2}{\sqrt{n+3}}\)</span> converge or diverge?</p></article></article><article class="activity project-like" id="activity-SQ6pickandcompare2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.8</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-104"><p id="p-1030">We wish to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{3}{n^2+8n+5}\)</span> converges or diverges using <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>.</p></div>
+<article class="task exercise-like" id="task-317"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1031">To which of the following should we compare <span class="process-math">\(\displaystyle \{x_n\}=\left\{\frac{3}{n^2+8n+5} \right\}\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-895"><p id="p-derived-li-895"><span class="process-math">\(\displaystyle \left\{\frac{1}{n}\right\}\text{.}\)</span></p></li>
+<li id="li-896"><p id="p-derived-li-896"><span class="process-math">\(\displaystyle \left\{\frac{1}{\sqrt{n}}\right\}\text{.}\)</span></p></li>
+<li id="li-897"><p id="p-derived-li-897"><span class="process-math">\(\displaystyle \left\{\frac{1}{n^2}\right\}\text{.}\)</span></p></li>
+<li id="li-898"><p id="p-derived-li-898"><span class="process-math">\(\displaystyle \left\{\frac{1}{2^n}\right\}\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-318"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1032">Using your chosen sequence and <a href="" class="xref" data-knowl="./knowl/fact-SQ6limitcomparisontest.html" title="Fact 4.6.4: The Limit Comparison Test">Fact 4.6.4</a>, does <span class="process-math">\(\displaystyle \frac{3}{n^2+8n+5}\)</span> converge or diverge?</p></article></article><article class="activity project-like" id="activity-SQ6comparesequences"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-104"><p id="p-1028">Consider sequences <span class="process-math">\(\{a_n\}, \{b_n\}\)</span> where <span class="process-math">\(a_n\geq b_n\geq 0\text{.}\)</span> <figure class="figure figure-like" id="figure-79"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/comparesequences.svg" role="img" class="contained" alt="Plots of sequences \(\{a_n\}, \{b_n\}\) where \(a_n\geq b_n\geq 0\text{.}\)"></div>
+<div class="introduction" id="introduction-105"><p id="p-1033">Consider sequences <span class="process-math">\(\{a_n\}, \{b_n\}\)</span> where <span class="process-math">\(a_n\geq b_n\geq 0\text{.}\)</span> <figure class="figure figure-like" id="figure-79"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/comparesequences.svg" role="img" class="contained" alt="Plots of sequences \(\{a_n\}, \{b_n\}\) where \(a_n\geq b_n\geq 0\text{.}\)"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">82<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(\{a_n\}, \{b_n\}\)</span></figcaption></figure></p></div>
-<article class="task exercise-like" id="task-316"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1029">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> converges.  What could be said about <span class="process-math">\(\{b_n\}\text{?}\)</span></p>
+<article class="task exercise-like" id="task-319"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1034">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> converges.  What could be said about <span class="process-math">\(\{b_n\}\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-895"><p id="p-derived-li-895"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges.</p></li>
-<li id="li-896"><p id="p-derived-li-896"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.</p></li>
-<li id="li-897"><p id="p-derived-li-897">Whether or not <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges or diverges cannot be determined with this information.</p></li>
-</ol></article><article class="task exercise-like" id="task-317"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1030">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{1}{n+1}\)</span> which diverges.</p>
+<li id="li-899"><p id="p-derived-li-899"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges.</p></li>
+<li id="li-900"><p id="p-derived-li-900"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.</p></li>
+<li id="li-901"><p id="p-derived-li-901">Whether or not <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges or diverges cannot be determined with this information.</p></li>
+</ol></article><article class="task exercise-like" id="task-320"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1035">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{1}{n+1}\)</span> which diverges.</p>
 <ol class="upper-alpha">
-<li id="li-898"><p id="p-derived-li-898">Find a sequence <span class="process-math">\(\{b_n\}\)</span> so that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges.</p></li>
-<li id="li-899"><p id="p-derived-li-899">Find a sequence <span class="process-math">\(\{b_n\}\)</span> so that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.</p></li>
-</ol></article><article class="task exercise-like" id="task-318"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1031">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> was some series that diverges.  What could be said about <span class="process-math">\(\{b_n\}\text{?}\)</span></p>
+<li id="li-902"><p id="p-derived-li-902">Find a sequence <span class="process-math">\(\{b_n\}\)</span> so that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges.</p></li>
+<li id="li-903"><p id="p-derived-li-903">Find a sequence <span class="process-math">\(\{b_n\}\)</span> so that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-321"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1036">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> was some series that diverges.  What could be said about <span class="process-math">\(\{b_n\}\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-900"><p id="p-derived-li-900"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges.</p></li>
-<li id="li-901"><p id="p-derived-li-901"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.</p></li>
-<li id="li-902"><p id="p-derived-li-902">Whether or not <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges or diverges cannot be determined with this information.</p></li>
-</ol></article><article class="task exercise-like" id="task-319"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1032">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.  What could be said about <span class="process-math">\(\{a_n\}\text{?}\)</span></p>
+<li id="li-904"><p id="p-derived-li-904"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges.</p></li>
+<li id="li-905"><p id="p-derived-li-905"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.</p></li>
+<li id="li-906"><p id="p-derived-li-906">Whether or not <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges or diverges cannot be determined with this information.</p></li>
+</ol></article><article class="task exercise-like" id="task-322"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1037">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.  What could be said about <span class="process-math">\(\{a_n\}\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-903"><p id="p-derived-li-903"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges.</p></li>
-<li id="li-904"><p id="p-derived-li-904"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.</p></li>
-<li id="li-905"><p id="p-derived-li-905">Whether or not <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges or diverges cannot be determined with this information.</p></li>
-</ol></article><article class="task exercise-like" id="task-320"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1033">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n=\sum_{n=0}^\infty \frac{1}{3^n}\)</span> which converges.</p>
+<li id="li-907"><p id="p-derived-li-907"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges.</p></li>
+<li id="li-908"><p id="p-derived-li-908"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> diverges.</p></li>
+<li id="li-909"><p id="p-derived-li-909">Whether or not <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> converges or diverges cannot be determined with this information.</p></li>
+</ol></article><article class="task exercise-like" id="task-323"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1038">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n=\sum_{n=0}^\infty \frac{1}{3^n}\)</span> which converges.</p>
 <ol class="upper-alpha">
-<li id="li-906"><p id="p-derived-li-906">Find a sequence <span class="process-math">\(\{a_n\}\)</span> so that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> converges.</p></li>
-<li id="li-907"><p id="p-derived-li-907">Find a sequence <span class="process-math">\(\{a_n\}\)</span> so that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> diverges.</p></li>
-</ol></article><article class="task exercise-like" id="task-321"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<p id="p-1034">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> was some series that converges.  What could be said about <span class="process-math">\(\{a_n\}\text{?}\)</span></p>
+<li id="li-910"><p id="p-derived-li-910">Find a sequence <span class="process-math">\(\{a_n\}\)</span> so that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> converges.</p></li>
+<li id="li-911"><p id="p-derived-li-911">Find a sequence <span class="process-math">\(\{a_n\}\)</span> so that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-324"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1039">Suppose that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\)</span> was some series that converges.  What could be said about <span class="process-math">\(\{a_n\}\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-908"><p id="p-derived-li-908"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> converges.</p></li>
-<li id="li-909"><p id="p-derived-li-909"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> diverges.</p></li>
-<li id="li-910"><p id="p-derived-li-910">Whether or not <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> converges or diverges cannot be determined with this information.</p></li>
+<li id="li-912"><p id="p-derived-li-912"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> converges.</p></li>
+<li id="li-913"><p id="p-derived-li-913"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> diverges.</p></li>
+<li id="li-914"><p id="p-derived-li-914">Whether or not <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> converges or diverges cannot be determined with this information.</p></li>
 </ol></article></article><article class="fact theorem-like" id="fact-SQ6comparesequence"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.6.10</span><span class="period">.</span>
 </h3>
-<p id="p-1035">Supppose we have sequences <span class="process-math">\(\{a_n\}, \{b_n\}\)</span> so that for some <span class="process-math">\(k\)</span> we have that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(k\geq n\)</span> then we have:</p>
+<p id="p-1040">Supppose we have sequences <span class="process-math">\(\{a_n\}, \{b_n\}\)</span> so that for some <span class="process-math">\(k\)</span> we have that <span class="process-math">\(0\leq b_n\leq a_n\)</span> for each <span class="process-math">\(k\geq n\)</span> then we have:</p>
 <ul class="disc">
-<li id="li-911"><p id="p-derived-li-911">If <span class="process-math">\(\displaystyle\sum_{k=n}^\infty a_n\)</span> converges, then so does  <span class="process-math">\(\displaystyle\sum_{k=n}^\infty b_n\text{.}\)</span></p></li>
-<li id="li-912"><p id="p-derived-li-912">If <span class="process-math">\(\displaystyle\sum_{k=n}^\infty b_n\)</span> diverges, then so does  <span class="process-math">\(\displaystyle\sum_{k=n}^\infty a_n\text{.}\)</span></p></li>
+<li id="li-915"><p id="p-derived-li-915">If <span class="process-math">\(\displaystyle\sum_{k=n}^\infty a_n\)</span> converges, then so does  <span class="process-math">\(\displaystyle\sum_{k=n}^\infty b_n\text{.}\)</span></p></li>
+<li id="li-916"><p id="p-derived-li-916">If <span class="process-math">\(\displaystyle\sum_{k=n}^\infty b_n\)</span> diverges, then so does  <span class="process-math">\(\displaystyle\sum_{k=n}^\infty a_n\text{.}\)</span></p></li>
 </ul></article><article class="activity project-like" id="activity-SQ6partialcompare"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.11</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-105"><p id="p-1036">Suppose that you were handed positive sequences <span class="process-math">\(\{a_n\}, \{b_n\}\text{.}\)</span>  For the first few values <span class="process-math">\(a_n\geq b_n\text{,}\)</span> but after that what happens is unclear until <span class="process-math">\(n=100\text{.}\)</span> Then for any <span class="process-math">\(n\geq 100\)</span> we have that <span class="process-math">\(a_n \leq b_n\text{.}\)</span> <figure class="figure figure-like" id="figure-80"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/comparepartialsequences.svg" role="img" class="contained" alt="Plots of sequences \(\{a_n\}, \{b_n\}\) where \(a_n\geq b_n\geq 0\) initially but eventually \(a_n\leq b_n\geq 0\text{.}\)"></div>
+<div class="introduction" id="introduction-106"><p id="p-1041">Suppose that you were handed positive sequences <span class="process-math">\(\{a_n\}, \{b_n\}\text{.}\)</span>  For the first few values <span class="process-math">\(a_n\geq b_n\text{,}\)</span> but after that what happens is unclear until <span class="process-math">\(n=100\text{.}\)</span> Then for any <span class="process-math">\(n\geq 100\)</span> we have that <span class="process-math">\(a_n \leq b_n\text{.}\)</span> <figure class="figure figure-like" id="figure-80"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/comparepartialsequences.svg" role="img" class="contained" alt="Plots of sequences \(\{a_n\}, \{b_n\}\) where \(a_n\geq b_n\geq 0\) initially but eventually \(a_n\leq b_n\geq 0\text{.}\)"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">83<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(\{a_n\}, \{b_n\}\)</span></figcaption></figure></p></div>
-<article class="task exercise-like" id="task-322"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1037">How might we best utilize <a href="" class="xref" data-knowl="./knowl/fact-SQ6comparesequence.html" title="Fact 4.6.10">Fact 4.6.10</a> to determine the convergence of <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> or <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\text{?}\)</span></p>
+<article class="task exercise-like" id="task-325"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1042">How might we best utilize <a href="" class="xref" data-knowl="./knowl/fact-SQ6comparesequence.html" title="Fact 4.6.10">Fact 4.6.10</a> to determine the convergence of <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n\)</span> or <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-913"><p id="p-derived-li-913">Since <span class="process-math">\(a_n\)</span> is sometimes greater than, and sometimes less than <span class="process-math">\(b_n\text{,}\)</span> there is no way to utilize <a href="" class="xref" data-knowl="./knowl/fact-SQ6comparesequence.html" title="Fact 4.6.10">Fact 4.6.10</a>.</p></li>
-<li id="li-914"><p id="p-derived-li-914">Since initially, we have <span class="process-math">\(b_n\leq a_n\text{,}\)</span> we can utilize <a href="" class="xref" data-knowl="./knowl/fact-SQ6comparesequence.html" title="Fact 4.6.10">Fact 4.6.10</a> by assuming <span class="process-math">\(a_n\geq b_n\text{.}\)</span></p></li>
-<li id="li-915"><p id="p-derived-li-915">Since we can rewrite <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^{99} a_n+\sum_{n=100}^\infty a_n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n=\sum_{n=0}^{99} b_n+\sum_{n=100}^\infty b_n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^{99} a_n, \sum_{n=0}^{99} b_n\)</span> are necessarily finite, we can compare <span class="process-math">\(\displaystyle \sum_{n=100}^\infty a_n, \sum_{n=100}^\infty b_n\)</span> with <a href="" class="xref" data-knowl="./knowl/fact-SQ6comparesequence.html" title="Fact 4.6.10">Fact 4.6.10</a>.</p></li>
+<li id="li-917"><p id="p-derived-li-917">Since <span class="process-math">\(a_n\)</span> is sometimes greater than, and sometimes less than <span class="process-math">\(b_n\text{,}\)</span> there is no way to utilize <a href="" class="xref" data-knowl="./knowl/fact-SQ6comparesequence.html" title="Fact 4.6.10">Fact 4.6.10</a>.</p></li>
+<li id="li-918"><p id="p-derived-li-918">Since initially, we have <span class="process-math">\(b_n\leq a_n\text{,}\)</span> we can utilize <a href="" class="xref" data-knowl="./knowl/fact-SQ6comparesequence.html" title="Fact 4.6.10">Fact 4.6.10</a> by assuming <span class="process-math">\(a_n\geq b_n\text{.}\)</span></p></li>
+<li id="li-919"><p id="p-derived-li-919">Since we can rewrite <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^{99} a_n+\sum_{n=100}^\infty a_n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^\infty b_n=\sum_{n=0}^{99} b_n+\sum_{n=100}^\infty b_n\)</span> and <span class="process-math">\(\displaystyle \sum_{n=0}^{99} a_n, \sum_{n=0}^{99} b_n\)</span> are necessarily finite, we can compare <span class="process-math">\(\displaystyle \sum_{n=100}^\infty a_n, \sum_{n=100}^\infty b_n\)</span> with <a href="" class="xref" data-knowl="./knowl/fact-SQ6comparesequence.html" title="Fact 4.6.10">Fact 4.6.10</a>.</p></li>
 </ol></article></article><article class="fact theorem-like" id="fact-SQ6directcomparisontest"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.6.12</span><span class="period">.</span><span class="space"> </span><span class="title">The Direct Comparison Test.</span>
 </h3>
 <p id="QCd">Let <span class="process-math">\(\displaystyle\sum a_n\)</span> and <span class="process-math">\(\displaystyle\sum b_n\)</span> be series with positive terms. If there is a <span class="process-math">\(k\)</span> such that <span class="process-math">\(b_n\leq a_n\)</span> for each <span class="process-math">\(n\geq k\text{,}\)</span> then:</p>
 <ul class="disc">
-<li id="li-916"><p id="p-derived-li-916">If <span class="process-math">\(\displaystyle \sum a_n\)</span> converges, then so does  <span class="process-math">\(\displaystyle \sum b_n\text{.}\)</span></p></li>
-<li id="li-917"><p id="p-derived-li-917">If <span class="process-math">\(\displaystyle \sum b_n\)</span> diverges, then so does  <span class="process-math">\(\displaystyle \sum a_n\text{.}\)</span></p></li>
+<li id="li-920"><p id="p-derived-li-920">If <span class="process-math">\(\displaystyle \sum a_n\)</span> converges, then so does  <span class="process-math">\(\displaystyle \sum b_n\text{.}\)</span></p></li>
+<li id="li-921"><p id="p-derived-li-921">If <span class="process-math">\(\displaystyle \sum b_n\)</span> diverges, then so does  <span class="process-math">\(\displaystyle \sum a_n\text{.}\)</span></p></li>
 </ul></article><article class="activity project-like" id="activity-SQ6useDCT"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.13</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-106"><p id="p-1039">Suppose we wish to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}\)</span> converged  using <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a>.</p></div>
-<article class="task exercise-like" id="task-323"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1040">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{3n}\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-324"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1041">For which value <span class="process-math">\(k\)</span> is <span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k\text{?}\)</span></p>
+<div class="introduction" id="introduction-107"><p id="p-1044">Suppose we wish to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}\)</span> converged  using <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a>.</p></div>
+<article class="task exercise-like" id="task-326"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1045">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{3n}\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-327"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1046">For which value <span class="process-math">\(k\)</span> is <span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-918"><p id="p-derived-li-918"><span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k=0\text{.}\)</span></p></li>
-<li id="li-919"><p id="p-derived-li-919"><span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k=1\text{.}\)</span></p></li>
-<li id="li-920"><p id="p-derived-li-920"><span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k=2\text{.}\)</span></p></li>
-<li id="li-921"><p id="p-derived-li-921"><span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k=3\text{.}\)</span></p></li>
-<li id="li-922"><p id="p-derived-li-922">There is no <span class="process-math">\(k\)</span> for which <span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-325"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1042">Use <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a> and compare <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}\)</span> to <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{3n}\)</span> to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}\)</span> converges or diverges.</p></article></article><article class="activity project-like" id="activity-SQ6useDCT2"><h3 class="heading">
+<li id="li-922"><p id="p-derived-li-922"><span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k=0\text{.}\)</span></p></li>
+<li id="li-923"><p id="p-derived-li-923"><span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k=1\text{.}\)</span></p></li>
+<li id="li-924"><p id="p-derived-li-924"><span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k=2\text{.}\)</span></p></li>
+<li id="li-925"><p id="p-derived-li-925"><span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k=3\text{.}\)</span></p></li>
+<li id="li-926"><p id="p-derived-li-926">There is no <span class="process-math">\(k\)</span> for which <span class="process-math">\(\frac{1}{3n}\leq \frac{1}{2n+3}\)</span> for each <span class="process-math">\(n\geq k\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-328"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1047">Use <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a> and compare <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}\)</span> to <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{3n}\)</span> to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{2n+3}\)</span> converges or diverges.</p></article></article><article class="activity project-like" id="activity-SQ6useDCT2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.14</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-107"><p id="p-1043">Suppose we wish to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2+5}\)</span> converged  using <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a>.</p></div>
-<article class="task exercise-like" id="task-326"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1044">Which series should we compare <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2+5}\)</span> to best utilize <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a>?</p>
+<div class="introduction" id="introduction-108"><p id="p-1048">Suppose we wish to determine if <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2+5}\)</span> converged  using <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a>.</p></div>
+<article class="task exercise-like" id="task-329"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1049">Which series should we compare <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2+5}\)</span> to best utilize <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a>?</p>
 <ol class="upper-alpha">
-<li id="li-923"><p id="p-derived-li-923"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n}\text{.}\)</span></p></li>
-<li id="li-924"><p id="p-derived-li-924"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n^2}\text{.}\)</span></p></li>
-<li id="li-925"><p id="p-derived-li-925"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{2^n}\text{.}\)</span></p></li>
-<li id="li-926"><p id="p-derived-li-926"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n+5}\text{.}\)</span></p></li>
-<li id="li-927"><p id="p-derived-li-927"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n^2+5}\text{.}\)</span></p></li>
-<li id="li-928"><p id="p-derived-li-928"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{2^n+5}\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-327"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1045">Using your chosen series and <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a>, does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2+5}\)</span> converge or diverge?</p></article></article><section class="subsection" id="subsection-39"><h3 class="heading hide-type">
+<li id="li-927"><p id="p-derived-li-927"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n}\text{.}\)</span></p></li>
+<li id="li-928"><p id="p-derived-li-928"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n^2}\text{.}\)</span></p></li>
+<li id="li-929"><p id="p-derived-li-929"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{2^n}\text{.}\)</span></p></li>
+<li id="li-930"><p id="p-derived-li-930"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n+5}\text{.}\)</span></p></li>
+<li id="li-931"><p id="p-derived-li-931"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{n^2+5}\text{.}\)</span></p></li>
+<li id="li-932"><p id="p-derived-li-932"><span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{1}{2^n+5}\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-330"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1050">Using your chosen series and <a href="" class="xref" data-knowl="./knowl/fact-SQ6directcomparisontest.html" title="Fact 4.6.12: The Direct Comparison Test">Fact 4.6.12</a>, does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2+5}\)</span> converge or diverge?</p></article></article><section class="subsection" id="subsection-39"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.6.1</span> <span class="title">Slideshow</span>
 </h3>
-<p id="p-1046">Slideshow of activities available at <a class="external" href="SQ6.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ6.slides.html</code></a>.</p></section><section class="subsection" id="subsection-40"><h3 class="heading hide-type">
+<p id="p-1051">Slideshow of activities available at <a class="external" href="SQ6.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ6.slides.html</code></a>.</p></section><section class="subsection" id="subsection-40"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.6.2</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-81"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ6" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/Sb3UUbj6-7A?&amp;modestbranding=1&amp;rel=0"></iframe></div>

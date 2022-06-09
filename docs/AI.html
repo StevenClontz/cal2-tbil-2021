@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-05T21:47:29Z       *-->
+<!--*       on 2022-06-09T18:39:52Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,7 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -62,6 +61,8 @@
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
@@ -150,38 +151,38 @@
 <span class="type">Chapter</span> <span class="codenumber">2</span> <span class="title">Applications of Integration (AI)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-10"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
-<div class="introduction" id="introduction-23">
-<p id="p-440">How do we use various techniques to integrate less simple functions?</p>
-<p id="p-441">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-24">
+<p id="p-445">How do we use various techniques to integrate less simple functions?</p>
+<p id="p-446">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-374"><p id="p-442">Compute the average value of a function on an interval.</p></li>
-<li id="li-375"><p id="p-443">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li>
-<li id="li-376"><p id="p-444">Compute volumes of solids of revolution.</p></li>
-<li id="li-377"><p id="p-445">Compute surface areas of surfaces of revolution.</p></li>
-<li id="li-378"><p id="p-446">Set up integrals to solve problems involving density, mass, and center of mass.</p></li>
+<li id="li-378"><p id="p-447">Compute the average value of a function on an interval.</p></li>
+<li id="li-379"><p id="p-448">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li>
+<li id="li-380"><p id="p-449">Compute volumes of solids of revolution.</p></li>
+<li id="li-381"><p id="p-450">Compute surface areas of surfaces of revolution.</p></li>
+<li id="li-382"><p id="p-451">Set up integrals to solve problems involving density, mass, and center of mass.</p></li>
 </ol></article><section class="introduction" id="AI-intro"><section class="paragraphs" id="AI-readiness"><h2 class="heading"><span class="title">Readiness Assurance.</span></h2>
-<p id="p-447">Before beginning this chapter, you should be able to...</p>
+<p id="p-452">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
-<li id="li-379">
-<p id="p-448">Estimate a definite integral with a Riemann sum.</p>
-<ul class="disc"><li id="li-380"><p id="p-449">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/generalizing-a-left-riemann-sum-with-equally-spaced-rectangles?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-10" id="fn-10"><sup> 1 </sup></a></p></li></ul>
-</li>
-<li id="li-381">
-<p id="p-450">Evaluate the limit of a Riemann sum to find an integral.</p>
-<ul class="disc"><li id="li-382"><p id="p-451">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/riemann-sums-and-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-11" id="fn-11"><sup> 2 </sup></a></p></li></ul>
-</li>
 <li id="li-383">
-<p id="p-452">Solve accumulation problems with definite integrals.</p>
-<ul class="disc"><li id="li-384"><p id="p-453">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-4/v/functions-defined-by-definite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-12" id="fn-12"><sup> 3 </sup></a></p></li></ul>
+<p id="p-453">Estimate a definite integral with a Riemann sum.</p>
+<ul class="disc"><li id="li-384"><p id="p-454">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/generalizing-a-left-riemann-sum-with-equally-spaced-rectangles?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-10" id="fn-10"><sup> 1 </sup></a></p></li></ul>
 </li>
 <li id="li-385">
-<p id="p-454">Find the distance between points on a curve.</p>
-<ul class="disc"><li id="li-386"><p id="p-455">Review: <a class="external" href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-13" id="fn-13"><sup> 4 </sup></a></p></li></ul>
+<p id="p-455">Evaluate the limit of a Riemann sum to find an integral.</p>
+<ul class="disc"><li id="li-386"><p id="p-456">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/riemann-sums-and-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-11" id="fn-11"><sup> 2 </sup></a></p></li></ul>
 </li>
 <li id="li-387">
-<p id="p-456">Express the sum of indexed values using summation notation.</p>
-<ul class="disc"><li id="li-388"><p id="p-457">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-14" id="fn-14"><sup> 5 </sup></a></p></li></ul>
+<p id="p-457">Solve accumulation problems with definite integrals.</p>
+<ul class="disc"><li id="li-388"><p id="p-458">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-4/v/functions-defined-by-definite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-12" id="fn-12"><sup> 3 </sup></a></p></li></ul>
+</li>
+<li id="li-389">
+<p id="p-459">Find the distance between points on a curve.</p>
+<ul class="disc"><li id="li-390"><p id="p-460">Review: <a class="external" href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-13" id="fn-13"><sup> 4 </sup></a></p></li></ul>
+</li>
+<li id="li-391">
+<p id="p-461">Express the sum of indexed values using summation notation.</p>
+<ul class="disc"><li id="li-392"><p id="p-462">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-14" id="fn-14"><sup> 5 </sup></a></p></li></ul>
 </li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="AI1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Average Value (AI1)</span></a></li>

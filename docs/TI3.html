@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-05T21:47:28Z       *-->
+<!--*       on 2022-06-09T18:39:51Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,7 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -62,6 +61,8 @@
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
@@ -149,89 +150,89 @@
 <span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Integration of trigonometry (TI3)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-4"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-111"><p id="p-199">Compute integrals involving products of trigonometric functions.</p></li></ul></article><article class="activity project-like" id="activity-TI3oddOdd"><h3 class="heading">
+<ul class="disc"><li id="li-115"><p id="p-204">Compute integrals involving products of trigonometric functions.</p></li></ul></article><article class="activity project-like" id="activity-TI3oddOdd"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span>
 </h3>
-<p id="p-200">Consider <span class="process-math">\(\displaystyle\int \sin(x)\cos(x) \, dx\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
+<p id="p-205">Consider <span class="process-math">\(\displaystyle\int \sin(x)\cos(x) \, dx\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
 <ol class="upper-alpha">
-<li id="li-112"><p id="p-derived-li-112">The method of substitution</p></li>
-<li id="li-113"><p id="p-derived-li-113">Integration by parts</p></li>
-<li id="li-114"><p id="p-derived-li-114">Other (specify your strategy)</p></li>
+<li id="li-116"><p id="p-derived-li-116">The method of substitution</p></li>
+<li id="li-117"><p id="p-derived-li-117">Integration by parts</p></li>
+<li id="li-118"><p id="p-derived-li-118">Other (specify your strategy)</p></li>
 </ol></article><article class="activity project-like" id="activity-TI3evenOdd"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span>
 </h3>
-<p id="p-201">Consider <span class="process-math">\(\displaystyle\int \sin^2(x)\cos(x) \, dx\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
+<p id="p-206">Consider <span class="process-math">\(\displaystyle\int \sin^2(x)\cos(x) \, dx\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
 <ol class="upper-alpha">
-<li id="li-115"><p id="p-derived-li-115">The method of substitution</p></li>
-<li id="li-116"><p id="p-derived-li-116">Integration by parts</p></li>
-<li id="li-117"><p id="p-derived-li-117">Other (specify your strategy)</p></li>
+<li id="li-119"><p id="p-derived-li-119">The method of substitution</p></li>
+<li id="li-120"><p id="p-derived-li-120">Integration by parts</p></li>
+<li id="li-121"><p id="p-derived-li-121">Other (specify your strategy)</p></li>
 </ol></article><article class="activity project-like" id="activity-TI3evenEven"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span>
 </h3>
-<p id="p-202">Consider <span class="process-math">\(\displaystyle\int \sin^2(x)\cos^2(x) \, dx\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
+<p id="p-207">Consider <span class="process-math">\(\displaystyle\int \sin^2(x)\cos^2(x) \, dx\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
 <ol class="upper-alpha">
-<li id="li-118"><p id="p-derived-li-118">The method of substitution</p></li>
-<li id="li-119"><p id="p-derived-li-119">Integration by parts</p></li>
-<li id="li-120"><p id="p-derived-li-120">Other (specify your strategy)</p></li>
+<li id="li-122"><p id="p-derived-li-122">The method of substitution</p></li>
+<li id="li-123"><p id="p-derived-li-123">Integration by parts</p></li>
+<li id="li-124"><p id="p-derived-li-124">Other (specify your strategy)</p></li>
 </ol></article><article class="activity project-like" id="activity-TI3evenEvenRedux"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span>
 </h3>
-<p id="p-203">Let's consider <span class="process-math">\(\displaystyle\int \sin^2(x)\cos^2(x) \, dx\)</span> again.</p>
+<p id="p-208">Let's consider <span class="process-math">\(\displaystyle\int \sin^2(x)\cos^2(x) \, dx\)</span> again.</p>
 <ol class="upper-alpha">
-<li id="li-121"><p id="p-derived-li-121">Use the fact that <span class="process-math">\(\cos^2(\theta)=\displaystyle\frac{1+cos(2\theta)}{2}\)</span> and <span class="process-math">\(\sin^2(\theta)=\displaystyle\frac{1-cos(2\theta)}{2}\)</span> to rewrite the integrand using the above identities to an integral involving <span class="process-math">\(\cos^2(2x)\text{.}\)</span></p></li>
-<li id="li-122"><p id="p-derived-li-122">Use the above identities to rewrite this new integrand as one involving <span class="process-math">\(\cos(4x)\text{.}\)</span></p></li>
-<li id="li-123"><p id="p-derived-li-123">Evaluate the integral.</p></li>
+<li id="li-125"><p id="p-derived-li-125">Use the fact that <span class="process-math">\(\cos^2(\theta)=\displaystyle\frac{1+cos(2\theta)}{2}\)</span> and <span class="process-math">\(\sin^2(\theta)=\displaystyle\frac{1-cos(2\theta)}{2}\)</span> to rewrite the integrand using the above identities to an integral involving <span class="process-math">\(\cos^2(2x)\text{.}\)</span></p></li>
+<li id="li-126"><p id="p-derived-li-126">Use the above identities to rewrite this new integrand as one involving <span class="process-math">\(\cos(4x)\text{.}\)</span></p></li>
+<li id="li-127"><p id="p-derived-li-127">Evaluate the integral.</p></li>
 </ol></article><article class="activity project-like" id="activity-TI3evenOddGeneral"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
 </h3>
-<p id="p-204">Consider <span class="process-math">\(\displaystyle\int \sin^m(x)\cos^n(x) \, dx\text{,}\)</span> where <span class="process-math">\(m\)</span> is even and <span class="process-math">\(n\)</span> is odd.  Which strategy would you choose to evaluate this integral?</p>
+<p id="p-209">Consider <span class="process-math">\(\displaystyle\int \sin^m(x)\cos^n(x) \, dx\text{,}\)</span> where <span class="process-math">\(m\)</span> is even and <span class="process-math">\(n\)</span> is odd.  Which strategy would you choose to evaluate this integral?</p>
 <ol class="upper-alpha">
-<li id="li-124"><p id="p-derived-li-124">Rewrite sine in terms of cosine by using a double-angle/half-angle identity.</p></li>
-<li id="li-125"><p id="p-derived-li-125">Rewrite cosine in terms of sine by using a double-angle/half-angle identity.</p></li>
-<li id="li-126"><p id="p-derived-li-126">Rewrite cosine in terms of sine by using a pythagorean identity.</p></li>
+<li id="li-128"><p id="p-derived-li-128">Rewrite sine in terms of cosine by using a double-angle/half-angle identity.</p></li>
+<li id="li-129"><p id="p-derived-li-129">Rewrite cosine in terms of sine by using a double-angle/half-angle identity.</p></li>
+<li id="li-130"><p id="p-derived-li-130">Rewrite cosine in terms of sine by using a pythagorean identity.</p></li>
 </ol></article><article class="activity project-like" id="activity-TI3oddOddGeneral"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span>
 </h3>
-<p id="p-205">Consider <span class="process-math">\(\displaystyle\int \sin^m(x)\cos^n(x) \, dx\text{,}\)</span> where <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> are both odd and <span class="process-math">\(m\geq n\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
+<p id="p-210">Consider <span class="process-math">\(\displaystyle\int \sin^m(x)\cos^n(x) \, dx\text{,}\)</span> where <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> are both odd and <span class="process-math">\(m\geq n\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
 <ol class="upper-alpha">
-<li id="li-127"><p id="p-derived-li-127">Rewrite sine in terms of cosine by using a pythagorean identity.</p></li>
-<li id="li-128"><p id="p-derived-li-128">Rewrite cosine in terms of sine by using a double-angle/half-angle identity.</p></li>
-<li id="li-129"><p id="p-derived-li-129">Rewrite cosine in terms of sine by using a pythagorean identity.</p></li>
+<li id="li-131"><p id="p-derived-li-131">Rewrite sine in terms of cosine by using a pythagorean identity.</p></li>
+<li id="li-132"><p id="p-derived-li-132">Rewrite cosine in terms of sine by using a double-angle/half-angle identity.</p></li>
+<li id="li-133"><p id="p-derived-li-133">Rewrite cosine in terms of sine by using a pythagorean identity.</p></li>
 </ol></article><article class="activity project-like" id="activity-TI3evenEvenGeneral"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span>
 </h3>
-<p id="p-206">Consider <span class="process-math">\(\displaystyle\int \sin^m(x)\cos^n(x) \, dx\text{,}\)</span> where <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> are both even and <span class="process-math">\(m\geq n\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
+<p id="p-211">Consider <span class="process-math">\(\displaystyle\int \sin^m(x)\cos^n(x) \, dx\text{,}\)</span> where <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> are both even and <span class="process-math">\(m\geq n\text{.}\)</span>  Which strategy would you choose to evaluate this integral?</p>
 <ol class="upper-alpha">
-<li id="li-130"><p id="p-derived-li-130">Rewrite sine in terms of cosine by using a pythagorean identity.</p></li>
-<li id="li-131"><p id="p-derived-li-131">Rewrite cosine in terms of sine by using a pythagorean identity.</p></li>
-<li id="li-132"><p id="p-derived-li-132">Rewrite everything in terms of cosine by using a double-angle/half-angle identity.</p></li>
+<li id="li-134"><p id="p-derived-li-134">Rewrite sine in terms of cosine by using a pythagorean identity.</p></li>
+<li id="li-135"><p id="p-derived-li-135">Rewrite cosine in terms of sine by using a pythagorean identity.</p></li>
+<li id="li-136"><p id="p-derived-li-136">Rewrite everything in terms of cosine by using a double-angle/half-angle identity.</p></li>
 </ol></article><article class="activity project-like" id="activity-TI3evenEvenFluency"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.8</span><span class="period">.</span>
 </h3>
-<p id="p-207">Consider <span class="process-math">\(\displaystyle\int \sin^4(x)\cos^4(x) \, dx\text{.}\)</span>  Which would be the most useful way to rewrite the integral?</p>
+<p id="p-212">Consider <span class="process-math">\(\displaystyle\int \sin^4(x)\cos^4(x) \, dx\text{.}\)</span>  Which would be the most useful way to rewrite the integral?</p>
 <ol class="upper-alpha">
-<li id="li-133"><p id="p-derived-li-133"><span class="process-math">\(\displaystyle \displaystyle\int (1-\cos^2(x))^2\cos^4(x) \, dx\)</span></p></li>
-<li id="li-134"><p id="p-derived-li-134"><span class="process-math">\(\displaystyle \displaystyle\int \sin^4(x)(1-\sin^2(x))^2 \, dx\)</span></p></li>
-<li id="li-135"><p id="p-derived-li-135"><span class="process-math">\(\displaystyle \displaystyle\int \left(\frac{1-\cos(2x)}{2}\right)^2\left(\frac{1+\cos(2x)}{2}\right)^2 \, dx\)</span></p></li>
+<li id="li-137"><p id="p-derived-li-137"><span class="process-math">\(\displaystyle \displaystyle\int (1-\cos^2(x))^2\cos^4(x) \, dx\)</span></p></li>
+<li id="li-138"><p id="p-derived-li-138"><span class="process-math">\(\displaystyle \displaystyle\int \sin^4(x)(1-\sin^2(x))^2 \, dx\)</span></p></li>
+<li id="li-139"><p id="p-derived-li-139"><span class="process-math">\(\displaystyle \displaystyle\int \left(\frac{1-\cos(2x)}{2}\right)^2\left(\frac{1+\cos(2x)}{2}\right)^2 \, dx\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI3oddOddFluency"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.9</span><span class="period">.</span>
 </h3>
-<p id="p-208">Consider <span class="process-math">\(\displaystyle\int \sin^3(x)\cos^5(x) \, dx\text{.}\)</span>  Which would be the most useful way to rewrite the integral?</p>
+<p id="p-213">Consider <span class="process-math">\(\displaystyle\int \sin^3(x)\cos^5(x) \, dx\text{.}\)</span>  Which would be the most useful way to rewrite the integral?</p>
 <ol class="upper-alpha">
-<li id="li-136"><p id="p-derived-li-136"><span class="process-math">\(\displaystyle \displaystyle\int (1-\cos^2(x))\sin(x)\cos^5(x) \, dx\)</span></p></li>
-<li id="li-137"><p id="p-derived-li-137"><span class="process-math">\(\displaystyle \displaystyle\int \sin^3(x)\left(\frac{1+\cos(2x)}{2}\right)^2\cos(x) \, dx\)</span></p></li>
-<li id="li-138"><p id="p-derived-li-138"><span class="process-math">\(\displaystyle \displaystyle\int \sin^3(x)(1-\sin^2(x))^2\cos(x) \, dx\)</span></p></li>
+<li id="li-140"><p id="p-derived-li-140"><span class="process-math">\(\displaystyle \displaystyle\int (1-\cos^2(x))\sin(x)\cos^5(x) \, dx\)</span></p></li>
+<li id="li-141"><p id="p-derived-li-141"><span class="process-math">\(\displaystyle \displaystyle\int \sin^3(x)\left(\frac{1+\cos(2x)}{2}\right)^2\cos(x) \, dx\)</span></p></li>
+<li id="li-142"><p id="p-derived-li-142"><span class="process-math">\(\displaystyle \displaystyle\int \sin^3(x)(1-\sin^2(x))^2\cos(x) \, dx\)</span></p></li>
 </ol></article><article class="remark remark-like" id="remark-1"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.3.10</span><span class="period">.</span>
 </h3>
-<p id="p-209">We might also use some other trigonometric identities to manipulate our integrands, listed in <a href="trig-table.html" class="internal" title="Appendix B: List of Trigonometric Identities">Appendix B</a>.</p></article><article class="activity project-like" id="activity-TI3productSumFlex"><h3 class="heading">
+<p id="p-214">We might also use some other trigonometric identities to manipulate our integrands, listed in <a href="trig-table.html" class="internal" title="Appendix B: List of Trigonometric Identities">Appendix B</a>.</p></article><article class="activity project-like" id="activity-TI3productSumFlex"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.11</span><span class="period">.</span>
 </h3>
-<p id="p-210">Consider <span class="process-math">\(\displaystyle\int \sin(\theta)\sin(3\theta) \, d\theta\text{.}\)</span></p>
+<p id="p-215">Consider <span class="process-math">\(\displaystyle\int \sin(\theta)\sin(3\theta) \, d\theta\text{.}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-139"><p id="p-derived-li-139">Find an identity from the table above which could be used to transform our integrand.</p></li>
-<li id="li-140"><p id="p-derived-li-140">Rewrite the integrand using the selected identity.</p></li>
-<li id="li-141"><p id="p-derived-li-141">Evaluate the integral.</p></li>
+<li id="li-143"><p id="p-derived-li-143">Find an identity from the table above which could be used to transform our integrand.</p></li>
+<li id="li-144"><p id="p-derived-li-144">Rewrite the integrand using the selected identity.</p></li>
+<li id="li-145"><p id="p-derived-li-145">Evaluate the integral.</p></li>
 </ol></article><section class="subsection" id="subsection-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.3.1</span> <span class="title">Videos</span>
 </h3>
@@ -239,7 +240,7 @@
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span>Video: Compute integrals involving products of trigonometric functions</figcaption></figure></section><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.3.2</span> <span class="title">Slideshow</span>
 </h3>
-<p id="p-211">Slideshow of activities available at <a class="external" href="TI3.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">TI3.slides.html</code></a>.</p></section></section></div></main>
+<p id="p-216">Slideshow of activities available at <a class="external" href="TI3.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">TI3.slides.html</code></a>.</p></section></section></div></main>
 </div>
 </body>
 </html>

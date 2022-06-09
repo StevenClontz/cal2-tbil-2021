@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-05-05T21:47:37Z       *-->
+<!--*       on 2022-06-09T18:39:55Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,7 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -62,6 +61,8 @@
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
@@ -149,41 +150,41 @@
 <span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">Taylor Series (PS4)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-38"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1280"><p id="p-1414">Determine  a Taylor or Maclaurin series for a function.</p></li></ul></article><article class="activity project-like" id="activity-310"><h3 class="heading">
+<ul class="disc"><li id="li-1284"><p id="p-1419">Determine  a Taylor or Maclaurin series for a function.</p></li></ul></article><article class="activity project-like" id="activity-312"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span>
 </h3>
-<article class="task exercise-like" id="task-441"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1415">Find the 2nd derivative of <span class="process-math">\(f(x)=x^2\text{.}\)</span></p></article><article class="task exercise-like" id="task-442"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1416">Find the 4th derivative of <span class="process-math">\(f(x)=x^4\text{.}\)</span></p></article><article class="task exercise-like" id="task-443"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1417">Find the 9th derivative of <span class="process-math">\(f(x)=x^9\text{.}\)</span></p></article><article class="task exercise-like" id="task-444"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1418">Which of the following represent the <span class="process-math">\(n\)</span>th and  derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span>  (Make sure it is consistent with <span class="process-math">\(n=2, 4, 9\)</span> that you found above.)</p>
+<article class="task exercise-like" id="task-444"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1420">Find the 2nd derivative of <span class="process-math">\(f(x)=x^2\text{.}\)</span></p></article><article class="task exercise-like" id="task-445"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1421">Find the 4th derivative of <span class="process-math">\(f(x)=x^4\text{.}\)</span></p></article><article class="task exercise-like" id="task-446"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1422">Find the 9th derivative of <span class="process-math">\(f(x)=x^9\text{.}\)</span></p></article><article class="task exercise-like" id="task-447"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1423">Which of the following represent the <span class="process-math">\(n\)</span>th and  derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span>  (Make sure it is consistent with <span class="process-math">\(n=2, 4, 9\)</span> that you found above.)</p>
 <ol class="upper-alpha">
-<li id="li-1281"><p id="p-derived-li-1281"><span class="process-math">\(\displaystyle n.\)</span></p></li>
-<li id="li-1282"><p id="p-derived-li-1282"><span class="process-math">\(\displaystyle n!.\)</span></p></li>
-<li id="li-1283"><p id="p-derived-li-1283"><span class="process-math">\(\displaystyle x.\)</span></p></li>
-<li id="li-1284"><p id="p-derived-li-1284"><span class="process-math">\(\displaystyle nx.\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-445"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1419">What then is the <span class="process-math">\(n+1\)</span>st derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span>   (We are differentiating with respect to <span class="process-math">\(x\text{.}\)</span>)</p></article></article><article class="activity project-like" id="activity-311"><h3 class="heading">
+<li id="li-1285"><p id="p-derived-li-1285"><span class="process-math">\(\displaystyle n.\)</span></p></li>
+<li id="li-1286"><p id="p-derived-li-1286"><span class="process-math">\(\displaystyle n!.\)</span></p></li>
+<li id="li-1287"><p id="p-derived-li-1287"><span class="process-math">\(\displaystyle x.\)</span></p></li>
+<li id="li-1288"><p id="p-derived-li-1288"><span class="process-math">\(\displaystyle nx.\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-448"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1424">What then is the <span class="process-math">\(n+1\)</span>st derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span>   (We are differentiating with respect to <span class="process-math">\(x\text{.}\)</span>)</p></article></article><article class="activity project-like" id="activity-313"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-146"><p id="p-1420">Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-446"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1421">What must <span class="process-math">\(a_0\)</span> be for <span class="process-math">\(p(0)=2\text{?}\)</span></p></article><article class="task exercise-like" id="task-447"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1422">Using your choice of <span class="process-math">\(a_0\text{,}\)</span> what must <span class="process-math">\(a_1\)</span> be for <span class="process-math">\(p'(0)=1\text{?}\)</span></p></article><article class="task exercise-like" id="task-448"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1423">Using your choice of <span class="process-math">\(a_0, a_1\text{,}\)</span> what must <span class="process-math">\(a_2\)</span> be for <span class="process-math">\(p''(0)=-2\text{?}\)</span></p></article><article class="task exercise-like" id="task-449"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1424">Using your choice of <span class="process-math">\(a_0, a_1, a_2\text{,}\)</span> what must <span class="process-math">\(a_3\)</span> be for <span class="process-math">\(p'''(0)=4\text{?}\)</span></p></article><article class="task exercise-like" id="task-450"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1425">What is <span class="process-math">\(p(x)\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-PS4taylorSeriesExist"><h3 class="heading">
+<div class="introduction" id="introduction-147"><p id="p-1425">Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-449"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1426">What must <span class="process-math">\(a_0\)</span> be for <span class="process-math">\(p(0)=2\text{?}\)</span></p></article><article class="task exercise-like" id="task-450"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1427">Using your choice of <span class="process-math">\(a_0\text{,}\)</span> what must <span class="process-math">\(a_1\)</span> be for <span class="process-math">\(p'(0)=1\text{?}\)</span></p></article><article class="task exercise-like" id="task-451"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1428">Using your choice of <span class="process-math">\(a_0, a_1\text{,}\)</span> what must <span class="process-math">\(a_2\)</span> be for <span class="process-math">\(p''(0)=-2\text{?}\)</span></p></article><article class="task exercise-like" id="task-452"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1429">Using your choice of <span class="process-math">\(a_0, a_1, a_2\text{,}\)</span> what must <span class="process-math">\(a_3\)</span> be for <span class="process-math">\(p'''(0)=4\text{?}\)</span></p></article><article class="task exercise-like" id="task-453"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1430">What is <span class="process-math">\(p(x)\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-PS4taylorSeriesExist"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-147"><p id="p-1426">Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-451"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1427">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^\prime(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-452"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1428">Use this power series to find <span class="process-math">\(f'(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-453"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1429">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^{\prime\prime}(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-454"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1430">Use this power series to find <span class="process-math">\(f''(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-455"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1431">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^{\prime\prime\prime}(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-456"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<p id="p-1432">Use this power series to find <span class="process-math">\(f'''(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-457"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<p id="p-1433">Deduce that <span class="process-math">\(f^{(n)}(c)=n!a_n\)</span> and hence <span class="process-math">\(a_n=\displaystyle\frac{f^{(n)}(c)}{n!}\text{.}\)</span></p></article></article><article class="fact theorem-like" id="fact-PS4taylorSeriesForm"><h3 class="heading">
+<div class="introduction" id="introduction-148"><p id="p-1431">Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-454"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1432">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^\prime(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-455"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1433">Use this power series to find <span class="process-math">\(f'(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-456"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1434">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^{\prime\prime}(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-457"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1435">Use this power series to find <span class="process-math">\(f''(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-458"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1436">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^{\prime\prime\prime}(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-459"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1437">Use this power series to find <span class="process-math">\(f'''(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-460"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<p id="p-1438">Deduce that <span class="process-math">\(f^{(n)}(c)=n!a_n\)</span> and hence <span class="process-math">\(a_n=\displaystyle\frac{f^{(n)}(c)}{n!}\text{.}\)</span></p></article></article><article class="fact theorem-like" id="fact-PS4taylorSeriesForm"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="period">.</span>
 </h3>
 <p id="QCd">If <span class="process-math">\(f(x)\)</span> can be written as a power series, then there is a real number <span class="process-math">\(c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(c)}{n!}(x-c)^n=f(c)+f^\prime(c)(x-c)+\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots\)</span> on some interval centered at <span class="process-math">\(x=c\text{.}\)</span></p></article><article class="fact theorem-like" id="fact-PS4taylorSeriesExistence"><h3 class="heading">
@@ -192,28 +193,28 @@
 <p id="QCd">A function can be represented as a power series if and only if it is infinitely differentiable on some open interval.</p></article><article class="definition definition-like" id="definition-PS4taylorSeries"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4.6</span><span class="period">.</span>
 </h3>
-<p id="p-1436">The <em class="emphasis">Taylor series</em> generated by <span class="process-math">\(f(x)\)</span> and <em class="emphasis">centered</em> at <span class="process-math">\(x=c\)</span> is given by <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(c)}{n!}(x-c)^n
+<p id="p-1441">The <em class="emphasis">Taylor series</em> generated by <span class="process-math">\(f(x)\)</span> and <em class="emphasis">centered</em> at <span class="process-math">\(x=c\)</span> is given by <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(c)}{n!}(x-c)^n
 =f(c)+f^\prime(c)(x-c)+\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots\text{,}\)</span> along with its interval of convergence (or <em class="emphasis">interval of validity</em>).</p>
-<p id="p-1437">When <span class="process-math">\(c=0\text{,}\)</span> <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!}(x^n)
+<p id="p-1442">When <span class="process-math">\(c=0\text{,}\)</span> <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!}(x^n)
 =f(0)+f^\prime(0)(x)+\frac{f^{\prime\prime}(0)}{2!}(x^2)+\frac{f^{(3)}(0)}{3!}(x^3)+\ldots\)</span> is called the <em class="emphasis">Maclaurin series</em> generated by <span class="process-math">\(f\text{.}\)</span></p></article><article class="definition definition-like" id="definition-PS4taylorPolynomial"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4.7</span><span class="period">.</span>
 </h3>
-<p id="p-1438"><span class="process-math">\(f(x) \approx T_k(x) = \displaystyle\sum_{n=0}^k \frac{f^{(n)}(c)}{n!}(x-c)^n = 
+<p id="p-1443"><span class="process-math">\(f(x) \approx T_k(x) = \displaystyle\sum_{n=0}^k \frac{f^{(n)}(c)}{n!}(x-c)^n = 
 f(c)+f^\prime(c)(x-c)+\displaystyle\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\displaystyle\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots+\displaystyle\frac{f^{(k)}(c)}{k!}(x-c)^k\text{,}\)</span> where <span class="process-math">\(T_k(x)\)</span> is called the <span class="process-math">\(k^{th}\)</span> degree <em class="emphasis">Taylor polynomial</em> generated by <span class="process-math">\(f\)</span> and centered at <span class="process-math">\(x=c\text{.}\)</span></p>
-<p id="p-1439">The <span class="process-math">\(k^{th}\)</span> degree Taylor polynomial can be seen as the “best” polynomial of degree <span class="process-math">\(k\)</span> or less for approximating <span class="process-math">\(f(x)\)</span> for values close to <span class="process-math">\(x=c\text{.}\)</span> Note that polynomials of degree less than <span class="process-math">\(k\)</span> are their own Taylor polynomials, and the <span class="process-math">\(1^{st}\)</span> degree Taylor polynomial is also known as the <em class="emphasis">linearization</em> of <span class="process-math">\(f\text{.}\)</span></p></article><article class="activity project-like" id="activity-PS4sineCosineExponential"><h3 class="heading">
+<p id="p-1444">The <span class="process-math">\(k^{th}\)</span> degree Taylor polynomial can be seen as the “best” polynomial of degree <span class="process-math">\(k\)</span> or less for approximating <span class="process-math">\(f(x)\)</span> for values close to <span class="process-math">\(x=c\text{.}\)</span> Note that polynomials of degree less than <span class="process-math">\(k\)</span> are their own Taylor polynomials, and the <span class="process-math">\(1^{st}\)</span> degree Taylor polynomial is also known as the <em class="emphasis">linearization</em> of <span class="process-math">\(f\text{.}\)</span></p></article><article class="activity project-like" id="activity-PS4sineCosineExponential"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.8</span><span class="period">.</span>
 </h3>
-<article class="task exercise-like" id="task-458"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1440">Find the Maclaurin series for <span class="process-math">\(f(x)=\sin(x)\)</span> about <span class="process-math">\(x=0\text{,}\)</span> along with the interval of validity.</p></article><article class="task exercise-like" id="task-459"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1441">Find the Taylor series generated by <span class="process-math">\(f(x)=\cos(x)\)</span> about <span class="process-math">\(x=0\text{.}\)</span></p></article><article class="task exercise-like" id="task-460"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1442">Find the Maclaurin series for <span class="process-math">\(f(x)=e^x\)</span> about <span class="process-math">\(x=0\text{,}\)</span> along with the interval of validity.</p></article></article><article class="remark remark-like" id="remark-5"><h3 class="heading">
+<article class="task exercise-like" id="task-461"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1445">Find the Maclaurin series for <span class="process-math">\(f(x)=\sin(x)\)</span> about <span class="process-math">\(x=0\text{,}\)</span> along with the interval of validity.</p></article><article class="task exercise-like" id="task-462"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1446">Find the Taylor series generated by <span class="process-math">\(f(x)=\cos(x)\)</span> about <span class="process-math">\(x=0\text{.}\)</span></p></article><article class="task exercise-like" id="task-463"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1447">Find the Maclaurin series for <span class="process-math">\(f(x)=e^x\)</span> about <span class="process-math">\(x=0\text{,}\)</span> along with the interval of validity.</p></article></article><article class="remark remark-like" id="remark-5"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.4.9</span><span class="period">.</span>
 </h3>
-<p id="p-1443">You might have seen <span class="process-math">\(\sqrt{-1}\)</span> written as <span class="process-math">\(i\text{,}\)</span> and know that <span class="process-math">\(z\)</span> is a complex number if <span class="process-math">\(z=a+bi\)</span> for some real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> Note that <span class="process-math">\(i^2=-1\text{,}\)</span> <span class="process-math">\(i^3=(i^2)i=-i\text{,}\)</span> <span class="process-math">\(i^4=(i^2)^2=1\text{,}\)</span> <span class="process-math">\(i^5=(i^4)i=i\text{,}\)</span> and so on. This gives rise to the following notion.</p></article><article class="definition definition-like" id="definition-PS4eulerIdentity"><h3 class="heading">
+<p id="p-1448">You might have seen <span class="process-math">\(\sqrt{-1}\)</span> written as <span class="process-math">\(i\text{,}\)</span> and know that <span class="process-math">\(z\)</span> is a complex number if <span class="process-math">\(z=a+bi\)</span> for some real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> Note that <span class="process-math">\(i^2=-1\text{,}\)</span> <span class="process-math">\(i^3=(i^2)i=-i\text{,}\)</span> <span class="process-math">\(i^4=(i^2)^2=1\text{,}\)</span> <span class="process-math">\(i^5=(i^4)i=i\text{,}\)</span> and so on. This gives rise to the following notion.</p></article><article class="definition definition-like" id="definition-PS4eulerIdentity"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4.10</span><span class="period">.</span><span class="space"> </span><span class="title">Euler's Identity.</span>
 </h3>
-<p id="p-1444">For any real number <span class="process-math">\(\theta\text{,}\)</span></p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="md-25">
+<p id="p-1449">For any real number <span class="process-math">\(\theta\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-26">
 \begin{align*}
 e^{i\theta}  &amp; =  1+\displaystyle\frac{i\theta}{1!}+\displaystyle\frac{(i\theta)^2}{2!}+\displaystyle\frac{(i\theta)^3}{3!}+\displaystyle\frac{(i\theta)^4}{4!}+\displaystyle\frac{(i\theta)^5}{5!}+\displaystyle\frac{(i\theta)^6}{6!}+\displaystyle\frac{(i\theta)^7}{7!}+\displaystyle\frac{(i\theta)^8}{8!}+\ldots\\
 &amp; =  1+i\theta-\displaystyle\frac{\theta^2}{2!}-\displaystyle\frac{i\theta^3}{3!}+\displaystyle\frac{\theta^4}{4!}+\displaystyle\frac{i\theta^5}{5!}-\displaystyle\frac{\theta^6}{6!}-\displaystyle\frac{i\theta^7}{7!}+\displaystyle\frac{\theta^8}{8!}+\ldots\\
@@ -223,10 +224,10 @@ e^{i\theta}  &amp; =  1+\displaystyle\frac{i\theta}{1!}+\displaystyle\frac{(i\th
 </div></article><article class="activity project-like" id="activity-PS4eulerIdentityExample"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.11</span><span class="period">.</span>
 </h3>
-<p id="p-1445">Use Euler's identity to evaluate <span class="process-math">\(e^{i\pi}\text{.}\)</span></p></article><section class="subsection" id="subsection-53"><h3 class="heading hide-type">
+<p id="p-1450">Use Euler's identity to evaluate <span class="process-math">\(e^{i\pi}\text{.}\)</span></p></article><section class="subsection" id="subsection-53"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.1</span> <span class="title">Slideshow</span>
 </h3>
-<p id="p-1446">Slideshow of activities available at <a class="external" href="PS4.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">PS4.slides.html</code></a>.</p></section><section class="subsection" id="subsection-54"><h3 class="heading hide-type">
+<p id="p-1451">Slideshow of activities available at <a class="external" href="PS4.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">PS4.slides.html</code></a>.</p></section><section class="subsection" id="subsection-54"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.2</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-95"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-PS4" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/bjktfFCafGs?&amp;modestbranding=1&amp;rel=0"></iframe></div>
