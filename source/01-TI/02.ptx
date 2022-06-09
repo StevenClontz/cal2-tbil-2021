@@ -314,6 +314,49 @@
     </activity>
     
     
+    <activity xml:id="activity-partssinsquare">
+        <introduction>
+            <p>
+                Consider the antiderivative <m>\displaystyle\int (\sin(x))^2dx.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Noting that <m>\displaystyle\int (\sin(x))^2dx=\displaystyle\int (\sin(x))(\sin(x))dx</m> and letting <m>u=\sin(x), dv=\sin(x)dx</m>, what equality does integration by parts yield?
+                <ol label='A'>
+                    <li><m>\displaystyle\int (\sin(x))^2dx=\sin(x)\cos(x)+\int (\cos(x))^2 dx.</m></li>
+                    <li><m>\displaystyle\int (\sin(x))^2dx=-\sin(x)\cos(x)+\int (\cos(x))^2 dx.</m></li>
+                    <li><m>\displaystyle\int (\sin(x))^2dx=\sin(x)\cos(x)-\int (\cos(x))^2 dx.</m></li>
+                    <li><m>\displaystyle\int (\sin(x))^2dx=-\sin(x)\cos(x)-\int (\cos(x))^2 dx.</m></li>
+                </ol>
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                Using the fact that <m>(\cos(x))^2=1-(\sin(x))^2</m> to rewrite the above equality.
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                Solve algebraically for <m>\displaystyle\int (\sin(x))^2dx.</m>
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    
+    <activity>
+        <statement>
+            <p>
+                Modifying the approach from <xref ref="activity-partssinsquare"/>, use parts to find <m>\displaystyle\int (\cos(x))^2dx.</m>
+            </p>
+        </statement>
+    </activity>
+    
+    
     <subsection>
         <title>Videos</title>
     <figure>

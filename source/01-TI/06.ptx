@@ -89,13 +89,17 @@
         <activity xml:id="activity-TI6FindCoeff">
             <statement>
                 <p>
-                     Suppose that one could write <m>\displaystyle\frac{4x^2-5x-2}{x^2(x-2)} =\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2}</m>.  What are the values of <m>A, B</m> and <m>C</m>?  
+                     Suppose that one could write <m>\displaystyle\frac{4x^2-5x-2}{x^2(x-2)} =\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2}</m>.  
                     
-                    <hint>
                         <p>
-                            Recall that  <m>\displaystyle \frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2} = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}.</m>
+                            Recall that:  <md>
+                            <mrow>\displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp;=\displaystyle \frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2} = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}</mrow>
+                            <mrow>\displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp; = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}</mrow>
+                            <mrow>4x^2-5x-2&amp; = Ax(x-2)+B(x-2)+Cx^2.</mrow>
+                            </md>
+                            
+                            What are the values of <m>A, B</m> and <m>C</m>?  
                         </p>
-                    </hint>
                      
                     <ol label="A">
                         <li><m>A=4, B=-5, C=-2.</m></li>
@@ -173,6 +177,61 @@
                 </p>
             </statement>
         </activity>
+    
+    <activity xml:id="activity-TI6RationaltoPoly">
+            <statement>
+                <p>
+                    Consider that the partial decomposition of <m>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}</m> is <me>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}.</me>  What equality do we obtain if we multiply both sides of the above equation by <m>(x+1)^2x</m>?
+                    <ol label="A">
+                        <li><m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2.</m></li>
+                        <li><m>x^2+5x+3=A(x+1)+B(x+1)^2+Cx.</m></li>
+                        <li><m>x^2+5x+3=Ax(x+1)+Bx+C(x+1).</m></li>
+                        <li><m>x^2+5x+3=A(x+1)+Bx+Cx^2.</m></li>
+                        <li><m>x^2+5x+3=Ax(x+1)+Bx^2+C(x+1)^2.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6SolveaCoeff">
+            <statement>
+                <p>
+                    Notice that <m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2</m>.
+                    <task>
+                        <p>Which of the following values can we determine by setting <m>x=0</m>? Select all that apply.</p>
+                    <ol label="A">
+                        <li><m>A</m></li>
+                        <li><m>B</m></li>
+                        <li><m>C</m></li>
+                    </ol>
+                    </task>
+                    <task>
+                        <p>Which of the following values can we determine by setting <m>x=-1</m>? Select all that apply.</p>
+                    <ol label="A">
+                        <li><m>A</m></li>
+                        <li><m>B</m></li>
+                        <li><m>C</m></li>
+                    </ol>
+                    </task>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6SolvelastCoeff">
+            <statement>
+                <p>
+                    Rewrite <m>Ax(x+1)+x+3(x+1)^2</m> so that <m>Ax(x+1)+x+3(x+1)^2=?x^2+?x+?</m>.  Knowing that <me>1x^2+5x+3=Ax(x+1)+x+3(x+1)^2=?x^2+?x+?,</me> can we solve for  <m>A</m>?
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI6PuttingitTogether">
+            <statement>
+                <p>
+                    By using the form of the decomposition <m>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}</m>  and the coefficients found in <xref ref="activity-TI6SolveaCoeff"/> and <xref ref="activity-TI6SolvelastCoeff"/>, evaluate <m>\displaystyle \int \frac{x^2+5x+3}{(x+1)^2x} dx</m>.
+                </p>
+            </statement>
+        </activity>
+        
+    
         <activity xml:id="activity-TI6FindCoefficients1">
             <statement>
                 <p>
@@ -232,58 +291,6 @@
         </remark>
         
         
-        <activity xml:id="activity-TI6RationaltoPoly">
-            <statement>
-                <p>
-                    Consider that the partial decomposition of <m>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}</m> is <me>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}.</me>  What equality do we obtain if we multiply both sides of the above equation by <m>(x+1)^2x</m>?
-                    <ol label="A">
-                        <li><m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2.</m></li>
-                        <li><m>x^2+5x+3=A(x+1)+B(x+1)^2+Cx.</m></li>
-                        <li><m>x^2+5x+3=Ax(x+1)+Bx+C(x+1).</m></li>
-                        <li><m>x^2+5x+3=A(x+1)+Bx+Cx^2.</m></li>
-                        <li><m>x^2+5x+3=Ax(x+1)+Bx^2+C(x+1)^2.</m></li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        <activity xml:id="activity-TI6SolveaCoeff">
-            <statement>
-                <p>
-                    Notice that <m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2</m>.
-                    <task>
-                        <p>Which of the following values can we determine by setting <m>x=0</m>? Select all that apply.</p>
-                    <ol label="A">
-                        <li><m>A</m></li>
-                        <li><m>B</m></li>
-                        <li><m>C</m></li>
-                    </ol>
-                    </task>
-                    <task>
-                        <p>Which of the following values can we determine by setting <m>x=-1</m>? Select all that apply.</p>
-                    <ol label="A">
-                        <li><m>A</m></li>
-                        <li><m>B</m></li>
-                        <li><m>C</m></li>
-                    </ol>
-                    </task>
-                </p>
-            </statement>
-        </activity>
-        <activity xml:id="activity-TI6SolvelastCoeff">
-            <statement>
-                <p>
-                    Rewrite <m>Ax(x+1)+x+3(x+1)^2</m> so that <m>Ax(x+1)+x+3(x+1)^2=?x^2+?x+?</m>.  Knowing that <me>1x^2+5x+3=Ax(x+1)+x+3(x+1)^2=?x^2+?x+?,</me> can we solve for  <m>A</m>?
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI6PuttingitTogether">
-            <statement>
-                <p>
-                    By using the form of the decomposition <m>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}</m>  and the coefficients found in <xref ref="activity-TI6SolveaCoeff"/> and <xref ref="activity-TI6SolvelastCoeff"/>, evaluate <m>\displaystyle \int \frac{x^2+5x+3}{(x+1)^2x} dx</m>.
-                </p>
-            </statement>
-        </activity>
         
         <activity xml:id="activity-TI6HandsOff">
             <statement>

@@ -94,7 +94,7 @@
             <p><m>\displaystyle \int_{1}^{100} \frac{1}{\sqrt{x}} dx</m>.</p>
         </task>
         <task>
-            <p><m>\displaystyle \int_{1?^{1000} \frac{1}{\sqrt{x}} dx</m>.</p>
+            <p><m>\displaystyle \int_{1}^{1000} \frac{1}{\sqrt{x}} dx</m>.</p>
         </task>
     </activity>
     <activity>
@@ -121,7 +121,7 @@
         <ol label="A">
                     <li><m>-\frac{1}{x}+C</m></li>
                     <li><m>-\frac{1}{a}+C</m></li>
-                    <li><m>-\frac{1}{x}+</m></li>
+                    <li><m>-\frac{1}{x}+1</m></li>
                     <li><m>-\frac{1}{a}</m></li>
                     <li><m>-\frac{1}{a}+1</m></li>
         </ol>
