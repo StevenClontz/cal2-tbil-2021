@@ -118,6 +118,16 @@
         
         <task>
             <p>
+                Plot the Cartesian point <m>P=(x,y)=(\sqrt{3},-1)</m> and draw line segments connecting the origin to <m>P</m>, the origin to <m>(x,y)=(\sqrt{3},0)</m>, and <m>P</m> to <m>(x,y)=(\sqrt{3},0)</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Solve the triangle formed by the line segments you just drew (i.e. find the lengths of all sides and the measures of each angle).
+            </p>
+        </task>
+        <task>
+            <p>
                 Find all polar coordinates for the Cartesian point <m>(x,y)=(\sqrt{3},-1)</m>.
             </p>
         </task>
