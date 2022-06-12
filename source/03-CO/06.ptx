@@ -17,6 +17,10 @@
 Recall that the length of a parametric curve is given by <me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</me>.
             </p>
         </introduction>
+        
+        
+        
+        
         <task>
             <p>
 Let <m>x(t)=r\cos(\theta)</m> and <m>y(t)=r\sin(\theta)</m> and show that the length of a polar curve <m>r=f(\theta)</m> with <m>\alpha\leq\theta\leq\beta</m> is given by
@@ -24,6 +28,9 @@ Let <m>x(t)=r\cos(\theta)</m> and <m>y(t)=r\sin(\theta)</m> and show that the le
                 
             </p>
             
+        </task>
+        <task>
+            <p>Find an integral computing the arclength of the polar curve defined by <m>r=3\cos(\theta)-2</m> on <m>\pi/3\leq\theta\leq\pi</m>.</p>
         </task>
         <task>
             <p>Find the length of the cardioid <m>r=1-\cos(\theta)</m>.</p>
