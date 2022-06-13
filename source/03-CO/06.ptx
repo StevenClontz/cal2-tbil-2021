@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="CO6" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>(CO6)</title>
+  <title>Polar area (CO6)</title>
     <objectives>
         <ul>
             <li>
@@ -9,36 +9,107 @@
             </li>
         </ul>
     </objectives>
-
     
-    <activity xml:id="co6-activity-polar-length">
-        <introduction>
-            <p>
-Recall that the length of a parametric curve is given by <me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</me>.
-            </p>
-        </introduction>
+    
+    
+    
+    
+      <fact xml:id="fact-CO6polarIntegral">
+          
+      <p permid="QCd">
+        The area of the ``fan-shaped'' region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> is given by
+          <me>\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}d\theta</me>.
+
+      </p>
+        </fact>
+    
+    
+        <figure>
+                <caption>Finding the polar area differential</caption>
+                    <image xml:id="polarAreaDifferential" width="100%">
+                        <description>Illustration of polar area differential.</description>
+                        <latex-image>
+                          \begin{tikzpicture}[>=latex]
+
+% Draw the lines at multiples of pi/12
+\foreach \ang in {0,...,31} {
+  \draw [lightgray] (0,0) -- (\ang * 180 / 16:4);
+}
+
+% Concentric circles and radius labels
+\foreach \s in {0, 1, 2, 3} {
+  \draw [lightgray] (0,0) circle (\s + 0.5);
+  \draw (0,0) circle (\s);
+  \node [fill=white] at (\s, 0) [below] {\scriptsize $\s$};
+}
+
+% Add the labels at multiples of pi/4
+\foreach \ang/\lab/\dir in {
+  0/0/right,
+  1/{\pi/4}/{above right},
+  2/{\pi/2}/above,
+  3/{3\pi/4}/{above left},
+  4/{\pi}/left,
+  5/{5\pi/4}/{below left},
+  7/{7\pi/4}/{below right},
+  6/{3\pi/2}/below} {
+  \draw (0,0) -- (\ang * 180 / 4:4.1);
+  \node [fill=white] at (\ang * 180 / 4:4.2) [\dir] {\scriptsize $\lab$};
+}
+
+% The double-lined circle around the whole diagram
+\draw [style=double] (0,0) circle (4);
+
+\draw [fill=red!50!black, opacity=0.4] ({cos(30)},{sin(30)})--plot [domain=pi/6:pi/3]
+  (xy polar cs:angle=\x r, radius= {2+2*cos(\x r)})--plot [domain=pi/3:pi/6]
+  (xy polar cs:angle=\x r, radius= {1})--({cos(30)},{sin(30)});
+\draw [thick, color=red, domain=0:2*pi, samples=200, smooth]
+  plot (xy polar cs:angle=\x r, radius={2+2*cos(\x r)});
+\draw [thick, color=blue, domain=0:2*pi, samples=200, smooth]
+  plot (xy polar cs:angle=\x r, radius={1});  
+  
+\draw [fill=blue!50!black, opacity=0.4] ({cos(30)},{sin(30)})--plot [domain=pi/6:4*pi/18]
+  (xy polar cs:angle=\x r, radius= {2+2*cos(pi/6 r)})--plot [domain=4*pi/18:pi/6]
+  (xy polar cs:angle=\x r, radius= {1})--({cos(30)},{sin(30)});
+  
+\draw [fill=blue!50!black, opacity=0.4] ({cos(40)},{sin(40)})--plot [domain=4*pi/18:5*pi/18]
+  (xy polar cs:angle=\x r, radius= {2+2*cos(4*pi/18 r)})--plot [domain=5*pi/18:4*pi/18]
+  (xy polar cs:angle=\x r, radius= {1})--({cos(40)},{sin(40)});
+
+\draw [fill=blue!50!black, opacity=0.4] ({cos(50)},{sin(50)})--plot [domain=5*pi/18:6*pi/18]
+  (xy polar cs:angle=\x r, radius= {2+2*cos(5*pi/18 r)})--plot [domain=6*pi/18:5*pi/18]
+  (xy polar cs:angle=\x r, radius= {1})--({cos(50)},{sin(50)});  
+%\node [fill=white] at (2,1) {$r=1+\cos\theta$};
+
+\draw[purple, dashed] (0,0)--({cos(30)*(2+2*cos(30))}, {sin(30)*(2+2*cos(30))});
+\draw[purple, dashed] (0,0)--({cos(40)*(2+2*cos(30))}, {sin(40)*(2+2*cos(30))});
+\draw[purple, dashed] (0,0)--({cos(50)*(2+2*cos(40))}, {sin(50)*(2+2*cos(40))});
+\draw[purple, dashed] (0,0)--({cos(60)*(2+2*cos(50))}, {sin(60)*(2+2*cos(50))});
+
+\end{tikzpicture} 
+                        </latex-image>
+                    </image>
+            </figure>
         
+        
+    
+    
+    <activity xml:id="co6-activity-polar-area">
         
         
         
         <task>
-            <p>
-Let <m>x(t)=r\cos(\theta)</m> and <m>y(t)=r\sin(\theta)</m> and show that the length of a polar curve <m>r=f(\theta)</m> with <m>\alpha\leq\theta\leq\beta</m> is given by
-                <me>\int_{\theta=\alpha}^{\theta=\beta} \sqrt{\left(r\right)^2+\left(\frac{dr}{d\theta}\right)^2}d\theta</me>.
-                
-            </p>
-            
+            <p>Find an integral computing the area of the region defined by <m>0\leq r\leq-\cos(\theta)+5</m> and <m>\pi/2\leq \theta\leq 3\pi/4</m>.</p>
         </task>
         <task>
-            <p>Find an integral computing the arclength of the polar curve defined by <m>r=3\cos(\theta)-2</m> on <m>\pi/3\leq\theta\leq\pi</m>.</p>
+            <p>Find the area enclosed by the cardioid <m>r=2(1+\cos(\theta)</m>.</p>
         </task>
         <task>
-            <p>Find the length of the cardioid <m>r=1-\cos(\theta)</m>.</p>
+            <p>Find the area enclosed by one loop of the 4-petaled rose <m>r=\cos(2\theta)</m>.</p>
         </task>
     </activity>
     
-    
-    
+
 <!--     <activity xml:id="co1-activity-xy-chart">
         <introduction>
             <p>

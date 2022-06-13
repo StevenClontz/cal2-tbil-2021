@@ -34,7 +34,7 @@
             </ol>
         </task>
         
-        <task><p>Find a formula that allows us to move from one term to the next one.</p>
+        <task><p>Where possible, find a formula that allows us to move from one term to the next one.</p>
         </task>
             
     </activity>
@@ -42,7 +42,7 @@
     <remark>
         <statement>
             <p>
-    As seen in the previous activity, having too few terms may prevent us from finding a unique way to continue creating a sequence of numbers. In fact, we need sufficiently many terms to uniquely continue a sequence of numbers uniquely (and how many terms is sufficient depends on which sequence of numbers you are trying to generate). Sometimes, we do not want to write out all of the terms needed to allow for this. Therefore, we will want to find short-hand notation that allows us to do so.
+    As seen in the previous activity, having too few terms may prevent us from finding a unique way to continue creating a sequence of numbers. In fact, we need sufficiently many terms to uniquely continue a sequence of numbers (and how many terms is sufficient depends on which sequence of numbers you are trying to generate). Sometimes, we do not want to write out all of the terms needed to allow for this. Therefore, we will want to find short-hand notation that allows us to do so.
                 </p>
             </statement>
     </remark>
@@ -78,6 +78,7 @@
             <li><m>\frac{26}{27}</m></li>
             <li><m>\frac{27}{28}</m></li>
             <li><m>\frac{28}{27}</m></li>
+            <li><m>\frac{29}{28}</m></li>
         </ol>
             </p>
             </statement>
@@ -85,12 +86,13 @@
     
     <activity xml:id="activity-SQ1findtermfromlistshift">
         <statement>
-        <p>Let <m>a_n</m> be the <m>n</m>th term in the sequence <m>\displaystyle \left\{\frac{n+1}{n}\right\}_{n=0}^\infty</m>. Which of the following terms corresponds to the <m>27^{th}</m> term of this sequence?
+        <p>Let <m>a_n</m> be the <m>n</m>th term in the sequence <m>\displaystyle \left\{\frac{n+1}{n}\right\}_{n=2}^\infty</m>. Which of the following terms corresponds to the <m>27^{th}</m> term of this sequence?
         <ol label="A">
             <li><m>\frac{27}{26}</m></li>
             <li><m>\frac{26}{27}</m></li>
             <li><m>\frac{27}{28}</m></li>
             <li><m>\frac{28}{27}</m></li>
+            <li><m>\frac{29}{28}</m></li>
         </ol>
             
             </p>
@@ -114,20 +116,19 @@
     
     <activity xml:id="activity-SQ1findclosedformuladiverge">
         <statement>
-        <p>Let <m>a_n</m> be the <m>n</m>th term in the sequence <m>0, 3, 8, 15, 24, \ldots</m>. Find a formula for <m>a_n</m>.</p>
+        <p>Find a closed form for the sequence <m>0, 3, 8, 15, 24, \ldots</m>.</p>
             </statement>
     </activity>
     
     <activity xml:id="activity-SQ1findclosedformulaconverge">
         <statement>
-        <p>Let <m>a_n</m> be the <m>n</m>th term in the sequence <m>\displaystyle \frac{12}{1}, \frac{16}{2}, \frac{20}{3}, \frac{24}{4}, \frac{28}{5}, \ldots</m>. Find a formula for <m>a_n</m>.</p>
+        <p>Find a closed form for the sequence <m>\displaystyle \frac{12}{1}, \frac{16}{2}, \frac{20}{3}, \frac{24}{4}, \frac{28}{5}, \ldots</m>.</p>
             </statement>
     </activity>
 
     <activity xml:id="activity-SQ1findclosedformulaRECURSIVE">
         <statement>
         <p>Let <m>a_n</m> be the <m>n</m>th term in the sequence <m>1, 1, 2, 3, 5, 8, \ldots</m>. Find a formula for <m>a_n</m>.</p>
-            
             </statement>
     </activity>
     
@@ -138,6 +139,9 @@
             </p>    
             </statement>
         </definition>
+
+    <activity><statement><p>Consider the sequence defined by <m>a_1=6</m> and <m>a_{k+1}=4a_k-7</m> for <m>k\geq 1</m>. What are the first four terms?</p></statement>
+    </activity>
     
     <activity> 
         <statement>
@@ -152,17 +156,17 @@
             </statement>
     </activity>
     
-    <activity> <statement><p>Once more, consider the sequence <m>1, 1, 2, 3, 5, 8, \ldots</m> from the RECURSIVE activity. Suppose <m>a_1=1</m> and <m>a_2=1</m>. Give a recursive formula for <m>a_n</m> for all <m>n\geq 3</m>.</p>
+    <activity> <statement><p>Once more, consider the sequence <m>1, 1, 2, 3, 5, 8, \ldots</m> from <xref ref="activity-SQ1findclosedformulaRECURSIVE"/>. Suppose <m>a_1=1</m> and <m>a_2=1</m>. Give a recursive formula for <m>a_n</m> for all <m>n\geq 3</m>.</p>
         </statement>
     </activity>
     
     <activity><statement><p>Give a recursive formula that generates the sequence <m>1, 2, 4, 8, 16, 32, \ldots</m>.</p></statement>
     </activity>
     
-    <activity><statement><p>Consider the sequence defined by <m>a_1=6</m> and <m>a_{k+1}=4a_k-7</m> for <m>k\geq 1</m>. What are the first four terms?</p></statement>
-    </activity>
-    
-    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ1.slides.html"/>.</p>
+    </subsection>
     
     <subsection>
         <title>Videos</title>
@@ -172,17 +176,7 @@
 		</video>
         <caption>Video: Define and use explicit and recursive formulas for sequences</caption>
     </figure>
-         
-        
-        
-    </subsection>
-    
-    
-    <subsection>
-        <title>Slideshow</title>
-        <p>Slideshow of activities available at <url href="SQ1.slides.html"/>.</p>
-    </subsection>
-    
-    
+
+    </subsection>    
     
 </section>
