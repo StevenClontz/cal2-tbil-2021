@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-12T23:44:46Z       *-->
+<!--*       on 2022-06-13T21:38:39Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -114,8 +114,8 @@
 <li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
 <li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
 <li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
-<li><a href="CO5.html" data-scroll="CO5" class="internal">(CO5)</a></li>
-<li><a href="CO6.html" data-scroll="CO6" class="internal">(CO6)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
 </ul>
 </li>
 <li class="link">
@@ -173,10 +173,10 @@
 <li id="li-690"><p id="p-derived-li-690"><span class="process-math">\(\displaystyle 1, 2, 4, \ldots\)</span></p></li>
 <li id="li-691"><p id="p-derived-li-691"><span class="process-math">\(\displaystyle 7, 12, 20, \ldots\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-236"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-868">Find a formula that allows us to move from one term to the next one.</p></article></article><article class="remark remark-like" id="remark-3"><h3 class="heading">
+<p id="p-868">Where possible, find a formula that allows us to move from one term to the next one.</p></article></article><article class="remark remark-like" id="remark-3"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
 </h3>
-<p id="p-869">As seen in the previous activity, having too few terms may prevent us from finding a unique way to continue creating a sequence of numbers. In fact, we need sufficiently many terms to uniquely continue a sequence of numbers uniquely (and how many terms is sufficient depends on which sequence of numbers you are trying to generate). Sometimes, we do not want to write out all of the terms needed to allow for this. Therefore, we will want to find short-hand notation that allows us to do so.</p></article><article class="definition definition-like" id="definition-6"><h3 class="heading">
+<p id="p-869">As seen in the previous activity, having too few terms may prevent us from finding a unique way to continue creating a sequence of numbers. In fact, we need sufficiently many terms to uniquely continue a sequence of numbers (and how many terms is sufficient depends on which sequence of numbers you are trying to generate). Sometimes, we do not want to write out all of the terms needed to allow for this. Therefore, we will want to find short-hand notation that allows us to do so.</p></article><article class="definition definition-like" id="definition-6"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
 </h3>
 <p id="p-870">Let <span class="process-math">\(a_n\)</span> denote the <span class="process-math">\(n\)</span>th term in a sequence. Then <span class="process-math">\(\displaystyle \{a_n\}_{n=1}^\infty=a_1, a_2, \ldots, a_n, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1WhereToStart"><h3 class="heading">
@@ -198,32 +198,34 @@
 <li id="li-698"><p id="p-derived-li-698"><span class="process-math">\(\displaystyle \frac{26}{27}\)</span></p></li>
 <li id="li-699"><p id="p-derived-li-699"><span class="process-math">\(\displaystyle \frac{27}{28}\)</span></p></li>
 <li id="li-700"><p id="p-derived-li-700"><span class="process-math">\(\displaystyle \frac{28}{27}\)</span></p></li>
+<li id="li-701"><p id="p-derived-li-701"><span class="process-math">\(\displaystyle \frac{29}{28}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ1findtermfromlistshift"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.7</span><span class="period">.</span>
 </h3>
-<p id="p-873">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle \left\{\frac{n+1}{n}\right\}_{n=0}^\infty\text{.}\)</span> Which of the following terms corresponds to the <span class="process-math">\(27^{th}\)</span> term of this sequence?</p>
+<p id="p-873">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle \left\{\frac{n+1}{n}\right\}_{n=2}^\infty\text{.}\)</span> Which of the following terms corresponds to the <span class="process-math">\(27^{th}\)</span> term of this sequence?</p>
 <ol class="upper-alpha">
-<li id="li-701"><p id="p-derived-li-701"><span class="process-math">\(\displaystyle \frac{27}{26}\)</span></p></li>
-<li id="li-702"><p id="p-derived-li-702"><span class="process-math">\(\displaystyle \frac{26}{27}\)</span></p></li>
-<li id="li-703"><p id="p-derived-li-703"><span class="process-math">\(\displaystyle \frac{27}{28}\)</span></p></li>
-<li id="li-704"><p id="p-derived-li-704"><span class="process-math">\(\displaystyle \frac{28}{27}\)</span></p></li>
+<li id="li-702"><p id="p-derived-li-702"><span class="process-math">\(\displaystyle \frac{27}{26}\)</span></p></li>
+<li id="li-703"><p id="p-derived-li-703"><span class="process-math">\(\displaystyle \frac{26}{27}\)</span></p></li>
+<li id="li-704"><p id="p-derived-li-704"><span class="process-math">\(\displaystyle \frac{27}{28}\)</span></p></li>
+<li id="li-705"><p id="p-derived-li-705"><span class="process-math">\(\displaystyle \frac{28}{27}\)</span></p></li>
+<li id="li-706"><p id="p-derived-li-706"><span class="process-math">\(\displaystyle \frac{29}{28}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ1findtermfromlist"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.8</span><span class="period">.</span>
 </h3>
 <p id="p-874">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle 1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \ldots\text{.}\)</span> Identify the <span class="process-math">\(81\)</span>st term of this sequence.</p>
 <ol class="upper-alpha">
-<li id="li-705"><p id="p-derived-li-705"><span class="process-math">\(\displaystyle \frac{1}{79}\)</span></p></li>
-<li id="li-706"><p id="p-derived-li-706"><span class="process-math">\(\displaystyle \frac{1}{80}\)</span></p></li>
-<li id="li-707"><p id="p-derived-li-707"><span class="process-math">\(\displaystyle \frac{1}{81}\)</span></p></li>
-<li id="li-708"><p id="p-derived-li-708"><span class="process-math">\(\displaystyle \frac{1}{82}\)</span></p></li>
-<li id="li-709"><p id="p-derived-li-709"><span class="process-math">\(\displaystyle \frac{1}{83}\)</span></p></li>
+<li id="li-707"><p id="p-derived-li-707"><span class="process-math">\(\displaystyle \frac{1}{79}\)</span></p></li>
+<li id="li-708"><p id="p-derived-li-708"><span class="process-math">\(\displaystyle \frac{1}{80}\)</span></p></li>
+<li id="li-709"><p id="p-derived-li-709"><span class="process-math">\(\displaystyle \frac{1}{81}\)</span></p></li>
+<li id="li-710"><p id="p-derived-li-710"><span class="process-math">\(\displaystyle \frac{1}{82}\)</span></p></li>
+<li id="li-711"><p id="p-derived-li-711"><span class="process-math">\(\displaystyle \frac{1}{83}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ1findclosedformuladiverge"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.9</span><span class="period">.</span>
 </h3>
-<p id="p-875">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(0, 3, 8, 15, 24, \ldots\text{.}\)</span> Find a formula for <span class="process-math">\(a_n\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1findclosedformulaconverge"><h3 class="heading">
+<p id="p-875">Find a closed form for the sequence <span class="process-math">\(0, 3, 8, 15, 24, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1findclosedformulaconverge"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.10</span><span class="period">.</span>
 </h3>
-<p id="p-876">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle \frac{12}{1}, \frac{16}{2}, \frac{20}{3}, \frac{24}{4}, \frac{28}{5}, \ldots\text{.}\)</span> Find a formula for <span class="process-math">\(a_n\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1findclosedformulaRECURSIVE"><h3 class="heading">
+<p id="p-876">Find a closed form for the sequence <span class="process-math">\(\displaystyle \frac{12}{1}, \frac{16}{2}, \frac{20}{3}, \frac{24}{4}, \frac{28}{5}, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1findclosedformulaRECURSIVE"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.11</span><span class="period">.</span>
 </h3>
 <p id="p-877">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(1, 1, 2, 3, 5, 8, \ldots\text{.}\)</span> Find a formula for <span class="process-math">\(a_n\text{.}\)</span></p></article><article class="definition definition-like" id="definition-7"><h3 class="heading">
@@ -232,28 +234,28 @@
 <p id="p-878">A sequence is recursive if the terms are defined as a function of previous terms (with the necessary initial terms provided).</p></article><article class="activity project-like" id="activity-208"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.13</span><span class="period">.</span>
 </h3>
-<p id="p-879">Consider the sequence <span class="process-math">\(2, 7, 22, 67, 202, \ldots\text{.}\)</span> Which of the following offers the best recursive formula for this sequence?</p>
-<ol class="upper-alpha">
-<li id="li-710"><p id="p-derived-li-710"><span class="process-math">\(\displaystyle 3a_n+1\)</span></p></li>
-<li id="li-711"><p id="p-derived-li-711"><span class="process-math">\(a_1=2, a_k=3a_{k-1}+1\)</span> for <span class="process-math">\(k&gt;1\)</span></p></li>
-<li id="li-712"><p id="p-derived-li-712"><span class="process-math">\(a_1=2, a_2=7, a_k=3a_{k-1}+1\)</span> for <span class="process-math">\(k&gt;2\)</span></p></li>
-</ol></article><article class="activity project-like" id="activity-209"><h3 class="heading">
+<p id="p-879">Consider the sequence defined by <span class="process-math">\(a_1=6\)</span> and <span class="process-math">\(a_{k+1}=4a_k-7\)</span> for <span class="process-math">\(k\geq 1\text{.}\)</span> What are the first four terms?</p></article><article class="activity project-like" id="activity-209"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.14</span><span class="period">.</span>
 </h3>
-<p id="p-880">Once more, consider the sequence <span class="process-math">\(1, 1, 2, 3, 5, 8, \ldots\)</span> from the RECURSIVE activity. Suppose <span class="process-math">\(a_1=1\)</span> and <span class="process-math">\(a_2=1\text{.}\)</span> Give a recursive formula for <span class="process-math">\(a_n\)</span> for all <span class="process-math">\(n\geq 3\text{.}\)</span></p></article><article class="activity project-like" id="activity-210"><h3 class="heading">
+<p id="p-880">Consider the sequence <span class="process-math">\(2, 7, 22, 67, 202, \ldots\text{.}\)</span> Which of the following offers the best recursive formula for this sequence?</p>
+<ol class="upper-alpha">
+<li id="li-712"><p id="p-derived-li-712"><span class="process-math">\(\displaystyle 3a_n+1\)</span></p></li>
+<li id="li-713"><p id="p-derived-li-713"><span class="process-math">\(a_1=2, a_k=3a_{k-1}+1\)</span> for <span class="process-math">\(k&gt;1\)</span></p></li>
+<li id="li-714"><p id="p-derived-li-714"><span class="process-math">\(a_1=2, a_2=7, a_k=3a_{k-1}+1\)</span> for <span class="process-math">\(k&gt;2\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-210"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.15</span><span class="period">.</span>
 </h3>
-<p id="p-881">Give a recursive formula that generates the sequence <span class="process-math">\(1, 2, 4, 8, 16, 32, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-211"><h3 class="heading">
+<p id="p-881">Once more, consider the sequence <span class="process-math">\(1, 1, 2, 3, 5, 8, \ldots\)</span> from <a href="" class="xref" data-knowl="./knowl/activity-SQ1findclosedformulaRECURSIVE.html" title="Activity 4.1.11">Activity 4.1.11</a>. Suppose <span class="process-math">\(a_1=1\)</span> and <span class="process-math">\(a_2=1\text{.}\)</span> Give a recursive formula for <span class="process-math">\(a_n\)</span> for all <span class="process-math">\(n\geq 3\text{.}\)</span></p></article><article class="activity project-like" id="activity-211"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.16</span><span class="period">.</span>
 </h3>
-<p id="p-882">Consider the sequence defined by <span class="process-math">\(a_1=6\)</span> and <span class="process-math">\(a_{k+1}=4a_k-7\)</span> for <span class="process-math">\(k\geq 1\text{.}\)</span> What are the first four terms?</p></article><section class="subsection" id="subsection-29"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">4.1.1</span> <span class="title">Videos</span>
+<p id="p-882">Give a recursive formula that generates the sequence <span class="process-math">\(1, 2, 4, 8, 16, 32, \ldots\text{.}\)</span></p></article><section class="subsection" id="subsection-29"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.1</span> <span class="title">Slideshow</span>
+</h3>
+<p id="p-883">Slideshow of activities available at <a class="external" href="SQ1.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ1.slides.html</code></a>.</p></section><section class="subsection" id="subsection-30"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.2</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-75"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/JmCWeEXQAJw?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">78<span class="period">.</span></span><span class="space"> </span>Video: Define and use explicit and recursive formulas for sequences</figcaption></figure></section><section class="subsection" id="subsection-30"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">4.1.2</span> <span class="title">Slideshow</span>
-</h3>
-<p id="p-883">Slideshow of activities available at <a class="external" href="SQ1.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ1.slides.html</code></a>.</p></section></section></div></main>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">78<span class="period">.</span></span><span class="space"> </span>Video: Define and use explicit and recursive formulas for sequences</figcaption></figure></section></section></div></main>
 </div>
 </body>
 </html>

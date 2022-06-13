@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-12T23:44:46Z       *-->
+<!--*       on 2022-06-13T21:38:39Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -114,8 +114,8 @@
 <li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
 <li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
 <li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
-<li><a href="CO5.html" data-scroll="CO5" class="internal">(CO5)</a></li>
-<li><a href="CO6.html" data-scroll="CO6" class="internal">(CO6)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
 </ul>
 </li>
 <li class="link">
@@ -150,7 +150,7 @@
 <span class="type">Section</span> <span class="codenumber">4.5</span> <span class="title">Basic Convergence Tests (SQ5)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-29"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-861"><p id="p-980">Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ5investigateDivergentSeries"><h3 class="heading">
+<ul class="disc"><li id="li-863"><p id="p-980">Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ5investigateDivergentSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-94"><p id="p-981">For each of the following series, write out the first several terms, and then argue whether the series converges or diverges.</p></div>
@@ -168,8 +168,8 @@
 </h3>
 <p id="QCd">If <span class="process-math">\(\displaystyle\sum a_n=A\text{,}\)</span> <span class="process-math">\(\displaystyle\sum b_n=B\text{,}\)</span> and <span class="process-math">\(c\)</span> is a real number, then</p>
 <ol class="decimal">
-<li id="li-862"><p id="p-derived-li-862"><span class="process-math">\(\displaystyle\sum ca_n=c\displaystyle\sum a_n=cA\text{,}\)</span> and</p></li>
-<li id="li-863"><p id="p-derived-li-863"><span class="process-math">\(\displaystyle\sum a_n+\displaystyle\sum b_n=\displaystyle\sum (a_n+b_n)=A+B\text{.}\)</span></p></li>
+<li id="li-864"><p id="p-derived-li-864"><span class="process-math">\(\displaystyle\sum ca_n=c\displaystyle\sum a_n=cA\text{,}\)</span> and</p></li>
+<li id="li-865"><p id="p-derived-li-865"><span class="process-math">\(\displaystyle\sum a_n+\displaystyle\sum b_n=\displaystyle\sum (a_n+b_n)=A+B\text{.}\)</span></p></li>
 </ol></article><article class="fact theorem-like" id="fact-SQ5boundedPartialSums"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.5</span><span class="period">.</span>
 </h3>
@@ -210,16 +210,16 @@
 </h3>
 <p id="QCd">The series <span class="process-math">\(\displaystyle\sum (-1)^{n+1}u_n\)</span> converges if all of the following conditions are satisfied:</p>
 <ol class="decimal">
-<li id="li-864"><p id="p-derived-li-864"><span class="process-math">\(u_n\)</span> is always positive,</p></li>
-<li id="li-865"><p id="p-derived-li-865">there is an integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(u_n\geq u_{n+1}\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> and</p></li>
-<li id="li-866"><p id="p-derived-li-866"><span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}u_n=0\text{.}\)</span></p></li>
+<li id="li-866"><p id="p-derived-li-866"><span class="process-math">\(u_n\)</span> is always positive,</p></li>
+<li id="li-867"><p id="p-derived-li-867">there is an integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(u_n\geq u_{n+1}\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> and</p></li>
+<li id="li-868"><p id="p-derived-li-868"><span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}u_n=0\text{.}\)</span></p></li>
 </ol></article><article class="fact theorem-like" id="fact-SQ8alternatingSeriesEstimation"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.13</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Series Estimation Theorem.</span>
 </h3>
 <p id="QCd">If the alternating series <span class="process-math">\(\displaystyle\sum a_n=\displaystyle\sum (-1)^{n+1}u_n\)</span> converges to <span class="process-math">\(L\)</span> and has <span class="process-math">\(n^{th}\)</span> partial sum <span class="process-math">\(S_n\text{,}\)</span> then for <span class="process-math">\(n\geq N\)</span> (as in the alternating series test):</p>
 <ol class="decimal">
-<li id="li-867"><p id="p-derived-li-867"><span class="process-math">\(|L-S_n|\)</span> is less than <span class="process-math">\(|a_{n+1}|\text{,}\)</span> and</p></li>
-<li id="li-868"><p id="p-derived-li-868"><span class="process-math">\((L-S_n)\)</span> has the same sign as <span class="process-math">\(a_{n+1}\text{.}\)</span></p></li>
+<li id="li-869"><p id="p-derived-li-869"><span class="process-math">\(|L-S_n|\)</span> is less than <span class="process-math">\(|a_{n+1}|\text{,}\)</span> and</p></li>
+<li id="li-870"><p id="p-derived-li-870"><span class="process-math">\((L-S_n)\)</span> has the same sign as <span class="process-math">\(a_{n+1}\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ5alternatingHarmonicSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.14</span><span class="period">.</span>
 </h3>

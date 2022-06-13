@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-12T23:44:46Z       *-->
+<!--*       on 2022-06-13T21:38:39Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal2 (CO6)</title>
+<title>TBIL-Cal2 Polar area (CO6)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -114,8 +114,8 @@
 <li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
 <li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
 <li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
-<li><a href="CO5.html" data-scroll="CO5" class="internal">(CO5)</a></li>
-<li><a href="CO6.html" data-scroll="CO6" class="active">(CO6)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="active">Polar area (CO6)</a></li>
 </ul>
 </li>
 <li class="link">
@@ -147,29 +147,25 @@
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="CO6"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.6</span> <span class="title">(CO6)</span>
+<span class="type">Section</span> <span class="codenumber">3.6</span> <span class="title">Polar area (CO6)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-23"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-665"><p id="p-841">Compute areas bounded by curves given in polar coordinates.</p></li></ul></article><article class="activity project-like" id="co6-activity-polar-length"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.6.1</span><span class="period">.</span>
+<ul class="disc"><li id="li-665"><p id="p-841">Compute areas bounded by curves given in polar coordinates.</p></li></ul></article><article class="fact theorem-like" id="fact-CO6polarIntegral"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">3.6.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-73">
-<p id="p-842">Recall that the length of a parametric curve is given by</p>
+<p id="QCd">The area of the ``fan-shaped'' region between the pole and <span class="process-math">\(r=f(\theta)\)</span> as the angle <span class="process-math">\(\theta\)</span> ranges from <span class="process-math">\(\alpha\)</span> to <span class="process-math">\(\beta\)</span> is given by</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt\text{.}
+\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}d\theta\text{.}
 \end{equation*}
-</div>
-</div>
+</div></article><figure class="figure figure-like" id="figure-74"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/polarAreaDifferential.svg" role="img" class="contained" alt="Illustration of polar area differential."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">77<span class="period">.</span></span><span class="space"> </span>Finding the polar area differential</figcaption></figure><article class="activity project-like" id="co6-activity-polar-area"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.6.2</span><span class="period">.</span>
+</h3>
 <article class="task exercise-like" id="task-232"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-843">Let <span class="process-math">\(x(t)=r\cos(\theta)\)</span> and <span class="process-math">\(y(t)=r\sin(\theta)\)</span> and show that the length of a polar curve <span class="process-math">\(r=f(\theta)\)</span> with <span class="process-math">\(\alpha\leq\theta\leq\beta\)</span> is given by</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\int_{\theta=\alpha}^{\theta=\beta} \sqrt{\left(r\right)^2+\left(\frac{dr}{d\theta}\right)^2}d\theta\text{.}
-\end{equation*}
-</div></article><article class="task exercise-like" id="task-233"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-844">Find an integral computing the arclength of the polar curve defined by <span class="process-math">\(r=3\cos(\theta)-2\)</span> on <span class="process-math">\(\pi/3\leq\theta\leq\pi\text{.}\)</span></p></article><article class="task exercise-like" id="task-234"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-845">Find the length of the cardioid <span class="process-math">\(r=1-\cos(\theta)\text{.}\)</span></p></article></article></section></div></main>
+<p id="p-843">Find an integral computing the area of the region defined by <span class="process-math">\(0\leq r\leq-\cos(\theta)+5\)</span> and <span class="process-math">\(\pi/2\leq \theta\leq 3\pi/4\text{.}\)</span></p></article><article class="task exercise-like" id="task-233"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-844">Find the area enclosed by the cardioid <span class="process-math">\(r=2(1+\cos(\theta)\text{.}\)</span></p></article><article class="task exercise-like" id="task-234"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-845">Find the area enclosed by one loop of the 4-petaled rose <span class="process-math">\(r=\cos(2\theta)\text{.}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>
