@@ -37,18 +37,14 @@
             
             <task>
                 <p>
-                    For each of the following, if <m>\displaystyle \sum_{n=0}^\infty ar^n</m> converges, determine what it converges to.
-                    <ol label="A">
-                        <li><m>r>1</m>.</li>
-                        <li><m>r=1</m>.</li>
-                        <li><m>-1&lt;r&lt;1</m>.</li>
-                        <li><m>r=-1</m>.</li>
-                        <li><m>r&lt;-1</m>.</li>
-                    </ol>
+                    Where possible, determine what value <m>\displaystyle \sum_{n=0}^\infty ar^n</m> converges to.
                 </p>
             </task>
             
         </activity>
+    
+    <fact xml:id="geometricseriesconverge"> <p><em>Geometric series</em> are of the form <m>\displaystyle \sum_{n=0}^\infty ar^n</m>, where <m>a</m> and <m>r</m> are real numbers. A geometric series converges only when <m>|r|&lt;1</m>. In this case, <m>\displaystyle \sum_{n=0}^\infty ar^n=\frac{a}{1-r}</m>. Otherwise, the geometric series diverges.</p>
+    </fact>
         
         <activity xml:id="activity-SQ4modifiedgeom">
             <introduction>
@@ -109,15 +105,15 @@
         <example xml:id="example-SQ4modifiedgeometric">
             <statement>
                 <p>
-                    Given a series that appears to be mostly geometric: <me>3+(1.1)^3+1.1^4+\cdots(1.1)^n+\cdots</me>  we can rewrite it as the sum of a standard geometric series with some modification: <m>\displaystyle ???+\sum_{n=0}^\infty a\cdot r^n</m>:
+                    Given a series that appears to be mostly geometric: <me>3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots</me>  we can rewrite it as the sum of a standard geometric series with some modification: <m>\displaystyle ???+\sum_{n=0}^\infty a\cdot r^n</m>:
                     <md>
-                        <mrow>&amp;3+(1.1)^3+1.1^4+\cdots(1.1)^n+\cdots </mrow>
+                        <mrow>&amp;3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots </mrow>
                             <mrow>&amp;=3-\textcolor{blue}{((1.1)^0+(1.1)^1+(1.1)^2)+((1.1)^0+(1.1)^1+(1.1)^2)}+(1.1)^3+\cdots</mrow>
                         <mrow>&amp;=3-((1.1)^0+(1.1)^1+(1.1)^2)+(1.1)^0+(1.1)^1+(1.1)^2+(1.1)^3+\cdots</mrow>
                         <mrow>&amp;=3-((1.1)^0+(1.1)^1+(1.1)^2)+\sum_{n=0}^\infty (1.1)^n</mrow>
                         <mrow>&amp;=-0.31+\sum_{n=0}^\infty (1.1)^n</mrow>
                     </md>
-                    which converges if and only if <m>\displaystyle \sum_{n=0}^\infty (1.1)^n</m> converges.  In this case it does not.
+                    which converges if and only if <m>\displaystyle \sum_{n=0}^\infty (1.1)^n</m> converges.  In this case, it does not.
                 </p>
             </statement>
         
@@ -125,33 +121,44 @@
         
         
         <activity xml:id="activity-SQ4evaluatingmodifiedgeo">
-            
-            <task>
                 <p>
                     For each of the following modified geometric series, rewrite them in the form <m>???+\displaystyle\sum_{n=0}^\infty a\cdot r^n</m>.
-                    <ol label="A">
+                    <ol>
                         <li><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</li>
                         <li><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</li>
                         <li><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
                         <li><m>8-1+1-1+1-1+\cdots</m>.</li>
                     </ol>
                 </p>
-            </task>
-            
-            <task>
-                <p>
-                    For each of the following modified geometric series, use your rewritten form from the previous part to determine if they converge, and if they converge, to what value.
-                    <ol label="A">
-                        <li><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</li>
-                        <li><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</li>
-                        <li><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
-                        <li><m>8-1+1-1+1-1+\cdots</m>.</li>
-                    </ol>
-                </p>
-            </task>
-            
         </activity>
-    
+            
+        <activity>
+                <p>
+                    Use your rewritten forms from <xref ref="activity-SQ4evaluatingmodifiedgeo"/> to determine which of the modified geometric series converge. If the series converges, find to what value it converges.
+                    <ol label="A">
+                        <li><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</li>
+                        <li><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</li>
+                        <li><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
+                        <li><m>8-1+1-1+1-1+\cdots</m>.</li>
+                    </ol>
+                </p>            
+        </activity>
+                
+<exercise checkit-seed="7450" checkit-slug="SQ4" checkit-title="Geometric summations">
+    <statement>
+        <p>
+            Find the limit of the following series.
+        </p>
+        <me>
+            -1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n.
+        </me>
+    </statement>
+    <answer>
+        <me>
+            -1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n=1.
+        </me>
+    </answer>
+</exercise>
     
     <subsection>
         <title>Slideshow</title>

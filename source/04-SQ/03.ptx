@@ -12,7 +12,7 @@
     <activity xml:id="activity-SQ3intropartialsumsgeometric">
         <introduction>
             <p>
-                Consider the sequence <m>\displaystyle \{a_n\}_{n=0}^\infty=\left\{\frac{1}{2^n}\right\}_{n=0}^\infty, \{a_n\}=1, \frac{1}{2},\frac{1}{4},\ldots</m>.
+                Consider the sequence <m>\displaystyle \{a_n\}_{n=0}^\infty=\left\{\frac{1}{2^n}\right\}_{n=0}^\infty</m>.
             </p>
         </introduction>
         <task>
@@ -23,7 +23,7 @@
         <task>
             <p>
                 Compute the following:
-                <ol label="A">
+                <ol>
                     <li><m>a_0.</m></li>
                     <li><m>a_0+a_1.</m></li>
                     <li><m>a_0+a_1+a_2.</m></li>
@@ -37,7 +37,7 @@
     <activity xml:id="activity-SQ3intropartialsumsharmonic">
         <introduction>
             <p>
-                Consider the sequence <m>\displaystyle \{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}\right\}_{n=1}^\infty, \{a_n\}=1,\frac{1}{2},\ldots</m>.
+                Consider the sequence <m>\displaystyle \{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}\right\}_{n=1}^\infty</m>.
             </p>
         </introduction>
         <task>
@@ -48,7 +48,7 @@
         <task>
             <p>
                 Compute the following:
-                <ol label="A">
+                <ol>
                     <li><m>a_1.</m></li>
                     <li><m>a_1+a_2.</m></li>
                     <li><m>a_1+a_2+a_3.</m></li>
@@ -71,11 +71,12 @@
             <statement>
                 <p>
                      Let <m>a_n=\frac{2}{3^n}.</m> Find the following partial sums:
-                    <ol label="A">
+                    <ol>
                         <li><m>A_0</m>.</li>
                         <li><m>A_1</m>.</li>
                         <li><m>A_2</m>.</li>
                         <li><m>A_3</m>.</li>
+                        <li><m>A_{100}</m>.</li>
                     </ol>
                 </p>
                  
@@ -95,11 +96,12 @@
         
         <activity xml:id="activity-SQ3polyproducts">
             <statement>
-                <p>Expand the following polynomial products, then reduce to as few summands as possible:
-                    <ol label="A">
+                <p>Expand the following polynomial products, and then reduce to as few summands as possible.
+                    <ol>
                         <li><m>(1-x)(1+x+x^2)</m>.</li>
                         <li><m>(1-x)(1+x+x^2+x^3)</m>.</li>
                         <li><m>(1-x)(1+x+x^2+x^3+x^4)</m>.</li>
+                        <li><m>(1-x)(1+x+x^2+\cdots+x^n)</m>, where <m>n</m> is any nonnegative integer.</li>
                     </ol>
                 </p>
             </statement>
@@ -120,7 +122,7 @@
         <activity xml:id="activity-SQ3particularclosedform">
             <introduction>
                 <p>
-                    Recall from <xref ref="activity-SQ3closedformmotivation"/> that <m>\displaystyle A_{100}=2+\frac{2}{3}+\frac{2}{3^2}+\frac{2}{3^3}+\frac{2}{3^4}+\cdots+\frac{2}{3^{100}}=2\left(1+\frac{1}{3}+\frac{1}{3^2}+\frac{1}{3^3}+\frac{1}{3^4}+\cdots+\frac{1}{3^{100}}\right).</m> 
+                    Recall from <xref ref="activity-SQ3geompartialsum"/> that <m>\displaystyle A_{100}=2+\frac{2}{3}+\frac{2}{3^2}+\frac{2}{3^3}+\frac{2}{3^4}+\cdots+\frac{2}{3^{100}}=2\left(1+\frac{1}{3}+\frac{1}{3^2}+\frac{1}{3^3}+\frac{1}{3^4}+\cdots+\frac{1}{3^{100}}\right).</m> 
                 </p>
             </introduction>
             <task>
@@ -145,26 +147,40 @@
         <activity xml:id="activity-SQ3nthclosedform">
             <introduction>
                 <p>
-                    Suppose that <m>\{b_n\}_{n=0}^\infty=\{(-2)^n\}=1,-2,4,-8,\ldots</m>.  Let <m>B_n=\displaystyle\sum_{i=0}^n b_i</m> be the <m>n</m>th partial sum of <m>\{b_n\}</m>.  
+                    Suppose that <m>\displaystyle \{b_n\}_{n=0}^\infty=\{(-2)^n\}_{n=0}^\infty=\{1,-2,4,-8,\ldots\}</m>.  Let <m>B_n=\displaystyle\sum_{i=0}^n b_i</m> be the <m>n</m>th partial sum of <m>\{b_n\}</m>.  
                 </p>
             </introduction>
             <task>
                 <p>
                      Find simple expressions for the following:
-                    <ol label="A">
+                    <ol>
                         <li><m>(1-(-2))B_{10}</m>.</li>
                         <li><m>(1-(-2))B_{30}</m>.</li>
                         <li><m>(1-(-2))B_{n}</m>.</li>
+                            <ol label="A">
+                                <li><m>1+(-2)^n</m>.</li>
+                                <li><m>1-(-2)^n</m>.</li>
+                                <li><m>1+(-2)^{n+1}</m>.</li>
+                                <li><m>1-(-2)^{n+1}</m>.</li>
+                                <li><m>1-2^n</m>.</li>
+                            </ol>
                     </ol>
                 </p>
             </task>
             <task>
                 <p>
                     Based on your previous answers, solve for the following:
-                    <ol label="A">
+                    <ol>
                         <li><m>B_{10}</m>.</li>
                         <li><m>B_{30}</m>.</li>
                         <li><m>B_{n}</m>.</li>
+                            <ol label="A">
+                                <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1-(-2)}</m></li>
+                                <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1-2}</m></li>
+                                <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1+(-2)}</m></li>
+                                <li><m>\displaystyle \frac{1-(-2)^{n}}{1-2}</m></li>
+                                <li><m>\displaystyle \frac{1-(-2)^{n}}{1-(-2)}</m></li>
+                            </ol>                        
                     </ol>
                 </p>
             </task>
@@ -175,7 +191,7 @@
             <introduction>
                 <p>
                     Consider the following sequences:
-                    <ol label="A">
+                    <ol>
                         <li><m>\displaystyle\{a_n\}_{n=0}^\infty=\left\{\left(-\frac{2}{3}\right)^n\right\}_{n=0}^\infty</m>.</li>
                         <li><m>\displaystyle\{b_n\}_{n=0}^\infty=\left\{2\cdot\left(-1\right)^n\right\}_{n=0}^\infty</m>.</li>
                         <li><m>\displaystyle\{c_n\}_{n=0}^\infty=\left\{-3\cdot \left(1.2\right)^n\right\}_{n=0}^\infty</m>.</li>
@@ -184,27 +200,44 @@
             </introduction>
             <task>
                 <p>
-                    Find the closed form for the <m>n</m>th partial sum for the following geometric sequences.
+                    Find the closed form for the <m>n</m>th partial sum for the geometric sequence <m>A_n=\displaystyle\sum_{i=0}^n a_i=\displaystyle\sum_{i=0}^n \left(-\frac{2}{3}\right)^n</m>.
                     <ol label="A">
-                        <li><m>A_n=\displaystyle\sum_{i=0}^n a_i=\displaystyle\sum_{i=0}^n \left(-\frac{2}{3}\right)^n</m>.</li>
-                        <li><m>B_n=\displaystyle\sum_{i=0}^n b_i=\displaystyle\sum_{i=0}^n 2\cdot\left(-1\right)^n</m>.</li>
-                        <li><m>C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^n</m>.</li>
+                        <li><m>\displaystyle \frac{3}{5}\left(1-\left(-\frac{2}{3}\right)^{n+1}\right)</m>.</li>
+                        <li><m>\displaystyle \frac{5}{3}\left(1-\left(-\frac{2}{3}\right)^{n+1}\right)</m>.</li>
+                        <li><m>\displaystyle \frac{5}{3}\left(1+\frac{2}{3}\left(\frac{2}{3}\right)^{n}\right)</m>.</li>
+                        <li><m>\displaystyle \frac{3}{5}\left(1+\frac{2}{3}\left(\frac{2}{3}\right)^{n}\right)</m>.</li>
+                        <li><m>\displaystyle 1-\left(-\frac{2}{3}\right)^{n+1}</m>.</li>
                     </ol>
                 </p>
             </task>
-            
             <task>
                 <p>
-                    Given the closed forms you found in the previous task, which of the following limits are defined?  If defined, what is the limit?
+                    Find the closed form for the <m>n</m>th partial sum for the geometric sequence <m>B_n=\displaystyle\sum_{i=0}^n b_i=\displaystyle\sum_{i=0}^n 2\cdot\left(-1\right)^n</m>.
+                    <ol label="A">
+                        <li><m>\displaystyle 2^{n+1}</m>.</li>
+                        <li><m>\displaystyle 1-(-1)^{n+1}</m>.</li>
+                        <li><m>\displaystyle 1+(-1)^{n}</m>.</li>
+                        <li><m>\displaystyle 2(1+(-1)^{n})</m>.</li>
+                        <li><m>\displaystyle 2(1-(-1)^{n+1})</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Find the closed form for the <m>n</m>th partial sum for the geometric sequence <m>C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^n</m>.
+                </p>            
+            </task>
+          </activity>
+            <activity>
+                <p>
+                    Given the closed forms you found in <xref ref="activity-SQ3closedformgeomhandsoff"/>, which of the following limits are defined?  If defined, what is the limit?
                     <ol label="A">
                         <li><m>\displaystyle\lim_{n\to\infty}A_n</m>.</li>
                         <li><m>\displaystyle\lim_{n\to\infty}B_n</m>.</li>
                         <li><m>\displaystyle\lim_{n\to\infty}C_n</m>.</li>
                     </ol>
                 </p>
-            </task>
-            
-        </activity>
+            </activity>
         
         <definition xml:id="definition-SQ3serieslimit">
             <statement>
@@ -217,10 +250,13 @@
         <activity xml:id="activity-SQ3geomserieslimit">
             <statement>
                 <p>
-                    For each of the following series, find the limit if it exists:
+                    Which of the following series seem(s) to be infinite?
                     <ol label="A">
                         <li><m>\displaystyle\sum_{n=0}^\infty 3(0.8)^n</m>.</li>
                         <li><m>\displaystyle\sum_{n=0}^\infty 2\left(\frac{5}{4}\right)^n</m>.</li>
+                        <li><m>\displaystyle\sum_{n=0}^\infty \left(\frac{5}{6}\right)^n</m>.</li>
+                        <li><m>\displaystyle\sum_{n=0}^\infty \frac{1}{2}\left(81\right)^n</m>.</li>
+                        <li><m>\displaystyle\sum_{n=0}^\infty 10\left(-\frac{1}{5}\right)^n</m>.</li>
                     </ol>
                 </p>
             </statement>
@@ -249,8 +285,8 @@
                     Recall from <xref ref="activity-SQ3telescopingpartialsums"/> that <m>\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}</m> and <m>\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)</m>.
                 </p>
                 <p>
-                    Compute the following
-                    <ol label="A">
+                    Compute the following partial sums:
+                    <ol>
                         <li><m>A_3</m>.</li>
                         <li><m>A_{10}</m>.</li>
                         <li><m>A_{100}</m>.</li>
@@ -291,10 +327,17 @@
             <statement>
                 <p>
                     Given a telescoping series <m>S_n=\displaystyle\sum_{i=1}^n s_i=\sum_{i=1}^n(x_i-x_{i+1})</m>, find:
-                    <ol label="A">
+                    <ol>
                         <li><m>S_2</m>.</li>
                         <li><m>S_{10}</m>.</li>
                         <li><m>S_n</m>.</li>
+                            <ol label="A">
+                                <li><m>x_1-x_n</m></li>
+                                <li><m>x_1-x_{n+1}</m></li>
+                                <li><m>x_1-x_{n-1}</m></li>
+                                <li><m>x_1-x_n+1</m></li>
+                                <li><m>x_1-x_n-1</m></li>
+                            </ol>
                     </ol>
                 </p>
             </statement>
@@ -303,28 +346,71 @@
         
         
         <activity xml:id="activity-SQ3telescopinghandsoff">
-            <task>
                 <p>
                     For each of the following telescoping series, find the closed form for the <m>n</m>th partial sum.
-                    <ol label="A">
+                    <ol>
                         <li><m>S_n=\displaystyle\sum_{i=1}^n (2^{-i}-(2^{-i-1}))</m>.</li>
                         <li><m>S_n=\displaystyle\sum_{i=1}^n (i^2-(i+1)^2)</m>.</li>
                         <li><m>S_n=\displaystyle\sum_{i=1}^n \left( \frac{1}{2i+1}-\frac{1}{2i+3}\right)</m>.</li>
                     </ol>
                 </p>
-            </task>
-            <task>
-                <p>
-                    Determine if the following converge, and if so, to what value?
+        </activity>
+    
+        <activity>
+            <p>Given the closed forms you found in <xref ref="activity-SQ3telescopinghandsoff"/>, determine which of the following telescoping series converge. If so, to what value does it converge?</p>
                     <ol label="A">
                         <li><m>\displaystyle\sum_{i=1}^\infty (2^{-i}-(2^{-i-1}))</m>.</li>
                         <li><m>\displaystyle\sum_{i=1}^\infty (i^2-(i+1)^2)</m>.</li>
                         <li><m>\displaystyle\sum_{i=1}^\infty \left( \frac{1}{2i+1}-\frac{1}{2i+3}\right)</m>.</li>
-                    </ol>
-                </p>
-            </task>
+                    </ol>            
         </activity>
-    
+
+<exercise checkit-seed="3192" checkit-slug="SQ3" checkit-title="Partial sum sequence">
+    <statement>
+        <p>
+            <ol>
+                <li>
+                    <p>Consider the partial sum sequence <m>\displaystyle A_n=\left(-2\right)+\left(\frac{2}{3}\right)+\left(-\frac{2}{9}\right)+\cdots+\left(-2\cdot \left( -\frac{1}{3}\right)^n \right).</m></p>
+                    <ol>
+                        <li>Find a closed form for <m>A_n</m>.</li>
+                        <li>Does <m>\{A_n\}</m> converge?  If so, to what value?</li>
+                    </ol>
+                </li>
+                <li>
+                    <p>Consider the partial sum sequence <m>\displaystyle B_n=\sum_{i=1}^n \left( \frac{1}{5 \, i + 2}-\frac{1}{5 \, i + 7} \right).</m></p>
+                    <ol>
+                        <li>Find a closed form for <m>B_n</m>.</li>
+                        <li>Does <m>\{B_n\}</m> converge?  If so, to what value?</li>
+                    </ol>
+                </li>
+                
+            </ol>
+        </p>
+        
+    </statement>
+    <answer>
+        <p>
+            <ol>
+                <li>
+                    <ol>
+                        <li><m>\displaystyle A_n=-2\cdot\frac{1-\left(-\frac{1}{3}\right)^{n+1} }{1- \left(-\frac{1}{3}\right) }</m>.</li>
+                        <li>
+                            <m>\displaystyle\lim_{n\to\infty} -2\cdot\frac{1-\left(-\frac{1}{3}\right)^{n+1} }{1- \left(-\frac{1}{3}\right) } </m> converges to <m>-\frac{3}{2}</m>.                
+                        </li>            
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li><m>\displaystyle B_n=\frac{1}{7}-\frac{1}{5 \, n + 7}</m>.</li>
+                        <li>
+                            <m>\displaystyle\lim_{n\to\infty} \frac{1}{7}-\frac{1}{5 \, n + 7} </m> converges to <m>\frac{1}{7}</m>.                
+                        </li>            
+                    </ol>
+                </li>
+            </ol>
+        </p>
+    </answer>
+</exercise>
     
     <subsection>
         <title>Slideshow</title>

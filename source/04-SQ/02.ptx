@@ -56,7 +56,7 @@
     </definition>
     
     
-    <activity>
+    <activity xml:id="sq2alternatingharmonic">
         <introduction>
             <p>
                 Consider the sequence <m>\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.</m>
@@ -70,7 +70,7 @@
         <task>
             <p>
                 Which of the following is true about <m>x_{n+1}-x_n</m>?  There can be more or less than one answer.
-                <ol>
+                <ol label="A">
                     <li><m>x_{n+1}-x_n> 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n\geq 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n &lt; 0</m> for every choice of <m>n</m>.</li>
@@ -81,7 +81,7 @@
         <task>
             <p>
                 Which of the following (if any) describe <m>\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty?</m>
-                <ol>
+                <ol label="A">
                     <li>Monotonically increasing.</li>
                     <li>Monotonically non-decreasing.</li>
                     <li>Monotonically decreasing.</li>
@@ -92,7 +92,7 @@
     </activity>
     
     
-    <activity>
+    <activity xml:id="sq2quadraticrational">
         <introduction>
             <p>
                 Consider the sequence <m>\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.</m>
@@ -106,7 +106,7 @@
         <task>
             <p>
                 Which of the following is true about <m>x_{n+1}-x_n</m>?  There can be more or less than one answer.
-                <ol>
+                <ol label="A">
                     <li><m>x_{n+1}-x_n> 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n\geq 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n &lt; 0</m> for every choice of <m>n</m>.</li>
@@ -117,7 +117,7 @@
         <task>
             <p>
                 Which of the following (if any) describe <m>\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty?</m>
-                <ol>
+                <ol label="A">
                     <li>Monotonically increasing.</li>
                     <li>Monotonically non-decreasing.</li>
                     <li>Monotonically decreasing.</li>
@@ -128,7 +128,7 @@
     </activity>
     
     
-    <activity>
+    <activity xml:id="sq2linearrational">
         <introduction>
             <p>
                 Consider the sequence <m>\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.</m>
@@ -142,7 +142,7 @@
         <task>
             <p>
                 Which of the following is true about <m>x_{n+1}-x_n</m>?  There can be more or less than one answer.
-                <ol>
+                <ol label="A">
                     <li><m>x_{n+1}-x_n> 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n\geq 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n &lt; 0</m> for every choice of <m>n</m>.</li>
@@ -153,7 +153,7 @@
         <task>
             <p>
                 Which of the following (if any) describe <m>\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty?</m>
-                <ol>
+                <ol label="A">
                     <li>Monotonically increasing.</li>
                     <li>Monotonically non-decreasing.</li>
                     <li>Monotonically decreasing.</li>
@@ -164,7 +164,7 @@
     </activity>
     
     
-    <activity>
+    <activity xml:id="sq2geometric">
         <introduction>
             <p>
                 Consider the sequence <m>\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.</m>
@@ -178,7 +178,7 @@
         <task>
             <p>
                 Which of the following is true about <m>x_{n+1}-x_n</m>?  There can be more or less than one answer.
-                <ol>
+                <ol label="A">
                     <li><m>x_{n+1}-x_n> 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n\geq 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n &lt; 0</m> for every choice of <m>n</m>.</li>
@@ -189,7 +189,7 @@
         <task>
             <p>
                 Which of the following (if any) describe <m>\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty?</m>
-                <ol>
+                <ol label="A">
                     <li>Monotonically increasing.</li>
                     <li>Monotonically non-decreasing.</li>
                     <li>Monotonically decreasing.</li>
@@ -211,7 +211,7 @@
     <activity>
         <introduction>
             <p>
-                Consider the sequence <m>\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.</m>
+                Consider the sequence <m>\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty</m> from <xref ref="sq2alternatingharmonic"/>.
             </p>
         </introduction>
         <task>
@@ -222,7 +222,7 @@
         
         <task>
             <p>
-                Is there a <m>b_\ell</m> such that <m>b_\ell x_n</m> for every <m>n</m>?  If so, what would be one such <m>b_\ell</m>?
+                Is there a <m>b_\ell</m> such that <m>b_\ell \leq x_n</m> for every <m>n</m>?  If so, what would be one such <m>b_\ell</m>?
             </p>
         </task>
         
@@ -237,7 +237,7 @@
     <activity>
         <introduction>
             <p>
-                Consider the sequence <m>\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.</m>
+                Consider the sequence <m>\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty</m> from <xref ref="sq2quadraticrational"/>.
             </p>
         </introduction>
         <task>
@@ -248,7 +248,7 @@
         
         <task>
             <p>
-                Is there a <m>b_\ell</m> such that <m>b_\ell x_n</m> for every <m>n</m>?  If so, what would be one such <m>b_\ell</m>?
+                Is there a <m>b_\ell</m> such that <m>b_\ell \leq x_n</m> for every <m>n</m>?  If so, what would be one such <m>b_\ell</m>?
             </p>
         </task>
         
@@ -263,7 +263,7 @@
     <activity>
         <introduction>
             <p>
-                Consider the sequence <m>\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.</m>
+                Consider the sequence <m>\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty</m> from <xref ref="sq2linearrational"/>.
             </p>
         </introduction>
         <task>
@@ -274,7 +274,7 @@
         
         <task>
             <p>
-                Is there a <m>b_\ell</m> such that <m>b_\ell x_n</m> for every <m>n</m>?  If so, what would be one such <m>b_\ell</m>?
+                Is there a <m>b_\ell</m> such that <m>b_\ell \leq x_n</m> for every <m>n</m>?  If so, what would be one such <m>b_\ell</m>?
             </p>
         </task>
         
@@ -289,7 +289,7 @@
     <activity>
         <introduction>
             <p>
-                Consider the sequence <m>\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty.</m>
+                Consider the sequence <m>\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty</m> from <xref ref="sq2geometric"/>.
             </p>
         </introduction>
         <task>
@@ -300,7 +300,7 @@
         
         <task>
             <p>
-                Is there a <m>b_\ell</m> such that <m>b_\ell x_n</m> for every <m>n</m>?  If so, what would be one such <m>b_\ell</m>?
+                Is there a <m>b_\ell</m> such that <m>b_\ell \leq x_n</m> for every <m>n</m>?  If so, what would be one such <m>b_\ell</m>?
             </p>
         </task>
         
@@ -333,6 +333,11 @@
                 </ol>
             </p>
         </task>
+        <task>
+            <p>
+                Where possible, find the limit of the sequence.
+            </p>
+        </task>
     </activity>
     
     <activity>
@@ -356,23 +361,23 @@
     
     
     <activity>
-        <task>
+        <statement>
             <p>
-                For each of the following, determine determine which of the properties: <em>monotonic</em>, <em>bounded</em> and <em>convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges.
-                <ol>
-                    <li><m>\left\{\displaystyle 3n\right\}_{n=0}^\infty.</m></li>
-                    <li><m>\left\{\displaystyle \frac{n^3}{3^n}\right\}_{n=0}^\infty.</m></li>
-                    <li><m>\left\{\displaystyle \frac{n}{n+3}\right\}_{n=1}^\infty.</m></li>
-                    <li><m>\left\{\displaystyle \frac{(-1)^n}{n+3}\right\}_{n=1}^\infty.</m></li>
-                </ol>
+                For each of the following sequences, determine which of the properties: <em>monotonic</em>, <em>bounded</em> and <em>convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges.
+                <task>
+                    <m>\left\{\displaystyle 3n\right\}_{n=0}^\infty.</m>
+                </task>
+                <task>
+                    <m>\left\{\displaystyle \frac{n^3}{3^n}\right\}_{n=0}^\infty.</m>
+                </task>
+                <task>
+                    <m>\left\{\displaystyle \frac{n}{n+3}\right\}_{n=1}^\infty.</m>
+                </task>
+                <task>
+                    <m>\left\{\displaystyle \frac{(-1)^n}{n+3}\right\}_{n=1}^\infty.</m>
+                </task>
             </p>
-        </task>
-        <task>
-            <p>Of the above sequences, which of them were monotonic?</p>
-        </task>
-        <task>
-            <p>Of the monotonic sequences, which of them were convergent?</p>
-        </task>
+        </statement>
     </activity>
     
     
