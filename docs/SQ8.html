@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-13T21:38:40Z       *-->
+<!--*       on 2022-06-27T04:15:45Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,6 +49,38 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -150,53 +182,53 @@
 <span class="type">Section</span> <span class="codenumber">4.8</span> <span class="title">Absolute Convergence (SQ8)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-32"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-961"><p id="p-1106">Determine if a series converges absolutely or conditionally.</p></li></ul></article><article class="activity project-like" id="activity-270"><h3 class="heading">
+<ul class="disc"><li id="li-1015"><p id="p-1119">Determine if a series converges absolutely or conditionally.</p></li></ul></article><article class="activity project-like" id="activity-273"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.8.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-119"><p id="p-1107">Consider the series: <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-371"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1108">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}\)</span> converge or diverge?  (Recall <a href="" class="xref" data-knowl="./knowl/fact-SQ8alternatingSeriesTest.html" title="Fact 4.5.12: The Alternating Series Test (Leibniz's Theorem)">Fact 4.5.12</a>.)</p></article><article class="task exercise-like" id="task-372"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1109">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n}\right|\)</span> converge or diverge?  (Recall <a href="" class="xref" data-knowl="./knowl/activity-SQ5harmonicSeries.html" title="Activity 4.5.6">Activity 4.5.6</a>.)</p></article></article><article class="definition definition-like" id="definition-absoluteconvergence"><h3 class="heading">
+<div class="introduction" id="introduction-119"><p id="p-1120">Consider the series: <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-370"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1121">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}\)</span> converge or diverge?  (Recall <a href="" class="xref" data-knowl="./knowl/fact-SQ8alternatingSeriesTest.html" title="Fact 4.5.12: The Alternating Series Test (Leibniz's Theorem)">Fact 4.5.12</a>.)</p></article><article class="task exercise-like" id="task-371"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1122">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n}\right|\)</span> converge or diverge?  (Recall <a href="" class="xref" data-knowl="./knowl/activity-SQ5harmonicSeries.html" title="Activity 4.5.6">Activity 4.5.6</a>.)</p></article></article><article class="definition definition-like" id="definition-absoluteconvergence"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.8.2</span><span class="period">.</span>
 </h3>
-<p id="p-1110">Given a series</p>
+<p id="p-1123">Given a series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \sum a_n
 \end{equation*}
 </div>
-<p class="continuation">we say that <span class="process-math">\(\displaystyle \sum a_n\)</span> is <em class="emphasis">absolutely convergent</em> if <span class="process-math">\(\displaystyle \sum |a_n|\)</span> converges.</p></article><article class="activity project-like" id="activity-271"><h3 class="heading">
+<p class="continuation">we say that <span class="process-math">\(\displaystyle \sum a_n\)</span> is <em class="emphasis">absolutely convergent</em> if <span class="process-math">\(\displaystyle \sum |a_n|\)</span> converges.</p></article><article class="activity project-like" id="activity-274"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.8.3</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-120">
-<p id="p-1111">Consider the following series:</p>
+<p id="p-1124">Consider the following series:</p>
 <ol class="decimal">
-<li id="li-962"><p id="p-derived-li-962"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{n^2(-1)^n}{n^3+1}\text{.}\)</span></p></li>
-<li id="li-963"><p id="p-derived-li-963"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\text{.}\)</span></p></li>
-<li id="li-964"><p id="p-derived-li-964"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \left(\frac{2}{3}\right)^n\text{.}\)</span></p></li>
-<li id="li-965"><p id="p-derived-li-965"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty -n\text{.}\)</span></p></li>
+<li id="li-1016"><p id="p-derived-li-1016"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{n^2(-1)^n}{n^3+1}\text{.}\)</span></p></li>
+<li id="li-1017"><p id="p-derived-li-1017"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\text{.}\)</span></p></li>
+<li id="li-1018"><p id="p-derived-li-1018"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \left(\frac{2}{3}\right)^n\text{.}\)</span></p></li>
+<li id="li-1019"><p id="p-derived-li-1019"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty -n\text{.}\)</span></p></li>
 </ol>
 </div>
-<article class="task exercise-like" id="task-373"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1112">For each of the series, determine if the series converges using any method.</p></article><article class="task exercise-like" id="task-374"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1113">For each of the series, compute <span class="process-math">\(|a_n|\text{.}\)</span></p></article><article class="task exercise-like" id="task-375"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1114">For each of the series, determine if the series is <em class="emphasis">absolutely convergent</em>.</p></article></article><article class="activity project-like" id="activity-272"><h3 class="heading">
+<article class="task exercise-like" id="task-372"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1125">For each of the series, determine if the series converges using any method.</p></article><article class="task exercise-like" id="task-373"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1126">For each of the series, compute <span class="process-math">\(|a_n|\text{.}\)</span></p></article><article class="task exercise-like" id="task-374"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1127">For each of the series, determine if the series is <em class="emphasis">absolutely convergent</em>.</p></article></article><article class="activity project-like" id="activity-275"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.8.4</span><span class="period">.</span>
 </h3>
-<p id="p-1115">If you know a series <span class="process-math">\(\displaystyle \sum a_n\)</span> is absolutely convergent, what can you conclude about whether or not <span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent?</p>
+<p id="p-1128">If you know a series <span class="process-math">\(\displaystyle \sum a_n\)</span> is absolutely convergent, what can you conclude about whether or not <span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent?</p>
 <ol class="decimal">
-<li id="li-966"><p id="p-derived-li-966">We cannot determine if <span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent.</p></li>
-<li id="li-967"><p id="p-derived-li-967"><span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent since it “grows slower” than <span class="process-math">\(\displaystyle \sum |a_n|\)</span> (and falls slower than <span class="process-math">\(\displaystyle \sum -|a_n|\)</span>).</p></li>
-</ol></article><article class="fact theorem-like" id="fact-40"><h3 class="heading">
+<li id="li-1020"><p id="p-derived-li-1020">We cannot determine if <span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent.</p></li>
+<li id="li-1021"><p id="p-derived-li-1021"><span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent since it “grows slower” than <span class="process-math">\(\displaystyle \sum |a_n|\)</span> (and falls slower than <span class="process-math">\(\displaystyle \sum -|a_n|\)</span>).</p></li>
+</ol></article><article class="fact theorem-like" id="fact-41"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.8.5</span><span class="period">.</span>
 </h3>
-<p id="p-1116">If <span class="process-math">\(\displaystyle \sum a_n\)</span> is absolutely convergent, then it must be convergent.</p></article><article class="activity project-like" id="activity-273"><h3 class="heading">
+<p id="p-1129">If <span class="process-math">\(\displaystyle \sum a_n\)</span> is absolutely convergent, then it must be convergent.</p></article><article class="activity project-like" id="activity-276"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.8.6</span><span class="period">.</span>
 </h3>
-<p id="p-1117">Find 3 series that are convergent but not absolutely convergent (recall <a href="" class="xref" data-knowl="./knowl/fact-SQ8alternatingSeriesTest.html" title="Fact 4.5.12: The Alternating Series Test (Leibniz's Theorem)">Fact 4.5.12</a>, <a href="SQ6.html" class="internal" title="Section 4.6: Comparison Tests (SQ6)">Section 4.6</a>).</p></article><section class="subsection" id="subsection-43"><h3 class="heading hide-type">
+<p id="p-1130">Find 3 series that are convergent but not absolutely convergent (recall <a href="" class="xref" data-knowl="./knowl/fact-SQ8alternatingSeriesTest.html" title="Fact 4.5.12: The Alternating Series Test (Leibniz's Theorem)">Fact 4.5.12</a>, <a href="SQ6.html" class="internal" title="Section 4.6: Comparison Tests (SQ6)">Section 4.6</a>).</p></article><section class="subsection" id="subsection-43"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.8.1</span> <span class="title">Slideshow</span>
 </h3>
-<p id="p-1118">Slideshow of activities available at <a class="external" href="SQ8.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ8.slides.html</code></a>.</p></section><section class="subsection" id="subsection-44"><h3 class="heading hide-type">
+<p id="p-1131">Slideshow of activities available at <a class="external" href="SQ8.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ8.slides.html</code></a>.</p></section><section class="subsection" id="subsection-44"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.8.2</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-84"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ8" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/snRKVwCkymQ?&amp;modestbranding=1&amp;rel=0"></iframe></div>

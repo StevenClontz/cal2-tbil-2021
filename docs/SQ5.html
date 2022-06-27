@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-13T21:38:39Z       *-->
+<!--*       on 2022-06-27T04:15:44Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,6 +49,38 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -150,14 +182,14 @@
 <span class="type">Section</span> <span class="codenumber">4.5</span> <span class="title">Basic Convergence Tests (SQ5)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-29"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-863"><p id="p-980">Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ5investigateDivergentSeries"><h3 class="heading">
+<ul class="disc"><li id="li-917"><p id="p-993">Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ5investigateDivergentSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-94"><p id="p-981">For each of the following series, write out the first several terms, and then argue whether the series converges or diverges.</p></div>
-<article class="task exercise-like" id="task-290"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-982"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty n^2\)</span></p></article><article class="task exercise-like" id="task-291"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-983"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{n+1}{n}\)</span></p></article><article class="task exercise-like" id="task-292"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-984"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty (-1)^n\)</span></p></article></article><article class="fact theorem-like" id="fact-SQ5convergenceTheorem"><h3 class="heading">
+<div class="introduction" id="introduction-94"><p id="p-994">For each of the following series, write out the first several terms, and then argue whether the series converges or diverges.</p></div>
+<article class="task exercise-like" id="task-289"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-995"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty n^2\)</span></p></article><article class="task exercise-like" id="task-290"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-996"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{n+1}{n}\)</span></p></article><article class="task exercise-like" id="task-291"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-997"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty (-1)^n\)</span></p></article></article><article class="fact theorem-like" id="fact-SQ5convergenceTheorem"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span>
 </h3>
 <p id="QCd">If the series <span class="process-math">\(\displaystyle\sum a_n\)</span> is convergent, then  <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty} a_n=0\text{.}\)</span></p></article><article class="fact theorem-like" id="fact-SQ5divergenceTest"><h3 class="heading">
@@ -168,26 +200,26 @@
 </h3>
 <p id="QCd">If <span class="process-math">\(\displaystyle\sum a_n=A\text{,}\)</span> <span class="process-math">\(\displaystyle\sum b_n=B\text{,}\)</span> and <span class="process-math">\(c\)</span> is a real number, then</p>
 <ol class="decimal">
-<li id="li-864"><p id="p-derived-li-864"><span class="process-math">\(\displaystyle\sum ca_n=c\displaystyle\sum a_n=cA\text{,}\)</span> and</p></li>
-<li id="li-865"><p id="p-derived-li-865"><span class="process-math">\(\displaystyle\sum a_n+\displaystyle\sum b_n=\displaystyle\sum (a_n+b_n)=A+B\text{.}\)</span></p></li>
+<li id="li-918"><p id="p-derived-li-918"><span class="process-math">\(\displaystyle\sum ca_n=c\displaystyle\sum a_n=cA\text{,}\)</span> and</p></li>
+<li id="li-919"><p id="p-derived-li-919"><span class="process-math">\(\displaystyle\sum a_n+\displaystyle\sum b_n=\displaystyle\sum (a_n+b_n)=A+B\text{.}\)</span></p></li>
 </ol></article><article class="fact theorem-like" id="fact-SQ5boundedPartialSums"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.5</span><span class="period">.</span>
 </h3>
 <p id="QCd">If <span class="process-math">\(a_n&gt;0\)</span> for all <span class="process-math">\(n\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum a_n\)</span> is convergent if and only if the sequence of partial sums is bounded from above.</p></article><article class="activity project-like" id="activity-SQ5harmonicSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-95"><p id="p-989">Consider the so-called <em class="emphasis">harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n}\text{,}\)</span> and let <span class="process-math">\(S_n\)</span> be its <span class="process-math">\(n^{th}\)</span> partial sum.</p></div>
-<article class="task exercise-like" id="task-293"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-990">Show that <span class="process-math">\(S_4\geq S_2+\displaystyle\frac{1}{2}\text{.}\)</span></p></article><article class="task exercise-like" id="task-294"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-991">Show that <span class="process-math">\(S_8\geq S_4+\displaystyle\frac{1}{2}\text{.}\)</span></p></article><article class="task exercise-like" id="task-295"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-992">Argue that the series converges or diverges.</p></article></article><article class="activity project-like" id="activity-SQ5pEquals2Series"><h3 class="heading">
+<div class="introduction" id="introduction-95"><p id="p-1002">Consider the so-called <em class="emphasis">harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n}\text{,}\)</span> and let <span class="process-math">\(S_n\)</span> be its <span class="process-math">\(n^{th}\)</span> partial sum.</p></div>
+<article class="task exercise-like" id="task-292"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1003">Show that <span class="process-math">\(S_4\geq S_2+\displaystyle\frac{1}{2}\text{.}\)</span></p></article><article class="task exercise-like" id="task-293"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1004">Show that <span class="process-math">\(S_8\geq S_4+\displaystyle\frac{1}{2}\text{.}\)</span></p></article><article class="task exercise-like" id="task-294"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1005">Argue that the series converges or diverges.</p></article></article><article class="activity project-like" id="activity-SQ5pEquals2Series"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-96"><p id="p-993">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2}\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-296"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-994">How does this series compare to <span class="process-math">\(\displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{?}\)</span></p></article><article class="task exercise-like" id="task-297"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-995">Draw a picture relating the sum and the integral (try comparing areas of appropriate regions in the plane).</p></article><article class="task exercise-like" id="task-298"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-996">Argue that the series converges or diverges.</p></article></article><article class="fact theorem-like" id="fact-SQ5integralTest"><h3 class="heading">
+<div class="introduction" id="introduction-96"><p id="p-1006">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-295"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1007">How does this series compare to <span class="process-math">\(\displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{?}\)</span></p></article><article class="task exercise-like" id="task-296"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1008">Draw a picture relating the sum and the integral (try comparing areas of appropriate regions in the plane).</p></article><article class="task exercise-like" id="task-297"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1009">Argue that the series converges or diverges.</p></article></article><article class="fact theorem-like" id="fact-SQ5integralTest"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.8</span><span class="period">.</span><span class="space"> </span><span class="title">The Integral Test.</span>
 </h3>
 <p id="QCd">Let <span class="process-math">\(\{a_n\}\)</span> be a sequence of positive numbers. If <span class="process-math">\(f(x)\)</span> is continuous, positive, and decreasing, and there is some positive integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(f(n)=a_n\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> then <span class="process-math">\(\displaystyle \sum_{n=N}^\infty a_n\)</span> and <span class="process-math">\(\displaystyle\int_N^\infty \displaystyle f(x) \, dx\)</span> both converge or both diverge.</p></article><article class="fact theorem-like" id="fact-SQ5pTest"><h3 class="heading">
@@ -196,40 +228,40 @@
 <p id="QCd">The series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}\)</span> converges for _______, and diverges otherwise.</p></article><article class="activity project-like" id="activity-SQ5pSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.10</span><span class="period">.</span>
 </h3>
-<article class="task exercise-like" id="task-299"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-999">What value of <span class="process-math">\(p\)</span> corresponds to the harmonic series?</p></article><article class="task exercise-like" id="task-300"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1000">What do we know about the <span class="process-math">\(p\)</span>-series with <span class="process-math">\(p=2\text{?}\)</span></p></article><article class="task exercise-like" id="task-301"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1001">Fill in the blank in the above fact, and then prove it.</p></article></article><article class="activity project-like" id="activity-SQ5pSeriesAlmost"><h3 class="heading">
+<article class="task exercise-like" id="task-298"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1012">What value of <span class="process-math">\(p\)</span> corresponds to the harmonic series?</p></article><article class="task exercise-like" id="task-299"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1013">What do we know about the <span class="process-math">\(p\)</span>-series with <span class="process-math">\(p=2\text{?}\)</span></p></article><article class="task exercise-like" id="task-300"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1014">Fill in the blank in the above fact, and then prove it.</p></article></article><article class="activity project-like" id="activity-SQ5pSeriesAlmost"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.11</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-97"><p id="p-1002">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2+1}\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-302"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1003">If we aim to use the integral test, what is an appropriate choice for <span class="process-math">\(f(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-303"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1004">Does the series converge or diverge?</p></article></article><article class="fact theorem-like" id="fact-SQ8alternatingSeriesTest"><h3 class="heading">
+<div class="introduction" id="introduction-97"><p id="p-1015">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2+1}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-301"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1016">If we aim to use the integral test, what is an appropriate choice for <span class="process-math">\(f(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-302"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1017">Does the series converge or diverge?</p></article></article><article class="fact theorem-like" id="fact-SQ8alternatingSeriesTest"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.12</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Series Test (Leibniz's Theorem).</span>
 </h3>
 <p id="QCd">The series <span class="process-math">\(\displaystyle\sum (-1)^{n+1}u_n\)</span> converges if all of the following conditions are satisfied:</p>
 <ol class="decimal">
-<li id="li-866"><p id="p-derived-li-866"><span class="process-math">\(u_n\)</span> is always positive,</p></li>
-<li id="li-867"><p id="p-derived-li-867">there is an integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(u_n\geq u_{n+1}\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> and</p></li>
-<li id="li-868"><p id="p-derived-li-868"><span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}u_n=0\text{.}\)</span></p></li>
+<li id="li-920"><p id="p-derived-li-920"><span class="process-math">\(u_n\)</span> is always positive,</p></li>
+<li id="li-921"><p id="p-derived-li-921">there is an integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(u_n\geq u_{n+1}\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> and</p></li>
+<li id="li-922"><p id="p-derived-li-922"><span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}u_n=0\text{.}\)</span></p></li>
 </ol></article><article class="fact theorem-like" id="fact-SQ8alternatingSeriesEstimation"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.5.13</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Series Estimation Theorem.</span>
 </h3>
 <p id="QCd">If the alternating series <span class="process-math">\(\displaystyle\sum a_n=\displaystyle\sum (-1)^{n+1}u_n\)</span> converges to <span class="process-math">\(L\)</span> and has <span class="process-math">\(n^{th}\)</span> partial sum <span class="process-math">\(S_n\text{,}\)</span> then for <span class="process-math">\(n\geq N\)</span> (as in the alternating series test):</p>
 <ol class="decimal">
-<li id="li-869"><p id="p-derived-li-869"><span class="process-math">\(|L-S_n|\)</span> is less than <span class="process-math">\(|a_{n+1}|\text{,}\)</span> and</p></li>
-<li id="li-870"><p id="p-derived-li-870"><span class="process-math">\((L-S_n)\)</span> has the same sign as <span class="process-math">\(a_{n+1}\text{.}\)</span></p></li>
+<li id="li-923"><p id="p-derived-li-923"><span class="process-math">\(|L-S_n|\)</span> is less than <span class="process-math">\(|a_{n+1}|\text{,}\)</span> and</p></li>
+<li id="li-924"><p id="p-derived-li-924"><span class="process-math">\((L-S_n)\)</span> has the same sign as <span class="process-math">\(a_{n+1}\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ5alternatingHarmonicSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.14</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-98"><p id="p-1007">Consider the so-called <em class="emphasis">alternating harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(-1)^{n+1}}{n}\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-304"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1008">Use the alternating series test to determine if the series converges.</p></article><article class="task exercise-like" id="task-305"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1009">If so, estimate the series using the first 3 terms.</p></article></article><section class="subsection" id="subsection-37"><h3 class="heading hide-type">
+<div class="introduction" id="introduction-98"><p id="p-1020">Consider the so-called <em class="emphasis">alternating harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(-1)^{n+1}}{n}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-303"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1021">Use the alternating series test to determine if the series converges.</p></article><article class="task exercise-like" id="task-304"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1022">If so, estimate the series using the first 3 terms.</p></article></article><section class="subsection" id="subsection-37"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.1</span> <span class="title">Slideshow</span>
 </h3>
-<p id="p-1010">Slideshow of activities available at <a class="external" href="SQ5.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ5.slides.html</code></a>.</p></section><section class="subsection" id="subsection-38"><h3 class="heading hide-type">
+<p id="p-1023">Slideshow of activities available at <a class="external" href="SQ5.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ5.slides.html</code></a>.</p></section><section class="subsection" id="subsection-38"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.2</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-79"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ5" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/XPGsG1Usjxg?&amp;modestbranding=1&amp;rel=0"></iframe></div>
